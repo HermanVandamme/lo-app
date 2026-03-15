@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    font-size: 16px;
+  }
+  body {
+    @apply bg-gray-100 text-gray-900 min-h-screen;
+    -webkit-font-smoothing: antialiased;
+  }
+  button, select, input {
+    font-size: 1rem;
+  }
+}
+
+@layer utilities {
+  .safe-top    { padding-top: env(safe-area-inset-top); }
+  .safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+}

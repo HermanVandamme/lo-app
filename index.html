@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!-- Primaire PWA-meta -->
+    <meta name="theme-color" content="#E67E22" />
+    <meta name="description" content="LO MASTER 2026 — Leskaarten en evaluatie voor Lichamelijke Opvoeding" />
+
+    <!-- Apple PWA (iOS homescreen) -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="LO App" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <title>LO MASTER 2026</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- GitHub Pages SPA-redirect herstel (zie public/404.html) -->
+    <script>
+      (function () {
+        var r = sessionStorage.getItem('__spa_redirect');
+        if (r) {
+          sessionStorage.removeItem('__spa_redirect');
+          window.history.replaceState(null, null, r);
+        }
+      })();
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

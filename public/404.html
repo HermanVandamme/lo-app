@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <title>LO MASTER 2026</title>
+  <meta name="robots" content="noindex" />
+  <script>
+    /**
+     * GitHub Pages SPA-redirect
+     * Slaat de volledige URL op en stuurt door naar de app-root.
+     * De app-root herstelt daarna de originele URL via history.replaceState.
+     * Zo werken directe links (bv. QR-code /lo-app/zelfeval?token=...) correct.
+     */
+    sessionStorage.setItem('__spa_redirect', window.location.href);
+    var base = window.location.pathname.split('/').slice(0, 2).join('/');
+    window.location.replace(base + '/');
+  </script>
+</head>
+<body></body>
+</html>

@@ -1,0 +1,47 @@
+# ── Build & deps ───────────────────────────────────────────────────────────────
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# ── PRIVÉ LEERLINGDATA — nooit committen ──────────────────────────────────────
+# Studentnamen, -foto's en klassenlijsten mogen NOOIT in git terechtkomen.
+
+# CSV-bestanden (overal in de repo)
+*.csv
+*.CSV
+
+# Excel & PDF klassenlijsten
+*.xlsx
+*.xls
+*.pdf
+
+# Foto's
+/photos/
+/images/
+*.jpg
+*.jpeg
+*.JPG
+*.JPEG
+
+# Specifieke mappen met privédata
+/Classes/
+/old/
+/private/
+/students/
+/Klaslijst.pdf
+/Klaslijst.xlsx
+
+# Lokale env-overrides (kunnen keys bevatten)
+.env.local
+.env.*.local
+# .env.production wordt wél getrackt (bevat alleen de base URL, geen secrets)
+
+# OS-rommel
+.DS_Store
+Thumbs.db
+
+# Editor & tools
+.vscode/
+.idea/
+.claude/

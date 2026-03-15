@@ -1,0 +1,124 @@
+name: Deploy naar GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  # ── 1. Privacy-check ───────────────────────────────────────────────────────
+  privacy-check:
+    name: Privacy-check (geen privédata in repo)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Controleer op CSV-bestanden
+        run: |
+          FOUND=$(find . \
+            -not -path "./.git/*" \
+            -not -path "./node_modules/*" \
+            \( -name "*.csv" -o -name "*.CSV" \) | head -20)
+          if [ -n "$FOUND" ]; then
+            echo "::error::❌ PRIVACYRISICO: CSV-bestanden gevonden in repo!"
+            echo "$FOUND"
+            exit 1
+          fi
+          echo "✓ Geen CSV-bestanden"
+
+      - name: Controleer op foto's van leerlingen
+        run: |
+          FOUND=$(find . \
+            -not -path "./.git/*" \
+            -not -path "./node_modules/*" \
+            -not -path "./public/*" \
+            \( -name "*.jpg" -o -name "*.jpeg" -o -name "*.JPG" -o -name "*.JPEG" \) | head -20)
+          if [ -n "$FOUND" ]; then
+            echo "::error::❌ PRIVACYRISICO: Foto's (jpg/jpeg) gevonden buiten /public!"
+            echo "$FOUND"
+            exit 1
+          fi
+          echo "✓ Geen leerlingfoto's"
+
+      - name: Controleer op Excel/PDF klassenlijsten
+        run: |
+          FOUND=$(find . \
+            -not -path "./.git/*" \
+            -not -path "./node_modules/*" \
+            \( -name "*.xlsx" -o -name "*.xls" -o -name "Klaslijst*" \) | head -20)
+          if [ -n "$FOUND" ]; then
+            echo "::error::❌ PRIVACYRISICO: Excel/PDF-bestanden gevonden!"
+            echo "$FOUND"
+            exit 1
+          fi
+          echo "✓ Geen Excel/PDF-klassenlijsten"
+
+      - name: Controleer op privémappen
+        run: |
+          FOUND=""
+          for d in Classes photos students private old; do
+            if [ -d "$d" ]; then FOUND="$FOUND $d"; fi
+          done
+          if [ -n "$FOUND" ]; then
+            echo "::error::❌ PRIVACYRISICO: Privémappen gevonden:$FOUND"
+            exit 1
+          fi
+          echo "✓ Geen privémappen"
+
+      - name: Controleer /public op privédata
+        run: |
+          FOUND=$(find public/ \
+            -not -path "public/images/*" \
+            \( -name "*.csv" -o -name "*.jpg" -o -name "*.jpeg" \) 2>/dev/null | head -10)
+          if [ -n "$FOUND" ]; then
+            echo "::error::❌ PRIVACYRISICO: Privédata in /public!"
+            echo "$FOUND"
+            exit 1
+          fi
+          echo "✓ /public is schoon"
+
+  # ── 2. Build & Deploy ──────────────────────────────────────────────────────
+  build-and-deploy:
+    name: Build en deploy
+    needs: privacy-check
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Installeer dependencies
+        run: npm ci
+
+      - name: Build (base URL via .env.production)
+        run: npm run build
+        # VITE_BASE=/lo-app/ wordt gelezen uit .env.production
+
+      - name: Configureer GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Deploy naar GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

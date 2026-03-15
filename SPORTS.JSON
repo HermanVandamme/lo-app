@@ -1,0 +1,40 @@
+{
+  "sports": [
+    {
+      "id": "basketbal",
+      "name": "Basketbal",
+      "image": "basketbal.jpg",
+      "panels": [
+        "Opwarming",
+        "Oefening 1",
+        "Oefening 2",
+        "Spelvorm",
+        "Evaluatie"
+      ]
+    },
+    {
+      "id": "volleybal",
+      "name": "Volleybal",
+      "image": "volleybal.jpg",
+      "panels": [
+        "Opwarming",
+        "Oefening 1",
+        "Oefening 2",
+        "Spelvorm",
+        "Evaluatie"
+      ]
+    },
+    {
+      "id": "gymnastiek",
+      "name": "Gymnastiek",
+      "image": "gymnastiek.jpg",
+      "panels": [
+        "Opwarming",
+        "Station 1",
+        "Station 2",
+        "Reeks",
+        "Evaluatie"
+      ]
+    }
+  ]
+}
