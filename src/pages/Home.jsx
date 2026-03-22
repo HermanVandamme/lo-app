@@ -44,7 +44,7 @@ function SportTile({ sport }) {
       >
         {!imgFailed && (
           <img
-            src={`/images/${sport.image}`}
+            src={`${import.meta.env.BASE_URL}images/${sport.image}`}
             alt={sport.name}
             className="w-full h-full object-cover"
             onError={() => setImgFailed(true)}
