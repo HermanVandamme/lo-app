@@ -1,0 +1,854 @@
+{
+  "_scoring": {
+    "rubric_niveaus": {
+      "zwak": 2.5,
+      "voldoende": 5,
+      "goed": 7.5,
+      "uitstekend": 10
+    },
+    "manueel_max": 10,
+    "kledij": {
+      "max": 10,
+      "aftrek_per_keer": 2,
+      "min": 0
+    },
+    "berekening": "Gemiddelde van alle ingevulde rubrics per thema = score op 10. Niet-ingevulde rubrics worden NIET meegerekend."
+  },
+  "volleybal": {
+    "lpd_1": {
+      "naam": "LPD 1 — Bewegingsdoel volleybal",
+      "evaluatievorm": "Leraarevaluatie (technische test + procesobservatie)",
+      "rubrics": {
+        "jaar_4": [
+          {
+            "criterium": "Bovenhandse toets",
+            "niveaus": {
+              "zwak": "Duwt de bal met vlakke handen. Bal zakt regelmatig onder ooglijn.",
+              "voldoende": "Vormt een kommetje. Bal blijft meestal boven ooglijn. Beperkte beenstrekking.",
+              "goed": "Kommetje correct. Buig-strek vanuit benen en armen. Bal boven ooglijn.",
+              "uitstekend": "Vloeiende buig-strek. Nawijzen met gestrekte armen. Bal altijd boven ooglijn."
+            }
+          },
+          {
+            "criterium": "Looplijnen en samenspel",
+            "niveaus": {
+              "zwak": "Blijft staan na de pas. Bereikt aanvalshome niet.",
+              "voldoende": "Loopt naar het net maar timing klopt niet. Bereikt aanvalshome soms.",
+              "goed": "Loopt correct in als setter. Bereikt aanvalshome op tijd.",
+              "uitstekend": "Setter loopt snel in, geeft hoge pas evenwijdig met net. Aanvalshome altijd bereikt."
+            }
+          }
+        ],
+        "jaar_5": [
+          {
+            "criterium": "Onderhandse receptie",
+            "niveaus": {
+              "zwak": "Vangt de bal in plaats van te spelen. Geen split-positie.",
+              "voldoende": "Split-positie aanwezig. Speelt onderhands maar zonder frontaliteit.",
+              "goed": "Split, frontaliteit, armen gestrekt. Speelt gericht naar setter.",
+              "uitstekend": "Vloeiende receptie met frontaliteit. Bal komt hoog en gericht bij de setter."
+            }
+          },
+          {
+            "criterium": "Keuze bij 1e contact",
+            "niveaus": {
+              "zwak": "Maakt geen bewuste keuze. Vangt altijd.",
+              "voldoende": "Kiest soms om te spelen i.p.v. vangen, maar onzeker.",
+              "goed": "Maakt bewuste keuze: vangen bij moeilijke bal, spelen bij makkelijke bal.",
+              "uitstekend": "Kiest altijd correct. Speelt onderhands bij makkelijke bal, vangt bij moeilijke."
+            }
+          }
+        ],
+        "jaar_6": [
+          {
+            "criterium": "Smash en shotkeuze",
+            "niveaus": {
+              "zwak": "Toetst altijd, probeert geen smash. Geen keuze.",
+              "voldoende": "Probeert soms een smash maar techniek klopt niet. Keuze is willekeurig.",
+              "goed": "Smash bij hoge pas, toets bij lagere pas. Armzwaai en polsactie aanwezig.",
+              "uitstekend": "Correcte smash met armzwaai en polsactie. Maakt altijd de juiste keuze."
+            }
+          },
+          {
+            "criterium": "Eindvorm 3v3 met alle elementen",
+            "niveaus": {
+              "zwak": "Vergeet looplijnen, roept niet JA, bereikt aanvalshome niet.",
+              "voldoende": "Volgt looplijnen met fouten. Roept soms JA. Bereikt soms aanvalshome.",
+              "goed": "Alle elementen aanwezig: JA roepen, looplijnen, aanvalshome, doordraaien.",
+              "uitstekend": "Vloeiend 3v3: alle elementen correct, stuurt medespelers aan."
+            }
+          }
+        ]
+      }
+    },
+    "lpd_8": {
+      "naam": "LPD 8 — Regels en afspraken",
+      "evaluatievorm": "Zelfevaluatie + leraarevaluatie",
+      "rubrics": {
+        "jaar_4": [
+          {
+            "criterium": "Spelregels toepassen",
+            "niveaus": {
+              "zwak": "Kent de 5 basisregels niet. Vergeet doordraaien.",
+              "voldoende": "Kent de regels maar vergeet er soms een. Draait door na herinnering.",
+              "goed": "Past alle regels toe. Draait correct door.",
+              "uitstekend": "Past alle regels toe en corrigeert medespelers."
+            }
+          },
+          {
+            "criterium": "Scheidsrechtersrol",
+            "niveaus": {
+              "zwak": "Doet niets als scheidsrechter. Let niet op.",
+              "voldoende": "Fluit bij duidelijke fouten. Houdt de score bij. Aarzelt soms.",
+              "goed": "Fluit bij de meeste fouten. Houdt score correct bij.",
+              "uitstekend": "Fluit zelfzeker. Houdt score correct bij. Legt regels uit aan spelers."
+            }
+          }
+        ],
+        "jaar_5": [
+          {
+            "criterium": "Spelregels toepassen",
+            "niveaus": {
+              "zwak": "Vergeet regels. Roept niet JA. Draait niet door.",
+              "voldoende": "Past meeste regels toe maar vergeet soms doordraaien of JA roepen.",
+              "goed": "Past alle regels correct toe: JA roepen, doordraaien, opslag.",
+              "uitstekend": "Past alle regels toe en corrigeert medespelers spontaan."
+            }
+          },
+          {
+            "criterium": "Scheidsrechtersrol",
+            "niveaus": {
+              "zwak": "Doet niets als scheidsrechter.",
+              "voldoende": "Fluit bij duidelijke fouten. Houdt score bij met fouten.",
+              "goed": "Fluit correct. Houdt score bij. Turft observatiepunten.",
+              "uitstekend": "Fluit zelfzeker. Score en observatie correct. Legt regels uit."
+            }
+          }
+        ],
+        "jaar_6": [
+          {
+            "criterium": "Spelregels in tornooicontext",
+            "niveaus": {
+              "zwak": "Vergeet regels onder wedstrijddruk. Protesteert bij beslissingen.",
+              "voldoende": "Past regels toe maar maakt fouten bij doordraaien of netaanraking.",
+              "goed": "Past alle regels correct toe in tornooicontext. Accepteert beslissingen.",
+              "uitstekend": "Speelt regelconform en sportief. Geeft zelf fouten toe. Moedigt fair play aan."
+            }
+          },
+          {
+            "criterium": "Zelfstandig spel reguleren",
+            "niveaus": {
+              "zwak": "Heeft externe sturing nodig om het spel te laten vlotten.",
+              "voldoende": "Reguleert soms zelf maar kijkt naar leerkracht voor bevestiging.",
+              "goed": "Reguleert het spel zelfstandig: opslag, doordraaien, wisselen.",
+              "uitstekend": "Organiseert het spel volledig zelf. Lost discussies op."
+            }
+          }
+        ]
+      }
+    }
+  },
+  "badminton": {
+    "lpd_1": {
+      "naam": "LPD 1 — Bewegingsdoel badminton",
+      "evaluatievorm": "Leraarevaluatie tijdens eindspel",
+      "rubrics": {
+        "jaar_4": [
+          {
+            "criterium": "Slagtechniek (lobservice, clear, drop)",
+            "niveaus": {
+              "zwak": "Shuttle wordt zelden geraakt. Geen herkenbare slagtechniek.",
+              "voldoende": "Raakt de shuttle maar beperkte controle. Hamergreep inconsistent.",
+              "goed": "Voert lobservice, clear en drop uit met correcte hamergreep en dwarse stand.",
+              "uitstekend": "Vloeiende slagtechniek. Goede gewichtsoverdracht en nawijzen."
+            }
+          },
+          {
+            "criterium": "Tactische toepassing (kort-ver afwisselen)",
+            "niveaus": {
+              "zwak": "Speelt altijd naar dezelfde zone. Geen afwisseling.",
+              "voldoende": "Wisselt soms af maar niet bewust. Beginsequentie onvolledig.",
+              "goed": "Wisselt kort en ver bewust af. Voert beginsequentie correct uit.",
+              "uitstekend": "Dwigt tegenstander systematisch naar achter en speelt dan kort."
+            }
+          }
+        ],
+        "jaar_5": [
+          {
+            "criterium": "Smash en slagkeuze",
+            "niveaus": {
+              "zwak": "Probeert geen smash. Speelt altijd hetzelfde.",
+              "voldoende": "Probeert smash maar mist vaak. Keuze is willekeurig.",
+              "goed": "Smasht bij hoge shuttle. Maakt bewuste slagkeuze op basis van positie tegenstander.",
+              "uitstekend": "Krachtige smash met correcte techniek. Slagkeuze altijd aangepast aan situatie."
+            }
+          },
+          {
+            "criterium": "Spelpatroon in wedstrijd",
+            "niveaus": {
+              "zwak": "Geen herkenbaar patroon. Reageert alleen.",
+              "voldoende": "Voert beginsequentie uit maar schakelt daarna niet door.",
+              "goed": "Beginsequentie + bewuste slagkeuze. Scoort met directe winners.",
+              "uitstekend": "Bouwt rally's op en scoort gericht. Beheerst het spelritme."
+            }
+          }
+        ],
+        "jaar_6": [
+          {
+            "criterium": "Aanval opbouwen en servicevariatie",
+            "niveaus": {
+              "zwak": "Altijd dezelfde service. Geen opbouw.",
+              "voldoende": "Varieert soms in service. Opbouw via backhand is onzeker.",
+              "goed": "Varieert bewust tussen lobservice en korte BH-service. Bouwt aanval op via backhandzijde.",
+              "uitstekend": "Service als wapen. Aanval systematisch opgebouwd. Beheerst het keizertornooi."
+            }
+          },
+          {
+            "criterium": "Algeheel wedstrijdniveau",
+            "niveaus": {
+              "zwak": "Kan rally niet in stand houden.",
+              "voldoende": "Houdt rally's in stand maar scoort weinig bewust.",
+              "goed": "Speelt tactisch, scoort bewust, past alle technieken toe.",
+              "uitstekend": "Domineert de rally. Combineert alle technieken vloeiend en tactisch."
+            }
+          }
+        ]
+      }
+    },
+    "lpd_8": {
+      "naam": "LPD 8 — Regels en afspraken",
+      "evaluatievorm": "Zelfevaluatie",
+      "rubrics": {
+        "jaar_4": [
+          {
+            "criterium": "Spelregels naleven",
+            "niveaus": {
+              "zwak": "Kent de 5 basisregels niet. Serveert bovenhands.",
+              "voldoende": "Kent de regels maar vergeet score hardop te zeggen.",
+              "goed": "Past alle regels correct toe. Zegt score voor elke service.",
+              "uitstekend": "Past regels toe, zegt score, past fairplayregel toe bij twijfel."
+            }
+          }
+        ],
+        "jaar_5": [
+          {
+            "criterium": "Spelregels naleven",
+            "niveaus": {
+              "zwak": "Overtreedt regels herhaaldelijk.",
+              "voldoende": "Volgt regels maar vergeet soms score te zeggen.",
+              "goed": "Past alle regels correct toe in wedstrijdsituaties.",
+              "uitstekend": "Past regels toe en stimuleert fair play actief."
+            }
+          }
+        ],
+        "jaar_6": [
+          {
+            "criterium": "Spelregels in tornooicontext",
+            "niveaus": {
+              "zwak": "Vergeet regels onder wedstrijddruk.",
+              "voldoende": "Past regels toe maar maakt fouten bij serviceregel.",
+              "goed": "Past alle regels correct toe in keizertornooi.",
+              "uitstekend": "Speelt regelconform. Geeft zelf fouten toe. Stimuleert fair play."
+            }
+          }
+        ]
+      }
+    }
+  },
+  "voetbal": {
+    "lpd_8": {
+      "naam": "LPD 8 — Regels",
+      "evaluatievorm": "Zelfevaluatie",
+      "rubrics": {
+        "jaar_5": [
+          {
+            "criterium": "Spelregels naleven",
+            "niveaus": {
+              "zwak": "Overtreedt regels herhaaldelijk (hands, duwen van achter).",
+              "voldoende": "Volgt de meeste regels, maar vergeet soms ingooi of vrije trap-positie.",
+              "goed": "Past alle 5 basisregels correct toe zonder herinnering.",
+              "uitstekend": "Volgt alle regels en attendeert medespelers op overtredingen."
+            }
+          },
+          {
+            "criterium": "Eerlijk en sportief spelen",
+            "niveaus": {
+              "zwak": "Protesteert bij fluitsignaal. Negatief bij verlies.",
+              "voldoende": "Accepteert beslissingen maar moppert soms.",
+              "goed": "Accepteert beslissingen en moedigt medespelers aan.",
+              "uitstekend": "Stimuleert fairplay actief. Feliciteert tegenstander."
+            }
+          }
+        ]
+      }
+    },
+    "lpd_11": {
+      "naam": "LPD 11 — Leiding nemen en aanvaarden",
+      "evaluatievorm": "Zelfevaluatie",
+      "rubrics": {
+        "jaar_5": [
+          {
+            "criterium": "Leiding nemen als kapitein",
+            "niveaus": {
+              "zwak": "Zegt niets, organiseert niet.",
+              "voldoende": "Leest de taakkaart voor maar organiseert niet actief.",
+              "goed": "Organiseert het groepje, verdeelt posities, bespreekt kort.",
+              "uitstekend": "Organiseert, motiveert, bespreekt tactiek in de time-out."
+            }
+          },
+          {
+            "criterium": "Leiding aanvaarden",
+            "niveaus": {
+              "zwak": "Luistert niet naar de kapitein.",
+              "voldoende": "Volgt instructies maar vraagt niet door.",
+              "goed": "Volgt instructies en stelt constructieve vragen.",
+              "uitstekend": "Volgt instructies, geeft suggesties, zet zich in voor afspraken."
+            }
+          }
+        ]
+      }
+    }
+  },
+  "handbal": {
+    "lpd_1": {
+      "naam": "LPD 1 — Technieken handbal",
+      "evaluatievorm": "Leraarevaluatie tijdens eindspel",
+      "rubrics": {
+        "jaar_4": [
+          {
+            "criterium": "Slagworp en sprongworp",
+            "niveaus": {
+              "zwak": "Gooit zonder driesteunenritme. Geen sprong.",
+              "voldoende": "Driesteunenritme aanwezig maar onvloeiend. Sprongworp laag.",
+              "goed": "Correct driesteunenritme. Sprongworp met hoogte en richting.",
+              "uitstekend": "Vloeiend ritme. Krachtige sprongworp in de hoeken."
+            }
+          },
+          {
+            "criterium": "2v1 uitspeelbewegingen",
+            "niveaus": {
+              "zwak": "Leest de verdediger niet. Speelt altijd dezelfde keuze.",
+              "voldoende": "Leest de verdediger soms. Keuze vaak te laat.",
+              "goed": "Leest de verdediger correct en maakt de juiste keuze.",
+              "uitstekend": "Snelle beslissing, pas in de loop, scoort regelmatig."
+            }
+          }
+        ],
+        "jaar_6": [
+          {
+            "criterium": "Wissel en voorbeweging in spel",
+            "niveaus": {
+              "zwak": "Voert wissel niet uit. Voorbeweging afwezig.",
+              "voldoende": "Probeert wissel maar timing klopt niet. Voorbeweging te traag.",
+              "goed": "Correcte wissel en voorbeweging. Creëert openingen.",
+              "uitstekend": "Combineert wissel en voorbeweging vloeiend. Scoort of creëert kansen."
+            }
+          },
+          {
+            "criterium": "Tactisch samenspel in 5v4+K",
+            "niveaus": {
+              "zwak": "Staat stil, geen balcirculatie, geen samenspel.",
+              "voldoende": "Speelt de bal rond maar creëert geen openingen.",
+              "goed": "Snelle balcirculatie, harmonicabeweging, creëert openingen.",
+              "uitstekend": "Combineert alle tactieken. Leest de verdediging en kiest het juiste middel."
+            }
+          }
+        ]
+      }
+    },
+    "lpd_8": {
+      "naam": "LPD 8 — Regels",
+      "evaluatievorm": "Zelfevaluatie",
+      "rubrics": {
+        "jaar_4": [
+          {
+            "criterium": "Spelregels naleven",
+            "niveaus": {
+              "zwak": "Overtreedt regels herhaaldelijk (lopen met bal, in cirkel).",
+              "voldoende": "Volgt regels maar vergeet soms max 3 stappen of 3 seconden.",
+              "goed": "Volgt alle spelregels zonder herinnering van de leerkracht.",
+              "uitstekend": "Volgt alle regels en attendeert medespelers op overtredingen."
+            }
+          },
+          {
+            "criterium": "Eerlijk en sportief spelen",
+            "niveaus": {
+              "zwak": "Protesteert bij fluitsignaal. Negatief bij verlies.",
+              "voldoende": "Accepteert beslissingen maar moppert soms.",
+              "goed": "Accepteert beslissingen en moedigt medespelers aan.",
+              "uitstekend": "Stimuleert fairplay actief. Feliciteert tegenstander."
+            }
+          }
+        ],
+        "jaar_6": [
+          {
+            "criterium": "Spelregels naleven",
+            "niveaus": {
+              "zwak": "Overtreedt regels herhaaldelijk.",
+              "voldoende": "Volgt regels maar vergeet soms max 3 stappen of 3 seconden.",
+              "goed": "Volgt alle spelregels zonder herinnering.",
+              "uitstekend": "Volgt alle regels en attendeert medespelers op overtredingen."
+            }
+          },
+          {
+            "criterium": "Eerlijk en sportief spelen",
+            "niveaus": {
+              "zwak": "Protesteert bij fluitsignaal.",
+              "voldoende": "Accepteert beslissingen maar moppert soms.",
+              "goed": "Accepteert beslissingen en moedigt medespelers aan.",
+              "uitstekend": "Stimuleert fairplay actief. Feliciteert tegenstander."
+            }
+          }
+        ]
+      }
+    },
+    "lpd_11": {
+      "naam": "LPD 11 — Leiding nemen en aanvaarden",
+      "evaluatievorm": "Zelfevaluatie",
+      "rubrics": {
+        "jaar_4": [
+          {
+            "criterium": "Leiding nemen als kapitein",
+            "niveaus": {
+              "zwak": "Zegt niets, organiseert niet.",
+              "voldoende": "Leest de taakkaart voor maar organiseert niet actief.",
+              "goed": "Organiseert het groepje, verdeelt posities.",
+              "uitstekend": "Organiseert, motiveert, bespreekt tactiek in de time-out."
+            }
+          },
+          {
+            "criterium": "Leiding aanvaarden",
+            "niveaus": {
+              "zwak": "Luistert niet naar de kapitein.",
+              "voldoende": "Volgt instructies maar vraagt niet door.",
+              "goed": "Volgt instructies en stelt constructieve vragen.",
+              "uitstekend": "Volgt instructies, geeft suggesties, zet zich in voor afspraken."
+            }
+          }
+        ],
+        "jaar_6": [
+          {
+            "criterium": "Leiding nemen als kapitein",
+            "niveaus": {
+              "zwak": "Zegt niets, organiseert niet.",
+              "voldoende": "Leest de taakkaart voor maar organiseert niet actief.",
+              "goed": "Organiseert het groepje, verdeelt posities.",
+              "uitstekend": "Organiseert, motiveert, bespreekt tactiek in de time-out."
+            }
+          },
+          {
+            "criterium": "Leiding aanvaarden",
+            "niveaus": {
+              "zwak": "Luistert niet naar de kapitein.",
+              "voldoende": "Volgt instructies maar vraagt niet door.",
+              "goed": "Volgt instructies en stelt constructieve vragen.",
+              "uitstekend": "Volgt instructies, geeft suggesties, zet zich in voor afspraken."
+            }
+          }
+        ]
+      }
+    }
+  },
+  "judo": {
+    "lpd_1": {
+      "naam": "LPD 1 — Technieken judo ne-waza",
+      "evaluatievorm": "Leraarevaluatie tijdens eindspel (judotornooi)",
+      "rubrics": {
+        "jaar_5": [
+          {
+            "criterium": "Houdgrepen",
+            "niveaus": {
+              "zwak": "Kan geen houdgreep correct uitvoeren. Verliest controle direct.",
+              "voldoende": "Voert 1-2 houdgrepen uit maar houdt ze niet lang vast.",
+              "goed": "Voert 3 houdgrepen correct uit en houdt ze minstens 10 sec vast.",
+              "uitstekend": "Schakelt vloeiend tussen houdgrepen. Houdt 20 sec vol."
+            }
+          },
+          {
+            "criterium": "Omkeertechnieken en bevrijdingstechnieken",
+            "niveaus": {
+              "zwak": "Kan geen omkeertechniek of bevrijdingstechniek uitvoeren.",
+              "voldoende": "Voert 1 techniek uit maar met fouten.",
+              "goed": "Voert omkeertechniek vanuit vierpuntensteun en buiklig correct uit. Bevrijdingstechniek aanwezig.",
+              "uitstekend": "Combineert omkeertechnieken en bevrijdingstechnieken vloeiend in randori."
+            }
+          }
+        ]
+      }
+    },
+    "lpd_8": {
+      "naam": "LPD 8 — Regels en veiligheid",
+      "evaluatievorm": "Zelfevaluatie (6 stellingen)",
+      "rubrics": {
+        "jaar_5": [
+          {
+            "criterium": "Veiligheidsregels naleven",
+            "niveaus": {
+              "zwak": "Reageert niet op Mate. Gebruikt gevaarlijke technieken.",
+              "voldoende": "Reageert op Mate maar soms te laat. Vergeet soms respect.",
+              "goed": "Reageert direct op Hajime/Mate. Toont respect. Geen overtredingen.",
+              "uitstekend": "Perfecte naleving. Treedt op als scheidsrechter met correcte signalen."
+            }
+          },
+          {
+            "criterium": "Scheidsrechtersrol",
+            "niveaus": {
+              "zwak": "Kan niet scheidsrechteren. Kent signalen niet.",
+              "voldoende": "Geeft Hajime en Mate maar twijfelt bij Osaekomi/Toketa.",
+              "goed": "Correct gebruik van Osaekomi, Toketa, Ippon, Waza-ari.",
+              "uitstekend": "Scheidsrechtert zelfstandig en correct. Houdt tijd bij."
+            }
+          }
+        ]
+      }
+    }
+  },
+  "klimmen": {
+    "lpd_8": {
+      "naam": "LPD 8 — Regels en veiligheid",
+      "evaluatievorm": "Zelfevaluatie",
+      "rubrics": {
+        "jaar_5": [
+          {
+            "criterium": "Buddy-check uitvoeren",
+            "niveaus": {
+              "zwak": "Vergeet de buddy-check of voert ze niet uit.",
+              "voldoende": "Voert buddy-check uit na herinnering door leerkracht.",
+              "goed": "Voert buddy-check elke beurt uit: karabiner, communicatieprotocol.",
+              "uitstekend": "Buddy-check foutloos + corrigeert anderen spontaan."
+            }
+          },
+          {
+            "criterium": "Via ferrata-regel naleven",
+            "niveaus": {
+              "zwak": "Maakt beide musketons tegelijk los.",
+              "voldoende": "Maakt soms een fout, corrigeert na opmerking buddy.",
+              "goed": "Volgt 'eerst vast, dan los' consequent.",
+              "uitstekend": "Volgt de regel foutloos, signaleert ook bij anderen."
+            }
+          },
+          {
+            "criterium": "Communicatieprotocol volgen",
+            "niveaus": {
+              "zwak": "Start zonder te vragen of toestemming te geven.",
+              "voldoende": "Gebruikt het protocol na herinnering.",
+              "goed": "Gebruikt het protocol elke beurt correct.",
+              "uitstekend": "Gebruikt het protocol foutloos en spontaan, eist het ook van anderen."
+            }
+          }
+        ]
+      }
+    },
+    "lpd_13": {
+      "naam": "LPD 13 — Grenzen verleggen",
+      "evaluatievorm": "Zelfevaluatie",
+      "rubrics": {
+        "jaar_5": [
+          {
+            "criterium": "Uitdaging kiezen",
+            "niveaus": {
+              "zwak": "Kiest altijd makkelijkste variant. Probeert niets nieuws.",
+              "voldoende": "Kiest soms moeilijkere variant na aanmoediging.",
+              "goed": "Kiest bij minstens 2 stations de moeilijkere variant.",
+              "uitstekend": "Kiest systematisch variant net buiten comfortzone. Legt uit waarom."
+            }
+          },
+          {
+            "criterium": "Omgaan met onzekerheid",
+            "niveaus": {
+              "zwak": "Weigert te klimmen of stopt meteen.",
+              "voldoende": "Stopt bij onzekerheid maar probeert opnieuw na aanmoediging.",
+              "goed": "Herkent onzekerheid, pauzeert even, probeert opnieuw.",
+              "uitstekend": "Benoemt onzekerheid, kiest tussenstap, voert die uit."
+            }
+          },
+          {
+            "criterium": "Progressie zichtbaar maken",
+            "niveaus": {
+              "zwak": "Vult scorekaart niet in.",
+              "voldoende": "Vult scorekaart in maar vergelijkt niet.",
+              "goed": "Vergelijkt scores met vorige beurt/les, benoemt vooruitgang.",
+              "uitstekend": "Vergelijkt scores, stelt concreet doel en bereikt het."
+            }
+          }
+        ]
+      }
+    }
+  },
+  "ehbo": {
+    "lpd_7": {
+      "naam": "LPD 7 — EHBO / Levensreddend handelen",
+      "evaluatievorm": "Leraarevaluatie + peerevaluatie (observer met kijkwijzer)",
+      "rubrics": {
+        "jaar_4": [
+          {
+            "criterium": "BLS-protocol volledigheid",
+            "niveaus": {
+              "zwak": "Slaat meerdere stappen over of verkeerde volgorde.",
+              "voldoende": "Doorloopt de meeste stappen, slaat 1-2 over.",
+              "goed": "Doorloopt alle stappen in juiste volgorde, soms korte aarzeling.",
+              "uitstekend": "Doorloopt alle 8 stappen vlot en in juiste volgorde."
+            }
+          },
+          {
+            "criterium": "Technische uitvoering compressies",
+            "niveaus": {
+              "zwak": "Handen verkeerde plaats, nauwelijks diepte, onregelmatig tempo.",
+              "voldoende": "Handen juiste plaats, te ondiep of te langzaam.",
+              "goed": "Juiste plaats, meestal 5-6 cm diep, tempo dicht bij 100-120/min.",
+              "uitstekend": "Altijd juiste plaats, 5-6 cm, 100-120/min, borst veert volledig terug."
+            }
+          },
+          {
+            "criterium": "Handelen bij scenario",
+            "niveaus": {
+              "zwak": "Raakt in paniek of weet niet wat te doen.",
+              "voldoende": "Herkent situatie na hints, voert handeling uit met hulp.",
+              "goed": "Herkent situatie, voert juiste handeling uit met kleine onzekerheden.",
+              "uitstekend": "Herkent situatie snel, handelt kalm en correct."
+            }
+          }
+        ],
+        "jaar_6": [
+          {
+            "criterium": "BLS-protocol volledigheid",
+            "niveaus": {
+              "zwak": "Slaat stappen over, volgorde klopt niet.",
+              "voldoende": "Doorloopt stappen maar niet vloeiend.",
+              "goed": "Doorloopt alle stappen vloeiend in juiste volgorde.",
+              "uitstekend": "Protocol snel en vloeiend, neemt spontaan leiding."
+            }
+          },
+          {
+            "criterium": "Technische uitvoering BLS + AED",
+            "niveaus": {
+              "zwak": "Compressies en AED bevatten meerdere fouten.",
+              "voldoende": "Compressies of AED met kleine fouten.",
+              "goed": "Compressies correct, AED correct bediend, beademing acceptabel.",
+              "uitstekend": "Alles technisch perfect: 5-6 cm, 100-120/min, AED vloeiend."
+            }
+          },
+          {
+            "criterium": "Handelen bij open scenario",
+            "niveaus": {
+              "zwak": "Herkent probleem niet, handelt niet of verkeerd.",
+              "voldoende": "Herkent probleem na nadenken, handeling met fouten.",
+              "goed": "Herkent probleem, kiest juiste handeling, voert correct uit.",
+              "uitstekend": "Herkent probleem meteen, handelt kalm, snel en correct."
+            }
+          }
+        ]
+      }
+    },
+    "lpd_3": {
+      "naam": "LPD 3 — Zelfevaluatie",
+      "evaluatievorm": "Zelfevaluatie",
+      "rubrics": {
+        "jaar_4": [
+          {
+            "criterium": "Zichzelf inschatten",
+            "niveaus": {
+              "zwak": "Kan niet aangeven wat goed of fout ging.",
+              "voldoende": "Benoemt vaag of het goed of slecht ging.",
+              "goed": "Benoemt concreet welke stappen goed gingen en welke niet.",
+              "uitstekend": "Schat eigen niveau realistisch in, onderbouwt met voorbeelden."
+            }
+          }
+        ],
+        "jaar_6": [
+          {
+            "criterium": "Zichzelf inschatten",
+            "niveaus": {
+              "zwak": "Geen idee van eigen niveau.",
+              "voldoende": "Schat in met hulp, deels realistisch.",
+              "goed": "Schat niveau realistisch in, benoemt sterke en zwakke punten.",
+              "uitstekend": "Schat exact in, vergelijkt met vorige les, formuleert werkpunt."
+            }
+          },
+          {
+            "criterium": "Reflecteren op vorderingen",
+            "niveaus": {
+              "zwak": "Reflecteert niet, ziet geen verband met vorige uitvoering.",
+              "voldoende": "Benoemt vaag verschil met vorige les.",
+              "goed": "Benoemt concreet wat verbeterd is t.o.v. les 1.",
+              "uitstekend": "Benoemt progressie, formuleert realistisch doel."
+            }
+          }
+        ]
+      }
+    }
+  },
+  "basketbal": {
+    "lpd_2": {
+      "naam": "LPD 2 — Tactieken en spelprincipes",
+      "evaluatievorm": "Leraarevaluatie tijdens eindspel",
+      "rubrics": {
+        "jaar_4": [
+          {
+            "criterium": "Vrijlopen en actie",
+            "niveaus": {
+              "zwak": "Blijft staan of loopt doelloos. Geen V-cut of give and go.",
+              "voldoende": "Probeert V-cut of give and go maar timing en richting kloppen niet altijd.",
+              "goed": "Voert V-cut en give and go correct uit. Komt regelmatig vrij.",
+              "uitstekend": "Combineert V-cut en give and go vloeiend. Leest de verdediger en kiest de juiste actie."
+            }
+          },
+          {
+            "criterium": "Resultaat",
+            "niveaus": {
+              "zwak": "Komt zelden vrij. Verliest de bal regelmatig.",
+              "voldoende": "Komt soms vrij maar kan de bal niet altijd verwerken.",
+              "goed": "Komt vrij en ontvangt de bal op een positie waar een shot of doorpas mogelijk is.",
+              "uitstekend": "Komt systematisch vrij, ontvangt de bal correct en creëert scorkansen."
+            }
+          }
+        ],
+        "jaar_5": [
+          {
+            "criterium": "Vrijlopen en actie",
+            "niveaus": {
+              "zwak": "Gebruikt alleen V-cut. Geen backdoor of fill the spot.",
+              "voldoende": "Probeert backdoor en fill the spot maar leest de verdediger niet altijd correct.",
+              "goed": "Leest de verdediger en kiest correct: V-cut, backdoor of fill the spot.",
+              "uitstekend": "Combineert alle tactieken vloeiend. Herstelt de driehoek automatisch."
+            }
+          },
+          {
+            "criterium": "Resultaat",
+            "niveaus": {
+              "zwak": "Komt zelden vrij. Driehoek wordt niet hersteld.",
+              "voldoende": "Komt soms vrij. Driehoek wordt met vertraging hersteld.",
+              "goed": "Komt regelmatig vrij. Driehoek wordt correct hersteld na elke actie.",
+              "uitstekend": "Creëert systematisch scorkansen. Driehoek altijd intact."
+            }
+          }
+        ],
+        "jaar_6": [
+          {
+            "criterium": "Vrijlopen en actie",
+            "niveaus": {
+              "zwak": "Gebruikt beperkt aantal tactieken. Geen swing.",
+              "voldoende": "Probeert swing maar timing klopt niet. Combineert soms tactieken.",
+              "goed": "Combineert V-cut, backdoor, give and go, fill the spot en swing vloeiend.",
+              "uitstekend": "Alle tactieken geautomatiseerd. Leest de verdediging en kiest het juiste middel."
+            }
+          },
+          {
+            "criterium": "Resultaat",
+            "niveaus": {
+              "zwak": "Weinig scorkansen. Geen samenspel.",
+              "voldoende": "Creëert soms scorkansen maar mist afwerking.",
+              "goed": "Creëert regelmatig scorkansen via combinatiespel. Scoort of creëert voor medespelers.",
+              "uitstekend": "Domineert het aanvalsspel. Combineert alle tactieken en scoort of creëert systematisch."
+            }
+          }
+        ]
+      }
+    },
+    "lpd_8": {
+      "naam": "LPD 8 — Regels en afspraken",
+      "evaluatievorm": "Zelfevaluatie",
+      "rubrics": {
+        "jaar_4": [
+          {
+            "criterium": "Spelregels naleven",
+            "niveaus": {
+              "zwak": "Kent de basisregels niet. Loopt met de bal, duwt verdedigers.",
+              "voldoende": "Kent de regels maar vergeet soms steps of fouls.",
+              "goed": "Past alle regels correct toe zonder herinnering.",
+              "uitstekend": "Past regels toe en attendeert medespelers op overtredingen."
+            }
+          }
+        ],
+        "jaar_5": [
+          {
+            "criterium": "Spelregels naleven",
+            "niveaus": {
+              "zwak": "Overtreedt regels herhaaldelijk.",
+              "voldoende": "Volgt meeste regels maar vergeet soms transitieregels.",
+              "goed": "Past alle regels correct toe in wedstrijdsituaties.",
+              "uitstekend": "Past regels toe en stimuleert fair play actief."
+            }
+          }
+        ],
+        "jaar_6": [
+          {
+            "criterium": "Spelregels in tornooicontext",
+            "niveaus": {
+              "zwak": "Vergeet regels onder wedstrijddruk.",
+              "voldoende": "Past regels toe maar maakt fouten onder druk.",
+              "goed": "Past alle regels correct toe in tornooicontext.",
+              "uitstekend": "Speelt regelconform. Geeft fouten toe. Stimuleert fair play."
+            }
+          }
+        ]
+      }
+    },
+    "lpd_11": {
+      "naam": "LPD 11 — Leiding nemen en aanvaarden",
+      "evaluatievorm": "Zelfevaluatie",
+      "rubrics": {
+        "jaar_4": [
+          {
+            "criterium": "Leiding nemen als leider",
+            "niveaus": {
+              "zwak": "Zegt niets, organiseert niet.",
+              "voldoende": "Leest de taakkaart voor maar organiseert niet actief.",
+              "goed": "Organiseert het groepje, verdeelt posities.",
+              "uitstekend": "Organiseert, motiveert, bespreekt tactiek in de time-out."
+            }
+          },
+          {
+            "criterium": "Leiding aanvaarden",
+            "niveaus": {
+              "zwak": "Luistert niet naar de leider.",
+              "voldoende": "Volgt instructies maar vraagt niet door.",
+              "goed": "Volgt instructies en stelt constructieve vragen.",
+              "uitstekend": "Volgt instructies, geeft suggesties, zet zich in voor afspraken."
+            }
+          }
+        ],
+        "jaar_5": [
+          {
+            "criterium": "Leiding nemen als leider",
+            "niveaus": {
+              "zwak": "Zegt niets, organiseert niet.",
+              "voldoende": "Leest de taakkaart voor maar organiseert niet actief.",
+              "goed": "Organiseert het groepje, verdeelt posities, bespreekt kort.",
+              "uitstekend": "Organiseert, motiveert, bespreekt tactiek in de time-out."
+            }
+          },
+          {
+            "criterium": "Leiding aanvaarden",
+            "niveaus": {
+              "zwak": "Luistert niet naar de leider.",
+              "voldoende": "Volgt instructies maar vraagt niet door.",
+              "goed": "Volgt instructies en stelt constructieve vragen.",
+              "uitstekend": "Volgt instructies, geeft suggesties, zet zich in voor afspraken."
+            }
+          }
+        ],
+        "jaar_6": [
+          {
+            "criterium": "Leiding nemen als leider",
+            "niveaus": {
+              "zwak": "Zegt niets, organiseert niet.",
+              "voldoende": "Leest de taakkaart voor maar organiseert niet actief.",
+              "goed": "Organiseert het groepje, verdeelt posities, bespreekt kort.",
+              "uitstekend": "Organiseert, motiveert, bespreekt tactiek, stuurt medespelers bij."
+            }
+          },
+          {
+            "criterium": "Leiding aanvaarden",
+            "niveaus": {
+              "zwak": "Luistert niet naar de leider.",
+              "voldoende": "Volgt instructies maar vraagt niet door.",
+              "goed": "Volgt instructies en stelt constructieve vragen.",
+              "uitstekend": "Volgt instructies, geeft suggesties, zet zich volledig in."
+            }
+          }
+        ]
+      }
+    }
+  }
+}

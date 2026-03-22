@@ -31,7 +31,7 @@ export default function Admin() {
       }).filter(r => r.klas_id)
       const klassen = rows.map(r => ({ id: r.klas_id.toLowerCase(), naam: (r.naam || r.klas_id).toUpperCase() }))
       await db.klassen.clear()
-      await db.klassen.bulkAdd(klassen)
+      await db.klassen.bulkPut(klassen)
       setMsg('classes', `✓ ${klassen.length} klassen geïmporteerd.`)
     } catch (err) {
       setMsg('classes', `Fout: ${err.message}`)

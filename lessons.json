@@ -1,151 +1,1295 @@
 {
+  "volleybal": {
+    "jaar_4": {
+      "les_1": {
+        "titel": "Bovenhandse toets & introductie looplijnen",
+        "panels": {
+          "opwarming": {
+            "titel": "1v1 stap-achteruit-toets",
+            "opstelling": "Per 2 aan weerskanten van het net. Net ±2,50 m hoog.",
+            "beschrijving": "Speler A en B starten dicht bij het net en toetsen de bal heen en weer. Na elke 5 geslaagde toetsen zetten beide spelers een stap achteruit. Hoe ver geraken jullie?",
+            "cues": "Benen en armen tegelijk strekken. Lichaam onder de bal. Bal niet laten zakken onder ooglijn.",
+            "makkelijker": "Toets vervangen door bovenhands vangen en terugduwen.",
+            "moeilijker": "Vanaf de achterlijn: wedstrijd — wie scoort eerst achter de lijn van de tegenstander?"
+          },
+          "oefening_1": {
+            "titel": "Bots-toets in duo",
+            "opstelling": "Per 2 naast elkaar. 1 bal per duo.",
+            "beschrijving": "Speler A botst de bal op de grond en toetst hoog. Speler B vangt de bal boven de ooglijn en doet hetzelfde. Tel het aantal geslaagde bots-toetsen in 2 minuten. Wie haalt de meeste?",
+            "cues": "Kommetje met duimen en wijsvingers. Bal boven ooglijn. Buig-strek vanuit benen en armen tegelijk. Nawijzen met gestrekte armen.",
+            "makkelijker": "Bal bovenhands vangen en teruggooien in plaats van toetsen.",
+            "moeilijker": "Na de bots-toets een gerichte pas naar de partner."
+          },
+          "oefening_2": {
+            "titel": "3v0 doorloopoefening met looplijnen",
+            "opstelling": "3 duo's per veldje. Duo A aan opslagkant, duo B en C in het veld aan de ontvangkant. Kegels op 3 m van het net (= aanvalshome).",
+            "beschrijving": "Duo A gooit de bal over het net. Eén speler van duo B vangt de bal en roept 'JA'. De andere speler loopt snel naar het net (= setter) en ontvangt de bal. De setter geeft een hoge pas evenwijdig met het net. De receptiespeler tikt de kegel (aanvalshome) en toetst de bal over het net. Duo B loopt onder het net door en sluit achteraan.",
+            "cues": "'JA' roepen. Setter snel inlopen. Aanvalshome bereiken (kegel tikken).",
+            "makkelijker": "Alle contacten vangen en gooien.",
+            "moeilijker": "Setter doet tussentoets (vangen, opgooien, toetsen als pas). Aanvaller speelt met smash over het net."
+          },
+          "spelvorm": {
+            "titel": "3v3 met vangmomenten",
+            "opstelling": "3v3 op half veld. 1 setter aan het net, 2 spelers in achterveld. Kegels op aanvalshome. Reserve + scheidsrechter achter het veld.",
+            "beschrijving": "Het spel start met een onderhandse worp (= opslag). Per opbouw is 1 vangmoment toegestaan (bij 1e of 2e contact). Het 3e contact moet een volleybalcontact zijn (toets). Wie de eerste bal neemt roept 'JA'. De andere achterste speler gaat naar aanvalshome. Setter neemt het 2e contact. Doordraaien bij heroverde opslag. Wedstrijden van 5 minuten, daarna wisselen teams.",
+            "cues": "'JA' roepen. Setter snel naar net. Doordraaien.",
+            "makkelijker": "Alle contacten vangen en gooien toegestaan.",
+            "moeilijker": "Geen vangmoment — alle contacten zijn volleybalcontacten."
+          },
+          "evaluatie": {
+            "tekst": "Wordt beoordeeld via rubrics LPD 1 en LPD 8 (zie evaluatiescherm)."
+          }
+        }
+      },
+      "les_2": {
+        "titel": "Receptie & 3v3 met opbouw",
+        "panels": {
+          "opwarming": {
+            "titel": "1v1 met onderhandse worpen",
+            "opstelling": "Per 2 tegenover elkaar over het net, 1 bal per duo. Reserve achter het veld.",
+            "beschrijving": "1v1 met uitsluitend tweehandige onderhandse worpen. Speler A brengt de bal in het spel met een onderhandse worp van achter de achterlijn. Speler B verplaatst zich, vangt onderhands in de basishouding en gooit de bal buiten bereik van zijn tegenstander. Puntentelling per rally.",
+            "cues": "Split-positie. Schouders en tenen wijzen naar waar je gooit.",
+            "makkelijker": "Veld groter maken.",
+            "moeilijker": "Receptie (onderhands spelen) in plaats van vangen en gooien."
+          },
+          "oefening_1": {
+            "titel": "Receptie naar hoepel",
+            "opstelling": "Per 3: inwerpspeler links, receptiespeler rechts, vangspeler in hoepel bij het net. 1 bal per groepje.",
+            "beschrijving": "De inwerpspeler gooit de bal onderhands naar de receptiespeler. Die speelt de bal met onderhandse receptie naar de speler in de hoepel. Punt als de bal boven de ooglijn gevangen wordt en de vanger minstens met één voet in de hoepel staat. Wissel na 5 ballen. Wie haalt de meeste punten in 2 minuten?",
+            "cues": "Mes in de borst (schouders naar voor). Armen gestrekt. Bal op de onderarmen. Frontaliteit naar het net.",
+            "makkelijker": "Bal onderhands vangen in basishouding en naar de hoepel gooien.",
+            "moeilijker": "Na het vangen in de hoepel meteen de bal bovenhands terugspelen."
+          },
+          "oefening_2": {
+            "titel": "3v0 looplijnen: receptie-setter-aanval",
+            "opstelling": "Per 6 aan één veldje. 2 spelers (receptie + setter) in het veld, 2 spelers met matje aan overkant, reserveduo achteraan. Kegel = aanvalshome.",
+            "beschrijving": "Receptiespeler botst de bal op de grond en toetst hoog naar het net (= signaal voor setter om snel in te lopen). Setter vangt de bal en geeft een hoge pas evenwijdig met het net. Receptiespeler loopt naar aanvalshome (kegel) en speelt de bal over het net tegen het matje. Duo schuift door.",
+            "cues": "Bots = signaal om in te lopen. Setter: hoge pas evenwijdig met net. Aanvalshome bereiken.",
+            "makkelijker": "Alle contacten vangen en gooien.",
+            "moeilijker": "Aanval met smash naar het matje. Setter doet tussentoets."
+          },
+          "spelvorm": {
+            "titel": "3v3 met opbouw en vangmoment",
+            "opstelling": "3v3 op half veld. Kegels op aanvalshome. Reserve + scheidsrechter achter het veld.",
+            "beschrijving": "Spel met 3 contacten. 1e contact: vangen in basishouding en in één vloeiende beweging hoog naar setter gooien. Setter vangt en geeft hoge pas. Aanvaller toetst over het net. Doordraaien bij heroverde opslag. Onderhandse worp als opslag. Wedstrijden van 5 min, winnaar blijft staan, verliezer schuift door.",
+            "cues": "Vang en gooi in één beweging direct terug omhoog. Setter snel inlopen. Aanvalshome bereiken.",
+            "makkelijker": "Alle contacten vangen en gooien.",
+            "moeilijker": "1e contact: onderhands inspelen naar setter (geen vangmoment)."
+          },
+          "evaluatie": {
+            "tekst": "Wordt beoordeeld via rubrics LPD 1 en LPD 8 (zie evaluatiescherm)."
+          }
+        }
+      }
+    },
+    "jaar_5": {
+      "les_1": {
+        "titel": "Onderhands spelen & looplijnen 3v3",
+        "panels": {
+          "opwarming": {
+            "titel": "1v1 onder het net — onderhandse basishouding",
+            "opstelling": "Per 4 (2 per kant, 1 in het veld + 1 reserve). Bal gaat ONDER het net door.",
+            "beschrijving": "De speler in het veld speelt de bal onderhands onder het net door naar de overkant en wisselt dan met de reserve. Bij het ontvangen moet de leerling de bal in de onderhandse basishouding vangen en dan gericht terugspelen. Punt bij correcte basishouding.",
+            "cues": "Split-positie. Frontaliteit. Armen gestrekt, schouders naar voor.",
+            "makkelijker": "Bal gewoon vangen en terugspelen.",
+            "moeilijker": "Bal onderhands terugspelen (echt volleybalcontact) of smash."
+          },
+          "oefening_1": {
+            "titel": "Looplijnoefening met matje",
+            "opstelling": "Per 6: receptie+setter aan ene kant, duo met matje aan overkant, reserveduo achteraan. Kegel = aanvalshome.",
+            "beschrijving": "Receptiespeler botst de bal en toetst hoog naar het net (= signaal voor setter). Setter loopt in, vangt de bal aan het net en geeft een hoge pas evenwijdig met het net. Receptiespeler loopt naar aanvalshome en speelt de bal over het net tegen het matje. Opbouw: (1) vangen+gooien → (2) vangen+toetsen → (3) aanval/smash.",
+            "cues": "Bots = signaal voor setter. Pas hoog en evenwijdig met het net.",
+            "makkelijker": "Setter vangt en gooit in plaats van toetsen.",
+            "moeilijker": "Aanval met smash. Setter doet tussentoets (vangen, opgooien, toetsen)."
+          },
+          "oefening_2": {
+            "titel": "3v0 met na-actie niet-aanvallers",
+            "opstelling": "Per 6: 3 spelers in het veld (2 achter, 1 setter aan net), 3 aan overkant die de bal ingooien. Kegels = aanvalshome + na-actie positie.",
+            "beschrijving": "Bal wordt over het net ingegooid. Receptiespeler roept 'JA' en vangt de bal in basishouding, gooit hoog naar setter. Niet-receptiespeler loopt direct naar aanvalshome. Setter vangt en geeft pas naar aanvaller. Na de aanval: aanvaller tikt achterlijn, setter tikt centraal het net, niet-aanvaller keert terug naar achterveld.",
+            "cues": "'JA' roepen. Snel naar aanvalshome. Na-actie: iedereen terug naar startpositie.",
+            "makkelijker": "1e contact altijd vangen en gooien.",
+            "moeilijker": "1e contact onderhands inspelen naar setter."
+          },
+          "spelvorm": {
+            "titel": "3v3 met observatie",
+            "opstelling": "3v3 op half veld. Kegels op aanvalshome. Per veldje 8 leerlingen: 3v3 + 1 reserve + 1 observator.",
+            "beschrijving": "3v3 met onderhandse worp als opslag. Opbouw met 3 contacten. 1e contact: vangen in basishouding en hoog naar setter gooien (of onderhands inspelen voor wie dat kan). Wachtende speler observeert en turft: (1) hoe vaak roept de speler 'JA' bij 1e contact, (2) hoe vaak behoudt de speler frontaliteit. Doordraaien bij heroverde opslag.",
+            "cues": "'JA' roepen. Frontaliteit bij 1e contact. Aanvalshome bereiken.",
+            "makkelijker": "Alle contacten vangen.",
+            "moeilijker": "1e contact onderhands spelen. Aanval met smash."
+          },
+          "evaluatie": {
+            "tekst": "Wordt beoordeeld via rubrics LPD 1 en LPD 8 (zie evaluatiescherm)."
+          }
+        }
+      },
+      "les_2": {
+        "titel": "Onderhandse opslag & keuzes in 3v3",
+        "panels": {
+          "opwarming": {
+            "titel": "1v1 met onderhands accent",
+            "opstelling": "Per 4 (2 per kant, 1 in veld + 1 reserve). Over het net.",
+            "beschrijving": "1v1 met reserve. Bal wordt over het net gespeeld. De ontvanger vangt de bal in onderhandse basishouding en speelt meteen gericht terug: onderhands gooien of onderhands spelen. Na elke actie wisselen met reserve. Punt bij correcte onderhandse basishouding.",
+            "cues": "Split-positie. Frontaliteit naar net. Schouders naar voor.",
+            "makkelijker": "Bal gewoon vangen en overgooien.",
+            "moeilijker": "Direct onderhands terugspelen (echt volleybalcontact)."
+          },
+          "oefening_1": {
+            "titel": "Onderhandse opslag in zones",
+            "opstelling": "Per 2 aan weerskanten van het net. Kegels markeren 3 zones in het veld (links, midden, rechts).",
+            "beschrijving": "Speler A serveert onderhands naar een zone die speler B opnoemt. Speler B vangt de bal en serveert terug naar een zone die A opnoemt. Punten: 1 punt als de opslag in het veld landt, 2 punten als hij in de juiste zone landt.",
+            "cues": "Bal op niet-slaande hand. Stap met tegenovergesteld been. Sla met vlakke hand van onder naar boven.",
+            "makkelijker": "Opslag vanuit het veld (niet van achterlijn).",
+            "moeilijker": "Opslag gericht naar een specifieke persoon."
+          },
+          "oefening_2": {
+            "titel": "3v3 met keuze bij 1e contact",
+            "opstelling": "3v3 op half veld. Observator achter het veld. Kegels op aanvalshome.",
+            "beschrijving": "3v3 met onderhandse opslag. Bij het 1e contact maakt de speler een keuze: vangen (bij moeilijke bal) of onderhands inspelen (bij makkelijke bal). Observator turft: hoe vaak maakt de speler de juiste keuze? Doordraaien bij heroverde opslag.",
+            "cues": "Keuze bij 1e contact: makkelijke bal = spelen, moeilijke bal = vangen.",
+            "makkelijker": "1e contact altijd vangen.",
+            "moeilijker": "Geen vangmoment. Opslag gericht naar een zone."
+          },
+          "spelvorm": {
+            "titel": "3v3 met opslag en zelfevaluatie",
+            "opstelling": "3v3 op half veld. Reserve en scheidsrechter achter het veld.",
+            "beschrijving": "3v3 met onderhandse opslag van achter de achterlijn. Doordraaien. Keuze bij 1e contact. Setter neemt 2e contact. Aanvaller toetst of smasht. Na elke wedstrijd van 5 min vullen leerlingen kort hun zelfevaluatie in: hoe vaak maakte ik de juiste keuze bij het 1e contact?",
+            "cues": "Opslag in het veld. 'JA' roepen. Keuze bij 1e contact.",
+            "makkelijker": "Opslag vanuit het veld (niet van achterlijn). 1e contact altijd vangen.",
+            "moeilijker": "Geen vangmoment. Opslag gericht naar een zone."
+          },
+          "evaluatie": {
+            "tekst": "Wordt beoordeeld via rubrics LPD 1 en LPD 8 (zie evaluatiescherm)."
+          }
+        }
+      }
+    },
+    "jaar_6": {
+      "les_1": {
+        "titel": "Smash & bewuste keuzes in 3v3",
+        "panels": {
+          "opwarming": {
+            "titel": "1v1 met smash-accent",
+            "opstelling": "Per 4 (2 per kant, 1 in veld + 1 reserve). Over het net.",
+            "beschrijving": "1v1 met reserve. De bal wordt over het net gespeeld. Keuze bij overspelen: toets (als de bal laag aankomt) of smash (als de bal hoog aankomt). Na elke actie wisselen met reserve. Punt bij elk succesvol contact.",
+            "cues": "Arm strekken bij smash. Polsactie over de bal.",
+            "makkelijker": "Alleen toetsen toegestaan.",
+            "moeilijker": "Verplicht smash bij elke hoge bal."
+          },
+          "oefening_1": {
+            "titel": "Looplijnoefening met smash naar matje",
+            "opstelling": "Per 6: receptie+setter aan ene kant, duo met matje aan overkant, reserveduo achteraan. Kegel = aanvalshome.",
+            "beschrijving": "Receptiespeler botst de bal en toetst hoog naar het net. Setter loopt in, vangt en geeft een hoge pas evenwijdig met het net. Receptiespeler loopt naar aanvalshome. Keuze bij overspelen: als de pas hoog en dichtbij is = smash, als de pas minder goed is = toets. Speel de bal tegen het matje.",
+            "cues": "Goede pas = smash. Slechte pas = toets. Pas hoog en evenwijdig met net.",
+            "makkelijker": "Alle contacten vangen en gooien. Overspelen altijd met toets.",
+            "moeilijker": "Setter doet tussentoets (geen vangmoment). Verplicht smash."
+          },
+          "oefening_2": {
+            "titel": "3v3 met keuze-observatie",
+            "opstelling": "3v3 op half veld. Observator achter het veld met turffiche. Kegels op aanvalshome.",
+            "beschrijving": "3v3 met onderhandse opslag. Observator turft twee keuzes: (1) bij 1e contact — vangen of onderhands spelen, (2) bij 3e contact — toets of smash. Focus: durven smash proberen als de pas goed is. Bereiken aanvalshome door alle aanvallers.",
+            "cues": "1e contact: keuze vangen of spelen. 3e contact: keuze toets of smash.",
+            "makkelijker": "Altijd toets bij overspelen.",
+            "moeilijker": "Zo vaak mogelijk smash. Geen vangmoment bij 1e contact."
+          },
+          "spelvorm": {
+            "titel": "3v3 met bewuste keuzes en zelfevaluatie",
+            "opstelling": "3v3 op half veld. Reserve en scheidsrechter achter het veld.",
+            "beschrijving": "3v3 eindvorm met alle regels. Onderhandse opslag van achter de achterlijn. Doordraaien. 3 contacten. 'JA' roepen. Keuze bij 1e contact (vangen of spelen). Keuze bij 3e contact (toets of smash). Na elke wedstrijd van 5 min vullen leerlingen zelfevaluatie in.",
+            "cues": "Doordraaien. 'JA' roepen. Bewuste keuzes.",
+            "makkelijker": "Altijd toets bij 3e contact.",
+            "moeilijker": "Smash bij elke hoge pas. Geen vangmomenten."
+          },
+          "evaluatie": {
+            "tekst": "Wordt beoordeeld via rubrics LPD 1 en LPD 8 (zie evaluatiescherm)."
+          }
+        }
+      },
+      "les_2": {
+        "titel": "Eindvorm 3v3 — Tornooi + evaluatie",
+        "panels": {
+          "opwarming": {
+            "titel": "Vrij inspelen met alle technieken",
+            "opstelling": "Per 2 aan weerskanten van het net.",
+            "beschrijving": "5 min vrij inspelen: toets, receptie, opslag, smash. Alles mag. Doel: opwarmen en alle technieken kort herhalen.",
+            "cues": "Alle technieken kort herhalen. Op tempo.",
+            "makkelijker": "Enkel toetsen.",
+            "moeilijker": "Alles met smash."
+          },
+          "oefening_1": {
+            "titel": "Looplijnen-herhaling met alle elementen",
+            "opstelling": "Per 6: 3 in het veld + 3 aan de overkant. Kegels op aanvalshome.",
+            "beschrijving": "3v0 met alle looplijnen: opslag → receptiespeler roept 'JA' → setter loopt in → pas → aanvalshome → smash of toets. Na-actie: iedereen terug naar startpositie. Doel: 5 foutloze opbouwen op rij.",
+            "cues": "'JA' roepen. Tempo hoog houden. Alle looplijnen correct.",
+            "makkelijker": "Alle contacten vangen en gooien.",
+            "moeilijker": "1e contact direct onderhands. Setter tussentoets. Aanval met smash."
+          },
+          "oefening_2": {
+            "titel": "(Extra speeltijd — opgegaan in eindspel)",
+            "opstelling": "",
+            "beschrijving": "De extra 20 min uit het techniekblok gaan naar het eindspel (tornooi). Effectief ±60 min speeltijd.",
+            "cues": "",
+            "makkelijker": "",
+            "moeilijker": ""
+          },
+          "spelvorm": {
+            "titel": "Eindvorm 3v3 — Tornooi",
+            "opstelling": "3v3 op 4 halve velden. Doorschuifsysteem tussen veldjes. Reserve en scheidsrechter achter het veld.",
+            "beschrijving": "3v3 eindvorm met alle regels: onderhandse opslag, doordraaien, 3 contacten, 'JA' roepen. 1 vangmoment per opbouw. 3e contact altijd volleybalcontact. Keuze: toets of smash. Wedstrijden van 6 minuten. Winnend team schuift door. De leerkracht roept tijdens het tornooi duo's apart voor de LPD 1-test.",
+            "cues": "Doordraaien. 'JA' roepen. Aanvalshome. Na-actie.",
+            "makkelijker": "Alle contacten vangen en gooien.",
+            "moeilijker": "Geen vangmoment — alles met volleybalcontact."
+          },
+          "evaluatie": {
+            "tekst": "LPD 1: Technische test (parallel met eindspel). Per duo bovenhands 10x toetsen + onderhands 10x receptie. LPD 8: Zelfevaluatie spelregels (laatste 5 min)."
+          }
+        }
+      }
+    }
+  },
+  "badminton": {
+    "jaar_4": {
+      "les_1": {
+        "titel": "Herhaling basis & kort spelen (les 1)",
+        "panels": {
+          "opwarming": {
+            "titel": "Hoog-ver rally",
+            "opstelling": "Per 2 op half veld. 1 racket + 1 shuttle per duo.",
+            "beschrijving": "Rally met enkel clears: hoog en ver naar de achterlijn van de tegenstander. Tel het aantal geslaagde clears op rij. Doel: 10 achter elkaar.",
+            "cues": "Hamergreep, dakhouding, dwarse stand, positie onder/achter shuttle, rotatieslag met gewichtsoverdracht.",
+            "makkelijker": "Shuttle bovenhands gooien in plaats van slaan.",
+            "moeilijker": "Clear moet voorbij de achterste lijn landen."
+          },
+          "oefening_1": {
+            "titel": "Lobservice + clear oefenen",
+            "opstelling": "Per 2 op half veld. Servicelijn gemarkeerd.",
+            "beschrijving": "Speler A serveert met lobservice. Speler B speelt een clear terug. Speler A vangt en serveert opnieuw. Wissel na 10 services. Focus op correcte lobservice (onderhands, voorbij servicelijn).",
+            "cues": "Lobservice: hamergreep, dwarse stand, laag raakpunt, grote uitzwaai. Clear: dakhouding, onder/achter shuttle.",
+            "makkelijker": "Service vanuit het midden van het veld.",
+            "moeilijker": "Service moet in een bepaalde zone landen."
+          },
+          "oefening_2": {
+            "titel": "Drop en netdrop",
+            "opstelling": "Per 2 op half veld. Kegel op servicelijn als doelzone.",
+            "beschrijving": "Speler A gooit de shuttle hoog. Speler B speelt een drop (zacht, neerwaarts, kort bij het net). Speler A probeert met een netdrop terug te spelen (uitval op racketvoet). Wissel na 5 beurten.",
+            "cues": "Drop: voorbereiding zoals clear, contact zacht en vóór het lichaam. Netdrop: uitval op racketvoet, raakpunt op schouderhoogte.",
+            "makkelijker": "Shuttle gooien in plaats van slaan.",
+            "moeilijker": "Drop moet binnen de servicelijn landen."
+          },
+          "spelvorm": {
+            "titel": "Koning van het Veld met beginsequentie",
+            "opstelling": "Per 2 op half veld. 4-6 veldjes. Doorschuifsysteem: winst → wijzerzin, verlies → tegenwijzerzin.",
+            "beschrijving": "Elke rally start met een verplichte beginsequentie: lobservice → clear → drop. Pas daarna is het spel vrij. Punten tellen per rally. Wedstrijden tot 5 punten. Winnaar schuift wijzerzin door, verliezer tegenwijzerzin.",
+            "cues": "Beginsequentie: lobservice → clear → drop. Daarna vrij. Score hardop zeggen voor elke service.",
+            "makkelijker": "Beginsequentie mag met gooien.",
+            "moeilijker": "Bonuspunt als de drop binnen de servicelijn landt."
+          },
+          "evaluatie": {
+            "tekst": "Wordt beoordeeld via rubrics LPD 1 en LPD 8 (zie evaluatiescherm)."
+          }
+        }
+      },
+      "les_2": {
+        "titel": "Korte backhandservice & wedstrijdvorm",
+        "panels": {
+          "opwarming": {
+            "titel": "Kort-ver rally",
+            "opstelling": "Per 2 op half veld.",
+            "beschrijving": "Speler A speelt een clear. Speler B antwoordt met een drop. Speler A speelt een netdrop. Speler B speelt een clear. Zo blijven ze afwisselen kort en ver. Tel de langste rally.",
+            "cues": "Kort en ver afwisselen. Tegenstander laten lopen.",
+            "makkelijker": "Shuttle mag 1x op de grond stuiten.",
+            "moeilijker": "Tempo verhogen, snellere reactie."
+          },
+          "oefening_1": {
+            "titel": "Korte backhandservice",
+            "opstelling": "Per 2 op half veld. Servicelijn en netkant gemarkeerd.",
+            "beschrijving": "Speler A oefent de korte backhandservice: shuttle moet net over het net vallen, zo kort mogelijk. Speler B probeert meteen aan te vallen. Wissel na 10 services. Wie maakt de meeste korte services?",
+            "cues": "Korte BH-service: shuttle voor het lichaam, korte polsbeweging, net over het net.",
+            "makkelijker": "Service mag iets hoger over het net.",
+            "moeilijker": "Service moet binnen 30 cm na het net landen."
+          },
+          "oefening_2": {
+            "titel": "Beginsequentie + vrij punt spelen",
+            "opstelling": "Per 2 op half veld. Kegels als doelzones.",
+            "beschrijving": "Start met verplichte beginsequentie: lobservice → clear → drop. Na de drop is het spel vrij. Focus op tactisch spelen: kort en ver afwisselen om de tegenstander uit balans te brengen. Speel tot 3 punten en wissel.",
+            "cues": "Na de drop: kijk waar de tegenstander staat. Speel naar de open ruimte.",
+            "makkelijker": "Beginsequentie met gooien.",
+            "moeilijker": "Na de beginsequentie moet je binnen 3 slagen scoren."
+          },
+          "spelvorm": {
+            "titel": "Koning van het Veld — wedstrijden",
+            "opstelling": "Doorschuifsysteem op 4-6 veldjes.",
+            "beschrijving": "Wedstrijden tot 7 punten. Verplichte beginsequentie (lobservice → clear → drop). Keuze bij service: lobservice of korte backhandservice. Winnaar schuift wijzerzin, verliezer tegenwijzerzin. Wachtende leerling is scheidsrechter.",
+            "cues": "Service als wapen: verras met korte BH-service. Score hardop zeggen.",
+            "makkelijker": "Alleen lobservice.",
+            "moeilijker": "Dubbele punten voor directe winners na de beginsequentie."
+          },
+          "evaluatie": {
+            "tekst": "Wordt beoordeeld via rubrics LPD 1 en LPD 8 (zie evaluatiescherm)."
+          }
+        }
+      }
+    },
+    "jaar_5": {
+      "les_1": {
+        "titel": "Smash & slagkeuze (les 1)",
+        "panels": {
+          "opwarming": {
+            "titel": "Clear-rally op snelheid",
+            "opstelling": "Per 2 op half veld.",
+            "beschrijving": "Clears heen en weer, zo snel mogelijk. Doel: 15 clears achter elkaar binnen 1 minuut. Bij fout opnieuw beginnen.",
+            "cues": "Dakhouding, dwarse stand, gewichtsoverdracht.",
+            "makkelijker": "Geen tijdslimiet.",
+            "moeilijker": "20 clears in 1 minuut."
+          },
+          "oefening_1": {
+            "titel": "Smash vanuit hoge aangooi",
+            "opstelling": "Per 2 op half veld. Speler A bij het net, speler B achter in het veld.",
+            "beschrijving": "Speler A gooit de shuttle hoog op voor speler B. Speler B smasht de shuttle naar beneden. Focus op armzwaai en polsactie. Wissel na 10 smashes.",
+            "cues": "Smash: arm strekken, polsactie over de bal, shuttle naar beneden slaan.",
+            "makkelijker": "Shuttle gooien van dichterbij.",
+            "moeilijker": "Smash in een bepaalde zone (links/rechts)."
+          },
+          "oefening_2": {
+            "titel": "Slagkeuze op basis van opslag",
+            "opstelling": "Per 2 op half veld.",
+            "beschrijving": "Speler A serveert willekeurig: lobservice of korte service. Speler B moet de juiste slagkeuze maken: bij lobservice → clear of smash, bij korte service → netdrop. Na 10 services tellen hoeveel keer de juiste keuze werd gemaakt.",
+            "cues": "Hoge shuttle = smash of clear. Korte shuttle = netdrop.",
+            "makkelijker": "Speler A kondigt aan welke service komt.",
+            "moeilijker": "Speler B moet direct scoren na de keuze."
+          },
+          "spelvorm": {
+            "titel": "Koning van het Veld met bonuspunten",
+            "opstelling": "Doorschuifsysteem op 4-6 veldjes.",
+            "beschrijving": "Wedstrijden tot 7 punten. Verplichte beginsequentie (lobservice → clear → drop). Bonuspunt voor directe winners (shuttle die niet geraakt wordt). Winnaar wijzerzin, verliezer tegenwijzerzin.",
+            "cues": "Beginsequentie correct uitvoeren. Bonuspunt bij winner. Score hardop zeggen.",
+            "makkelijker": "Geen bonuspunten.",
+            "moeilijker": "Beginsequentie + verplichte smash als derde slag."
+          },
+          "evaluatie": {
+            "tekst": "Wordt beoordeeld via rubrics LPD 1 en LPD 8 (zie evaluatiescherm)."
+          }
+        }
+      },
+      "les_2": {
+        "titel": "Slagkeuze & wedstrijdvorm (les 2)",
+        "panels": {
+          "opwarming": {
+            "titel": "Smash-clear wisselspel",
+            "opstelling": "Per 2 op half veld.",
+            "beschrijving": "Speler A speelt een clear. Speler B smasht terug. Speler A probeert de smash te retourneren met een clear. Wissel na 5 beurten.",
+            "cues": "Clear hoog en ver. Smash krachtig naar beneden.",
+            "makkelijker": "Smash mag zachter (half smash).",
+            "moeilijker": "Smash moet in de achterhoek landen."
+          },
+          "oefening_1": {
+            "titel": "Situatiespel: slagkeuze",
+            "opstelling": "Per 2 op half veld.",
+            "beschrijving": "Speler A speelt willekeurig hoog of kort. Speler B kiest de juiste slag: hoge shuttle = smash of clear, korte shuttle = netdrop of lob. Focus op het lezen van de situatie.",
+            "cues": "Kijk naar de shuttlehoogte. Hoog = aanvallen. Laag = verdedigen/kort spelen.",
+            "makkelijker": "Speler A speelt voorspelbaar (eerst 5x hoog, dan 5x kort).",
+            "moeilijker": "Alles willekeurig, direct scoren vereist."
+          },
+          "oefening_2": {
+            "titel": "Wedstrijdjes met tactische focus",
+            "opstelling": "Per 2 op half veld. Kegels als doelzones.",
+            "beschrijving": "Mini-wedstrijdjes van 3 punten. Na elk punt benoemt de speler welke slagkeuze hij/zij maakte en waarom. Focus op bewust kiezen, niet op winnen.",
+            "cues": "Benoem na elk punt: welke slag koos je en waarom?",
+            "makkelijker": "Coach (wachtende leerling) geeft tips.",
+            "moeilijker": "Geen coaching, volledig zelfstandig."
+          },
+          "spelvorm": {
+            "titel": "Koning van het Veld — wedstrijdvorm",
+            "opstelling": "Doorschuifsysteem op 4-6 veldjes.",
+            "beschrijving": "Wedstrijden tot 7 punten met beginsequentie en bonuspunten voor directe winners. Winnaar wijzerzin, verliezer tegenwijzerzin. Wachtende leerling is scheidsrechter.",
+            "cues": "Beginsequentie. Slagkeuze bewust maken. Score hardop zeggen.",
+            "makkelijker": "Beginsequentie mag met gooien.",
+            "moeilijker": "Dubbele punten bij winner na smash."
+          },
+          "evaluatie": {
+            "tekst": "Wordt beoordeeld via rubrics LPD 1 en LPD 8 (zie evaluatiescherm)."
+          }
+        }
+      }
+    },
+    "jaar_6": {
+      "les_1": {
+        "titel": "Aanval opbouwen & servicevariatie (les 1)",
+        "panels": {
+          "opwarming": {
+            "titel": "Backhand clear-rally",
+            "opstelling": "Per 2 op half veld.",
+            "beschrijving": "Rally met clears, maar speler A speelt bewust naar de backhandzijde van speler B. Speler B probeert terug te clearen. Tel de langste rally.",
+            "cues": "Clear naar de backhand van de tegenstander. Dwarse stand, dakhouding.",
+            "makkelijker": "Clear mag naar de forehandzijde.",
+            "moeilijker": "Alle clears moeten op de backhand landen."
+          },
+          "oefening_1": {
+            "titel": "Aanvallende clear + smash",
+            "opstelling": "Per 2 op half veld.",
+            "beschrijving": "Speler A speelt een aanvallende clear (platter, sneller) naar de backhand van B. Als B een zwakke return geeft → speler A smasht. Opbouw: clear naar backhand → zwakke return → smash. Wissel na 5 opbouwen.",
+            "cues": "Aanvallende clear: platter en sneller dan een defensieve clear. Smash bij zwakke return.",
+            "makkelijker": "Gewone clear in plaats van aanvallende clear.",
+            "moeilijker": "Smash moet in een zone landen voor dubbele punten."
+          },
+          "oefening_2": {
+            "titel": "Servicevariatie: lob vs korte BH",
+            "opstelling": "Per 2 op half veld.",
+            "beschrijving": "Speler A kiest per service: lobservice of korte backhandservice. Speler B moet direct reageren. Na 10 services: hoeveel keer scoorde A direct of indirect via de servicekeuze? Wissel.",
+            "cues": "Varieer je service. Kijk waar de tegenstander staat. Verras!",
+            "makkelijker": "Altijd lobservice.",
+            "moeilijker": "Wisselen na elke 2 services (dwing jezelf om te variëren)."
+          },
+          "spelvorm": {
+            "titel": "Keizertornooi",
+            "opstelling": "Alle leerlingen op eigen veldje. Doorschuifsysteem: winnaar schuift door richting 'keizer' (veldje 1).",
+            "beschrijving": "Wedstrijden tot 5 punten. Geen vaste beginsequentie meer — vrij spel. Focus op service als wapen en aanval opbouwen via backhandzijde. Winnaar schuift op richting keizer-positie. Verliezer zakt af.",
+            "cues": "Service als wapen. Aanval opbouwen. Score hardop zeggen.",
+            "makkelijker": "Beginsequentie alsnog verplicht.",
+            "moeilijker": "Wedstrijden tot 3 punten (meer wisselingen)."
+          },
+          "evaluatie": {
+            "tekst": "Wordt beoordeeld via rubrics LPD 1 en LPD 8 (zie evaluatiescherm)."
+          }
+        }
+      },
+      "les_2": {
+        "titel": "Keizertornooi & evaluatie (les 2)",
+        "panels": {
+          "opwarming": {
+            "titel": "Alles-rally",
+            "opstelling": "Per 2 op half veld.",
+            "beschrijving": "Vrije rally met alle slagen: clear, drop, smash, netdrop, lob. Doel: zo lang mogelijke rally. Tel het aantal slagen. Focus op afwisselen en bewegen.",
+            "cues": "Alle slagen gebruiken. Kort en ver afwisselen. Bewegen na elke slag.",
+            "makkelijker": "Enkel clears en drops.",
+            "moeilijker": "Na elke 3 slagen verplicht een smash."
+          },
+          "oefening_1": {
+            "titel": "Tactische opbouw: 3-slagenplan",
+            "opstelling": "Per 2 op half veld.",
+            "beschrijving": "Speler A bedenkt een plan van 3 slagen (bv. korte service → netdrop → smash) en voert het uit. Speler B probeert te verdedigen. Na 3 plannen: wissel. Wie scoort het vaakst via een plan?",
+            "cues": "Bedenk een plan VOOR je serveert. Voer het uit.",
+            "makkelijker": "Plan mag van coach (wachtende leerling) komen.",
+            "moeilijker": "Plan moet variëren (nooit 2x hetzelfde plan)."
+          },
+          "oefening_2": {
+            "titel": "Vrij spel met zelfreflectie",
+            "opstelling": "Per 2 op half veld.",
+            "beschrijving": "Vrije wedstrijdjes van 5 punten. Na elke set benoemt de leerling 1 sterk punt en 1 werkpunt. Wachtende leerling geeft 1 tip.",
+            "cues": "Na elke set: wat ging goed? Wat kan beter?",
+            "makkelijker": "Coach (wachtende leerling) geeft tips.",
+            "moeilijker": "Zonder coaching, volledig zelfstandig reflecteren."
+          },
+          "spelvorm": {
+            "titel": "Keizertornooi — eindvorm",
+            "opstelling": "Alle leerlingen op eigen veldje. Doorschuifsysteem.",
+            "beschrijving": "Wedstrijden tot 5 punten. Vrij spel — alle technieken en tactieken. Service als wapen. Aanval opbouwen via backhandzijde. Winnaar schuift op, verliezer zakt af. Leerkracht observeert en scoort via rubric.",
+            "cues": "Alles gebruiken: service, clear, drop, smash, netdrop. Tactisch spelen.",
+            "makkelijker": "Langere wedstrijden (meer kansen).",
+            "moeilijker": "Kortere wedstrijden (meer druk)."
+          },
+          "evaluatie": {
+            "tekst": "Wordt beoordeeld via rubrics LPD 1 en LPD 8. Leraarevaluatie tijdens keizertornooi."
+          }
+        }
+      }
+    }
+  },
+  "handbal": {
+    "jaar_4": {
+      "les_1": {
+        "titel": "Slagworp en sprongworp",
+        "panels": {
+          "opwarming": {
+            "titel": "Vijfbal",
+            "opstelling": "Per team van 6: 5 pasters in een cirkel, 1 onderschepper in het midden. 1 bal per groep.",
+            "beschrijving": "De 5 pasters proberen de bal over te spelen zonder dat de onderschepper de bal onderschept. Na 5 geslaagde passes op rij scoort het team een punt. Wie een foute pas geeft, gaat in het midden.",
+            "cues": "Vrijlopen weg van de onderschepper. Bal snel afspelen. Oogcontact maken met de ontvanger.",
+            "makkelijker": "6 pasters vs 1 onderschepper (grotere meerderheid).",
+            "moeilijker": "4 pasters vs 2 onderscheppers."
+          },
+          "oefening_1": {
+            "titel": "Sprongworp na pas",
+            "opstelling": "Spelverdeler vast op positie. Opbouwers in rij met bal. Kegels in de 4 hoeken van het doel.",
+            "beschrijving": "Opbouwer past naar de spelverdeler en krijgt de pas terug in de loop. De opbouwer werkt af op doel met een sprongworp via het driesteunenritme. Zowel links als rechts uitvoeren.",
+            "cues": "Werparm snel wapenen. Pas in de loop geven. Via sprongworp afstand tot doel verkleinen. Scoren in de hoeken.",
+            "makkelijker": "Zonder verdediger. Passen op de plaats (geen loop).",
+            "moeilijker": "Passieve verdediger op de 6m-lijn."
+          },
+          "oefening_2": {
+            "titel": "Twee tegen één",
+            "opstelling": "2 aanvallers vs 1 verdediger. Kegels in de 4 doelhoeken als mikpunt.",
+            "beschrijving": "Twee aanvallers proberen te scoren tegen één verdediger. De aanvaller met bal leest de verdediger: stapt de verdediger uit = snelle pas naar vrije medespeler. Blijft de verdediger staan = zelf sprongworp.",
+            "cues": "Verdediger stapt uit = snelle pas naar vrije medespeler. Verdediger blijft staan = zelf sprongworp. Pas in de loop geven.",
+            "makkelijker": "Verdediger heel passief: duidelijk kiezen.",
+            "moeilijker": "Verdediger actief: moet snel beslissen."
+          },
+          "spelvorm": {
+            "titel": "5 tegen 4 + Keeper",
+            "opstelling": "5 aanvallers vs 4 verdedigers + keeper. 4 teams, rotatie. 2 hoekspelers, 2 opbouwers, 1 spelverdeler.",
+            "beschrijving": "5v4+K. Aanvallers proberen via samenspel te scoren. Verdedigers staan op de 6m-lijn (hand in hand). Wedstrijden van 10 min met time-out na 5 min. Kapitein beslist de time-out.",
+            "cues": "Breed opstellen. Snelle balcirculatie. Scoren in de hoeken. Na je pas terugzakken.",
+            "makkelijker": "Verdedigers hand in hand (beperkte mobiliteit).",
+            "moeilijker": "Verdedigers los van elkaar (vrij bewegen)."
+          },
+          "evaluatie": {
+            "tekst": "Wordt beoordeeld via rubrics LPD 1, LPD 8 en LPD 11 (zie evaluatiescherm)."
+          }
+        }
+      },
+      "les_2": {
+        "titel": "Voorbeweging hoekspeler & nulsprong",
+        "panels": {
+          "opwarming": {
+            "titel": "Dribbel-slalom-estafette",
+            "opstelling": "Per groep van 4: slalom met kegels + kegel aan het einde. 1 bal per groep.",
+            "beschrijving": "Elke leerling dribbelt met de handbal door de slalom, rolt de bal via de grond tegen de kegel aan het einde en spurt terug. Volgende vertrekt zodra de vorige de kegel raakt.",
+            "cues": "Bal onder controle houden. Op snelheid door de slalom. Bal goed richten bij het rollen.",
+            "makkelijker": "Zonder bal, enkel slalomloop.",
+            "moeilijker": "Na de slalom een passeerbeweging maken en afwerken op doel."
+          },
+          "oefening_1": {
+            "titel": "Vooractie hoekspeler",
+            "opstelling": "Hoekspeler start hoog (ter hoogte van de 9m-lijn). Opbouwer en vaste spelverdeler. Geen verdediger.",
+            "beschrijving": "De hoekspeler past naar de opbouwer, die de bal doorpast naar de spelverdeler. Na de pas doet de hoekspeler een voorbeweging: op snelheid diep de hoek in voorbij de verdediger, keert op snelheid terug en ontvangt de bal in de loop. De hoekspeler werkt af op doel.",
+            "cues": "Hoog starten, op snelheid diepgaan, op snelheid teruglopen. Timing: bal krijgen op het moment dat je terug inloopt.",
+            "makkelijker": "Zonder verdediger: enkel de looplijn en timing oefenen.",
+            "moeilijker": "Met passieve verdediger op de hoekpositie."
+          },
+          "oefening_2": {
+            "titel": "2v1 met voorbeweging + nulsprong",
+            "opstelling": "Hoekspeler + opbouwer vs 1 verdediger. Doelkegels.",
+            "beschrijving": "Zelfde opbouw als oefening 1, maar nu met een verdediger. De hoekspeler beslist: komt de verdediger bijsluiten → pas naar opbouwer. Komt de verdediger niet bij → zelf afwerken via nulsprong met uitwijken.",
+            "cues": "Juiste beslissing in functie van de verdediger. Nulsprong: bal vangen en gooien in één sprong. Uitwijken om de verdediger heen.",
+            "makkelijker": "Verdediger gedeeltelijk passief (keuze is duidelijk).",
+            "moeilijker": "Verdediger volledig actief."
+          },
+          "spelvorm": {
+            "titel": "5 tegen 4 + Keeper",
+            "opstelling": "Zelfde wedstrijdformat als les 1 (5v4+K, 4 teams, rotatie).",
+            "beschrijving": "Focus op de voorbeweging en de harmonicabeweging. Met bal richting doel bewegen, zonder bal terugzakken achteraan de cirkel.",
+            "cues": "Breed opstellen, hoek diep. Snelle pas. Na je pas terugzakken (harmonicabeweging).",
+            "makkelijker": "Verdedigers hand in hand.",
+            "moeilijker": "Verdedigers los van elkaar."
+          },
+          "evaluatie": {
+            "tekst": "Wordt beoordeeld via rubrics LPD 1, LPD 8 en LPD 11 (zie evaluatiescherm)."
+          }
+        }
+      }
+    },
+    "jaar_6": {
+      "les_1": {
+        "titel": "Wissel opbouwer-spelverdeler",
+        "panels": {
+          "opwarming": {
+            "titel": "Kegelbal",
+            "opstelling": "Kegels verspreid over het terrein. 2 teams per helft.",
+            "beschrijving": "Twee teams proberen punten te scoren door een kegel aan te tikken met de bal (niet gooien!). Dribbelen is niet toegestaan. Na het aantikken van een kegel is de bal voor het andere team.",
+            "cues": "Vrijlopen weg van de verdedigers. Snelle balcirculatie. Pas naar de best opgestelde medespeler.",
+            "makkelijker": "Meer kegels op het veld.",
+            "moeilijker": "Pas scoren als je twee kegels vlak na elkaar aantikt zonder balverlies."
+          },
+          "oefening_1": {
+            "titel": "Wissel opbouwer-spelverdeler",
+            "opstelling": "1 verdediger op de opbouwer (tussen 6 en 9m). Opbouwer met bal + spelverdeler.",
+            "beschrijving": "Opbouwer past naar de spelverdeler. Die past terug. De opbouwer loopt in naar zijn verdediger. De spelverdeler loopt achter de opbouwer door en krijgt de bal. De spelverdeler werkt op snelheid af op doel.",
+            "cues": "Op de juiste plaats de wissel inzetten (halve meter van de verdediging). Op het juiste moment én op snelheid inlopen.",
+            "makkelijker": "Verdediger passief (vast op de 6m).",
+            "moeilijker": "Verdediger actief (vrij bewegen)."
+          },
+          "oefening_2": {
+            "titel": "Wissel met keuze",
+            "opstelling": "Zelfde als oefening 1, maar met extra hoekspeler en hoekverdediger.",
+            "beschrijving": "Zelfde wissel. Na de wissel maakt de spelverdeler een keuze: komt de hoekverdediger bijsluiten → pas naar hoekspeler. Sluit niet bij → spelverdeler werkt zelf af op doel.",
+            "cues": "Juiste keuze maken in functie van de verdediging. Snelle pas naar de hoek als die vrijkomt.",
+            "makkelijker": "Verdedigers gedeeltelijk passief (keuze is duidelijk).",
+            "moeilijker": "Verdedigers volledig actief."
+          },
+          "spelvorm": {
+            "titel": "5 tegen 4 + Keeper",
+            "opstelling": "5v4+K, 4 teams, rotatie. Focus op wissel.",
+            "beschrijving": "Zelfde wedstrijdformat. Focus op het toepassen van de wissel in spelsituaties. Wedstrijden van 10 min met time-out.",
+            "cues": "Breed opstellen. Wissel op het juiste moment. Na de wissel: juiste keuze.",
+            "makkelijker": "Verdedigers hand in hand.",
+            "moeilijker": "Verdedigers los van elkaar."
+          },
+          "evaluatie": {
+            "tekst": "Wordt beoordeeld via rubrics LPD 1, LPD 8 en LPD 11 (zie evaluatiescherm)."
+          }
+        }
+      },
+      "les_2": {
+        "titel": "Meerderheidssituaties en tornooi",
+        "panels": {
+          "opwarming": {
+            "titel": "Bufferspel",
+            "opstelling": "2 teams van 3 spelers. Eén bufferzone per kant.",
+            "beschrijving": "Speler 1 past vanuit de bufferzone naar een ploegmaat. Daarna loopt speler 1 uit de bufferzone om de pas terug te vragen. Als speler 1 de bal krijgt en voorbij de lijn op de grond kan duwen, is er gescoord.",
+            "cues": "Na het geven van een pas een tweede beweging maken. Snelle balcirculatie. Vrijlopen.",
+            "makkelijker": "Met slechts één bufferzone (meer ruimte).",
+            "moeilijker": "Na score moet het verdedigende team eerst de bal over de middellijn brengen."
+          },
+          "oefening_1": {
+            "titel": "3 tegen 2",
+            "opstelling": "Hoekspeler, opbouwer, spelverdeler vs 2 verdedigers (hand in hand op de 6m-lijn).",
+            "beschrijving": "De drie aanvallers proberen via snelle balcirculatie en samenspel de twee verdedigers te omzeilen. Ze gebruiken voorbeweging of wissel.",
+            "cues": "Breed opstellen, hoek diep. Snelle pas. Na je pas terugzakken (harmonicabeweging).",
+            "makkelijker": "Verdedigers hand in hand.",
+            "moeilijker": "Verdedigers los van elkaar."
+          },
+          "oefening_2": {
+            "titel": "4 tegen 3",
+            "opstelling": "2 hoekspelers + 2 opbouwers vs 3 verdedigers.",
+            "beschrijving": "Alle geleerde tactieken mogen ingezet worden: voorbeweging, wissel, harmonicabeweging.",
+            "cues": "Breed opstellen. Snelle pas. Op snelheid afwerken bij open doelkans.",
+            "makkelijker": "Verplicht starten met een voorbeweging OF een wissel.",
+            "moeilijker": "Verdedigers volledig actief + tijdsdruk (max 30 sec)."
+          },
+          "spelvorm": {
+            "titel": "Tornooi 5 tegen 4 + Keeper",
+            "opstelling": "5v4+K. Elk team speelt tegen alle andere teams.",
+            "beschrijving": "Tornooivorm. Wedstrijden van 10 min met time-out na 5 min. Kapitein beslist de time-out. Winst = 3 punten, gelijkspel = 2, verlies = 1.",
+            "cues": "Breed opstellen. Voorbeweging of wissel. Harmonicabeweging. Juiste keuze.",
+            "makkelijker": "Verdedigers hand in hand.",
+            "moeilijker": "Verdedigers los van elkaar."
+          },
+          "evaluatie": {
+            "tekst": "Wordt beoordeeld via rubrics LPD 1, LPD 8 en LPD 11 (zie evaluatiescherm)."
+          }
+        }
+      }
+    }
+  },
+  "voetbal": {
+    "jaar_5": {
+      "les_1": {
+        "titel": "Ruitopstelling en breed spelen",
+        "panels": {
+          "opwarming": {
+            "titel": "1v1 Kegelvoetbal",
+            "opstelling": "Per twee leerlingen. Elk een kegel op ±8m afstand. 1 bal per duo.",
+            "beschrijving": "Elke speler beschermt zijn eigen kegel en probeert de kegel van de tegenstander om te trappen met de bal. Je mag de kegel niet met je handen of lichaam beschermen.",
+            "cues": "Bal dicht bij de voet. Hoofd omhoog. Buitenkant voet bij richtingsverandering.",
+            "makkelijker": "Grotere afstand tussen kegels.",
+            "moeilijker": "Kleinere kegels of dichter bij elkaar."
+          },
+          "oefening_1": {
+            "titel": "Pasvorm in ruit",
+            "opstelling": "Per 4 in ruitvorm: spelmaker achteraan, 2 flanken breed, spits vooraan. Kegels markeren de posities.",
+            "beschrijving": "De bal gaat rond in de ruit: spelmaker → flank → spits → andere flank → spelmaker. Focus op steunvoet naast de bal, binnenkant voet, strakke pas. Na de ronde draai je mee 1 positie.",
+            "cues": "Steunvoet naast de bal, binnenkant voet, strakke pas richting medespeler.",
+            "makkelijker": "Bal mag 2x stuiten voor het aannemen.",
+            "moeilijker": "Bal direct doorspelen (1 touch)."
+          },
+          "oefening_2": {
+            "titel": "4v3 positiespel met zones",
+            "opstelling": "4 aanvallers (ruitvorm) vs 3 verdedigers. 2 goals. Flankzones gemarkeerd met kegels.",
+            "beschrijving": "De 4 aanvallers proberen te scoren. De flankspelers starten breed in hun zone. Als de bal naar de flank gaat, loopt de flankspeler diep en zoekt de spits. Focus op breed opstellen en flankwissel.",
+            "cues": "Breed opstellen. Flankspeler: diep lopen bij de bal. Pas in de loop geven. Open draaien richting doel.",
+            "makkelijker": "Verdedigers mogen niet in de flankzone komen.",
+            "moeilijker": "Verdedigers mogen overal komen."
+          },
+          "spelvorm": {
+            "titel": "4v4 in ruitopstelling",
+            "opstelling": "4v4 op 2 goals. 4 teams, rotatie. Kegels markeren de ruitposities.",
+            "beschrijving": "4v4 wedstrijden van 8 min. Aanvallers spelen in ruitvorm. Verdedigers vrij. Time-out na 4 min (kapitein bespreekt). Winnend team schuift door. Focus op breed spelen en ruitopstelling houden.",
+            "cues": "Breed opstellen. Flankwissel. Bal snel laten rondgaan. Vooractie: traag weg, snel terugkomen.",
+            "makkelijker": "Verdedigers mogen niet in flankzones.",
+            "moeilijker": "4v4 volledige vrijheid."
+          },
+          "evaluatie": {
+            "tekst": "Wordt beoordeeld via rubrics LPD 8 en LPD 11 (zie evaluatiescherm)."
+          }
+        }
+      },
+      "les_2": {
+        "titel": "Flankwissel en doelgericht spelen",
+        "panels": {
+          "opwarming": {
+            "titel": "1v1 Kegelvoetbal (herhaling)",
+            "opstelling": "Per twee leerlingen. Elk een kegel op ±8m afstand. 1 bal per duo.",
+            "beschrijving": "Zelfde als les 1. Elke speler beschermt zijn kegel en probeert de kegel van de tegenstander om te trappen.",
+            "cues": "Bal dicht bij de voet. Hoofd omhoog.",
+            "makkelijker": "Grotere afstand.",
+            "moeilijker": "Kleinere kegels."
+          },
+          "oefening_1": {
+            "titel": "Flankwissel 4v2",
+            "opstelling": "4 aanvallers (2 flanken + spelmaker + spits) vs 2 verdedigers. 2 goals.",
+            "beschrijving": "De aanvallers spelen de bal rond. Wanneer de bal op de ene flank is, maakt de andere flankspeler een vooractie: traag weglopen, dan snel terugkomen voor de bal. Focus op flankverandering.",
+            "cues": "Vooractie: traag weg van de bal, dan korte versnelling richting bal. Open draaien richting doel.",
+            "makkelijker": "Verdedigers passief (staan stil).",
+            "moeilijker": "Verdedigers actief."
+          },
+          "oefening_2": {
+            "titel": "4v3 met doelgerichtheid",
+            "opstelling": "4 aanvallers vs 3 verdedigers. 2 goals.",
+            "beschrijving": "Aanvallers proberen binnen 30 seconden te scoren. Focus op snel naar voren spelen wanneer er een opening is. Niet eindeloos rond passen, maar doelgericht spelen.",
+            "cues": "Zie je een opening? Speel naar voren! Spits biedt zich aan. Afwerken: steunvoet naast de bal, lichaam over de bal.",
+            "makkelijker": "Geen tijdslimiet.",
+            "moeilijker": "20 seconden."
+          },
+          "spelvorm": {
+            "titel": "4v4 tornooi in ruitopstelling",
+            "opstelling": "4v4 op 2 goals. Tornooivorm: elk team speelt tegen alle andere teams.",
+            "beschrijving": "Wedstrijden van 8 min met time-out na 4 min. Kapitein bespreekt tactiek. Winst = 3 punten, gelijkspel = 2, verlies = 1. Focus op alles: ruit, flankwissel, doelgerichtheid.",
+            "cues": "Breed opstellen. Flankwissel. Doelgericht afwerken. Na bal verlies: snel terugverdedigen.",
+            "makkelijker": "Langere wedstrijden.",
+            "moeilijker": "Kortere wedstrijden (meer druk)."
+          },
+          "evaluatie": {
+            "tekst": "Wordt beoordeeld via rubrics LPD 8 en LPD 11. Zelfevaluatie (6 vragen) + kapiteinsevaluatie."
+          }
+        }
+      }
+    }
+  },
+  "judo": {
+    "jaar_5": {
+      "les_1": {
+        "titel": "Houdgrepen en omkeertechnieken",
+        "panels": {
+          "opwarming": {
+            "titel": "Knieëngevecht",
+            "opstelling": "Per 2 op een mat. Beide op de knieën tegenover elkaar.",
+            "beschrijving": "Op Hajime proberen beide leerlingen de ander op de rug te leggen zonder op te staan. Wie de ander op de rug legt en 3 seconden vasthoudt, wint het gevecht. Bij Mate: loslaten en opnieuw beginnen.",
+            "cues": "Laag zwaartepunt. Grijp de stof (niet de huid). Gebruik je gewicht.",
+            "makkelijker": "Enkel duwen en trekken, geen houdgreep nodig.",
+            "moeilijker": "Na op de rug leggen: houdgreep vasthouden tot 10 seconden."
+          },
+          "oefening_1": {
+            "titel": "Houdgrepen: Kesa-gatame, Kuzure-kesa-gatame, Yoko-shiho-gatame",
+            "opstelling": "Per 2 op een mat. Één leerling op de rug (= uke), de ander ernaast (= tori).",
+            "beschrijving": "Tori oefent de 3 houdgrepen: (1) Kesa-gatame: zit naast uke, arm onder uke's hoofd, houd de arm vast. (2) Kuzure-kesa-gatame: zelfde maar pak onder de oksel door. (3) Yoko-shiho-gatame: lig dwars op uke, grip de broek en het bovenlichaam. Per houdgreep: 20 seconden vasthouden. Wissel na 3 houdgrepen.",
+            "cues": "Zwaartepunt laag. Spreid je gewicht. Controleer hoofd en arm van uke.",
+            "makkelijker": "Uke biedt geen weerstand.",
+            "moeilijker": "Uke probeert licht te bewegen (niet volledig ontsnappen)."
+          },
+          "oefening_2": {
+            "titel": "Omkeertechniek vanuit vierpuntensteun",
+            "opstelling": "Per 2 op een mat. Uke op handen en knieën (vierpuntensteun). Tori ernaast.",
+            "beschrijving": "Tori pakt uke aan de bovenkant: één arm onder de buik door, de andere arm over de rug. Tori draait uke om naar de rug en gaat direct over in een houdgreep. Wissel na 5 herhalingen.",
+            "cues": "Pak stevig vast. Draai in één beweging. Direct doorgaan naar houdgreep.",
+            "makkelijker": "Uke biedt geen weerstand.",
+            "moeilijker": "Uke houdt stevig de vierpuntensteun vast."
+          },
+          "spelvorm": {
+            "titel": "Randori ne-waza met doorschuifsysteem",
+            "opstelling": "Per 2 op een mat. Doorschuifsysteem: winnaars schuiven door, verliezers zakken af.",
+            "beschrijving": "Randori ne-waza: vrij grondgevecht op de knieën. Start vanuit knieën tegenover elkaar. Op Hajime: probeer de ander op de rug te leggen en een houdgreep vast te houden. Ippon = houdgreep 20 sec. Waza-ari = houdgreep 10-19 sec. Mate = stoppen. Scheidsrechter (derde leerling) telt en geeft signalen.",
+            "cues": "Op Hajime: direct contact maken. Probeer omkeertechniek. Direct doorgaan naar houdgreep.",
+            "makkelijker": "Ippon al bij 10 seconden.",
+            "moeilijker": "Beide starten vanuit vierpuntensteun (moeilijker om te beginnen)."
+          },
+          "evaluatie": {
+            "tekst": "Formatieve evaluatie (nulmeting). Leerkracht observeert houdgrepen en omkeertechnieken."
+          }
+        }
+      },
+      "les_2": {
+        "titel": "Bevrijdingstechnieken en judotornooi",
+        "panels": {
+          "opwarming": {
+            "titel": "Schildpadgevecht",
+            "opstelling": "Per 2 op een mat. Uke in schildpadpositie (opgerold op de buik). Tori ernaast.",
+            "beschrijving": "Tori probeert uke om te draaien. Uke probeert in schildpadpositie te blijven. 30 seconden per beurt. Wie lukt het vaker?",
+            "cues": "Tori: zoek een opening (arm of been). Uke: armen en benen dicht bij het lichaam.",
+            "makkelijker": "Uke biedt minder weerstand.",
+            "moeilijker": "Uke mag actief ontsnappen en zelf aanvallen."
+          },
+          "oefening_1": {
+            "titel": "Bevrijdingstechniek: been omknellen",
+            "opstelling": "Per 2 op een mat. Tori houdt uke vast in Kesa-gatame.",
+            "beschrijving": "Uke leert ontsnappen: uke brengt het been dat het dichtst bij tori is omhoog en knelt het om tori's been. Uke draait de heupen en duwt tori weg. Wissel na 5 pogingen.",
+            "cues": "Been omhoog. Om tori's been knellen. Heupen draaien. Wegduwen.",
+            "makkelijker": "Tori houdt licht vast.",
+            "moeilijker": "Tori houdt stevig vast."
+          },
+          "oefening_2": {
+            "titel": "Omkeertechniek vanuit buiklig",
+            "opstelling": "Per 2 op een mat. Uke plat op de buik. Tori ernaast.",
+            "beschrijving": "Tori pakt uke bij de heup en de schouder. Tori draait uke in één beweging om naar de rug en gaat direct over in een houdgreep. Wissel na 5 herhalingen.",
+            "cues": "Pak heup en schouder. Draai in één beweging. Direct door naar houdgreep.",
+            "makkelijker": "Uke biedt geen weerstand.",
+            "moeilijker": "Uke probeert terug op de buik te draaien."
+          },
+          "spelvorm": {
+            "titel": "Judotornooi ne-waza",
+            "opstelling": "Groepjes van 4-5 leerlingen. Wedstrijdschema per groep. 1 scheidsrechter + 1 timekeeper per mat.",
+            "beschrijving": "Judotornooi: iedereen tegen iedereen in de groep. Gevechten van 2 minuten. Ippon = houdgreep 20 sec = 10 punten. Waza-ari = houdgreep 10-19 sec = 5 punten. Geen score = 0 punten. Scheidsrechter geeft Hajime, Mate, Osaekomi, Toketa.",
+            "cues": "Direct contact maken. Omkeertechniek → houdgreep. Bevrijdingstechniek als je vastzit.",
+            "makkelijker": "Gevechten van 1 minuut.",
+            "moeilijker": "Gevechten van 3 minuten."
+          },
+          "evaluatie": {
+            "tekst": "LPD 1: Leraarevaluatie tijdens tornooi (houdgrepen, omkeertechnieken, bevrijdingstechnieken). LPD 8: Zelfevaluatie (6 stellingen)."
+          }
+        }
+      }
+    }
+  },
+  "klimmen": {
+    "jaar_5": {
+      "les_1": {
+        "titel": "Basisvaardigheden klimmen",
+        "panels": {
+          "opwarming": {
+            "titel": "Traverse-estafette",
+            "opstelling": "2 sportramen naast elkaar. Klas in 2 groepen. Valmatten onder de sportramen.",
+            "beschrijving": "Per groep staan de leerlingen in een rij naast het sportraam. Op het signaal klimt de eerste leerling horizontaal over het sportraam (traverse) van links naar rechts. Aan het einde springt hij/zij op de mat en sluit achteraan. Welke groep is eerst door?",
+            "cues": "3 punten vast — rustig bewegen — niet springen vanop hoogte.",
+            "makkelijker": "Lager klimmen (enkel onderste helft sportraam).",
+            "moeilijker": "Enkel met de handen aan de bovenste sport, voeten zoeken zelf steun."
+          },
+          "station_1": {
+            "titel": "Prusikklimmen",
+            "opstelling": "5 klimtouwen met 2 prusiktouwtjes. Klimgordels + karabiners. Valmatten. Per touw: 1 klimmer + 1 buddy.",
+            "beschrijving": "Klimmer bevestigt karabiner aan bovenste prusiktouw. Buddy controleert. Communicatie: 'Kan ik gaan klimmen?' → 'Ja, [naam], je kunt gaan klimmen.' Klimmer klimt omhoog: bovenste touw omhoog schuiven, vastzetten, onderste touw omhoog, voet erin, staan, herhalen.",
+            "cues": "Duwen — schuiven — trekken — staan. Altijd buddy-check voor je start.",
+            "makkelijker": "Klimmen tot halverwege het touw.",
+            "moeilijker": "Klimmen tot helemaal boven."
+          },
+          "station_2": {
+            "titel": "Via ferrata aan sportraam",
+            "opstelling": "Sportraam met lussen (touw of bandjes). 2 musketons per leerling. Valmatten.",
+            "beschrijving": "Leerling haakt 2 musketons aan de eerste lus. Bij elke nieuwe lus: eerst de volgende musketon inhaken, DAN pas de vorige loshaken. Altijd minstens 1 musketon vast. Traverse het volledige sportraam.",
+            "cues": "Eerst vast, dan los. 3 punten vast. Rustig en gecontroleerd.",
+            "makkelijker": "Grotere lussen (makkelijker inhaken).",
+            "moeilijker": "Blindelings (ogen dicht) de lussen voelen en inhaken."
+          },
+          "klimcircuit": {
+            "titel": "Klimcircuit: 4 stations",
+            "opstelling": "4 stations met rotatie. Scorekaart per leerling. Timer per station.",
+            "beschrijving": "Station A: Prusikklimmen (hoe hoog?). Station B: Via ferrata traverse. Station C: Sportraam-traverse met 3-puntenregel. Station D: Afdalen (prusik). Rotatie elke 8 min. Buddy-check bij elk station. Leerling noteert zijn score (hoogte/tijd) op de scorekaart.",
+            "cues": "Buddy-check elke beurt. Scorekaart invullen. Kies je uitdagingsniveau.",
+            "makkelijker": "Enkel de makkelijkere variant per station.",
+            "moeilijker": "Moeilijkere variant + progressie t.o.v. vorige beurt."
+          },
+          "evaluatie": {
+            "tekst": "Zelfevaluatie LPD 8 + LPD 13 (6 vragen). Nulmeting — vergelijk in les 2."
+          }
+        }
+      },
+      "les_2": {
+        "titel": "Verdieping en grenzen verleggen",
+        "panels": {
+          "opwarming": {
+            "titel": "Sportraam-tikspel",
+            "opstelling": "2 sportramen. Klas in 2 groepen. Valmatten.",
+            "beschrijving": "Tikkertje op het sportraam: de tikker klimt langs het sportraam en probeert anderen aan te tikken. Wie getikt wordt, klimt naar de andere kant en is veilig. Na 1 minuut wisselt de tikker.",
+            "cues": "3 punten vast. Rustig maar snel bewegen.",
+            "makkelijker": "Alleen onderste helft sportraam.",
+            "moeilijker": "Hele sportraam + meerdere tikkers."
+          },
+          "station_1": {
+            "titel": "Prusikklimmen — verdieping",
+            "opstelling": "Zelfde als les 1. Klimtouwen + prusiktouwtjes + gordels.",
+            "beschrijving": "Herhaling prusikklimmen. Doel: hoger komen dan les 1. Buddy telt de sporten. Na het klimmen: afdalen via omgekeerde procedure. Focus op vloeiende beweging.",
+            "cues": "Duwen — schuiven — trekken — staan. Rustig zakken, stap voor stap.",
+            "makkelijker": "Halverwege en terug.",
+            "moeilijker": "Helemaal tot boven + vloeiend afdalen."
+          },
+          "station_2": {
+            "titel": "Via ferrata — verdieping",
+            "opstelling": "Zelfde als les 1. Sportraam met lussen.",
+            "beschrijving": "Herhaling via ferrata. Doel: sneller en vloeiender traverseren dan les 1. Focus op automatiseren van 'eerst vast, dan los'.",
+            "cues": "Eerst vast, dan los. Tempo opvoeren. 3 punten vast.",
+            "makkelijker": "Zelfde tempo als les 1.",
+            "moeilijker": "Op tijd: traverse binnen 2 minuten."
+          },
+          "klimcircuit": {
+            "titel": "Klimcircuit: vrije keuze",
+            "opstelling": "Zelfde 4 stations. Scorekaart les 1 erbij. Vrije keuze welk station.",
+            "beschrijving": "Leerlingen kiezen zelf welke stations ze doen en in welke volgorde. Doel: minstens 1 station beter doen dan les 1. Vergelijk scores met les 1. Buddy moedigt aan maar respecteert de grens.",
+            "cues": "Vergelijk met les 1. Kies je uitdaging. Buddy-check elke beurt.",
+            "makkelijker": "Zelfde niveau als les 1 is OK.",
+            "moeilijker": "Alle stations op het hoogste niveau."
+          },
+          "evaluatie": {
+            "tekst": "Zelfevaluatie LPD 8 + LPD 13 (6 vragen). Eindevaluatie — vergelijk met les 1."
+          }
+        }
+      }
+    }
+  },
+  "ehbo": {
+    "jaar_4": {
+      "les_1": {
+        "titel": "BLS-protocol aanleren",
+        "panels": {
+          "oefening_1": {
+            "titel": "BLS-protocol — demo en oefenen",
+            "opstelling": "Per 2 leerlingen: 1 minipop. Kijkwijzer BLS bij de observer.",
+            "beschrijving": "Leerkracht demonstreert het volledige BLS-protocol real-time op een ANNE-pop (zonder uitleg). Daarna opnieuw met uitleg per stap. Leerlingen gaan per 2 aan de slag. Eén leerling doorloopt het volledige protocol (compressies op minipop, beademing simuleren). De ander is observer met kijkwijzer. Wissel na 4 minuten.",
+            "cues": "Hard en snel — duw 5-6 cm, laat volledig terugveren, 100-120/min.",
+            "makkelijker": "Observer leest de stappen voor van de kijkwijzer, hulpverlener volgt.",
+            "moeilijker": "Hulpverlener doorloopt het protocol zonder hulp van de observer."
+          },
+          "oefening_2": {
+            "titel": "Stabiele zijligging",
+            "opstelling": "Per 2: 1 hulpverlener, 1 slachtoffer. Taakkaart met stappen erbij.",
+            "beschrijving": "Het slachtoffer ligt op de rug, de hulpverlener voert de stabiele zijligging uit volgens de stappen op de taakkaart. Na uitvoering controleert de hulpverlener of de luchtweg open is. Wissel na 2 uitvoeringen.",
+            "cues": "Hoofd achterover, kin optillen, luchtweg open. Bovenste been 90°, hand onder wang.",
+            "makkelijker": "Hulpverlener mag de taakkaart erbij houden.",
+            "moeilijker": "Zonder taakkaart, uit het hoofd."
+          },
+          "eindspel": {
+            "titel": "Doorschuifstations",
+            "opstelling": "4 stations: (A) BLS op minipop, (B) stabiele zijligging, (C) AED-bediening, (D) verstikking (Heimlich). Doorschuif per 8 min.",
+            "beschrijving": "Per station: duo's oefenen. Bij elk station een taakkaart en een kijkwijzer. De observer checkt de uitvoering. Doorschuif na 8 minuten. Elke leerling doorloopt alle stations.",
+            "cues": "Eerst veiligheid, dan diagnose, dan handelen. Volg de stappen op de kijkwijzer.",
+            "makkelijker": "Observer mag hints geven.",
+            "moeilijker": "Observer zwijgt, hulpverlener doet alles zelf."
+          },
+          "evaluatie": {
+            "tekst": "Formatieve evaluatie. Leerkracht observeert uitvoeringen. Zelfevaluatie LPD 3 + LPD 7."
+          }
+        }
+      },
+      "les_2": {
+        "titel": "Herhaling BLS + AED + scenario's",
+        "panels": {
+          "oefening_1": {
+            "titel": "BLS met AED — vloeiend",
+            "opstelling": "Per 2 aan een ANNE-pop + AED-trainer.",
+            "beschrijving": "Elke leerling voert het volledige BLS-protocol met AED uit: compressies → AED aanzetten → elektroden kleven → analyse → schok → verder reanimeren. Partner observeert met kijkwijzer.",
+            "cues": "Geen pauzes — vloeiend van compressies naar AED en terug.",
+            "makkelijker": "Partner mag bijsturen tijdens de uitvoering.",
+            "moeilijker": "Volledig zelfstandig. Leerkracht scoort via rubric."
+          },
+          "oefening_2": {
+            "titel": "Stabiele zijlig + herhaling verstikking",
+            "opstelling": "Per 3: hulpverlener, slachtoffer, supervisor met taakkaart.",
+            "beschrijving": "Supervisor kiest willekeurig: 'stabiele zijligging' of 'verstikking.' De hulpverlener voert uit, het slachtoffer simuleert. Supervisor geeft feedback. Elke leerling voert beide procedures minstens 1x uit.",
+            "cues": "Stabiele zijlig: luchtweg open! Heimlich: vuist boven de navel!",
+            "makkelijker": "Supervisor leest de stappen voor.",
+            "moeilijker": "Supervisor zegt enkel het scenario, hulpverlener beslist zelf welke procedure."
+          },
+          "eindspel": {
+            "titel": "Simulatietoernooi",
+            "opstelling": "Trio's: hulpverlener, slachtoffer, observer. Doorschuifsysteem per 8 minuten.",
+            "beschrijving": "Elk trio trekt een casuskaartje. Het slachtoffer simuleert de beschreven symptomen. De hulpverlener voert de juiste handeling uit. De observer beoordeelt en geeft achteraf feedback. Na 8 minuten: wissel rollen én doorschuif. Elke leerling is minstens 2x hulpverlener.",
+            "cues": "Eerst veiligheid, dan diagnose, dan handelen.",
+            "makkelijker": "Observer mag hints geven.",
+            "moeilijker": "Observer zwijgt volledig. Achteraf pas feedback."
+          },
+          "evaluatie": {
+            "tekst": "Leraarevaluatie LPD 7 (rubric). Zelfevaluatie LPD 3. Peerevaluatie LPD 10."
+          }
+        }
+      }
+    },
+    "jaar_6": {
+      "les_1": {
+        "titel": "Herhaling BLS/AED + open scenario's",
+        "panels": {
+          "oefening_1": {
+            "titel": "BLS met AED — herhaling onder druk",
+            "opstelling": "Per 2 aan een ANNE-pop + AED-trainer.",
+            "beschrijving": "Elke leerling voert het volledige BLS-protocol met AED uit terwijl de leerkracht observeert. Partner observeert met kijkwijzer. Focus op vloeiendheid en snelheid.",
+            "cues": "Volledige uitvoering — kalm, correct en vloeiend.",
+            "makkelijker": "Partner mag bijsturen.",
+            "moeilijker": "Volledig zelfstandig."
+          },
+          "oefening_2": {
+            "titel": "Casuskaartjes met symptoomherkenning",
+            "opstelling": "Per 3: hulpverlener, slachtoffer, observer.",
+            "beschrijving": "Het slachtoffer simuleert symptomen (bv. niet meer reageren, niet ademen, hoesten). De hulpverlener moet EERST de situatie inschatten en dan de juiste handeling kiezen. De observer zwijgt tot na de uitvoering.",
+            "cues": "Eerst kijken en denken, dan handelen — observeer de symptomen.",
+            "makkelijker": "Op het casuskaartje staat een hint.",
+            "moeilijker": "Geen hints. De hulpverlener moet volledig zelf diagnosticeren."
+          },
+          "eindspel": {
+            "titel": "Open scenario's met diagnose",
+            "opstelling": "Duo's (hulpverlener + observer). Casuskaartjes met complexere scenario's.",
+            "beschrijving": "De hulpverlener moet de situatie inschatten (symptomen herkennen) en de juiste handeling kiezen. Observer zwijgt en geeft achteraf gestructureerde feedback: (1) Was de diagnose correct? (2) Was het protocol volledig? (3) Waren de technieken correct? Doorschuif na 2 kaartjes.",
+            "cues": "Eerst kijken en denken, dan handelen.",
+            "makkelijker": "Hint op het kaartje.",
+            "moeilijker": "Geen hints. Volledig zelf diagnosticeren."
+          },
+          "evaluatie": {
+            "tekst": "Leraarevaluatie LPD 7. Zelfevaluatie LPD 3. Peerevaluatie LPD 10."
+          }
+        }
+      },
+      "les_2": {
+        "titel": "Eindevaluatie met simulaties",
+        "panels": {
+          "oefening_1": {
+            "titel": "Evaluatie BLS met AED",
+            "opstelling": "Per 2 aan een ANNE-pop + AED. Leerkracht observeert en scoort via rubric.",
+            "beschrijving": "Elke leerling voert het volledige BLS-protocol met AED uit terwijl de partner observeert met de kijkwijzer. De leerkracht scoort via de LPD 7-rubric. Na afloop geeft de observer feedback en vult de leerling de zelfevaluatie in.",
+            "cues": "Volledige uitvoering — kalm, correct en vloeiend.",
+            "makkelijker": "Leerling mag 1x opnieuw beginnen na een hint.",
+            "moeilijker": "Leerling voert uit zonder enige hulp."
+          },
+          "oefening_2": {
+            "titel": "Evaluatie casuskaartje",
+            "opstelling": "Individueel. Leerling trekt 1 casuskaartje. Medeleerling speelt het slachtoffer, een derde observeert.",
+            "beschrijving": "De leerling leest het scenario, herkent de situatie en voert de juiste handeling uit. De observer checkt de oplossing op de achterkant van het kaartje en geeft feedback. De leerkracht scoort via de rubric.",
+            "cues": "Lees, herken, handel — kalm en in de juiste volgorde.",
+            "makkelijker": "Op het kaartje staat een hint naar het type situatie.",
+            "moeilijker": "Geen hints. Het slachtoffer simuleert, de leerling moet zelf diagnosticeren."
+          },
+          "eindspel": {
+            "titel": "Simulatietoernooi",
+            "opstelling": "Trio's: hulpverlener, slachtoffer, observer. Doorschuifsysteem per 8 minuten.",
+            "beschrijving": "Elk trio trekt een casuskaartje. Hulpverlener voert uit. Observer beoordeelt met gestructureerde feedback: (1) Diagnose correct? (2) Protocol volledig? (3) Techniek correct? Doorschuif na 8 min. Leerkracht observeert en scoort.",
+            "cues": "Eerst veiligheid, dan diagnose, dan handelen.",
+            "makkelijker": "Observer mag hints geven.",
+            "moeilijker": "Observer zwijgt volledig."
+          },
+          "evaluatie": {
+            "tekst": "Eindevaluatie: LPD 7 (rubric leerkracht), LPD 3 (zelfevaluatie), LPD 10 (peerevaluatie feedback)."
+          }
+        }
+      }
+    }
+  },
   "basketbal": {
-    "graad_1": {
+    "jaar_4": {
       "les_1": {
         "titel": "V-cut en Give and Go",
         "panels": {
-          "opwarming": "TIKBAL\n\nAlle leerlingen dribbelen in een afgebakend veld. Probeer de bal van anderen weg te tikken terwijl je je eigen bal beschermt. Bal buiten veld getikt? 3 lay-ups scoren op de dichtstbijzijnde ring, dan mag je terug meedoen.\n\nGeen eliminatie — continue instroom vanuit de ringen. Na 4 min kort stoppen: iedereen telt hoeveel keer ze buiten moesten. Dan opnieuw 4 min — sla je je eigen score?\n\nCue: \"Kijk naar de andere spelers, niet naar je bal.\" \"Bescherm de bal met je lichaam, niet met je arm.\"",
-          "oefening_1": "IN-AND-OUT (V-CUT)\n\nOpstelling: 3 aanvallers in driehoek (SV boven, 2 vleugelspelers), 3 verdedigers man-man.\n\nBeschrijving: Beide vleugelspelers maken zich aanspeelbaar door een in-and-out beweging: traag naar binnen lopen (richting 3-secondengebied), dan explosief afstoten naar buiten en de bal vragen met de hand verst van de verdediger. De spelverdeler leest wie vrijkomt en geeft een pas in de vragende hand. Na balontvangst pivoteert de vleugelspeler facing basket en beslist: shot of pas. Verdedigers eerst halfactief, geleidelijk actiever.\n\nCoachingwoorden: \"Traag naar binnen, neem je verdediger mee.\" \"Explosief naar buiten.\" \"Vraag de bal met de hand ver van de verdediger.\"\n\nMakkelijker: Eén vleugelverdediger tikt eerst de middenlijn aan en keert terug — tijdelijk voordeel voor de aanval.\nMoeilijker: Verdedigers volledig actief, mogen de pas proberen onderscheppen.\n\nBron: REF les 4, taak 2 (fig. 18) — aangepast: beide vleugelspelers voeren de V-cut uit.",
-          "oefening_2": "GIVE AND GO\n\nOpstelling: 3 aanvallers in driehoek, 3 verdedigers man-man.\n\nBeschrijving: Beide vleugelspelers maken eerst een in-and-out (V-cut) om zich vrij te maken. De spelverdeler leest wie vrijkomt en past. Daarna maakt de spelverdeler een schijnbeweging weg van de bal en snijdt explosief aan balkant naar het doel. De vleugelspeler geeft de bal in de loop terug. De spelverdeler werkt af. De derde aanvaller houdt positie. Verdedigers eerst halfactief, geleidelijk actiever. Beide kanten uitvoeren.\n\nCoachingwoorden: \"Geef de pas en check controle.\" \"Schijnbeweging weg van bal.\" \"Snijden aan balkant, verdediger in de rug.\" \"Pas in de loop.\"\n\nMakkelijker: Eén vleugelverdediger tikt eerst de middenlijn aan en keert terug.\nMoeilijker: Alle drie de verdedigers volledig actief.\n\nBron: REF les 6, taak 2–3 (fig. 24–25) — aangepast: V-cut als voorafgaande actie + 3v3.",
-          "spelvorm": "EINDSPEL: 3V3 WEDSTRIJD\n\n3v3 op een halve ring met doorschuifsysteem: winnaar blijft, verliezer wisselt. Na doelpunt of balverlies: transitie. De leider stuurt aan. Focus: in-and-out en give and go.\n\nCue: \"Pas gegeven? Dan beweeg je.\"",
-          "evaluatie": "Observeer tijdens het eindspel:\n\n• Vrijlopen en actie: Loopt de leerling vrij via V-cut of snijdt na een pass (give and go) volgens de juiste looplijn?\n• Resultaat: Komt de leerling vrij en ontvangt de bal op een positie waar een shot of doorpas mogelijk is?\n\nFocus jaar 4: in-and-out (V-cut) en give and go."
-        },
-        "rubrics": {}
+          "opwarming": {
+            "titel": "TIKBAL",
+            "opstelling": "",
+            "beschrijving": "Alle leerlingen dribbelen in een afgebakend veld. Probeer de bal van anderen weg te tikken terwijl je je eigen bal beschermt. Bal buiten veld getikt? 3 lay-ups scoren op de dichtstbijzijnde ring, dan mag je terug meedoen.",
+            "cues": "Kijk naar de andere spelers, niet naar je bal. Bescherm de bal met je lichaam, niet met je arm.",
+            "makkelijker": "Verdediger tikt eerst de middenlijn aan (vertraagd).",
+            "moeilijker": "Verdedigers volledig actief."
+          },
+          "oefening_1": {
+            "titel": "IN-AND-OUT (V-CUT)",
+            "opstelling": "3 aanvallers in driehoek (SV boven, 2 vleugelspelers), 3 verdedigers man-man.",
+            "beschrijving": "Beide vleugelspelers maken zich aanspeelbaar door een in-and-out beweging: traag naar binnen lopen (richting 3-secondengebied), dan explosief afstoten naar buiten en de bal vragen met de hand verst van de verdediger. De spelverdeler leest wie vrijkomt en geeft een pas in de vragende hand. Na balontvangst pivoteert de vleugelspeler facing basket en beslist: shot of pas. Verdedigers eerst halfactief, geleidelijk actiever.",
+            "cues": "Traag naar binnen, neem je verdediger mee. Explosief naar buiten. Vraag de bal met de hand ver van de verdediger.",
+            "makkelijker": "Eén vleugelverdediger tikt eerst de middenlijn aan en keert terug — tijdelijk voordeel voor de aanval.",
+            "moeilijker": "Verdedigers volledig actief, mogen de pas proberen onderscheppen."
+          },
+          "oefening_2": {
+            "titel": "GIVE AND GO",
+            "opstelling": "3 aanvallers in driehoek, 3 verdedigers man-man.",
+            "beschrijving": "Beide vleugelspelers maken eerst een in-and-out (V-cut) om zich vrij te maken. De spelverdeler leest wie vrijkomt en past. Daarna maakt de spelverdeler een schijnbeweging weg van de bal en snijdt explosief aan balkant naar het doel. De vleugelspeler geeft de bal in de loop terug. De spelverdeler werkt af. De derde aanvaller houdt positie. Verdedigers eerst halfactief, geleidelijk actiever. Beide kanten uitvoeren.",
+            "cues": "Geef de pas en check controle. Schijnbeweging weg van bal. Snijden aan balkant, verdediger in de rug. Pas in de loop.",
+            "makkelijker": "Eén vleugelverdediger tikt eerst de middenlijn aan en keert terug.",
+            "moeilijker": "Alle drie de verdedigers volledig actief."
+          },
+          "spelvorm": {
+            "titel": "EINDSPEL: 3V3 WEDSTRIJD",
+            "opstelling": "",
+            "beschrijving": "3v3 op een halve ring met doorschuifsysteem: winnaar blijft, verliezer wisselt. Na doelpunt of balverlies: transitie. De leider stuurt aan. Focus: in-and-out en give and go.",
+            "cues": "Pas gegeven? Dan beweeg je.",
+            "makkelijker": "Verdediger tikt eerst de middenlijn aan (vertraagd).",
+            "moeilijker": "Verdedigers volledig actief."
+          },
+          "evaluatie": {
+            "tekst": "Observeer tijdens het eindspel:\n\n• Vrijlopen en actie: Loopt de leerling vrij via V-cut of snijdt na een pass (give and go) volgens de juiste looplijn?\n• Resultaat: Komt de leerling vrij en ontvangt de bal op een positie waar een shot of doorpas mogelijk is?\n\nFocus jaar 4: in-and-out (V-cut) en give and go."
+          }
+        }
       },
       "les_2": {
         "titel": "V-cut en Give and Go — verdieping",
         "panels": {
-          "opwarming": "TIKBAL\n\nAlle leerlingen dribbelen in een afgebakend veld. Probeer de bal van anderen weg te tikken terwijl je je eigen bal beschermt. Bal buiten veld getikt? 3 lay-ups scoren op de dichtstbijzijnde ring, dan mag je terug meedoen.\n\nGeen eliminatie — continue instroom vanuit de ringen.\n\nCue: \"Kijk naar de andere spelers, niet naar je bal.\" \"Bescherm de bal met je lichaam, niet met je arm.\"",
-          "oefening_1": "IN-AND-OUT (V-CUT) — HERHALING\n\nOpstelling: 3 aanvallers in driehoek (SV boven, 2 vleugelspelers), 3 verdedigers man-man.\n\nBeschrijving: Beide vleugelspelers maken zich aanspeelbaar door een in-and-out beweging: traag naar binnen lopen (richting 3-secondengebied), dan explosief afstoten naar buiten en de bal vragen met de hand verst van de verdediger. De spelverdeler leest wie vrijkomt en geeft een pas in de vragende hand. Na balontvangst pivoteert de vleugelspeler facing basket en beslist: shot of pas.\n\nCoachingwoorden: \"Traag naar binnen, neem je verdediger mee.\" \"Explosief naar buiten.\" \"Vraag de bal met de hand ver van de verdediger.\"",
-          "oefening_2": "GIVE AND GO — HERHALING\n\nOpstelling: 3 aanvallers in driehoek, 3 verdedigers man-man.\n\nBeschrijving: Beide vleugelspelers maken eerst een in-and-out (V-cut) om zich vrij te maken. De spelverdeler leest wie vrijkomt en past. Daarna maakt de spelverdeler een schijnbeweging weg van de bal en snijdt explosief aan balkant naar het doel. De vleugelspeler geeft de bal in de loop terug. De spelverdeler werkt af. De derde aanvaller houdt positie. Verdedigers volledig actief.\n\nCoachingwoorden: \"Geef de pas en check controle.\" \"Schijnbeweging weg van bal.\" \"Snijden aan balkant, verdediger in de rug.\" \"Pas in de loop.\"",
-          "spelvorm": "EINDSPEL: 3V3 WEDSTRIJD\n\n3v3 op een halve ring met doorschuifsysteem: winnaar blijft, verliezer wisselt. Na doelpunt of balverlies: transitie. De leider stuurt aan. Focus: in-and-out en give and go.\n\nCue: \"Pas gegeven? Dan beweeg je.\"",
-          "evaluatie": "EVALUATIE LPD 2 + LPD 11 (einde les 2, 10 min)\n\nProtocol: Min 1–2: aankondiging. Min 3–8: zelfevaluatie + leerkracht noteert LPD 2-scores. Min 9–10: kort klassikaal: \"Wie vond leiding geven makkelijk? Wie moeilijk? Wat heb je geleerd?\""
-        },
-        "rubrics": {
-          "lpd_2": {
-            "naam": "Tactieken",
-            "type": "leerkracht",
-            "focus": "in-and-out (V-cut) en give and go",
-            "jaar": 4,
-            "niveaus": {
-              "zwak": "Staat stil, loopt niet vrij.",
-              "voldoende": "Doet een poging tot vrijlopen maar willekeurig, zonder herkenbare looplijn.",
-              "goed": "Loopt vrij via V-cut of snijdt na een pass (give and go) volgens de juiste looplijn.",
-              "uitstekend": "Leest de verdediger, kiest het juiste moment en de juiste looplijn, perfecte timing."
-            }
+          "opwarming": {
+            "titel": "TIKBAL",
+            "opstelling": "",
+            "beschrijving": "Alle leerlingen dribbelen in een afgebakend veld. Probeer de bal van anderen weg te tikken terwijl je je eigen bal beschermt. Bal buiten veld getikt? 3 lay-ups scoren op de dichtstbijzijnde ring, dan mag je terug meedoen.",
+            "cues": "Kijk naar de andere spelers, niet naar je bal. Bescherm de bal met je lichaam, niet met je arm.",
+            "makkelijker": "Verdediger tikt eerst de middenlijn aan (vertraagd).",
+            "moeilijker": "Verdedigers volledig actief."
           },
-          "lpd_11": {
-            "naam": "Leiding",
-            "type": "zelfevaluatie",
-            "jaar": 4,
-            "vragen": [
-              "Heb je vandaag de leider-rol op je genomen?",
-              "Wat deed je als leider? (bv. looplijnen aansturen, aanmoedigen, corrigeren)",
-              "Hoe voelde het om leiding te geven? (makkelijk / moeilijk / spannend)",
-              "Heb je de leiding van iemand anders aanvaard?",
-              "Wat ging goed bij het aanvaarden van leiding?",
-              "Wat zou je volgende keer anders doen?"
-            ]
+          "oefening_1": {
+            "titel": "IN-AND-OUT (V-CUT) — HERHALING",
+            "opstelling": "3 aanvallers in driehoek (SV boven, 2 vleugelspelers), 3 verdedigers man-man.",
+            "beschrijving": "Beide vleugelspelers maken zich aanspeelbaar door een in-and-out beweging: traag naar binnen lopen (richting 3-secondengebied), dan explosief afstoten naar buiten en de bal vragen met de hand verst van de verdediger. De spelverdeler leest wie vrijkomt en geeft een pas in de vragende hand. Na balontvangst pivoteert de vleugelspeler facing basket en beslist: shot of pas.",
+            "cues": "Traag naar binnen, neem je verdediger mee. Explosief naar buiten. Vraag de bal met de hand ver van de verdediger.",
+            "makkelijker": "Verdediger tikt eerst de middenlijn aan (vertraagd).",
+            "moeilijker": "Verdedigers volledig actief."
+          },
+          "oefening_2": {
+            "titel": "GIVE AND GO — HERHALING",
+            "opstelling": "3 aanvallers in driehoek, 3 verdedigers man-man.",
+            "beschrijving": "Beide vleugelspelers maken eerst een in-and-out (V-cut) om zich vrij te maken. De spelverdeler leest wie vrijkomt en past. Daarna maakt de spelverdeler een schijnbeweging weg van de bal en snijdt explosief aan balkant naar het doel. De vleugelspeler geeft de bal in de loop terug. De spelverdeler werkt af. De derde aanvaller houdt positie. Verdedigers volledig actief.",
+            "cues": "Geef de pas en check controle. Schijnbeweging weg van bal. Snijden aan balkant, verdediger in de rug. Pas in de loop.",
+            "makkelijker": "Verdediger tikt eerst de middenlijn aan (vertraagd).",
+            "moeilijker": "Verdedigers volledig actief."
+          },
+          "spelvorm": {
+            "titel": "EINDSPEL: 3V3 WEDSTRIJD",
+            "opstelling": "",
+            "beschrijving": "3v3 op een halve ring met doorschuifsysteem: winnaar blijft, verliezer wisselt. Na doelpunt of balverlies: transitie. De leider stuurt aan. Focus: in-and-out en give and go.",
+            "cues": "Pas gegeven? Dan beweeg je.",
+            "makkelijker": "Verdediger tikt eerst de middenlijn aan (vertraagd).",
+            "moeilijker": "Verdedigers volledig actief."
+          },
+          "evaluatie": {
+            "tekst": "EVALUATIE LPD 2 + LPD 11 (einde les 2, 10 min)\n\nProtocol: Min 1–2: aankondiging. Min 3–8: zelfevaluatie + leerkracht noteert LPD 2-scores. Min 9–10: kort klassikaal: \"Wie vond leiding geven makkelijk? Wie moeilijk? Wat heb je geleerd?\""
           }
         }
       }
     },
-    "graad_2": {
+    "jaar_5": {
       "les_1": {
         "titel": "Backdoor en Fill the Spot",
         "panels": {
-          "opwarming": "FOLLOW THE LEADER\n\nDe leerkracht doet balvaardigheidsoefeningen voor, leerlingen kopiëren: bal achter de rug van hand naar hand, bal tussen de benen vangen en handen wisselen, bal rond het lichaam draaien, dribbelen, zo ver mogelijk rond het lichaam dribbelen (links en rechts).\n\nMoeilijker: Ogen dicht bij dribbelen.",
-          "oefening_1": "IN-AND-OUT MET BACKDOOR\n\nOpstelling: 3 aanvallers in driehoek, 3 verdedigers man-man.\n\nBeschrijving: Herhaling in-and-out, nu met backdoor. Beide vleugelspelers maken een in-and-out. De vleugelspeler leest de verdediger: laag = V-cut naar buiten. Hoog (in de paslijn) = backdoor: omdraaien en achter de verdediger naar het doel snijden. De spelverdeler geeft stuitpass in de loop. Verdedigers kiezen zelf hoog of laag.\n\nCoachingwoorden: \"Kijk naar de voeten: hoog = backdoor, laag = naar buiten.\" \"Stuitpass in de loop.\"\n\nMakkelijker: Verdediger toont overdreven waar hij staat (hoog of laag).\nMoeilijker: Verdedigers wisselen vrij, vleugelspeler moet in een fractie van een seconde lezen.\n\nBron: REF les 4, taak 2 — uitbreiding backdoor (fig. 18) — aangepast naar 3v3.",
-          "oefening_2": "FILL THE SPOT\n\nOpstelling: 3 aanvallers in driehoek, 3 verdedigers man-man.\n\nBeschrijving: Beide vleugelspelers maken een in-and-out. De spelverdeler speelt de open speler aan, maakt schijnbeweging en snijdt naar het doel (give and go). Geen bal terug? Verlaat het 3-secondengebied aan niet-balkant. De vleugelspeler aan niet-balkant schuift naar de SV-positie. De spelverdeler vult de vrije vleugelpositie op. Driehoek hersteld, aanval herstart.\n\nCoachingwoorden: \"Pas, snijd.\" \"Geen bal? Opvullen aan niet-balkant.\" \"Herstel de driehoek.\"\n\nMakkelijker: Eén vleugelverdediger tikt eerst de middenlijn aan en keert terug.\nMoeilijker: Verdedigers volledig actief, 24 seconden aanvalstijd.\n\nBron: REF les 6, taak 4 (fig. 26) — 3v3-oefening uit het boek.",
-          "spelvorm": "EINDSPEL: 3V3 WEDSTRIJD\n\n3v3 met doorschuifsysteem. De leider stuurt aan. Focus: in-and-out met backdoor en fill the spot.\n\nCue: \"Lees je verdediger. Geen bal? Opvullen.\"",
-          "evaluatie": "Observeer tijdens het eindspel:\n\n• Vrijlopen en actie: Leest de leerling de verdediger en kiest de juiste actie: V-cut als hij laag staat, backdoor als hij hoog staat? Herstelt de leerling de driehoek (fill the spot)?\n• Resultaat: Komt de leerling vrij en ontvangt de bal doelgevaarlijk? Bij een mislukte give and go: wordt de driehoek hersteld?\n\nFocus jaar 5: in-and-out (V-cut), backdoor en fill the spot."
-        },
-        "rubrics": {}
+          "opwarming": {
+            "titel": "FOLLOW THE LEADER",
+            "opstelling": "",
+            "beschrijving": "De leerkracht doet balvaardigheidsoefeningen voor, leerlingen kopiëren: bal achter de rug van hand naar hand, bal tussen de benen vangen en handen wisselen, bal rond het lichaam draaien, dribbelen, zo ver mogelijk rond het lichaam dribbelen (links en rechts).",
+            "cues": "",
+            "makkelijker": "Verdediger tikt eerst de middenlijn aan (vertraagd).",
+            "moeilijker": "Ogen dicht bij dribbelen."
+          },
+          "oefening_1": {
+            "titel": "IN-AND-OUT MET BACKDOOR",
+            "opstelling": "3 aanvallers in driehoek, 3 verdedigers man-man.",
+            "beschrijving": "Herhaling in-and-out, nu met backdoor. Beide vleugelspelers maken een in-and-out. De vleugelspeler leest de verdediger: laag = V-cut naar buiten. Hoog (in de paslijn) = backdoor: omdraaien en achter de verdediger naar het doel snijden. De spelverdeler geeft stuitpass in de loop. Verdedigers kiezen zelf hoog of laag.",
+            "cues": "Kijk naar de voeten: hoog = backdoor, laag = naar buiten. Stuitpass in de loop.",
+            "makkelijker": "Verdediger toont overdreven waar hij staat (hoog of laag).",
+            "moeilijker": "Verdedigers wisselen vrij, vleugelspeler moet in een fractie van een seconde lezen."
+          },
+          "oefening_2": {
+            "titel": "FILL THE SPOT",
+            "opstelling": "3 aanvallers in driehoek, 3 verdedigers man-man.",
+            "beschrijving": "Beide vleugelspelers maken een in-and-out. De spelverdeler speelt de open speler aan, maakt schijnbeweging en snijdt naar het doel (give and go). Geen bal terug? Verlaat het 3-secondengebied aan niet-balkant. De vleugelspeler aan niet-balkant schuift naar de SV-positie. De spelverdeler vult de vrije vleugelpositie op. Driehoek hersteld, aanval herstart.",
+            "cues": "Pas, snijd. Geen bal? Opvullen aan niet-balkant. Herstel de driehoek.",
+            "makkelijker": "Eén vleugelverdediger tikt eerst de middenlijn aan en keert terug.",
+            "moeilijker": "Verdedigers volledig actief, 24 seconden aanvalstijd."
+          },
+          "spelvorm": {
+            "titel": "EINDSPEL: 3V3 WEDSTRIJD",
+            "opstelling": "",
+            "beschrijving": "3v3 met doorschuifsysteem. De leider stuurt aan. Focus: in-and-out met backdoor en fill the spot.",
+            "cues": "Lees je verdediger. Geen bal? Opvullen.",
+            "makkelijker": "Verdediger tikt eerst de middenlijn aan (vertraagd).",
+            "moeilijker": "Verdedigers volledig actief."
+          },
+          "evaluatie": {
+            "tekst": "Observeer tijdens het eindspel:\n\n• Vrijlopen en actie: Leest de leerling de verdediger en kiest de juiste actie: V-cut als hij laag staat, backdoor als hij hoog staat? Herstelt de leerling de driehoek (fill the spot)?\n• Resultaat: Komt de leerling vrij en ontvangt de bal doelgevaarlijk? Bij een mislukte give and go: wordt de driehoek hersteld?\n\nFocus jaar 5: in-and-out (V-cut), backdoor en fill the spot."
+          }
+        }
       },
       "les_2": {
         "titel": "Backdoor en Fill the Spot — verdieping",
         "panels": {
-          "opwarming": "FOLLOW THE LEADER\n\nDe leerkracht doet balvaardigheidsoefeningen voor, leerlingen kopiëren: bal achter de rug van hand naar hand, bal tussen de benen vangen en handen wisselen, bal rond het lichaam draaien, dribbelen, zo ver mogelijk rond het lichaam dribbelen (links en rechts).\n\nMoeilijker: Ogen dicht bij dribbelen.",
-          "oefening_1": "IN-AND-OUT MET BACKDOOR — HERHALING\n\nOpstelling: 3 aanvallers in driehoek, 3 verdedigers man-man.\n\nBeschrijving: Beide vleugelspelers maken een in-and-out. De vleugelspeler leest de verdediger: laag = V-cut naar buiten. Hoog (in de paslijn) = backdoor: omdraaien en achter de verdediger naar het doel snijden. De spelverdeler geeft stuitpass in de loop.\n\nCoachingwoorden: \"Kijk naar de voeten: hoog = backdoor, laag = naar buiten.\" \"Stuitpass in de loop.\"",
-          "oefening_2": "GIVE AND GO + FILL THE SPOT (COMBINATIE)\n\nOpstelling: 3 aanvallers in driehoek, 3 verdedigers man-man.\n\nBeschrijving: Combinatie. Vleugelspelers maken in-and-out. SV speelt open speler aan, schijnbeweging, snijdt naar het doel. Optie A: bal terug = afwerken (give and go). Optie B: geen bal = verlaat 3-sec aan niet-balkant, vul de vrije positie op (fill the spot). Driehoek hersteld. Verdedigers volledig actief.\n\nCoachingwoorden: \"Pas, check, schijnbeweging, snijd.\" \"Geen bal? Opvullen. Herstel driehoek.\"\n\nMakkelijker: Eén vleugelverdediger tikt eerst de middenlijn aan en keert terug.\nMoeilijker: 24 seconden aanvalstijd, verdedigers mogen switchen.\n\nBron: REF les 6, taak 4 (fig. 26) — combinatie give and go + fill the spot.",
-          "spelvorm": "EINDSPEL: 3V3 TORNOOI\n\n3v3 tornooi met doorschuifsysteem. De leider stuurt aan. Alle geleerde tactieken. De coach begeleidt.\n\nCue: \"Gebruik alles wat je geleerd hebt. Driehoek herstellen na elke actie.\"",
-          "evaluatie": "EVALUATIE LPD 2 + LPD 11 (einde les 2, 10 min)\n\nProtocol: Min 1–2: aankondiging. Min 3–8: zelfevaluatie + leerkracht noteert LPD 2-scores. Min 9–10: kort klassikaal: \"Wie vond leiding geven makkelijk? Wie moeilijk? Wat heb je geleerd?\""
-        },
-        "rubrics": {
-          "lpd_2": {
-            "naam": "Tactieken",
-            "type": "leerkracht",
-            "focus": "in-and-out (V-cut), backdoor en fill the spot",
-            "jaar": 5,
-            "niveaus": {
-              "zwak": "Staat stil, maakt geen keuze.",
-              "voldoende": "Doet steeds dezelfde actie, leest de verdediger niet.",
-              "goed": "Leest de verdediger en kiest de juiste actie: V-cut als hij laag staat, backdoor als hij hoog staat. Herstelt de driehoek (fill the spot).",
-              "uitstekend": "Schakelt vlot tussen V-cut, backdoor en fill the spot, anticipeert op de positie van de verdediger."
-            }
+          "opwarming": {
+            "titel": "FOLLOW THE LEADER",
+            "opstelling": "",
+            "beschrijving": "De leerkracht doet balvaardigheidsoefeningen voor, leerlingen kopiëren: bal achter de rug van hand naar hand, bal tussen de benen vangen en handen wisselen, bal rond het lichaam draaien, dribbelen, zo ver mogelijk rond het lichaam dribbelen (links en rechts).",
+            "cues": "",
+            "makkelijker": "Verdediger tikt eerst de middenlijn aan (vertraagd).",
+            "moeilijker": "Ogen dicht bij dribbelen."
           },
-          "lpd_11": {
-            "naam": "Leiding",
-            "type": "zelfevaluatie",
-            "jaar": 5,
-            "vragen": [
-              "Heb je vandaag de leider-rol op je genomen?",
-              "Wat deed je als leider? (bv. looplijnen aansturen, aanmoedigen, corrigeren)",
-              "Hoe voelde het om leiding te geven? (makkelijk / moeilijk / spannend)",
-              "Heb je de leiding van iemand anders aanvaard?",
-              "Wat ging goed bij het aanvaarden van leiding?",
-              "Wat zou je volgende keer anders doen?"
-            ]
+          "oefening_1": {
+            "titel": "IN-AND-OUT MET BACKDOOR — HERHALING",
+            "opstelling": "3 aanvallers in driehoek, 3 verdedigers man-man.",
+            "beschrijving": "Beide vleugelspelers maken een in-and-out. De vleugelspeler leest de verdediger: laag = V-cut naar buiten. Hoog (in de paslijn) = backdoor: omdraaien en achter de verdediger naar het doel snijden. De spelverdeler geeft stuitpass in de loop.",
+            "cues": "Kijk naar de voeten: hoog = backdoor, laag = naar buiten. Stuitpass in de loop.",
+            "makkelijker": "Verdediger tikt eerst de middenlijn aan (vertraagd).",
+            "moeilijker": "Verdedigers volledig actief."
+          },
+          "oefening_2": {
+            "titel": "GIVE AND GO + FILL THE SPOT (COMBINATIE)",
+            "opstelling": "3 aanvallers in driehoek, 3 verdedigers man-man.",
+            "beschrijving": "Combinatie. Vleugelspelers maken in-and-out. SV speelt open speler aan, schijnbeweging, snijdt naar het doel. Optie A: bal terug = afwerken (give and go). Optie B: geen bal = verlaat 3-sec aan niet-balkant, vul de vrije positie op (fill the spot). Driehoek hersteld. Verdedigers volledig actief.",
+            "cues": "Pas, check, schijnbeweging, snijd. Geen bal? Opvullen. Herstel driehoek.",
+            "makkelijker": "Eén vleugelverdediger tikt eerst de middenlijn aan en keert terug.",
+            "moeilijker": "24 seconden aanvalstijd, verdedigers mogen switchen."
+          },
+          "spelvorm": {
+            "titel": "EINDSPEL: 3V3 TORNOOI",
+            "opstelling": "",
+            "beschrijving": "3v3 tornooi met doorschuifsysteem. De leider stuurt aan. Alle geleerde tactieken. De coach begeleidt.",
+            "cues": "Gebruik alles wat je geleerd hebt. Driehoek herstellen na elke actie.",
+            "makkelijker": "Verdediger tikt eerst de middenlijn aan (vertraagd).",
+            "moeilijker": "Verdedigers volledig actief."
+          },
+          "evaluatie": {
+            "tekst": "EVALUATIE LPD 2 + LPD 11 (einde les 2, 10 min)\n\nProtocol: Min 1–2: aankondiging. Min 3–8: zelfevaluatie + leerkracht noteert LPD 2-scores. Min 9–10: kort klassikaal: \"Wie vond leiding geven makkelijk? Wie moeilijk? Wat heb je geleerd?\""
           }
         }
       }
     },
-    "graad_3": {
+    "jaar_6": {
       "les_1": {
         "titel": "Swing en combinatiespel",
         "panels": {
-          "opwarming": "CROSSOVER DRIBBEL\n\n4 rijen leerlingen aan elke kant van de zaal (tegenover elkaar). Dribbelen naar elkaar toe met rechts. Bij kruising: crossover naar links, beide wijken uit. Terugweg: links starten, crossover naar rechts.\n\nCue: \"Laag dribbelen bij de crossover, hoofd omhoog.\"",
-          "oefening_1": "SWING\n\nOpstelling: 3 aanvallers in driehoek, 3 verdedigers man-man.\n\nBeschrijving: Vleugelspelers proberen vrij te komen via in-and-out. Lukt het niet? De spelverdeler roept \"swing\" en beide vleugelspelers wisselen van kant. Tijdens het wisselen oogcontact met de spelverdeler die de bal naar de open speler werpt. Verdedigers man-man. Na balontvangst 3v3 doorspelen.\n\nCoachingwoorden: \"In en out... swing!\" \"Blijf naar de bal kijken.\" \"Pas in de loop.\"\n\nMakkelijker: Verdedigers wisselen braaf mee van kant.\nMoeilijker: Verdedigers wisselen niet mee — spelverdeler profiteert van de ruimte.\n\nBron: REF les 5, taak 2–3 (fig. 21) — 3v3-oefening uit het boek.",
-          "oefening_2": "GIVE AND GO + FILL THE SPOT (COMBINATIE)\n\nOpstelling: 3 aanvallers in driehoek, 3 verdedigers man-man.\n\nBeschrijving: Combinatie. Vleugelspelers maken in-and-out. SV speelt open speler aan, schijnbeweging, snijdt naar het doel. Optie A: bal terug = afwerken (give and go). Optie B: geen bal = verlaat 3-sec aan niet-balkant, vul de vrije positie op (fill the spot). Driehoek hersteld. Verdedigers volledig actief.\n\nCoachingwoorden: \"Pas, check, schijnbeweging, snijd.\" \"Geen bal? Opvullen. Herstel driehoek.\"\n\nMakkelijker: Eén vleugelverdediger tikt eerst de middenlijn aan en keert terug.\nMoeilijker: 24 seconden aanvalstijd, verdedigers mogen switchen.\n\nBron: REF les 6, taak 4 (fig. 26) — combinatie give and go + fill the spot.",
-          "spelvorm": "EINDSPEL: 3V3 TORNOOI\n\n3v3 tornooi met doorschuifsysteem. De leider stuurt aan. Alle geleerde tactieken. De coach begeleidt.\n\nCue: \"Gebruik alles wat je geleerd hebt. Driehoek herstellen na elke actie.\"",
-          "evaluatie": "Observeer tijdens het eindspel:\n\n• Vrijlopen en actie: Combineert de leerling V-cut, backdoor, give and go, fill the spot en swing? Kiest hij de juiste actie op het juiste moment?\n• Resultaat: Loopt de aanval door? Bij mislukking wordt gewisseld (swing, fill the spot) en ontstaan nieuwe kansen?\n\nFocus jaar 6: alle voorgaande + swing."
-        },
-        "rubrics": {}
+          "opwarming": {
+            "titel": "CROSSOVER DRIBBEL",
+            "opstelling": "",
+            "beschrijving": "4 rijen leerlingen aan elke kant van de zaal (tegenover elkaar). Dribbelen naar elkaar toe met rechts. Bij kruising: crossover naar links, beide wijken uit. Terugweg: links starten, crossover naar rechts.",
+            "cues": "Laag dribbelen bij de crossover, hoofd omhoog.",
+            "makkelijker": "Verdediger tikt eerst de middenlijn aan (vertraagd).",
+            "moeilijker": "Verdedigers volledig actief."
+          },
+          "oefening_1": {
+            "titel": "SWING",
+            "opstelling": "3 aanvallers in driehoek, 3 verdedigers man-man.",
+            "beschrijving": "Vleugelspelers proberen vrij te komen via in-and-out. Lukt het niet? De spelverdeler roept \"swing\" en beide vleugelspelers wisselen van kant. Tijdens het wisselen oogcontact met de spelverdeler die de bal naar de open speler werpt. Verdedigers man-man. Na balontvangst 3v3 doorspelen.",
+            "cues": "In en out... swing! Blijf naar de bal kijken. Pas in de loop.",
+            "makkelijker": "Verdedigers wisselen braaf mee van kant.",
+            "moeilijker": "Verdedigers wisselen niet mee — spelverdeler profiteert van de ruimte."
+          },
+          "oefening_2": {
+            "titel": "GIVE AND GO + FILL THE SPOT (COMBINATIE)",
+            "opstelling": "3 aanvallers in driehoek, 3 verdedigers man-man.",
+            "beschrijving": "Combinatie. Vleugelspelers maken in-and-out. SV speelt open speler aan, schijnbeweging, snijdt naar het doel. Optie A: bal terug = afwerken (give and go). Optie B: geen bal = verlaat 3-sec aan niet-balkant, vul de vrije positie op (fill the spot). Driehoek hersteld. Verdedigers volledig actief.",
+            "cues": "Pas, check, schijnbeweging, snijd. Geen bal? Opvullen. Herstel driehoek.",
+            "makkelijker": "Eén vleugelverdediger tikt eerst de middenlijn aan en keert terug.",
+            "moeilijker": "24 seconden aanvalstijd, verdedigers mogen switchen."
+          },
+          "spelvorm": {
+            "titel": "EINDSPEL: 3V3 TORNOOI",
+            "opstelling": "",
+            "beschrijving": "3v3 tornooi met doorschuifsysteem. De leider stuurt aan. Alle geleerde tactieken. De coach begeleidt.",
+            "cues": "Gebruik alles wat je geleerd hebt. Driehoek herstellen na elke actie.",
+            "makkelijker": "Verdediger tikt eerst de middenlijn aan (vertraagd).",
+            "moeilijker": "Verdedigers volledig actief."
+          },
+          "evaluatie": {
+            "tekst": "Observeer tijdens het eindspel:\n\n• Vrijlopen en actie: Combineert de leerling V-cut, backdoor, give and go, fill the spot en swing? Kiest hij de juiste actie op het juiste moment?\n• Resultaat: Loopt de aanval door? Bij mislukking wordt gewisseld (swing, fill the spot) en ontstaan nieuwe kansen?\n\nFocus jaar 6: alle voorgaande + swing."
+          }
+        }
       },
       "les_2": {
         "titel": "Swing en combinatiespel — verdieping",
         "panels": {
-          "opwarming": "CROSSOVER DRIBBEL\n\n4 rijen leerlingen aan elke kant van de zaal (tegenover elkaar). Dribbelen naar elkaar toe met rechts. Bij kruising: crossover naar links, beide wijken uit. Terugweg: links starten, crossover naar rechts.\n\nCue: \"Laag dribbelen bij de crossover, hoofd omhoog.\"",
-          "oefening_1": "SWING — HERHALING\n\nOpstelling: 3 aanvallers in driehoek, 3 verdedigers man-man.\n\nBeschrijving: Vleugelspelers proberen vrij te komen via in-and-out. Lukt het niet? De spelverdeler roept \"swing\" en beide vleugelspelers wisselen van kant. Tijdens het wisselen oogcontact met de spelverdeler die de bal naar de open speler werpt. Verdedigers man-man. Na balontvangst 3v3 doorspelen.\n\nCoachingwoorden: \"In en out... swing!\" \"Blijf naar de bal kijken.\" \"Pas in de loop.\"",
-          "oefening_2": "GIVE AND GO + FILL THE SPOT (COMBINATIE) — HERHALING\n\nOpstelling: 3 aanvallers in driehoek, 3 verdedigers man-man.\n\nBeschrijving: Combinatie. Vleugelspelers maken in-and-out. SV speelt open speler aan, schijnbeweging, snijdt naar het doel. Optie A: bal terug = afwerken (give and go). Optie B: geen bal = verlaat 3-sec aan niet-balkant, vul de vrije positie op (fill the spot). Driehoek hersteld. Verdedigers volledig actief.\n\nCoachingwoorden: \"Pas, check, schijnbeweging, snijd.\" \"Geen bal? Opvullen. Herstel driehoek.\"",
-          "spelvorm": "EINDSPEL: 3V3 TORNOOI\n\n3v3 tornooi met doorschuifsysteem. De leider stuurt aan. Alle geleerde tactieken. De coach begeleidt.\n\nCue: \"Gebruik alles wat je geleerd hebt. Driehoek herstellen na elke actie.\"",
-          "evaluatie": "EVALUATIE LPD 2 + LPD 11 (einde les 2, 10 min)\n\nProtocol: Min 1–2: aankondiging. Min 3–8: zelfevaluatie + leerkracht noteert LPD 2-scores. Min 9–10: kort klassikaal: \"Wie vond leiding geven makkelijk? Wie moeilijk? Wat heb je geleerd?\""
-        },
-        "rubrics": {
-          "lpd_2": {
-            "naam": "Tactieken",
-            "type": "leerkracht",
-            "focus": "alle voorgaande + swing",
-            "jaar": 6,
-            "niveaus": {
-              "zwak": "Staat stil of beweegt willekeurig.",
-              "voldoende": "Gebruikt één tactiek herhaaldelijk, schakelt niet.",
-              "goed": "Combineert V-cut, backdoor, give and go, fill the spot en swing. Kiest de juiste actie op het juiste moment.",
-              "uitstekend": "Leest het volledige spel, anticipeert, schakelt vloeiend tussen tactieken en stuurt ploegmaats aan."
-            }
+          "opwarming": {
+            "titel": "CROSSOVER DRIBBEL",
+            "opstelling": "",
+            "beschrijving": "4 rijen leerlingen aan elke kant van de zaal (tegenover elkaar). Dribbelen naar elkaar toe met rechts. Bij kruising: crossover naar links, beide wijken uit. Terugweg: links starten, crossover naar rechts.",
+            "cues": "Laag dribbelen bij de crossover, hoofd omhoog.",
+            "makkelijker": "Verdediger tikt eerst de middenlijn aan (vertraagd).",
+            "moeilijker": "Verdedigers volledig actief."
           },
-          "lpd_11": {
-            "naam": "Leiding",
-            "type": "zelfevaluatie",
-            "jaar": 6,
-            "vragen": [
-              "Heb je vandaag de leider-rol op je genomen?",
-              "Wat deed je als leider? (bv. looplijnen aansturen, aanmoedigen, corrigeren)",
-              "Hoe voelde het om leiding te geven? (makkelijk / moeilijk / spannend)",
-              "Heb je de leiding van iemand anders aanvaard?",
-              "Wat ging goed bij het aanvaarden van leiding?",
-              "Wat zou je volgende keer anders doen?"
-            ]
+          "oefening_1": {
+            "titel": "SWING — HERHALING",
+            "opstelling": "3 aanvallers in driehoek, 3 verdedigers man-man.",
+            "beschrijving": "Vleugelspelers proberen vrij te komen via in-and-out. Lukt het niet? De spelverdeler roept \"swing\" en beide vleugelspelers wisselen van kant. Tijdens het wisselen oogcontact met de spelverdeler die de bal naar de open speler werpt. Verdedigers man-man. Na balontvangst 3v3 doorspelen.",
+            "cues": "In en out... swing! Blijf naar de bal kijken. Pas in de loop.",
+            "makkelijker": "Verdediger tikt eerst de middenlijn aan (vertraagd).",
+            "moeilijker": "Verdedigers volledig actief."
+          },
+          "oefening_2": {
+            "titel": "GIVE AND GO + FILL THE SPOT (COMBINATIE) — HERHALING",
+            "opstelling": "3 aanvallers in driehoek, 3 verdedigers man-man.",
+            "beschrijving": "Combinatie. Vleugelspelers maken in-and-out. SV speelt open speler aan, schijnbeweging, snijdt naar het doel. Optie A: bal terug = afwerken (give and go). Optie B: geen bal = verlaat 3-sec aan niet-balkant, vul de vrije positie op (fill the spot). Driehoek hersteld. Verdedigers volledig actief.",
+            "cues": "Pas, check, schijnbeweging, snijd. Geen bal? Opvullen. Herstel driehoek.",
+            "makkelijker": "Verdediger tikt eerst de middenlijn aan (vertraagd).",
+            "moeilijker": "Verdedigers volledig actief."
+          },
+          "spelvorm": {
+            "titel": "EINDSPEL: 3V3 TORNOOI",
+            "opstelling": "",
+            "beschrijving": "3v3 tornooi met doorschuifsysteem. De leider stuurt aan. Alle geleerde tactieken. De coach begeleidt.",
+            "cues": "Gebruik alles wat je geleerd hebt. Driehoek herstellen na elke actie.",
+            "makkelijker": "Verdediger tikt eerst de middenlijn aan (vertraagd).",
+            "moeilijker": "Verdedigers volledig actief."
+          },
+          "evaluatie": {
+            "tekst": "EVALUATIE LPD 2 + LPD 11 (einde les 2, 10 min)\n\nProtocol: Min 1–2: aankondiging. Min 3–8: zelfevaluatie + leerkracht noteert LPD 2-scores. Min 9–10: kort klassikaal: \"Wie vond leiding geven makkelijk? Wie moeilijk? Wat heb je geleerd?\""
           }
         }
       }

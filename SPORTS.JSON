@@ -10,7 +10,8 @@
         "Oefening 2",
         "Spelvorm",
         "Evaluatie"
-      ]
+      ],
+      "jaren": [4, 5, 6]
     },
     {
       "id": "volleybal",
@@ -22,19 +23,85 @@
         "Oefening 2",
         "Spelvorm",
         "Evaluatie"
-      ]
+      ],
+      "jaren": [4, 5, 6]
     },
     {
-      "id": "gymnastiek",
-      "name": "Gymnastiek",
-      "image": "gymnastiek.jpg",
+      "id": "badminton",
+      "name": "Badminton",
+      "image": "badminton.jpg",
+      "panels": [
+        "Opwarming",
+        "Oefening 1",
+        "Oefening 2",
+        "Spelvorm",
+        "Evaluatie"
+      ],
+      "jaren": [4, 5, 6]
+    },
+    {
+      "id": "handbal",
+      "name": "Handbal",
+      "image": "handbal.jpg",
+      "panels": [
+        "Opwarming",
+        "Oefening 1",
+        "Oefening 2",
+        "Spelvorm",
+        "Evaluatie"
+      ],
+      "jaren": [4, 6]
+    },
+    {
+      "id": "voetbal",
+      "name": "Voetbal",
+      "image": "voetbal.jpg",
+      "panels": [
+        "Opwarming",
+        "Oefening 1",
+        "Oefening 2",
+        "Spelvorm",
+        "Evaluatie"
+      ],
+      "jaren": [5]
+    },
+    {
+      "id": "judo",
+      "name": "Judo Ne-Waza",
+      "image": "judo.jpg",
+      "panels": [
+        "Opwarming",
+        "Oefening 1",
+        "Oefening 2",
+        "Spelvorm",
+        "Evaluatie"
+      ],
+      "jaren": [5]
+    },
+    {
+      "id": "klimmen",
+      "name": "Klimmen",
+      "image": "klimmen.jpg",
       "panels": [
         "Opwarming",
         "Station 1",
         "Station 2",
-        "Reeks",
+        "Klimcircuit",
         "Evaluatie"
-      ]
+      ],
+      "jaren": [5]
+    },
+    {
+      "id": "ehbo",
+      "name": "EHBO",
+      "image": "ehbo.jpg",
+      "panels": [
+        "Oefening 1",
+        "Oefening 2",
+        "Eindspel",
+        "Evaluatie"
+      ],
+      "jaren": [4, 6]
     }
   ]
 }

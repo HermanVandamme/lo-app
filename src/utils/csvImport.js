@@ -34,8 +34,8 @@ export async function importStudentsToDb(db, rows) {
   await db.transaction('rw', db.klassen, db.leerlingen, async () => {
     await db.leerlingen.clear()
     await db.klassen.clear()
-    await db.klassen.bulkAdd(klassen)
-    await db.leerlingen.bulkAdd(leerlingen)
+    await db.klassen.bulkPut(klassen)
+    await db.leerlingen.bulkPut(leerlingen)
   })
 
   return { klassen: klassen.length, leerlingen: leerlingen.length }

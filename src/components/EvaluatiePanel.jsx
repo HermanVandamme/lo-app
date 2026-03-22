@@ -9,6 +9,7 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import db from '../db/db'
 import { useKlassen, useStudentsByKlas } from '../hooks/useStudents'
 import { graadFromKlasId } from '../utils/graad'
+import { NIVEAU_SCORE, berekenEindScore, scoreKleur } from '../utils/scoring'
 
 const NIVEAU_LABELS = {
   zwak:       'Zwak',
@@ -213,12 +214,13 @@ function LeerlingKaart({ leerling, scores, rubricEntries, onScore }) {
     return () => URL.revokeObjectURL(url)
   }, [leerling.fotoBlob])
 
+  const rubricKeys = rubricEntries.map(([k]) => k)
   const numScore   = scores['numeriek'] ?? DEFAULT_SCORE
-  const scoreColor = numScore >= 14 ? '#27AE60' : numScore >= 10 ? '#E67E22' : '#E74C3C'
+  const eindscore  = berekenEindScore(scores, rubricKeys)
 
   return (
     <div className="bg-gray-50 border border-gray-200 rounded-2xl p-3">
-      {/* Naam + foto */}
+      {/* Naam + foto + eindscore */}
       <div className="flex items-center gap-3 mb-3">
         <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-200 flex-shrink-0 flex items-center justify-center">
           {imgSrc
@@ -226,26 +228,33 @@ function LeerlingKaart({ leerling, scores, rubricEntries, onScore }) {
             : <span className="text-xl text-gray-400">👤</span>
           }
         </div>
-        <div>
+        <div className="flex-1">
           <p className="font-bold text-sm leading-tight" style={{ color: '#2C3E50' }}>
             {leerling.voornaam} {leerling.achternaam}
           </p>
           <p className="text-xs text-gray-400">{leerling.klasId}</p>
         </div>
+        {eindscore !== null && (
+          <div className="text-right">
+            <span className="block text-lg font-bold" style={{ color: scoreKleur(eindscore) }}>{eindscore}</span>
+            <span className="text-xs text-gray-400">eindscr.</span>
+          </div>
+        )}
       </div>
 
-      {/* Numerieke score */}
+      {/* Numerieke score /10 */}
+      <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Manuele score</p>
       <div className="flex items-center bg-white rounded-xl border border-gray-200 mb-2.5 overflow-hidden">
         <button
           onClick={() => onScore('numeriek', Math.max(0, numScore - 1))}
           className="flex-1 py-3 text-2xl font-bold text-red-500 active:bg-red-50"
           aria-label="min 1"
         >−</button>
-        <span className="w-12 text-center text-xl font-bold" style={{ color: scoreColor }}>
+        <span className="w-12 text-center text-xl font-bold" style={{ color: scoreKleur(numScore) }}>
           {numScore}
         </span>
         <button
-          onClick={() => onScore('numeriek', Math.min(20, numScore + 1))}
+          onClick={() => onScore('numeriek', Math.min(10, numScore + 1))}
           className="flex-1 py-3 text-2xl font-bold text-green-500 active:bg-green-50"
           aria-label="plus 1"
         >+</button>
@@ -342,6 +351,7 @@ function LpdRij({ lpdKey, lpd, huidig, onKies }) {
         <div className="space-y-1.5">
           {niveauEntries.map(([key, omschrijving]) => {
             const actief = huidig === key
+            const punten = NIVEAU_SCORE[key]
             return (
               <button
                 key={key}
@@ -352,13 +362,16 @@ function LpdRij({ lpdKey, lpd, huidig, onKies }) {
                   : { borderColor: '#e5e7eb', background: 'white' }
                 }
               >
-                <p
-                  className="text-xs font-bold uppercase tracking-wide mb-0.5"
-                  style={{ color: actief ? '#E67E22' : '#2C3E50' }}
-                >
-                  {NIVEAU_LABELS[key] ?? key}
-                  {actief && <span className="ml-1.5 normal-case font-normal">✓</span>}
-                </p>
+                <div className="flex items-center justify-between mb-0.5">
+                  <p
+                    className="text-xs font-bold uppercase tracking-wide"
+                    style={{ color: actief ? '#E67E22' : '#2C3E50' }}
+                  >
+                    {NIVEAU_LABELS[key] ?? key}
+                    {actief && <span className="ml-1.5 normal-case font-normal">✓</span>}
+                  </p>
+                  <span className="text-xs font-semibold text-gray-400">{punten}/10</span>
+                </div>
                 <p className="text-xs text-gray-600 leading-relaxed">{omschrijving}</p>
               </button>
             )

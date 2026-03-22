@@ -168,5 +168,913 @@
         }
       }
     }
+  },
+  "volleybal": {
+    "graad_1": {
+      "les_1": {
+        "titel": "Bovenhandse toets & introductie looplijnen",
+        "rubrics": {
+          "lpd_1": {
+            "naam": "LPD 1 — Bewegingsdoel volleybal",
+            "type": "leerkracht",
+            "niveaus": {
+              "zwak": "Bovenhandse toets: Duwt de bal met vlakke handen. Bal zakt regelmatig onder ooglijn.\nLooplijnen en samenspel: Blijft staan na de pas. Bereikt aanvalshome niet.",
+              "voldoende": "Bovenhandse toets: Vormt een kommetje. Bal blijft meestal boven ooglijn. Beperkte beenstrekking.\nLooplijnen en samenspel: Loopt naar het net maar timing klopt niet. Bereikt aanvalshome soms.",
+              "goed": "Bovenhandse toets: Kommetje correct. Buig-strek vanuit benen en armen. Bal boven ooglijn.\nLooplijnen en samenspel: Loopt correct in als setter. Bereikt aanvalshome op tijd.",
+              "uitstekend": "Bovenhandse toets: Vloeiende buig-strek. Nawijzen met gestrekte armen. Bal altijd boven ooglijn.\nLooplijnen en samenspel: Setter loopt snel in, geeft hoge pas evenwijdig met net. Aanvalshome altijd bereikt."
+            }
+          },
+          "lpd_8": {
+            "naam": "LPD 8 — Regels en afspraken",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Spelregels toepassen: Kent de 5 basisregels niet. Vergeet doordraaien.\nScheidsrechtersrol: Doet niets als scheidsrechter. Let niet op.",
+              "voldoende": "Spelregels toepassen: Kent de regels maar vergeet er soms een. Draait door na herinnering.\nScheidsrechtersrol: Fluit bij duidelijke fouten. Houdt de score bij. Aarzelt soms.",
+              "goed": "Spelregels toepassen: Past alle regels toe. Draait correct door.\nScheidsrechtersrol: Fluit bij de meeste fouten. Houdt score correct bij.",
+              "uitstekend": "Spelregels toepassen: Past alle regels toe en corrigeert medespelers.\nScheidsrechtersrol: Fluit zelfzeker. Houdt score correct bij. Legt regels uit aan spelers."
+            }
+          }
+        },
+        "panels": {
+          "opwarming": "1v1 stap-achteruit-toets\n\nOpstelling: Per 2 aan weerskanten van het net. Net ±2,50 m hoog.\n\nBeschrijving: Speler A en B starten dicht bij het net en toetsen de bal heen en weer. Na elke 5 geslaagde toetsen zetten beide spelers een stap achteruit. Hoe ver geraken jullie?\n\nCue: Benen en armen tegelijk strekken. Lichaam onder de bal. Bal niet laten zakken onder ooglijn.\n\nMakkelijker: Toets vervangen door bovenhands vangen en terugduwen.\n\nMoeilijker: Vanaf de achterlijn: wedstrijd — wie scoort eerst achter de lijn van de tegenstander?",
+          "oefening_1": "Bots-toets in duo\n\nOpstelling: Per 2 naast elkaar. 1 bal per duo.\n\nBeschrijving: Speler A botst de bal op de grond en toetst hoog. Speler B vangt de bal boven de ooglijn en doet hetzelfde. Tel het aantal geslaagde bots-toetsen in 2 minuten. Wie haalt de meeste?\n\nCue: Kommetje met duimen en wijsvingers. Bal boven ooglijn. Buig-strek vanuit benen en armen tegelijk. Nawijzen met gestrekte armen.\n\nMakkelijker: Bal bovenhands vangen en teruggooien in plaats van toetsen.\n\nMoeilijker: Na de bots-toets een gerichte pas naar de partner.",
+          "oefening_2": "3v0 doorloopoefening met looplijnen\n\nOpstelling: 3 duo's per veldje. Duo A aan opslagkant, duo B en C in het veld aan de ontvangkant. Kegels op 3 m van het net (= aanvalshome).\n\nBeschrijving: Duo A gooit de bal over het net. Eén speler van duo B vangt de bal en roept 'JA'. De andere speler loopt snel naar het net (= setter) en ontvangt de bal. De setter geeft een hoge pas evenwijdig met het net. De receptiespeler tikt de kegel (aanvalshome) en toetst de bal over het net. Duo B loopt onder het net door en sluit achteraan.\n\nCue: 'JA' roepen. Setter snel inlopen. Aanvalshome bereiken (kegel tikken).\n\nMakkelijker: Alle contacten vangen en gooien.\n\nMoeilijker: Setter doet tussentoets (vangen, opgooien, toetsen als pas). Aanvaller speelt met smash over het net.",
+          "spelvorm": "3v3 met vangmomenten\n\nOpstelling: 3v3 op half veld. 1 setter aan het net, 2 spelers in achterveld. Kegels op aanvalshome. Reserve + scheidsrechter achter het veld.\n\nBeschrijving: Het spel start met een onderhandse worp (= opslag). Per opbouw is 1 vangmoment toegestaan (bij 1e of 2e contact). Het 3e contact moet een volleybalcontact zijn (toets). Wie de eerste bal neemt roept 'JA'. De andere achterste speler gaat naar aanvalshome. Setter neemt het 2e contact. Doordraaien bij heroverde opslag. Wedstrijden van 5 minuten, daarna wisselen teams.\n\nCue: 'JA' roepen. Setter snel naar net. Doordraaien.\n\nMakkelijker: Alle contacten vangen en gooien toegestaan.\n\nMoeilijker: Geen vangmoment — alle contacten zijn volleybalcontacten.",
+          "evaluatie": "Wordt beoordeeld via rubrics LPD 1 en LPD 8 (zie evaluatiescherm)."
+        }
+      },
+      "les_2": {
+        "titel": "Receptie & 3v3 met opbouw",
+        "rubrics": {
+          "lpd_1": {
+            "naam": "LPD 1 — Bewegingsdoel volleybal",
+            "type": "leerkracht",
+            "niveaus": {
+              "zwak": "Bovenhandse toets: Duwt de bal met vlakke handen. Bal zakt regelmatig onder ooglijn.\nLooplijnen en samenspel: Blijft staan na de pas. Bereikt aanvalshome niet.",
+              "voldoende": "Bovenhandse toets: Vormt een kommetje. Bal blijft meestal boven ooglijn. Beperkte beenstrekking.\nLooplijnen en samenspel: Loopt naar het net maar timing klopt niet. Bereikt aanvalshome soms.",
+              "goed": "Bovenhandse toets: Kommetje correct. Buig-strek vanuit benen en armen. Bal boven ooglijn.\nLooplijnen en samenspel: Loopt correct in als setter. Bereikt aanvalshome op tijd.",
+              "uitstekend": "Bovenhandse toets: Vloeiende buig-strek. Nawijzen met gestrekte armen. Bal altijd boven ooglijn.\nLooplijnen en samenspel: Setter loopt snel in, geeft hoge pas evenwijdig met net. Aanvalshome altijd bereikt."
+            }
+          },
+          "lpd_8": {
+            "naam": "LPD 8 — Regels en afspraken",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Spelregels toepassen: Kent de 5 basisregels niet. Vergeet doordraaien.\nScheidsrechtersrol: Doet niets als scheidsrechter. Let niet op.",
+              "voldoende": "Spelregels toepassen: Kent de regels maar vergeet er soms een. Draait door na herinnering.\nScheidsrechtersrol: Fluit bij duidelijke fouten. Houdt de score bij. Aarzelt soms.",
+              "goed": "Spelregels toepassen: Past alle regels toe. Draait correct door.\nScheidsrechtersrol: Fluit bij de meeste fouten. Houdt score correct bij.",
+              "uitstekend": "Spelregels toepassen: Past alle regels toe en corrigeert medespelers.\nScheidsrechtersrol: Fluit zelfzeker. Houdt score correct bij. Legt regels uit aan spelers."
+            }
+          }
+        },
+        "panels": {
+          "opwarming": "1v1 met onderhandse worpen\n\nOpstelling: Per 2 tegenover elkaar over het net, 1 bal per duo. Reserve achter het veld.\n\nBeschrijving: 1v1 met uitsluitend tweehandige onderhandse worpen. Speler A brengt de bal in het spel met een onderhandse worp van achter de achterlijn. Speler B verplaatst zich, vangt onderhands in de basishouding en gooit de bal buiten bereik van zijn tegenstander. Puntentelling per rally.\n\nCue: Split-positie. Schouders en tenen wijzen naar waar je gooit.\n\nMakkelijker: Veld groter maken.\n\nMoeilijker: Receptie (onderhands spelen) in plaats van vangen en gooien.",
+          "oefening_1": "Receptie naar hoepel\n\nOpstelling: Per 3: inwerpspeler links, receptiespeler rechts, vangspeler in hoepel bij het net. 1 bal per groepje.\n\nBeschrijving: De inwerpspeler gooit de bal onderhands naar de receptiespeler. Die speelt de bal met onderhandse receptie naar de speler in de hoepel. Punt als de bal boven de ooglijn gevangen wordt en de vanger minstens met één voet in de hoepel staat. Wissel na 5 ballen. Wie haalt de meeste punten in 2 minuten?\n\nCue: Mes in de borst (schouders naar voor). Armen gestrekt. Bal op de onderarmen. Frontaliteit naar het net.\n\nMakkelijker: Bal onderhands vangen in basishouding en naar de hoepel gooien.\n\nMoeilijker: Na het vangen in de hoepel meteen de bal bovenhands terugspelen.",
+          "oefening_2": "3v0 looplijnen: receptie-setter-aanval\n\nOpstelling: Per 6 aan één veldje. 2 spelers (receptie + setter) in het veld, 2 spelers met matje aan overkant, reserveduo achteraan. Kegel = aanvalshome.\n\nBeschrijving: Receptiespeler botst de bal op de grond en toetst hoog naar het net (= signaal voor setter om snel in te lopen). Setter vangt de bal en geeft een hoge pas evenwijdig met het net. Receptiespeler loopt naar aanvalshome (kegel) en speelt de bal over het net tegen het matje. Duo schuift door.\n\nCue: Bots = signaal om in te lopen. Setter: hoge pas evenwijdig met net. Aanvalshome bereiken.\n\nMakkelijker: Alle contacten vangen en gooien.\n\nMoeilijker: Aanval met smash naar het matje. Setter doet tussentoets.",
+          "spelvorm": "3v3 met opbouw en vangmoment\n\nOpstelling: 3v3 op half veld. Kegels op aanvalshome. Reserve + scheidsrechter achter het veld.\n\nBeschrijving: Spel met 3 contacten. 1e contact: vangen in basishouding en in één vloeiende beweging hoog naar setter gooien. Setter vangt en geeft hoge pas. Aanvaller toetst over het net. Doordraaien bij heroverde opslag. Onderhandse worp als opslag. Wedstrijden van 5 min, winnaar blijft staan, verliezer schuift door.\n\nCue: Vang en gooi in één beweging direct terug omhoog. Setter snel inlopen. Aanvalshome bereiken.\n\nMakkelijker: Alle contacten vangen en gooien.\n\nMoeilijker: 1e contact: onderhands inspelen naar setter (geen vangmoment).",
+          "evaluatie": "Wordt beoordeeld via rubrics LPD 1 en LPD 8 (zie evaluatiescherm)."
+        }
+      }
+    },
+    "graad_2": {
+      "les_1": {
+        "titel": "Onderhands spelen & looplijnen 3v3",
+        "rubrics": {
+          "lpd_1": {
+            "naam": "LPD 1 — Bewegingsdoel volleybal",
+            "type": "leerkracht",
+            "niveaus": {
+              "zwak": "Onderhandse receptie: Vangt de bal in plaats van te spelen. Geen split-positie.\nKeuze bij 1e contact: Maakt geen bewuste keuze. Vangt altijd.",
+              "voldoende": "Onderhandse receptie: Split-positie aanwezig. Speelt onderhands maar zonder frontaliteit.\nKeuze bij 1e contact: Kiest soms om te spelen i.p.v. vangen, maar onzeker.",
+              "goed": "Onderhandse receptie: Split, frontaliteit, armen gestrekt. Speelt gericht naar setter.\nKeuze bij 1e contact: Maakt bewuste keuze: vangen bij moeilijke bal, spelen bij makkelijke bal.",
+              "uitstekend": "Onderhandse receptie: Vloeiende receptie met frontaliteit. Bal komt hoog en gericht bij de setter.\nKeuze bij 1e contact: Kiest altijd correct. Speelt onderhands bij makkelijke bal, vangt bij moeilijke."
+            }
+          },
+          "lpd_8": {
+            "naam": "LPD 8 — Regels en afspraken",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Spelregels toepassen: Vergeet regels. Roept niet JA. Draait niet door.\nScheidsrechtersrol: Doet niets als scheidsrechter.",
+              "voldoende": "Spelregels toepassen: Past meeste regels toe maar vergeet soms doordraaien of JA roepen.\nScheidsrechtersrol: Fluit bij duidelijke fouten. Houdt score bij met fouten.",
+              "goed": "Spelregels toepassen: Past alle regels correct toe: JA roepen, doordraaien, opslag.\nScheidsrechtersrol: Fluit correct. Houdt score bij. Turft observatiepunten.",
+              "uitstekend": "Spelregels toepassen: Past alle regels toe en corrigeert medespelers spontaan.\nScheidsrechtersrol: Fluit zelfzeker. Score en observatie correct. Legt regels uit."
+            }
+          }
+        },
+        "panels": {
+          "opwarming": "1v1 onder het net — onderhandse basishouding\n\nOpstelling: Per 4 (2 per kant, 1 in het veld + 1 reserve). Bal gaat ONDER het net door.\n\nBeschrijving: De speler in het veld speelt de bal onderhands onder het net door naar de overkant en wisselt dan met de reserve. Bij het ontvangen moet de leerling de bal in de onderhandse basishouding vangen en dan gericht terugspelen. Punt bij correcte basishouding.\n\nCue: Split-positie. Frontaliteit. Armen gestrekt, schouders naar voor.\n\nMakkelijker: Bal gewoon vangen en terugspelen.\n\nMoeilijker: Bal onderhands terugspelen (echt volleybalcontact) of smash.",
+          "oefening_1": "Looplijnoefening met matje\n\nOpstelling: Per 6: receptie+setter aan ene kant, duo met matje aan overkant, reserveduo achteraan. Kegel = aanvalshome.\n\nBeschrijving: Receptiespeler botst de bal en toetst hoog naar het net (= signaal voor setter). Setter loopt in, vangt de bal aan het net en geeft een hoge pas evenwijdig met het net. Receptiespeler loopt naar aanvalshome en speelt de bal over het net tegen het matje. Opbouw: (1) vangen+gooien → (2) vangen+toetsen → (3) aanval/smash.\n\nCue: Bots = signaal voor setter. Pas hoog en evenwijdig met het net.\n\nMakkelijker: Setter vangt en gooit in plaats van toetsen.\n\nMoeilijker: Aanval met smash. Setter doet tussentoets (vangen, opgooien, toetsen).",
+          "oefening_2": "3v0 met na-actie niet-aanvallers\n\nOpstelling: Per 6: 3 spelers in het veld (2 achter, 1 setter aan net), 3 aan overkant die de bal ingooien. Kegels = aanvalshome + na-actie positie.\n\nBeschrijving: Bal wordt over het net ingegooid. Receptiespeler roept 'JA' en vangt de bal in basishouding, gooit hoog naar setter. Niet-receptiespeler loopt direct naar aanvalshome. Setter vangt en geeft pas naar aanvaller. Na de aanval: aanvaller tikt achterlijn, setter tikt centraal het net, niet-aanvaller keert terug naar achterveld.\n\nCue: 'JA' roepen. Snel naar aanvalshome. Na-actie: iedereen terug naar startpositie.\n\nMakkelijker: 1e contact altijd vangen en gooien.\n\nMoeilijker: 1e contact onderhands inspelen naar setter.",
+          "spelvorm": "3v3 met observatie\n\nOpstelling: 3v3 op half veld. Kegels op aanvalshome. Per veldje 8 leerlingen: 3v3 + 1 reserve + 1 observator.\n\nBeschrijving: 3v3 met onderhandse worp als opslag. Opbouw met 3 contacten. 1e contact: vangen in basishouding en hoog naar setter gooien (of onderhands inspelen voor wie dat kan). Wachtende speler observeert en turft: (1) hoe vaak roept de speler 'JA' bij 1e contact, (2) hoe vaak behoudt de speler frontaliteit. Doordraaien bij heroverde opslag.\n\nCue: 'JA' roepen. Frontaliteit bij 1e contact. Aanvalshome bereiken.\n\nMakkelijker: Alle contacten vangen.\n\nMoeilijker: 1e contact onderhands spelen. Aanval met smash.",
+          "evaluatie": "Wordt beoordeeld via rubrics LPD 1 en LPD 8 (zie evaluatiescherm)."
+        }
+      },
+      "les_2": {
+        "titel": "Onderhandse opslag & keuzes in 3v3",
+        "rubrics": {
+          "lpd_1": {
+            "naam": "LPD 1 — Bewegingsdoel volleybal",
+            "type": "leerkracht",
+            "niveaus": {
+              "zwak": "Onderhandse receptie: Vangt de bal in plaats van te spelen. Geen split-positie.\nKeuze bij 1e contact: Maakt geen bewuste keuze. Vangt altijd.",
+              "voldoende": "Onderhandse receptie: Split-positie aanwezig. Speelt onderhands maar zonder frontaliteit.\nKeuze bij 1e contact: Kiest soms om te spelen i.p.v. vangen, maar onzeker.",
+              "goed": "Onderhandse receptie: Split, frontaliteit, armen gestrekt. Speelt gericht naar setter.\nKeuze bij 1e contact: Maakt bewuste keuze: vangen bij moeilijke bal, spelen bij makkelijke bal.",
+              "uitstekend": "Onderhandse receptie: Vloeiende receptie met frontaliteit. Bal komt hoog en gericht bij de setter.\nKeuze bij 1e contact: Kiest altijd correct. Speelt onderhands bij makkelijke bal, vangt bij moeilijke."
+            }
+          },
+          "lpd_8": {
+            "naam": "LPD 8 — Regels en afspraken",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Spelregels toepassen: Vergeet regels. Roept niet JA. Draait niet door.\nScheidsrechtersrol: Doet niets als scheidsrechter.",
+              "voldoende": "Spelregels toepassen: Past meeste regels toe maar vergeet soms doordraaien of JA roepen.\nScheidsrechtersrol: Fluit bij duidelijke fouten. Houdt score bij met fouten.",
+              "goed": "Spelregels toepassen: Past alle regels correct toe: JA roepen, doordraaien, opslag.\nScheidsrechtersrol: Fluit correct. Houdt score bij. Turft observatiepunten.",
+              "uitstekend": "Spelregels toepassen: Past alle regels toe en corrigeert medespelers spontaan.\nScheidsrechtersrol: Fluit zelfzeker. Score en observatie correct. Legt regels uit."
+            }
+          }
+        },
+        "panels": {
+          "opwarming": "1v1 met onderhands accent\n\nOpstelling: Per 4 (2 per kant, 1 in veld + 1 reserve). Over het net.\n\nBeschrijving: 1v1 met reserve. Bal wordt over het net gespeeld. De ontvanger vangt de bal in onderhandse basishouding en speelt meteen gericht terug: onderhands gooien of onderhands spelen. Na elke actie wisselen met reserve. Punt bij correcte onderhandse basishouding.\n\nCue: Split-positie. Frontaliteit naar net. Schouders naar voor.\n\nMakkelijker: Bal gewoon vangen en overgooien.\n\nMoeilijker: Direct onderhands terugspelen (echt volleybalcontact).",
+          "oefening_1": "Onderhandse opslag in zones\n\nOpstelling: Per 2 aan weerskanten van het net. Kegels markeren 3 zones in het veld (links, midden, rechts).\n\nBeschrijving: Speler A serveert onderhands naar een zone die speler B opnoemt. Speler B vangt de bal en serveert terug naar een zone die A opnoemt. Punten: 1 punt als de opslag in het veld landt, 2 punten als hij in de juiste zone landt.\n\nCue: Bal op niet-slaande hand. Stap met tegenovergesteld been. Sla met vlakke hand van onder naar boven.\n\nMakkelijker: Opslag vanuit het veld (niet van achterlijn).\n\nMoeilijker: Opslag gericht naar een specifieke persoon.",
+          "oefening_2": "3v3 met keuze bij 1e contact\n\nOpstelling: 3v3 op half veld. Observator achter het veld. Kegels op aanvalshome.\n\nBeschrijving: 3v3 met onderhandse opslag. Bij het 1e contact maakt de speler een keuze: vangen (bij moeilijke bal) of onderhands inspelen (bij makkelijke bal). Observator turft: hoe vaak maakt de speler de juiste keuze? Doordraaien bij heroverde opslag.\n\nCue: Keuze bij 1e contact: makkelijke bal = spelen, moeilijke bal = vangen.\n\nMakkelijker: 1e contact altijd vangen.\n\nMoeilijker: Geen vangmoment. Opslag gericht naar een zone.",
+          "spelvorm": "3v3 met opslag en zelfevaluatie\n\nOpstelling: 3v3 op half veld. Reserve en scheidsrechter achter het veld.\n\nBeschrijving: 3v3 met onderhandse opslag van achter de achterlijn. Doordraaien. Keuze bij 1e contact. Setter neemt 2e contact. Aanvaller toetst of smasht. Na elke wedstrijd van 5 min vullen leerlingen kort hun zelfevaluatie in: hoe vaak maakte ik de juiste keuze bij het 1e contact?\n\nCue: Opslag in het veld. 'JA' roepen. Keuze bij 1e contact.\n\nMakkelijker: Opslag vanuit het veld (niet van achterlijn). 1e contact altijd vangen.\n\nMoeilijker: Geen vangmoment. Opslag gericht naar een zone.",
+          "evaluatie": "Wordt beoordeeld via rubrics LPD 1 en LPD 8 (zie evaluatiescherm)."
+        }
+      }
+    },
+    "graad_3": {
+      "les_1": {
+        "titel": "Smash & bewuste keuzes in 3v3",
+        "rubrics": {
+          "lpd_1": {
+            "naam": "LPD 1 — Bewegingsdoel volleybal",
+            "type": "leerkracht",
+            "niveaus": {
+              "zwak": "Smash en shotkeuze: Toetst altijd, probeert geen smash. Geen keuze.\nEindvorm 3v3 met alle elementen: Vergeet looplijnen, roept niet JA, bereikt aanvalshome niet.",
+              "voldoende": "Smash en shotkeuze: Probeert soms een smash maar techniek klopt niet. Keuze is willekeurig.\nEindvorm 3v3 met alle elementen: Volgt looplijnen met fouten. Roept soms JA. Bereikt soms aanvalshome.",
+              "goed": "Smash en shotkeuze: Smash bij hoge pas, toets bij lagere pas. Armzwaai en polsactie aanwezig.\nEindvorm 3v3 met alle elementen: Alle elementen aanwezig: JA roepen, looplijnen, aanvalshome, doordraaien.",
+              "uitstekend": "Smash en shotkeuze: Correcte smash met armzwaai en polsactie. Maakt altijd de juiste keuze.\nEindvorm 3v3 met alle elementen: Vloeiend 3v3: alle elementen correct, stuurt medespelers aan."
+            }
+          },
+          "lpd_8": {
+            "naam": "LPD 8 — Regels en afspraken",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Spelregels in tornooicontext: Vergeet regels onder wedstrijddruk. Protesteert bij beslissingen.\nZelfstandig spel reguleren: Heeft externe sturing nodig om het spel te laten vlotten.",
+              "voldoende": "Spelregels in tornooicontext: Past regels toe maar maakt fouten bij doordraaien of netaanraking.\nZelfstandig spel reguleren: Reguleert soms zelf maar kijkt naar leerkracht voor bevestiging.",
+              "goed": "Spelregels in tornooicontext: Past alle regels correct toe in tornooicontext. Accepteert beslissingen.\nZelfstandig spel reguleren: Reguleert het spel zelfstandig: opslag, doordraaien, wisselen.",
+              "uitstekend": "Spelregels in tornooicontext: Speelt regelconform en sportief. Geeft zelf fouten toe. Moedigt fair play aan.\nZelfstandig spel reguleren: Organiseert het spel volledig zelf. Lost discussies op."
+            }
+          }
+        },
+        "panels": {
+          "opwarming": "1v1 met smash-accent\n\nOpstelling: Per 4 (2 per kant, 1 in veld + 1 reserve). Over het net.\n\nBeschrijving: 1v1 met reserve. De bal wordt over het net gespeeld. Keuze bij overspelen: toets (als de bal laag aankomt) of smash (als de bal hoog aankomt). Na elke actie wisselen met reserve. Punt bij elk succesvol contact.\n\nCue: Arm strekken bij smash. Polsactie over de bal.\n\nMakkelijker: Alleen toetsen toegestaan.\n\nMoeilijker: Verplicht smash bij elke hoge bal.",
+          "oefening_1": "Looplijnoefening met smash naar matje\n\nOpstelling: Per 6: receptie+setter aan ene kant, duo met matje aan overkant, reserveduo achteraan. Kegel = aanvalshome.\n\nBeschrijving: Receptiespeler botst de bal en toetst hoog naar het net. Setter loopt in, vangt en geeft een hoge pas evenwijdig met het net. Receptiespeler loopt naar aanvalshome. Keuze bij overspelen: als de pas hoog en dichtbij is = smash, als de pas minder goed is = toets. Speel de bal tegen het matje.\n\nCue: Goede pas = smash. Slechte pas = toets. Pas hoog en evenwijdig met net.\n\nMakkelijker: Alle contacten vangen en gooien. Overspelen altijd met toets.\n\nMoeilijker: Setter doet tussentoets (geen vangmoment). Verplicht smash.",
+          "oefening_2": "3v3 met keuze-observatie\n\nOpstelling: 3v3 op half veld. Observator achter het veld met turffiche. Kegels op aanvalshome.\n\nBeschrijving: 3v3 met onderhandse opslag. Observator turft twee keuzes: (1) bij 1e contact — vangen of onderhands spelen, (2) bij 3e contact — toets of smash. Focus: durven smash proberen als de pas goed is. Bereiken aanvalshome door alle aanvallers.\n\nCue: 1e contact: keuze vangen of spelen. 3e contact: keuze toets of smash.\n\nMakkelijker: Altijd toets bij overspelen.\n\nMoeilijker: Zo vaak mogelijk smash. Geen vangmoment bij 1e contact.",
+          "spelvorm": "3v3 met bewuste keuzes en zelfevaluatie\n\nOpstelling: 3v3 op half veld. Reserve en scheidsrechter achter het veld.\n\nBeschrijving: 3v3 eindvorm met alle regels. Onderhandse opslag van achter de achterlijn. Doordraaien. 3 contacten. 'JA' roepen. Keuze bij 1e contact (vangen of spelen). Keuze bij 3e contact (toets of smash). Na elke wedstrijd van 5 min vullen leerlingen zelfevaluatie in.\n\nCue: Doordraaien. 'JA' roepen. Bewuste keuzes.\n\nMakkelijker: Altijd toets bij 3e contact.\n\nMoeilijker: Smash bij elke hoge pas. Geen vangmomenten.",
+          "evaluatie": "Wordt beoordeeld via rubrics LPD 1 en LPD 8 (zie evaluatiescherm)."
+        }
+      },
+      "les_2": {
+        "titel": "Eindvorm 3v3 — Tornooi + evaluatie",
+        "rubrics": {
+          "lpd_1": {
+            "naam": "LPD 1 — Bewegingsdoel volleybal",
+            "type": "leerkracht",
+            "niveaus": {
+              "zwak": "Smash en shotkeuze: Toetst altijd, probeert geen smash. Geen keuze.\nEindvorm 3v3 met alle elementen: Vergeet looplijnen, roept niet JA, bereikt aanvalshome niet.",
+              "voldoende": "Smash en shotkeuze: Probeert soms een smash maar techniek klopt niet. Keuze is willekeurig.\nEindvorm 3v3 met alle elementen: Volgt looplijnen met fouten. Roept soms JA. Bereikt soms aanvalshome.",
+              "goed": "Smash en shotkeuze: Smash bij hoge pas, toets bij lagere pas. Armzwaai en polsactie aanwezig.\nEindvorm 3v3 met alle elementen: Alle elementen aanwezig: JA roepen, looplijnen, aanvalshome, doordraaien.",
+              "uitstekend": "Smash en shotkeuze: Correcte smash met armzwaai en polsactie. Maakt altijd de juiste keuze.\nEindvorm 3v3 met alle elementen: Vloeiend 3v3: alle elementen correct, stuurt medespelers aan."
+            }
+          },
+          "lpd_8": {
+            "naam": "LPD 8 — Regels en afspraken",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Spelregels in tornooicontext: Vergeet regels onder wedstrijddruk. Protesteert bij beslissingen.\nZelfstandig spel reguleren: Heeft externe sturing nodig om het spel te laten vlotten.",
+              "voldoende": "Spelregels in tornooicontext: Past regels toe maar maakt fouten bij doordraaien of netaanraking.\nZelfstandig spel reguleren: Reguleert soms zelf maar kijkt naar leerkracht voor bevestiging.",
+              "goed": "Spelregels in tornooicontext: Past alle regels correct toe in tornooicontext. Accepteert beslissingen.\nZelfstandig spel reguleren: Reguleert het spel zelfstandig: opslag, doordraaien, wisselen.",
+              "uitstekend": "Spelregels in tornooicontext: Speelt regelconform en sportief. Geeft zelf fouten toe. Moedigt fair play aan.\nZelfstandig spel reguleren: Organiseert het spel volledig zelf. Lost discussies op."
+            }
+          }
+        },
+        "panels": {
+          "opwarming": "Vrij inspelen met alle technieken\n\nOpstelling: Per 2 aan weerskanten van het net.\n\nBeschrijving: 5 min vrij inspelen: toets, receptie, opslag, smash. Alles mag. Doel: opwarmen en alle technieken kort herhalen.\n\nCue: Alle technieken kort herhalen. Op tempo.\n\nMakkelijker: Enkel toetsen.\n\nMoeilijker: Alles met smash.",
+          "oefening_1": "Looplijnen-herhaling met alle elementen\n\nOpstelling: Per 6: 3 in het veld + 3 aan de overkant. Kegels op aanvalshome.\n\nBeschrijving: 3v0 met alle looplijnen: opslag → receptiespeler roept 'JA' → setter loopt in → pas → aanvalshome → smash of toets. Na-actie: iedereen terug naar startpositie. Doel: 5 foutloze opbouwen op rij.\n\nCue: 'JA' roepen. Tempo hoog houden. Alle looplijnen correct.\n\nMakkelijker: Alle contacten vangen en gooien.\n\nMoeilijker: 1e contact direct onderhands. Setter tussentoets. Aanval met smash.",
+          "oefening_2": "(Extra speeltijd — opgegaan in eindspel)\n\nBeschrijving: De extra 20 min uit het techniekblok gaan naar het eindspel (tornooi). Effectief ±60 min speeltijd.",
+          "spelvorm": "Eindvorm 3v3 — Tornooi\n\nOpstelling: 3v3 op 4 halve velden. Doorschuifsysteem tussen veldjes. Reserve en scheidsrechter achter het veld.\n\nBeschrijving: 3v3 eindvorm met alle regels: onderhandse opslag, doordraaien, 3 contacten, 'JA' roepen. 1 vangmoment per opbouw. 3e contact altijd volleybalcontact. Keuze: toets of smash. Wedstrijden van 6 minuten. Winnend team schuift door. De leerkracht roept tijdens het tornooi duo's apart voor de LPD 1-test.\n\nCue: Doordraaien. 'JA' roepen. Aanvalshome. Na-actie.\n\nMakkelijker: Alle contacten vangen en gooien.\n\nMoeilijker: Geen vangmoment — alles met volleybalcontact.",
+          "evaluatie": "LPD 1: Technische test (parallel met eindspel). Per duo bovenhands 10x toetsen + onderhands 10x receptie. LPD 8: Zelfevaluatie spelregels (laatste 5 min)."
+        }
+      }
+    }
+  },
+  "badminton": {
+    "graad_1": {
+      "les_1": {
+        "titel": "Herhaling basis & kort spelen (les 1)",
+        "rubrics": {
+          "lpd_1": {
+            "naam": "LPD 1 — Bewegingsdoel badminton",
+            "type": "leerkracht",
+            "niveaus": {
+              "zwak": "Slagtechniek (lobservice, clear, drop): Shuttle wordt zelden geraakt. Geen herkenbare slagtechniek.\nTactische toepassing (kort-ver afwisselen): Speelt altijd naar dezelfde zone. Geen afwisseling.",
+              "voldoende": "Slagtechniek (lobservice, clear, drop): Raakt de shuttle maar beperkte controle. Hamergreep inconsistent.\nTactische toepassing (kort-ver afwisselen): Wisselt soms af maar niet bewust. Beginsequentie onvolledig.",
+              "goed": "Slagtechniek (lobservice, clear, drop): Voert lobservice, clear en drop uit met correcte hamergreep en dwarse stand.\nTactische toepassing (kort-ver afwisselen): Wisselt kort en ver bewust af. Voert beginsequentie correct uit.",
+              "uitstekend": "Slagtechniek (lobservice, clear, drop): Vloeiende slagtechniek. Goede gewichtsoverdracht en nawijzen.\nTactische toepassing (kort-ver afwisselen): Dwigt tegenstander systematisch naar achter en speelt dan kort."
+            }
+          },
+          "lpd_8": {
+            "naam": "LPD 8 — Regels en afspraken",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Kent de 5 basisregels niet. Serveert bovenhands.",
+              "voldoende": "Kent de regels maar vergeet score hardop te zeggen.",
+              "goed": "Past alle regels correct toe. Zegt score voor elke service.",
+              "uitstekend": "Past regels toe, zegt score, past fairplayregel toe bij twijfel."
+            }
+          }
+        },
+        "panels": {
+          "opwarming": "Hoog-ver rally\n\nOpstelling: Per 2 op half veld. 1 racket + 1 shuttle per duo.\n\nBeschrijving: Rally met enkel clears: hoog en ver naar de achterlijn van de tegenstander. Tel het aantal geslaagde clears op rij. Doel: 10 achter elkaar.\n\nCue: Hamergreep, dakhouding, dwarse stand, positie onder/achter shuttle, rotatieslag met gewichtsoverdracht.\n\nMakkelijker: Shuttle bovenhands gooien in plaats van slaan.\n\nMoeilijker: Clear moet voorbij de achterste lijn landen.",
+          "oefening_1": "Lobservice + clear oefenen\n\nOpstelling: Per 2 op half veld. Servicelijn gemarkeerd.\n\nBeschrijving: Speler A serveert met lobservice. Speler B speelt een clear terug. Speler A vangt en serveert opnieuw. Wissel na 10 services. Focus op correcte lobservice (onderhands, voorbij servicelijn).\n\nCue: Lobservice: hamergreep, dwarse stand, laag raakpunt, grote uitzwaai. Clear: dakhouding, onder/achter shuttle.\n\nMakkelijker: Service vanuit het midden van het veld.\n\nMoeilijker: Service moet in een bepaalde zone landen.",
+          "oefening_2": "Drop en netdrop\n\nOpstelling: Per 2 op half veld. Kegel op servicelijn als doelzone.\n\nBeschrijving: Speler A gooit de shuttle hoog. Speler B speelt een drop (zacht, neerwaarts, kort bij het net). Speler A probeert met een netdrop terug te spelen (uitval op racketvoet). Wissel na 5 beurten.\n\nCue: Drop: voorbereiding zoals clear, contact zacht en vóór het lichaam. Netdrop: uitval op racketvoet, raakpunt op schouderhoogte.\n\nMakkelijker: Shuttle gooien in plaats van slaan.\n\nMoeilijker: Drop moet binnen de servicelijn landen.",
+          "spelvorm": "Koning van het Veld met beginsequentie\n\nOpstelling: Per 2 op half veld. 4-6 veldjes. Doorschuifsysteem: winst → wijzerzin, verlies → tegenwijzerzin.\n\nBeschrijving: Elke rally start met een verplichte beginsequentie: lobservice → clear → drop. Pas daarna is het spel vrij. Punten tellen per rally. Wedstrijden tot 5 punten. Winnaar schuift wijzerzin door, verliezer tegenwijzerzin.\n\nCue: Beginsequentie: lobservice → clear → drop. Daarna vrij. Score hardop zeggen voor elke service.\n\nMakkelijker: Beginsequentie mag met gooien.\n\nMoeilijker: Bonuspunt als de drop binnen de servicelijn landt.",
+          "evaluatie": "Wordt beoordeeld via rubrics LPD 1 en LPD 8 (zie evaluatiescherm)."
+        }
+      },
+      "les_2": {
+        "titel": "Korte backhandservice & wedstrijdvorm",
+        "rubrics": {
+          "lpd_1": {
+            "naam": "LPD 1 — Bewegingsdoel badminton",
+            "type": "leerkracht",
+            "niveaus": {
+              "zwak": "Slagtechniek (lobservice, clear, drop): Shuttle wordt zelden geraakt. Geen herkenbare slagtechniek.\nTactische toepassing (kort-ver afwisselen): Speelt altijd naar dezelfde zone. Geen afwisseling.",
+              "voldoende": "Slagtechniek (lobservice, clear, drop): Raakt de shuttle maar beperkte controle. Hamergreep inconsistent.\nTactische toepassing (kort-ver afwisselen): Wisselt soms af maar niet bewust. Beginsequentie onvolledig.",
+              "goed": "Slagtechniek (lobservice, clear, drop): Voert lobservice, clear en drop uit met correcte hamergreep en dwarse stand.\nTactische toepassing (kort-ver afwisselen): Wisselt kort en ver bewust af. Voert beginsequentie correct uit.",
+              "uitstekend": "Slagtechniek (lobservice, clear, drop): Vloeiende slagtechniek. Goede gewichtsoverdracht en nawijzen.\nTactische toepassing (kort-ver afwisselen): Dwigt tegenstander systematisch naar achter en speelt dan kort."
+            }
+          },
+          "lpd_8": {
+            "naam": "LPD 8 — Regels en afspraken",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Kent de 5 basisregels niet. Serveert bovenhands.",
+              "voldoende": "Kent de regels maar vergeet score hardop te zeggen.",
+              "goed": "Past alle regels correct toe. Zegt score voor elke service.",
+              "uitstekend": "Past regels toe, zegt score, past fairplayregel toe bij twijfel."
+            }
+          }
+        },
+        "panels": {
+          "opwarming": "Kort-ver rally\n\nOpstelling: Per 2 op half veld.\n\nBeschrijving: Speler A speelt een clear. Speler B antwoordt met een drop. Speler A speelt een netdrop. Speler B speelt een clear. Zo blijven ze afwisselen kort en ver. Tel de langste rally.\n\nCue: Kort en ver afwisselen. Tegenstander laten lopen.\n\nMakkelijker: Shuttle mag 1x op de grond stuiten.\n\nMoeilijker: Tempo verhogen, snellere reactie.",
+          "oefening_1": "Korte backhandservice\n\nOpstelling: Per 2 op half veld. Servicelijn en netkant gemarkeerd.\n\nBeschrijving: Speler A oefent de korte backhandservice: shuttle moet net over het net vallen, zo kort mogelijk. Speler B probeert meteen aan te vallen. Wissel na 10 services. Wie maakt de meeste korte services?\n\nCue: Korte BH-service: shuttle voor het lichaam, korte polsbeweging, net over het net.\n\nMakkelijker: Service mag iets hoger over het net.\n\nMoeilijker: Service moet binnen 30 cm na het net landen.",
+          "oefening_2": "Beginsequentie + vrij punt spelen\n\nOpstelling: Per 2 op half veld. Kegels als doelzones.\n\nBeschrijving: Start met verplichte beginsequentie: lobservice → clear → drop. Na de drop is het spel vrij. Focus op tactisch spelen: kort en ver afwisselen om de tegenstander uit balans te brengen. Speel tot 3 punten en wissel.\n\nCue: Na de drop: kijk waar de tegenstander staat. Speel naar de open ruimte.\n\nMakkelijker: Beginsequentie met gooien.\n\nMoeilijker: Na de beginsequentie moet je binnen 3 slagen scoren.",
+          "spelvorm": "Koning van het Veld — wedstrijden\n\nOpstelling: Doorschuifsysteem op 4-6 veldjes.\n\nBeschrijving: Wedstrijden tot 7 punten. Verplichte beginsequentie (lobservice → clear → drop). Keuze bij service: lobservice of korte backhandservice. Winnaar schuift wijzerzin, verliezer tegenwijzerzin. Wachtende leerling is scheidsrechter.\n\nCue: Service als wapen: verras met korte BH-service. Score hardop zeggen.\n\nMakkelijker: Alleen lobservice.\n\nMoeilijker: Dubbele punten voor directe winners na de beginsequentie.",
+          "evaluatie": "Wordt beoordeeld via rubrics LPD 1 en LPD 8 (zie evaluatiescherm)."
+        }
+      }
+    },
+    "graad_2": {
+      "les_1": {
+        "titel": "Smash & slagkeuze (les 1)",
+        "rubrics": {
+          "lpd_1": {
+            "naam": "LPD 1 — Bewegingsdoel badminton",
+            "type": "leerkracht",
+            "niveaus": {
+              "zwak": "Smash en slagkeuze: Probeert geen smash. Speelt altijd hetzelfde.\nSpelpatroon in wedstrijd: Geen herkenbaar patroon. Reageert alleen.",
+              "voldoende": "Smash en slagkeuze: Probeert smash maar mist vaak. Keuze is willekeurig.\nSpelpatroon in wedstrijd: Voert beginsequentie uit maar schakelt daarna niet door.",
+              "goed": "Smash en slagkeuze: Smasht bij hoge shuttle. Maakt bewuste slagkeuze op basis van positie tegenstander.\nSpelpatroon in wedstrijd: Beginsequentie + bewuste slagkeuze. Scoort met directe winners.",
+              "uitstekend": "Smash en slagkeuze: Krachtige smash met correcte techniek. Slagkeuze altijd aangepast aan situatie.\nSpelpatroon in wedstrijd: Bouwt rally's op en scoort gericht. Beheerst het spelritme."
+            }
+          },
+          "lpd_8": {
+            "naam": "LPD 8 — Regels en afspraken",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Overtreedt regels herhaaldelijk.",
+              "voldoende": "Volgt regels maar vergeet soms score te zeggen.",
+              "goed": "Past alle regels correct toe in wedstrijdsituaties.",
+              "uitstekend": "Past regels toe en stimuleert fair play actief."
+            }
+          }
+        },
+        "panels": {
+          "opwarming": "Clear-rally op snelheid\n\nOpstelling: Per 2 op half veld.\n\nBeschrijving: Clears heen en weer, zo snel mogelijk. Doel: 15 clears achter elkaar binnen 1 minuut. Bij fout opnieuw beginnen.\n\nCue: Dakhouding, dwarse stand, gewichtsoverdracht.\n\nMakkelijker: Geen tijdslimiet.\n\nMoeilijker: 20 clears in 1 minuut.",
+          "oefening_1": "Smash vanuit hoge aangooi\n\nOpstelling: Per 2 op half veld. Speler A bij het net, speler B achter in het veld.\n\nBeschrijving: Speler A gooit de shuttle hoog op voor speler B. Speler B smasht de shuttle naar beneden. Focus op armzwaai en polsactie. Wissel na 10 smashes.\n\nCue: Smash: arm strekken, polsactie over de bal, shuttle naar beneden slaan.\n\nMakkelijker: Shuttle gooien van dichterbij.\n\nMoeilijker: Smash in een bepaalde zone (links/rechts).",
+          "oefening_2": "Slagkeuze op basis van opslag\n\nOpstelling: Per 2 op half veld.\n\nBeschrijving: Speler A serveert willekeurig: lobservice of korte service. Speler B moet de juiste slagkeuze maken: bij lobservice → clear of smash, bij korte service → netdrop. Na 10 services tellen hoeveel keer de juiste keuze werd gemaakt.\n\nCue: Hoge shuttle = smash of clear. Korte shuttle = netdrop.\n\nMakkelijker: Speler A kondigt aan welke service komt.\n\nMoeilijker: Speler B moet direct scoren na de keuze.",
+          "spelvorm": "Koning van het Veld met bonuspunten\n\nOpstelling: Doorschuifsysteem op 4-6 veldjes.\n\nBeschrijving: Wedstrijden tot 7 punten. Verplichte beginsequentie (lobservice → clear → drop). Bonuspunt voor directe winners (shuttle die niet geraakt wordt). Winnaar wijzerzin, verliezer tegenwijzerzin.\n\nCue: Beginsequentie correct uitvoeren. Bonuspunt bij winner. Score hardop zeggen.\n\nMakkelijker: Geen bonuspunten.\n\nMoeilijker: Beginsequentie + verplichte smash als derde slag.",
+          "evaluatie": "Wordt beoordeeld via rubrics LPD 1 en LPD 8 (zie evaluatiescherm)."
+        }
+      },
+      "les_2": {
+        "titel": "Slagkeuze & wedstrijdvorm (les 2)",
+        "rubrics": {
+          "lpd_1": {
+            "naam": "LPD 1 — Bewegingsdoel badminton",
+            "type": "leerkracht",
+            "niveaus": {
+              "zwak": "Smash en slagkeuze: Probeert geen smash. Speelt altijd hetzelfde.\nSpelpatroon in wedstrijd: Geen herkenbaar patroon. Reageert alleen.",
+              "voldoende": "Smash en slagkeuze: Probeert smash maar mist vaak. Keuze is willekeurig.\nSpelpatroon in wedstrijd: Voert beginsequentie uit maar schakelt daarna niet door.",
+              "goed": "Smash en slagkeuze: Smasht bij hoge shuttle. Maakt bewuste slagkeuze op basis van positie tegenstander.\nSpelpatroon in wedstrijd: Beginsequentie + bewuste slagkeuze. Scoort met directe winners.",
+              "uitstekend": "Smash en slagkeuze: Krachtige smash met correcte techniek. Slagkeuze altijd aangepast aan situatie.\nSpelpatroon in wedstrijd: Bouwt rally's op en scoort gericht. Beheerst het spelritme."
+            }
+          },
+          "lpd_8": {
+            "naam": "LPD 8 — Regels en afspraken",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Overtreedt regels herhaaldelijk.",
+              "voldoende": "Volgt regels maar vergeet soms score te zeggen.",
+              "goed": "Past alle regels correct toe in wedstrijdsituaties.",
+              "uitstekend": "Past regels toe en stimuleert fair play actief."
+            }
+          }
+        },
+        "panels": {
+          "opwarming": "Smash-clear wisselspel\n\nOpstelling: Per 2 op half veld.\n\nBeschrijving: Speler A speelt een clear. Speler B smasht terug. Speler A probeert de smash te retourneren met een clear. Wissel na 5 beurten.\n\nCue: Clear hoog en ver. Smash krachtig naar beneden.\n\nMakkelijker: Smash mag zachter (half smash).\n\nMoeilijker: Smash moet in de achterhoek landen.",
+          "oefening_1": "Situatiespel: slagkeuze\n\nOpstelling: Per 2 op half veld.\n\nBeschrijving: Speler A speelt willekeurig hoog of kort. Speler B kiest de juiste slag: hoge shuttle = smash of clear, korte shuttle = netdrop of lob. Focus op het lezen van de situatie.\n\nCue: Kijk naar de shuttlehoogte. Hoog = aanvallen. Laag = verdedigen/kort spelen.\n\nMakkelijker: Speler A speelt voorspelbaar (eerst 5x hoog, dan 5x kort).\n\nMoeilijker: Alles willekeurig, direct scoren vereist.",
+          "oefening_2": "Wedstrijdjes met tactische focus\n\nOpstelling: Per 2 op half veld. Kegels als doelzones.\n\nBeschrijving: Mini-wedstrijdjes van 3 punten. Na elk punt benoemt de speler welke slagkeuze hij/zij maakte en waarom. Focus op bewust kiezen, niet op winnen.\n\nCue: Benoem na elk punt: welke slag koos je en waarom?\n\nMakkelijker: Coach (wachtende leerling) geeft tips.\n\nMoeilijker: Geen coaching, volledig zelfstandig.",
+          "spelvorm": "Koning van het Veld — wedstrijdvorm\n\nOpstelling: Doorschuifsysteem op 4-6 veldjes.\n\nBeschrijving: Wedstrijden tot 7 punten met beginsequentie en bonuspunten voor directe winners. Winnaar wijzerzin, verliezer tegenwijzerzin. Wachtende leerling is scheidsrechter.\n\nCue: Beginsequentie. Slagkeuze bewust maken. Score hardop zeggen.\n\nMakkelijker: Beginsequentie mag met gooien.\n\nMoeilijker: Dubbele punten bij winner na smash.",
+          "evaluatie": "Wordt beoordeeld via rubrics LPD 1 en LPD 8 (zie evaluatiescherm)."
+        }
+      }
+    },
+    "graad_3": {
+      "les_1": {
+        "titel": "Aanval opbouwen & servicevariatie (les 1)",
+        "rubrics": {
+          "lpd_1": {
+            "naam": "LPD 1 — Bewegingsdoel badminton",
+            "type": "leerkracht",
+            "niveaus": {
+              "zwak": "Aanval opbouwen en servicevariatie: Altijd dezelfde service. Geen opbouw.\nAlgeheel wedstrijdniveau: Kan rally niet in stand houden.",
+              "voldoende": "Aanval opbouwen en servicevariatie: Varieert soms in service. Opbouw via backhand is onzeker.\nAlgeheel wedstrijdniveau: Houdt rally's in stand maar scoort weinig bewust.",
+              "goed": "Aanval opbouwen en servicevariatie: Varieert bewust tussen lobservice en korte BH-service. Bouwt aanval op via backhandzijde.\nAlgeheel wedstrijdniveau: Speelt tactisch, scoort bewust, past alle technieken toe.",
+              "uitstekend": "Aanval opbouwen en servicevariatie: Service als wapen. Aanval systematisch opgebouwd. Beheerst het keizertornooi.\nAlgeheel wedstrijdniveau: Domineert de rally. Combineert alle technieken vloeiend en tactisch."
+            }
+          },
+          "lpd_8": {
+            "naam": "LPD 8 — Regels en afspraken",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Vergeet regels onder wedstrijddruk.",
+              "voldoende": "Past regels toe maar maakt fouten bij serviceregel.",
+              "goed": "Past alle regels correct toe in keizertornooi.",
+              "uitstekend": "Speelt regelconform. Geeft zelf fouten toe. Stimuleert fair play."
+            }
+          }
+        },
+        "panels": {
+          "opwarming": "Backhand clear-rally\n\nOpstelling: Per 2 op half veld.\n\nBeschrijving: Rally met clears, maar speler A speelt bewust naar de backhandzijde van speler B. Speler B probeert terug te clearen. Tel de langste rally.\n\nCue: Clear naar de backhand van de tegenstander. Dwarse stand, dakhouding.\n\nMakkelijker: Clear mag naar de forehandzijde.\n\nMoeilijker: Alle clears moeten op de backhand landen.",
+          "oefening_1": "Aanvallende clear + smash\n\nOpstelling: Per 2 op half veld.\n\nBeschrijving: Speler A speelt een aanvallende clear (platter, sneller) naar de backhand van B. Als B een zwakke return geeft → speler A smasht. Opbouw: clear naar backhand → zwakke return → smash. Wissel na 5 opbouwen.\n\nCue: Aanvallende clear: platter en sneller dan een defensieve clear. Smash bij zwakke return.\n\nMakkelijker: Gewone clear in plaats van aanvallende clear.\n\nMoeilijker: Smash moet in een zone landen voor dubbele punten.",
+          "oefening_2": "Servicevariatie: lob vs korte BH\n\nOpstelling: Per 2 op half veld.\n\nBeschrijving: Speler A kiest per service: lobservice of korte backhandservice. Speler B moet direct reageren. Na 10 services: hoeveel keer scoorde A direct of indirect via de servicekeuze? Wissel.\n\nCue: Varieer je service. Kijk waar de tegenstander staat. Verras!\n\nMakkelijker: Altijd lobservice.\n\nMoeilijker: Wisselen na elke 2 services (dwing jezelf om te variëren).",
+          "spelvorm": "Keizertornooi\n\nOpstelling: Alle leerlingen op eigen veldje. Doorschuifsysteem: winnaar schuift door richting 'keizer' (veldje 1).\n\nBeschrijving: Wedstrijden tot 5 punten. Geen vaste beginsequentie meer — vrij spel. Focus op service als wapen en aanval opbouwen via backhandzijde. Winnaar schuift op richting keizer-positie. Verliezer zakt af.\n\nCue: Service als wapen. Aanval opbouwen. Score hardop zeggen.\n\nMakkelijker: Beginsequentie alsnog verplicht.\n\nMoeilijker: Wedstrijden tot 3 punten (meer wisselingen).",
+          "evaluatie": "Wordt beoordeeld via rubrics LPD 1 en LPD 8 (zie evaluatiescherm)."
+        }
+      },
+      "les_2": {
+        "titel": "Keizertornooi & evaluatie (les 2)",
+        "rubrics": {
+          "lpd_1": {
+            "naam": "LPD 1 — Bewegingsdoel badminton",
+            "type": "leerkracht",
+            "niveaus": {
+              "zwak": "Aanval opbouwen en servicevariatie: Altijd dezelfde service. Geen opbouw.\nAlgeheel wedstrijdniveau: Kan rally niet in stand houden.",
+              "voldoende": "Aanval opbouwen en servicevariatie: Varieert soms in service. Opbouw via backhand is onzeker.\nAlgeheel wedstrijdniveau: Houdt rally's in stand maar scoort weinig bewust.",
+              "goed": "Aanval opbouwen en servicevariatie: Varieert bewust tussen lobservice en korte BH-service. Bouwt aanval op via backhandzijde.\nAlgeheel wedstrijdniveau: Speelt tactisch, scoort bewust, past alle technieken toe.",
+              "uitstekend": "Aanval opbouwen en servicevariatie: Service als wapen. Aanval systematisch opgebouwd. Beheerst het keizertornooi.\nAlgeheel wedstrijdniveau: Domineert de rally. Combineert alle technieken vloeiend en tactisch."
+            }
+          },
+          "lpd_8": {
+            "naam": "LPD 8 — Regels en afspraken",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Vergeet regels onder wedstrijddruk.",
+              "voldoende": "Past regels toe maar maakt fouten bij serviceregel.",
+              "goed": "Past alle regels correct toe in keizertornooi.",
+              "uitstekend": "Speelt regelconform. Geeft zelf fouten toe. Stimuleert fair play."
+            }
+          }
+        },
+        "panels": {
+          "opwarming": "Alles-rally\n\nOpstelling: Per 2 op half veld.\n\nBeschrijving: Vrije rally met alle slagen: clear, drop, smash, netdrop, lob. Doel: zo lang mogelijke rally. Tel het aantal slagen. Focus op afwisselen en bewegen.\n\nCue: Alle slagen gebruiken. Kort en ver afwisselen. Bewegen na elke slag.\n\nMakkelijker: Enkel clears en drops.\n\nMoeilijker: Na elke 3 slagen verplicht een smash.",
+          "oefening_1": "Tactische opbouw: 3-slagenplan\n\nOpstelling: Per 2 op half veld.\n\nBeschrijving: Speler A bedenkt een plan van 3 slagen (bv. korte service → netdrop → smash) en voert het uit. Speler B probeert te verdedigen. Na 3 plannen: wissel. Wie scoort het vaakst via een plan?\n\nCue: Bedenk een plan VOOR je serveert. Voer het uit.\n\nMakkelijker: Plan mag van coach (wachtende leerling) komen.\n\nMoeilijker: Plan moet variëren (nooit 2x hetzelfde plan).",
+          "oefening_2": "Vrij spel met zelfreflectie\n\nOpstelling: Per 2 op half veld.\n\nBeschrijving: Vrije wedstrijdjes van 5 punten. Na elke set benoemt de leerling 1 sterk punt en 1 werkpunt. Wachtende leerling geeft 1 tip.\n\nCue: Na elke set: wat ging goed? Wat kan beter?\n\nMakkelijker: Coach (wachtende leerling) geeft tips.\n\nMoeilijker: Zonder coaching, volledig zelfstandig reflecteren.",
+          "spelvorm": "Keizertornooi — eindvorm\n\nOpstelling: Alle leerlingen op eigen veldje. Doorschuifsysteem.\n\nBeschrijving: Wedstrijden tot 5 punten. Vrij spel — alle technieken en tactieken. Service als wapen. Aanval opbouwen via backhandzijde. Winnaar schuift op, verliezer zakt af. Leerkracht observeert en scoort via rubric.\n\nCue: Alles gebruiken: service, clear, drop, smash, netdrop. Tactisch spelen.\n\nMakkelijker: Langere wedstrijden (meer kansen).\n\nMoeilijker: Kortere wedstrijden (meer druk).",
+          "evaluatie": "Wordt beoordeeld via rubrics LPD 1 en LPD 8. Leraarevaluatie tijdens keizertornooi."
+        }
+      }
+    }
+  },
+  "handbal": {
+    "graad_1": {
+      "les_1": {
+        "titel": "Slagworp en sprongworp",
+        "rubrics": {
+          "lpd_1": {
+            "naam": "LPD 1 — Technieken handbal",
+            "type": "leerkracht",
+            "niveaus": {
+              "zwak": "Slagworp en sprongworp: Gooit zonder driesteunenritme. Geen sprong.\n2v1 uitspeelbewegingen: Leest de verdediger niet. Speelt altijd dezelfde keuze.",
+              "voldoende": "Slagworp en sprongworp: Driesteunenritme aanwezig maar onvloeiend. Sprongworp laag.\n2v1 uitspeelbewegingen: Leest de verdediger soms. Keuze vaak te laat.",
+              "goed": "Slagworp en sprongworp: Correct driesteunenritme. Sprongworp met hoogte en richting.\n2v1 uitspeelbewegingen: Leest de verdediger correct en maakt de juiste keuze.",
+              "uitstekend": "Slagworp en sprongworp: Vloeiend ritme. Krachtige sprongworp in de hoeken.\n2v1 uitspeelbewegingen: Snelle beslissing, pas in de loop, scoort regelmatig."
+            }
+          },
+          "lpd_8": {
+            "naam": "LPD 8 — Regels",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Spelregels naleven: Overtreedt regels herhaaldelijk (lopen met bal, in cirkel).\nEerlijk en sportief spelen: Protesteert bij fluitsignaal. Negatief bij verlies.",
+              "voldoende": "Spelregels naleven: Volgt regels maar vergeet soms max 3 stappen of 3 seconden.\nEerlijk en sportief spelen: Accepteert beslissingen maar moppert soms.",
+              "goed": "Spelregels naleven: Volgt alle spelregels zonder herinnering van de leerkracht.\nEerlijk en sportief spelen: Accepteert beslissingen en moedigt medespelers aan.",
+              "uitstekend": "Spelregels naleven: Volgt alle regels en attendeert medespelers op overtredingen.\nEerlijk en sportief spelen: Stimuleert fairplay actief. Feliciteert tegenstander."
+            }
+          },
+          "lpd_11": {
+            "naam": "LPD 11 — Leiding nemen en aanvaarden",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Leiding nemen als kapitein: Zegt niets, organiseert niet.\nLeiding aanvaarden: Luistert niet naar de kapitein.",
+              "voldoende": "Leiding nemen als kapitein: Leest de taakkaart voor maar organiseert niet actief.\nLeiding aanvaarden: Volgt instructies maar vraagt niet door.",
+              "goed": "Leiding nemen als kapitein: Organiseert het groepje, verdeelt posities.\nLeiding aanvaarden: Volgt instructies en stelt constructieve vragen.",
+              "uitstekend": "Leiding nemen als kapitein: Organiseert, motiveert, bespreekt tactiek in de time-out.\nLeiding aanvaarden: Volgt instructies, geeft suggesties, zet zich in voor afspraken."
+            }
+          }
+        },
+        "panels": {
+          "opwarming": "Vijfbal\n\nOpstelling: Per team van 6: 5 pasters in een cirkel, 1 onderschepper in het midden. 1 bal per groep.\n\nBeschrijving: De 5 pasters proberen de bal over te spelen zonder dat de onderschepper de bal onderschept. Na 5 geslaagde passes op rij scoort het team een punt. Wie een foute pas geeft, gaat in het midden.\n\nCue: Vrijlopen weg van de onderschepper. Bal snel afspelen. Oogcontact maken met de ontvanger.\n\nMakkelijker: 6 pasters vs 1 onderschepper (grotere meerderheid).\n\nMoeilijker: 4 pasters vs 2 onderscheppers.",
+          "oefening_1": "Sprongworp na pas\n\nOpstelling: Spelverdeler vast op positie. Opbouwers in rij met bal. Kegels in de 4 hoeken van het doel.\n\nBeschrijving: Opbouwer past naar de spelverdeler en krijgt de pas terug in de loop. De opbouwer werkt af op doel met een sprongworp via het driesteunenritme. Zowel links als rechts uitvoeren.\n\nCue: Werparm snel wapenen. Pas in de loop geven. Via sprongworp afstand tot doel verkleinen. Scoren in de hoeken.\n\nMakkelijker: Zonder verdediger. Passen op de plaats (geen loop).\n\nMoeilijker: Passieve verdediger op de 6m-lijn.",
+          "oefening_2": "Twee tegen één\n\nOpstelling: 2 aanvallers vs 1 verdediger. Kegels in de 4 doelhoeken als mikpunt.\n\nBeschrijving: Twee aanvallers proberen te scoren tegen één verdediger. De aanvaller met bal leest de verdediger: stapt de verdediger uit = snelle pas naar vrije medespeler. Blijft de verdediger staan = zelf sprongworp.\n\nCue: Verdediger stapt uit = snelle pas naar vrije medespeler. Verdediger blijft staan = zelf sprongworp. Pas in de loop geven.\n\nMakkelijker: Verdediger heel passief: duidelijk kiezen.\n\nMoeilijker: Verdediger actief: moet snel beslissen.",
+          "spelvorm": "5 tegen 4 + Keeper\n\nOpstelling: 5 aanvallers vs 4 verdedigers + keeper. 4 teams, rotatie. 2 hoekspelers, 2 opbouwers, 1 spelverdeler.\n\nBeschrijving: 5v4+K. Aanvallers proberen via samenspel te scoren. Verdedigers staan op de 6m-lijn (hand in hand). Wedstrijden van 10 min met time-out na 5 min. Kapitein beslist de time-out.\n\nCue: Breed opstellen. Snelle balcirculatie. Scoren in de hoeken. Na je pas terugzakken.\n\nMakkelijker: Verdedigers hand in hand (beperkte mobiliteit).\n\nMoeilijker: Verdedigers los van elkaar (vrij bewegen).",
+          "evaluatie": "Wordt beoordeeld via rubrics LPD 1, LPD 8 en LPD 11 (zie evaluatiescherm)."
+        }
+      },
+      "les_2": {
+        "titel": "Voorbeweging hoekspeler & nulsprong",
+        "rubrics": {
+          "lpd_1": {
+            "naam": "LPD 1 — Technieken handbal",
+            "type": "leerkracht",
+            "niveaus": {
+              "zwak": "Slagworp en sprongworp: Gooit zonder driesteunenritme. Geen sprong.\n2v1 uitspeelbewegingen: Leest de verdediger niet. Speelt altijd dezelfde keuze.",
+              "voldoende": "Slagworp en sprongworp: Driesteunenritme aanwezig maar onvloeiend. Sprongworp laag.\n2v1 uitspeelbewegingen: Leest de verdediger soms. Keuze vaak te laat.",
+              "goed": "Slagworp en sprongworp: Correct driesteunenritme. Sprongworp met hoogte en richting.\n2v1 uitspeelbewegingen: Leest de verdediger correct en maakt de juiste keuze.",
+              "uitstekend": "Slagworp en sprongworp: Vloeiend ritme. Krachtige sprongworp in de hoeken.\n2v1 uitspeelbewegingen: Snelle beslissing, pas in de loop, scoort regelmatig."
+            }
+          },
+          "lpd_8": {
+            "naam": "LPD 8 — Regels",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Spelregels naleven: Overtreedt regels herhaaldelijk (lopen met bal, in cirkel).\nEerlijk en sportief spelen: Protesteert bij fluitsignaal. Negatief bij verlies.",
+              "voldoende": "Spelregels naleven: Volgt regels maar vergeet soms max 3 stappen of 3 seconden.\nEerlijk en sportief spelen: Accepteert beslissingen maar moppert soms.",
+              "goed": "Spelregels naleven: Volgt alle spelregels zonder herinnering van de leerkracht.\nEerlijk en sportief spelen: Accepteert beslissingen en moedigt medespelers aan.",
+              "uitstekend": "Spelregels naleven: Volgt alle regels en attendeert medespelers op overtredingen.\nEerlijk en sportief spelen: Stimuleert fairplay actief. Feliciteert tegenstander."
+            }
+          },
+          "lpd_11": {
+            "naam": "LPD 11 — Leiding nemen en aanvaarden",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Leiding nemen als kapitein: Zegt niets, organiseert niet.\nLeiding aanvaarden: Luistert niet naar de kapitein.",
+              "voldoende": "Leiding nemen als kapitein: Leest de taakkaart voor maar organiseert niet actief.\nLeiding aanvaarden: Volgt instructies maar vraagt niet door.",
+              "goed": "Leiding nemen als kapitein: Organiseert het groepje, verdeelt posities.\nLeiding aanvaarden: Volgt instructies en stelt constructieve vragen.",
+              "uitstekend": "Leiding nemen als kapitein: Organiseert, motiveert, bespreekt tactiek in de time-out.\nLeiding aanvaarden: Volgt instructies, geeft suggesties, zet zich in voor afspraken."
+            }
+          }
+        },
+        "panels": {
+          "opwarming": "Dribbel-slalom-estafette\n\nOpstelling: Per groep van 4: slalom met kegels + kegel aan het einde. 1 bal per groep.\n\nBeschrijving: Elke leerling dribbelt met de handbal door de slalom, rolt de bal via de grond tegen de kegel aan het einde en spurt terug. Volgende vertrekt zodra de vorige de kegel raakt.\n\nCue: Bal onder controle houden. Op snelheid door de slalom. Bal goed richten bij het rollen.\n\nMakkelijker: Zonder bal, enkel slalomloop.\n\nMoeilijker: Na de slalom een passeerbeweging maken en afwerken op doel.",
+          "oefening_1": "Vooractie hoekspeler\n\nOpstelling: Hoekspeler start hoog (ter hoogte van de 9m-lijn). Opbouwer en vaste spelverdeler. Geen verdediger.\n\nBeschrijving: De hoekspeler past naar de opbouwer, die de bal doorpast naar de spelverdeler. Na de pas doet de hoekspeler een voorbeweging: op snelheid diep de hoek in voorbij de verdediger, keert op snelheid terug en ontvangt de bal in de loop. De hoekspeler werkt af op doel.\n\nCue: Hoog starten, op snelheid diepgaan, op snelheid teruglopen. Timing: bal krijgen op het moment dat je terug inloopt.\n\nMakkelijker: Zonder verdediger: enkel de looplijn en timing oefenen.\n\nMoeilijker: Met passieve verdediger op de hoekpositie.",
+          "oefening_2": "2v1 met voorbeweging + nulsprong\n\nOpstelling: Hoekspeler + opbouwer vs 1 verdediger. Doelkegels.\n\nBeschrijving: Zelfde opbouw als oefening 1, maar nu met een verdediger. De hoekspeler beslist: komt de verdediger bijsluiten → pas naar opbouwer. Komt de verdediger niet bij → zelf afwerken via nulsprong met uitwijken.\n\nCue: Juiste beslissing in functie van de verdediger. Nulsprong: bal vangen en gooien in één sprong. Uitwijken om de verdediger heen.\n\nMakkelijker: Verdediger gedeeltelijk passief (keuze is duidelijk).\n\nMoeilijker: Verdediger volledig actief.",
+          "spelvorm": "5 tegen 4 + Keeper\n\nOpstelling: Zelfde wedstrijdformat als les 1 (5v4+K, 4 teams, rotatie).\n\nBeschrijving: Focus op de voorbeweging en de harmonicabeweging. Met bal richting doel bewegen, zonder bal terugzakken achteraan de cirkel.\n\nCue: Breed opstellen, hoek diep. Snelle pas. Na je pas terugzakken (harmonicabeweging).\n\nMakkelijker: Verdedigers hand in hand.\n\nMoeilijker: Verdedigers los van elkaar.",
+          "evaluatie": "Wordt beoordeeld via rubrics LPD 1, LPD 8 en LPD 11 (zie evaluatiescherm)."
+        }
+      }
+    },
+    "graad_3": {
+      "les_1": {
+        "titel": "Wissel opbouwer-spelverdeler",
+        "rubrics": {
+          "lpd_1": {
+            "naam": "LPD 1 — Technieken handbal",
+            "type": "leerkracht",
+            "niveaus": {
+              "zwak": "Wissel en voorbeweging in spel: Voert wissel niet uit. Voorbeweging afwezig.\nTactisch samenspel in 5v4+K: Staat stil, geen balcirculatie, geen samenspel.",
+              "voldoende": "Wissel en voorbeweging in spel: Probeert wissel maar timing klopt niet. Voorbeweging te traag.\nTactisch samenspel in 5v4+K: Speelt de bal rond maar creëert geen openingen.",
+              "goed": "Wissel en voorbeweging in spel: Correcte wissel en voorbeweging. Creëert openingen.\nTactisch samenspel in 5v4+K: Snelle balcirculatie, harmonicabeweging, creëert openingen.",
+              "uitstekend": "Wissel en voorbeweging in spel: Combineert wissel en voorbeweging vloeiend. Scoort of creëert kansen.\nTactisch samenspel in 5v4+K: Combineert alle tactieken. Leest de verdediging en kiest het juiste middel."
+            }
+          },
+          "lpd_8": {
+            "naam": "LPD 8 — Regels",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Spelregels naleven: Overtreedt regels herhaaldelijk.\nEerlijk en sportief spelen: Protesteert bij fluitsignaal.",
+              "voldoende": "Spelregels naleven: Volgt regels maar vergeet soms max 3 stappen of 3 seconden.\nEerlijk en sportief spelen: Accepteert beslissingen maar moppert soms.",
+              "goed": "Spelregels naleven: Volgt alle spelregels zonder herinnering.\nEerlijk en sportief spelen: Accepteert beslissingen en moedigt medespelers aan.",
+              "uitstekend": "Spelregels naleven: Volgt alle regels en attendeert medespelers op overtredingen.\nEerlijk en sportief spelen: Stimuleert fairplay actief. Feliciteert tegenstander."
+            }
+          },
+          "lpd_11": {
+            "naam": "LPD 11 — Leiding nemen en aanvaarden",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Leiding nemen als kapitein: Zegt niets, organiseert niet.\nLeiding aanvaarden: Luistert niet naar de kapitein.",
+              "voldoende": "Leiding nemen als kapitein: Leest de taakkaart voor maar organiseert niet actief.\nLeiding aanvaarden: Volgt instructies maar vraagt niet door.",
+              "goed": "Leiding nemen als kapitein: Organiseert het groepje, verdeelt posities.\nLeiding aanvaarden: Volgt instructies en stelt constructieve vragen.",
+              "uitstekend": "Leiding nemen als kapitein: Organiseert, motiveert, bespreekt tactiek in de time-out.\nLeiding aanvaarden: Volgt instructies, geeft suggesties, zet zich in voor afspraken."
+            }
+          }
+        },
+        "panels": {
+          "opwarming": "Kegelbal\n\nOpstelling: Kegels verspreid over het terrein. 2 teams per helft.\n\nBeschrijving: Twee teams proberen punten te scoren door een kegel aan te tikken met de bal (niet gooien!). Dribbelen is niet toegestaan. Na het aantikken van een kegel is de bal voor het andere team.\n\nCue: Vrijlopen weg van de verdedigers. Snelle balcirculatie. Pas naar de best opgestelde medespeler.\n\nMakkelijker: Meer kegels op het veld.\n\nMoeilijker: Pas scoren als je twee kegels vlak na elkaar aantikt zonder balverlies.",
+          "oefening_1": "Wissel opbouwer-spelverdeler\n\nOpstelling: 1 verdediger op de opbouwer (tussen 6 en 9m). Opbouwer met bal + spelverdeler.\n\nBeschrijving: Opbouwer past naar de spelverdeler. Die past terug. De opbouwer loopt in naar zijn verdediger. De spelverdeler loopt achter de opbouwer door en krijgt de bal. De spelverdeler werkt op snelheid af op doel.\n\nCue: Op de juiste plaats de wissel inzetten (halve meter van de verdediging). Op het juiste moment én op snelheid inlopen.\n\nMakkelijker: Verdediger passief (vast op de 6m).\n\nMoeilijker: Verdediger actief (vrij bewegen).",
+          "oefening_2": "Wissel met keuze\n\nOpstelling: Zelfde als oefening 1, maar met extra hoekspeler en hoekverdediger.\n\nBeschrijving: Zelfde wissel. Na de wissel maakt de spelverdeler een keuze: komt de hoekverdediger bijsluiten → pas naar hoekspeler. Sluit niet bij → spelverdeler werkt zelf af op doel.\n\nCue: Juiste keuze maken in functie van de verdediging. Snelle pas naar de hoek als die vrijkomt.\n\nMakkelijker: Verdedigers gedeeltelijk passief (keuze is duidelijk).\n\nMoeilijker: Verdedigers volledig actief.",
+          "spelvorm": "5 tegen 4 + Keeper\n\nOpstelling: 5v4+K, 4 teams, rotatie. Focus op wissel.\n\nBeschrijving: Zelfde wedstrijdformat. Focus op het toepassen van de wissel in spelsituaties. Wedstrijden van 10 min met time-out.\n\nCue: Breed opstellen. Wissel op het juiste moment. Na de wissel: juiste keuze.\n\nMakkelijker: Verdedigers hand in hand.\n\nMoeilijker: Verdedigers los van elkaar.",
+          "evaluatie": "Wordt beoordeeld via rubrics LPD 1, LPD 8 en LPD 11 (zie evaluatiescherm)."
+        }
+      },
+      "les_2": {
+        "titel": "Meerderheidssituaties en tornooi",
+        "rubrics": {
+          "lpd_1": {
+            "naam": "LPD 1 — Technieken handbal",
+            "type": "leerkracht",
+            "niveaus": {
+              "zwak": "Wissel en voorbeweging in spel: Voert wissel niet uit. Voorbeweging afwezig.\nTactisch samenspel in 5v4+K: Staat stil, geen balcirculatie, geen samenspel.",
+              "voldoende": "Wissel en voorbeweging in spel: Probeert wissel maar timing klopt niet. Voorbeweging te traag.\nTactisch samenspel in 5v4+K: Speelt de bal rond maar creëert geen openingen.",
+              "goed": "Wissel en voorbeweging in spel: Correcte wissel en voorbeweging. Creëert openingen.\nTactisch samenspel in 5v4+K: Snelle balcirculatie, harmonicabeweging, creëert openingen.",
+              "uitstekend": "Wissel en voorbeweging in spel: Combineert wissel en voorbeweging vloeiend. Scoort of creëert kansen.\nTactisch samenspel in 5v4+K: Combineert alle tactieken. Leest de verdediging en kiest het juiste middel."
+            }
+          },
+          "lpd_8": {
+            "naam": "LPD 8 — Regels",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Spelregels naleven: Overtreedt regels herhaaldelijk.\nEerlijk en sportief spelen: Protesteert bij fluitsignaal.",
+              "voldoende": "Spelregels naleven: Volgt regels maar vergeet soms max 3 stappen of 3 seconden.\nEerlijk en sportief spelen: Accepteert beslissingen maar moppert soms.",
+              "goed": "Spelregels naleven: Volgt alle spelregels zonder herinnering.\nEerlijk en sportief spelen: Accepteert beslissingen en moedigt medespelers aan.",
+              "uitstekend": "Spelregels naleven: Volgt alle regels en attendeert medespelers op overtredingen.\nEerlijk en sportief spelen: Stimuleert fairplay actief. Feliciteert tegenstander."
+            }
+          },
+          "lpd_11": {
+            "naam": "LPD 11 — Leiding nemen en aanvaarden",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Leiding nemen als kapitein: Zegt niets, organiseert niet.\nLeiding aanvaarden: Luistert niet naar de kapitein.",
+              "voldoende": "Leiding nemen als kapitein: Leest de taakkaart voor maar organiseert niet actief.\nLeiding aanvaarden: Volgt instructies maar vraagt niet door.",
+              "goed": "Leiding nemen als kapitein: Organiseert het groepje, verdeelt posities.\nLeiding aanvaarden: Volgt instructies en stelt constructieve vragen.",
+              "uitstekend": "Leiding nemen als kapitein: Organiseert, motiveert, bespreekt tactiek in de time-out.\nLeiding aanvaarden: Volgt instructies, geeft suggesties, zet zich in voor afspraken."
+            }
+          }
+        },
+        "panels": {
+          "opwarming": "Bufferspel\n\nOpstelling: 2 teams van 3 spelers. Eén bufferzone per kant.\n\nBeschrijving: Speler 1 past vanuit de bufferzone naar een ploegmaat. Daarna loopt speler 1 uit de bufferzone om de pas terug te vragen. Als speler 1 de bal krijgt en voorbij de lijn op de grond kan duwen, is er gescoord.\n\nCue: Na het geven van een pas een tweede beweging maken. Snelle balcirculatie. Vrijlopen.\n\nMakkelijker: Met slechts één bufferzone (meer ruimte).\n\nMoeilijker: Na score moet het verdedigende team eerst de bal over de middellijn brengen.",
+          "oefening_1": "3 tegen 2\n\nOpstelling: Hoekspeler, opbouwer, spelverdeler vs 2 verdedigers (hand in hand op de 6m-lijn).\n\nBeschrijving: De drie aanvallers proberen via snelle balcirculatie en samenspel de twee verdedigers te omzeilen. Ze gebruiken voorbeweging of wissel.\n\nCue: Breed opstellen, hoek diep. Snelle pas. Na je pas terugzakken (harmonicabeweging).\n\nMakkelijker: Verdedigers hand in hand.\n\nMoeilijker: Verdedigers los van elkaar.",
+          "oefening_2": "4 tegen 3\n\nOpstelling: 2 hoekspelers + 2 opbouwers vs 3 verdedigers.\n\nBeschrijving: Alle geleerde tactieken mogen ingezet worden: voorbeweging, wissel, harmonicabeweging.\n\nCue: Breed opstellen. Snelle pas. Op snelheid afwerken bij open doelkans.\n\nMakkelijker: Verplicht starten met een voorbeweging OF een wissel.\n\nMoeilijker: Verdedigers volledig actief + tijdsdruk (max 30 sec).",
+          "spelvorm": "Tornooi 5 tegen 4 + Keeper\n\nOpstelling: 5v4+K. Elk team speelt tegen alle andere teams.\n\nBeschrijving: Tornooivorm. Wedstrijden van 10 min met time-out na 5 min. Kapitein beslist de time-out. Winst = 3 punten, gelijkspel = 2, verlies = 1.\n\nCue: Breed opstellen. Voorbeweging of wissel. Harmonicabeweging. Juiste keuze.\n\nMakkelijker: Verdedigers hand in hand.\n\nMoeilijker: Verdedigers los van elkaar.",
+          "evaluatie": "Wordt beoordeeld via rubrics LPD 1, LPD 8 en LPD 11 (zie evaluatiescherm)."
+        }
+      }
+    }
+  },
+  "voetbal": {
+    "graad_2": {
+      "les_1": {
+        "titel": "Ruitopstelling en breed spelen",
+        "rubrics": {
+          "lpd_8": {
+            "naam": "LPD 8 — Regels",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Spelregels naleven: Overtreedt regels herhaaldelijk (hands, duwen van achter).\nEerlijk en sportief spelen: Protesteert bij fluitsignaal. Negatief bij verlies.",
+              "voldoende": "Spelregels naleven: Volgt de meeste regels, maar vergeet soms ingooi of vrije trap-positie.\nEerlijk en sportief spelen: Accepteert beslissingen maar moppert soms.",
+              "goed": "Spelregels naleven: Past alle 5 basisregels correct toe zonder herinnering.\nEerlijk en sportief spelen: Accepteert beslissingen en moedigt medespelers aan.",
+              "uitstekend": "Spelregels naleven: Volgt alle regels en attendeert medespelers op overtredingen.\nEerlijk en sportief spelen: Stimuleert fairplay actief. Feliciteert tegenstander."
+            }
+          },
+          "lpd_11": {
+            "naam": "LPD 11 — Leiding nemen en aanvaarden",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Leiding nemen als kapitein: Zegt niets, organiseert niet.\nLeiding aanvaarden: Luistert niet naar de kapitein.",
+              "voldoende": "Leiding nemen als kapitein: Leest de taakkaart voor maar organiseert niet actief.\nLeiding aanvaarden: Volgt instructies maar vraagt niet door.",
+              "goed": "Leiding nemen als kapitein: Organiseert het groepje, verdeelt posities, bespreekt kort.\nLeiding aanvaarden: Volgt instructies en stelt constructieve vragen.",
+              "uitstekend": "Leiding nemen als kapitein: Organiseert, motiveert, bespreekt tactiek in de time-out.\nLeiding aanvaarden: Volgt instructies, geeft suggesties, zet zich in voor afspraken."
+            }
+          }
+        },
+        "panels": {
+          "opwarming": "1v1 Kegelvoetbal\n\nOpstelling: Per twee leerlingen. Elk een kegel op ±8m afstand. 1 bal per duo.\n\nBeschrijving: Elke speler beschermt zijn eigen kegel en probeert de kegel van de tegenstander om te trappen met de bal. Je mag de kegel niet met je handen of lichaam beschermen.\n\nCue: Bal dicht bij de voet. Hoofd omhoog. Buitenkant voet bij richtingsverandering.\n\nMakkelijker: Grotere afstand tussen kegels.\n\nMoeilijker: Kleinere kegels of dichter bij elkaar.",
+          "oefening_1": "Pasvorm in ruit\n\nOpstelling: Per 4 in ruitvorm: spelmaker achteraan, 2 flanken breed, spits vooraan. Kegels markeren de posities.\n\nBeschrijving: De bal gaat rond in de ruit: spelmaker → flank → spits → andere flank → spelmaker. Focus op steunvoet naast de bal, binnenkant voet, strakke pas. Na de ronde draai je mee 1 positie.\n\nCue: Steunvoet naast de bal, binnenkant voet, strakke pas richting medespeler.\n\nMakkelijker: Bal mag 2x stuiten voor het aannemen.\n\nMoeilijker: Bal direct doorspelen (1 touch).",
+          "oefening_2": "4v3 positiespel met zones\n\nOpstelling: 4 aanvallers (ruitvorm) vs 3 verdedigers. 2 goals. Flankzones gemarkeerd met kegels.\n\nBeschrijving: De 4 aanvallers proberen te scoren. De flankspelers starten breed in hun zone. Als de bal naar de flank gaat, loopt de flankspeler diep en zoekt de spits. Focus op breed opstellen en flankwissel.\n\nCue: Breed opstellen. Flankspeler: diep lopen bij de bal. Pas in de loop geven. Open draaien richting doel.\n\nMakkelijker: Verdedigers mogen niet in de flankzone komen.\n\nMoeilijker: Verdedigers mogen overal komen.",
+          "spelvorm": "4v4 in ruitopstelling\n\nOpstelling: 4v4 op 2 goals. 4 teams, rotatie. Kegels markeren de ruitposities.\n\nBeschrijving: 4v4 wedstrijden van 8 min. Aanvallers spelen in ruitvorm. Verdedigers vrij. Time-out na 4 min (kapitein bespreekt). Winnend team schuift door. Focus op breed spelen en ruitopstelling houden.\n\nCue: Breed opstellen. Flankwissel. Bal snel laten rondgaan. Vooractie: traag weg, snel terugkomen.\n\nMakkelijker: Verdedigers mogen niet in flankzones.\n\nMoeilijker: 4v4 volledige vrijheid.",
+          "evaluatie": "Wordt beoordeeld via rubrics LPD 8 en LPD 11 (zie evaluatiescherm)."
+        }
+      },
+      "les_2": {
+        "titel": "Flankwissel en doelgericht spelen",
+        "rubrics": {
+          "lpd_8": {
+            "naam": "LPD 8 — Regels",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Spelregels naleven: Overtreedt regels herhaaldelijk (hands, duwen van achter).\nEerlijk en sportief spelen: Protesteert bij fluitsignaal. Negatief bij verlies.",
+              "voldoende": "Spelregels naleven: Volgt de meeste regels, maar vergeet soms ingooi of vrije trap-positie.\nEerlijk en sportief spelen: Accepteert beslissingen maar moppert soms.",
+              "goed": "Spelregels naleven: Past alle 5 basisregels correct toe zonder herinnering.\nEerlijk en sportief spelen: Accepteert beslissingen en moedigt medespelers aan.",
+              "uitstekend": "Spelregels naleven: Volgt alle regels en attendeert medespelers op overtredingen.\nEerlijk en sportief spelen: Stimuleert fairplay actief. Feliciteert tegenstander."
+            }
+          },
+          "lpd_11": {
+            "naam": "LPD 11 — Leiding nemen en aanvaarden",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Leiding nemen als kapitein: Zegt niets, organiseert niet.\nLeiding aanvaarden: Luistert niet naar de kapitein.",
+              "voldoende": "Leiding nemen als kapitein: Leest de taakkaart voor maar organiseert niet actief.\nLeiding aanvaarden: Volgt instructies maar vraagt niet door.",
+              "goed": "Leiding nemen als kapitein: Organiseert het groepje, verdeelt posities, bespreekt kort.\nLeiding aanvaarden: Volgt instructies en stelt constructieve vragen.",
+              "uitstekend": "Leiding nemen als kapitein: Organiseert, motiveert, bespreekt tactiek in de time-out.\nLeiding aanvaarden: Volgt instructies, geeft suggesties, zet zich in voor afspraken."
+            }
+          }
+        },
+        "panels": {
+          "opwarming": "1v1 Kegelvoetbal (herhaling)\n\nOpstelling: Per twee leerlingen. Elk een kegel op ±8m afstand. 1 bal per duo.\n\nBeschrijving: Zelfde als les 1. Elke speler beschermt zijn kegel en probeert de kegel van de tegenstander om te trappen.\n\nCue: Bal dicht bij de voet. Hoofd omhoog.\n\nMakkelijker: Grotere afstand.\n\nMoeilijker: Kleinere kegels.",
+          "oefening_1": "Flankwissel 4v2\n\nOpstelling: 4 aanvallers (2 flanken + spelmaker + spits) vs 2 verdedigers. 2 goals.\n\nBeschrijving: De aanvallers spelen de bal rond. Wanneer de bal op de ene flank is, maakt de andere flankspeler een vooractie: traag weglopen, dan snel terugkomen voor de bal. Focus op flankverandering.\n\nCue: Vooractie: traag weg van de bal, dan korte versnelling richting bal. Open draaien richting doel.\n\nMakkelijker: Verdedigers passief (staan stil).\n\nMoeilijker: Verdedigers actief.",
+          "oefening_2": "4v3 met doelgerichtheid\n\nOpstelling: 4 aanvallers vs 3 verdedigers. 2 goals.\n\nBeschrijving: Aanvallers proberen binnen 30 seconden te scoren. Focus op snel naar voren spelen wanneer er een opening is. Niet eindeloos rond passen, maar doelgericht spelen.\n\nCue: Zie je een opening? Speel naar voren! Spits biedt zich aan. Afwerken: steunvoet naast de bal, lichaam over de bal.\n\nMakkelijker: Geen tijdslimiet.\n\nMoeilijker: 20 seconden.",
+          "spelvorm": "4v4 tornooi in ruitopstelling\n\nOpstelling: 4v4 op 2 goals. Tornooivorm: elk team speelt tegen alle andere teams.\n\nBeschrijving: Wedstrijden van 8 min met time-out na 4 min. Kapitein bespreekt tactiek. Winst = 3 punten, gelijkspel = 2, verlies = 1. Focus op alles: ruit, flankwissel, doelgerichtheid.\n\nCue: Breed opstellen. Flankwissel. Doelgericht afwerken. Na bal verlies: snel terugverdedigen.\n\nMakkelijker: Langere wedstrijden.\n\nMoeilijker: Kortere wedstrijden (meer druk).",
+          "evaluatie": "Wordt beoordeeld via rubrics LPD 8 en LPD 11. Zelfevaluatie (6 vragen) + kapiteinsevaluatie."
+        }
+      }
+    }
+  },
+  "judo": {
+    "graad_2": {
+      "les_1": {
+        "titel": "Houdgrepen en omkeertechnieken",
+        "rubrics": {
+          "lpd_1": {
+            "naam": "LPD 1 — Technieken judo ne-waza",
+            "type": "leerkracht",
+            "niveaus": {
+              "zwak": "Houdgrepen: Kan geen houdgreep correct uitvoeren. Verliest controle direct.\nOmkeertechnieken en bevrijdingstechnieken: Kan geen omkeertechniek of bevrijdingstechniek uitvoeren.",
+              "voldoende": "Houdgrepen: Voert 1-2 houdgrepen uit maar houdt ze niet lang vast.\nOmkeertechnieken en bevrijdingstechnieken: Voert 1 techniek uit maar met fouten.",
+              "goed": "Houdgrepen: Voert 3 houdgrepen correct uit en houdt ze minstens 10 sec vast.\nOmkeertechnieken en bevrijdingstechnieken: Voert omkeertechniek vanuit vierpuntensteun en buiklig correct uit. Bevrijdingstechniek aanwezig.",
+              "uitstekend": "Houdgrepen: Schakelt vloeiend tussen houdgrepen. Houdt 20 sec vol.\nOmkeertechnieken en bevrijdingstechnieken: Combineert omkeertechnieken en bevrijdingstechnieken vloeiend in randori."
+            }
+          },
+          "lpd_8": {
+            "naam": "LPD 8 — Regels en veiligheid",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Veiligheidsregels naleven: Reageert niet op Mate. Gebruikt gevaarlijke technieken.\nScheidsrechtersrol: Kan niet scheidsrechteren. Kent signalen niet.",
+              "voldoende": "Veiligheidsregels naleven: Reageert op Mate maar soms te laat. Vergeet soms respect.\nScheidsrechtersrol: Geeft Hajime en Mate maar twijfelt bij Osaekomi/Toketa.",
+              "goed": "Veiligheidsregels naleven: Reageert direct op Hajime/Mate. Toont respect. Geen overtredingen.\nScheidsrechtersrol: Correct gebruik van Osaekomi, Toketa, Ippon, Waza-ari.",
+              "uitstekend": "Veiligheidsregels naleven: Perfecte naleving. Treedt op als scheidsrechter met correcte signalen.\nScheidsrechtersrol: Scheidsrechtert zelfstandig en correct. Houdt tijd bij."
+            }
+          }
+        },
+        "panels": {
+          "opwarming": "Knieëngevecht\n\nOpstelling: Per 2 op een mat. Beide op de knieën tegenover elkaar.\n\nBeschrijving: Op Hajime proberen beide leerlingen de ander op de rug te leggen zonder op te staan. Wie de ander op de rug legt en 3 seconden vasthoudt, wint het gevecht. Bij Mate: loslaten en opnieuw beginnen.\n\nCue: Laag zwaartepunt. Grijp de stof (niet de huid). Gebruik je gewicht.\n\nMakkelijker: Enkel duwen en trekken, geen houdgreep nodig.\n\nMoeilijker: Na op de rug leggen: houdgreep vasthouden tot 10 seconden.",
+          "oefening_1": "Houdgrepen: Kesa-gatame, Kuzure-kesa-gatame, Yoko-shiho-gatame\n\nOpstelling: Per 2 op een mat. Één leerling op de rug (= uke), de ander ernaast (= tori).\n\nBeschrijving: Tori oefent de 3 houdgrepen: (1) Kesa-gatame: zit naast uke, arm onder uke's hoofd, houd de arm vast. (2) Kuzure-kesa-gatame: zelfde maar pak onder de oksel door. (3) Yoko-shiho-gatame: lig dwars op uke, grip de broek en het bovenlichaam. Per houdgreep: 20 seconden vasthouden. Wissel na 3 houdgrepen.\n\nCue: Zwaartepunt laag. Spreid je gewicht. Controleer hoofd en arm van uke.\n\nMakkelijker: Uke biedt geen weerstand.\n\nMoeilijker: Uke probeert licht te bewegen (niet volledig ontsnappen).",
+          "oefening_2": "Omkeertechniek vanuit vierpuntensteun\n\nOpstelling: Per 2 op een mat. Uke op handen en knieën (vierpuntensteun). Tori ernaast.\n\nBeschrijving: Tori pakt uke aan de bovenkant: één arm onder de buik door, de andere arm over de rug. Tori draait uke om naar de rug en gaat direct over in een houdgreep. Wissel na 5 herhalingen.\n\nCue: Pak stevig vast. Draai in één beweging. Direct doorgaan naar houdgreep.\n\nMakkelijker: Uke biedt geen weerstand.\n\nMoeilijker: Uke houdt stevig de vierpuntensteun vast.",
+          "spelvorm": "Randori ne-waza met doorschuifsysteem\n\nOpstelling: Per 2 op een mat. Doorschuifsysteem: winnaars schuiven door, verliezers zakken af.\n\nBeschrijving: Randori ne-waza: vrij grondgevecht op de knieën. Start vanuit knieën tegenover elkaar. Op Hajime: probeer de ander op de rug te leggen en een houdgreep vast te houden. Ippon = houdgreep 20 sec. Waza-ari = houdgreep 10-19 sec. Mate = stoppen. Scheidsrechter (derde leerling) telt en geeft signalen.\n\nCue: Op Hajime: direct contact maken. Probeer omkeertechniek. Direct doorgaan naar houdgreep.\n\nMakkelijker: Ippon al bij 10 seconden.\n\nMoeilijker: Beide starten vanuit vierpuntensteun (moeilijker om te beginnen).",
+          "evaluatie": "Formatieve evaluatie (nulmeting). Leerkracht observeert houdgrepen en omkeertechnieken."
+        }
+      },
+      "les_2": {
+        "titel": "Bevrijdingstechnieken en judotornooi",
+        "rubrics": {
+          "lpd_1": {
+            "naam": "LPD 1 — Technieken judo ne-waza",
+            "type": "leerkracht",
+            "niveaus": {
+              "zwak": "Houdgrepen: Kan geen houdgreep correct uitvoeren. Verliest controle direct.\nOmkeertechnieken en bevrijdingstechnieken: Kan geen omkeertechniek of bevrijdingstechniek uitvoeren.",
+              "voldoende": "Houdgrepen: Voert 1-2 houdgrepen uit maar houdt ze niet lang vast.\nOmkeertechnieken en bevrijdingstechnieken: Voert 1 techniek uit maar met fouten.",
+              "goed": "Houdgrepen: Voert 3 houdgrepen correct uit en houdt ze minstens 10 sec vast.\nOmkeertechnieken en bevrijdingstechnieken: Voert omkeertechniek vanuit vierpuntensteun en buiklig correct uit. Bevrijdingstechniek aanwezig.",
+              "uitstekend": "Houdgrepen: Schakelt vloeiend tussen houdgrepen. Houdt 20 sec vol.\nOmkeertechnieken en bevrijdingstechnieken: Combineert omkeertechnieken en bevrijdingstechnieken vloeiend in randori."
+            }
+          },
+          "lpd_8": {
+            "naam": "LPD 8 — Regels en veiligheid",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Veiligheidsregels naleven: Reageert niet op Mate. Gebruikt gevaarlijke technieken.\nScheidsrechtersrol: Kan niet scheidsrechteren. Kent signalen niet.",
+              "voldoende": "Veiligheidsregels naleven: Reageert op Mate maar soms te laat. Vergeet soms respect.\nScheidsrechtersrol: Geeft Hajime en Mate maar twijfelt bij Osaekomi/Toketa.",
+              "goed": "Veiligheidsregels naleven: Reageert direct op Hajime/Mate. Toont respect. Geen overtredingen.\nScheidsrechtersrol: Correct gebruik van Osaekomi, Toketa, Ippon, Waza-ari.",
+              "uitstekend": "Veiligheidsregels naleven: Perfecte naleving. Treedt op als scheidsrechter met correcte signalen.\nScheidsrechtersrol: Scheidsrechtert zelfstandig en correct. Houdt tijd bij."
+            }
+          }
+        },
+        "panels": {
+          "opwarming": "Schildpadgevecht\n\nOpstelling: Per 2 op een mat. Uke in schildpadpositie (opgerold op de buik). Tori ernaast.\n\nBeschrijving: Tori probeert uke om te draaien. Uke probeert in schildpadpositie te blijven. 30 seconden per beurt. Wie lukt het vaker?\n\nCue: Tori: zoek een opening (arm of been). Uke: armen en benen dicht bij het lichaam.\n\nMakkelijker: Uke biedt minder weerstand.\n\nMoeilijker: Uke mag actief ontsnappen en zelf aanvallen.",
+          "oefening_1": "Bevrijdingstechniek: been omknellen\n\nOpstelling: Per 2 op een mat. Tori houdt uke vast in Kesa-gatame.\n\nBeschrijving: Uke leert ontsnappen: uke brengt het been dat het dichtst bij tori is omhoog en knelt het om tori's been. Uke draait de heupen en duwt tori weg. Wissel na 5 pogingen.\n\nCue: Been omhoog. Om tori's been knellen. Heupen draaien. Wegduwen.\n\nMakkelijker: Tori houdt licht vast.\n\nMoeilijker: Tori houdt stevig vast.",
+          "oefening_2": "Omkeertechniek vanuit buiklig\n\nOpstelling: Per 2 op een mat. Uke plat op de buik. Tori ernaast.\n\nBeschrijving: Tori pakt uke bij de heup en de schouder. Tori draait uke in één beweging om naar de rug en gaat direct over in een houdgreep. Wissel na 5 herhalingen.\n\nCue: Pak heup en schouder. Draai in één beweging. Direct door naar houdgreep.\n\nMakkelijker: Uke biedt geen weerstand.\n\nMoeilijker: Uke probeert terug op de buik te draaien.",
+          "spelvorm": "Judotornooi ne-waza\n\nOpstelling: Groepjes van 4-5 leerlingen. Wedstrijdschema per groep. 1 scheidsrechter + 1 timekeeper per mat.\n\nBeschrijving: Judotornooi: iedereen tegen iedereen in de groep. Gevechten van 2 minuten. Ippon = houdgreep 20 sec = 10 punten. Waza-ari = houdgreep 10-19 sec = 5 punten. Geen score = 0 punten. Scheidsrechter geeft Hajime, Mate, Osaekomi, Toketa.\n\nCue: Direct contact maken. Omkeertechniek → houdgreep. Bevrijdingstechniek als je vastzit.\n\nMakkelijker: Gevechten van 1 minuut.\n\nMoeilijker: Gevechten van 3 minuten.",
+          "evaluatie": "LPD 1: Leraarevaluatie tijdens tornooi (houdgrepen, omkeertechnieken, bevrijdingstechnieken). LPD 8: Zelfevaluatie (6 stellingen)."
+        }
+      }
+    }
+  },
+  "klimmen": {
+    "graad_2": {
+      "les_1": {
+        "titel": "Basisvaardigheden klimmen",
+        "rubrics": {
+          "lpd_8": {
+            "naam": "LPD 8 — Regels en veiligheid",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Buddy-check uitvoeren: Vergeet de buddy-check of voert ze niet uit.\nVia ferrata-regel naleven: Maakt beide musketons tegelijk los.\nCommunicatieprotocol volgen: Start zonder te vragen of toestemming te geven.",
+              "voldoende": "Buddy-check uitvoeren: Voert buddy-check uit na herinnering door leerkracht.\nVia ferrata-regel naleven: Maakt soms een fout, corrigeert na opmerking buddy.\nCommunicatieprotocol volgen: Gebruikt het protocol na herinnering.",
+              "goed": "Buddy-check uitvoeren: Voert buddy-check elke beurt uit: karabiner, communicatieprotocol.\nVia ferrata-regel naleven: Volgt 'eerst vast, dan los' consequent.\nCommunicatieprotocol volgen: Gebruikt het protocol elke beurt correct.",
+              "uitstekend": "Buddy-check uitvoeren: Buddy-check foutloos + corrigeert anderen spontaan.\nVia ferrata-regel naleven: Volgt de regel foutloos, signaleert ook bij anderen.\nCommunicatieprotocol volgen: Gebruikt het protocol foutloos en spontaan, eist het ook van anderen."
+            }
+          },
+          "lpd_13": {
+            "naam": "LPD 13 — Grenzen verleggen",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Uitdaging kiezen: Kiest altijd makkelijkste variant. Probeert niets nieuws.\nOmgaan met onzekerheid: Weigert te klimmen of stopt meteen.\nProgressie zichtbaar maken: Vult scorekaart niet in.",
+              "voldoende": "Uitdaging kiezen: Kiest soms moeilijkere variant na aanmoediging.\nOmgaan met onzekerheid: Stopt bij onzekerheid maar probeert opnieuw na aanmoediging.\nProgressie zichtbaar maken: Vult scorekaart in maar vergelijkt niet.",
+              "goed": "Uitdaging kiezen: Kiest bij minstens 2 stations de moeilijkere variant.\nOmgaan met onzekerheid: Herkent onzekerheid, pauzeert even, probeert opnieuw.\nProgressie zichtbaar maken: Vergelijkt scores met vorige beurt/les, benoemt vooruitgang.",
+              "uitstekend": "Uitdaging kiezen: Kiest systematisch variant net buiten comfortzone. Legt uit waarom.\nOmgaan met onzekerheid: Benoemt onzekerheid, kiest tussenstap, voert die uit.\nProgressie zichtbaar maken: Vergelijkt scores, stelt concreet doel en bereikt het."
+            }
+          }
+        },
+        "panels": {
+          "opwarming": "Traverse-estafette\n\nOpstelling: 2 sportramen naast elkaar. Klas in 2 groepen. Valmatten onder de sportramen.\n\nBeschrijving: Per groep staan de leerlingen in een rij naast het sportraam. Op het signaal klimt de eerste leerling horizontaal over het sportraam (traverse) van links naar rechts. Aan het einde springt hij/zij op de mat en sluit achteraan. Welke groep is eerst door?\n\nCue: 3 punten vast — rustig bewegen — niet springen vanop hoogte.\n\nMakkelijker: Lager klimmen (enkel onderste helft sportraam).\n\nMoeilijker: Enkel met de handen aan de bovenste sport, voeten zoeken zelf steun.",
+          "station_1": "Prusikklimmen\n\nOpstelling: 5 klimtouwen met 2 prusiktouwtjes. Klimgordels + karabiners. Valmatten. Per touw: 1 klimmer + 1 buddy.\n\nBeschrijving: Klimmer bevestigt karabiner aan bovenste prusiktouw. Buddy controleert. Communicatie: 'Kan ik gaan klimmen?' → 'Ja, [naam], je kunt gaan klimmen.' Klimmer klimt omhoog: bovenste touw omhoog schuiven, vastzetten, onderste touw omhoog, voet erin, staan, herhalen.\n\nCue: Duwen — schuiven — trekken — staan. Altijd buddy-check voor je start.\n\nMakkelijker: Klimmen tot halverwege het touw.\n\nMoeilijker: Klimmen tot helemaal boven.",
+          "station_2": "Via ferrata aan sportraam\n\nOpstelling: Sportraam met lussen (touw of bandjes). 2 musketons per leerling. Valmatten.\n\nBeschrijving: Leerling haakt 2 musketons aan de eerste lus. Bij elke nieuwe lus: eerst de volgende musketon inhaken, DAN pas de vorige loshaken. Altijd minstens 1 musketon vast. Traverse het volledige sportraam.\n\nCue: Eerst vast, dan los. 3 punten vast. Rustig en gecontroleerd.\n\nMakkelijker: Grotere lussen (makkelijker inhaken).\n\nMoeilijker: Blindelings (ogen dicht) de lussen voelen en inhaken.",
+          "klimcircuit": "Klimcircuit: 4 stations\n\nOpstelling: 4 stations met rotatie. Scorekaart per leerling. Timer per station.\n\nBeschrijving: Station A: Prusikklimmen (hoe hoog?). Station B: Via ferrata traverse. Station C: Sportraam-traverse met 3-puntenregel. Station D: Afdalen (prusik). Rotatie elke 8 min. Buddy-check bij elk station. Leerling noteert zijn score (hoogte/tijd) op de scorekaart.\n\nCue: Buddy-check elke beurt. Scorekaart invullen. Kies je uitdagingsniveau.\n\nMakkelijker: Enkel de makkelijkere variant per station.\n\nMoeilijker: Moeilijkere variant + progressie t.o.v. vorige beurt.",
+          "evaluatie": "Zelfevaluatie LPD 8 + LPD 13 (6 vragen). Nulmeting — vergelijk in les 2."
+        }
+      },
+      "les_2": {
+        "titel": "Verdieping en grenzen verleggen",
+        "rubrics": {
+          "lpd_8": {
+            "naam": "LPD 8 — Regels en veiligheid",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Buddy-check uitvoeren: Vergeet de buddy-check of voert ze niet uit.\nVia ferrata-regel naleven: Maakt beide musketons tegelijk los.\nCommunicatieprotocol volgen: Start zonder te vragen of toestemming te geven.",
+              "voldoende": "Buddy-check uitvoeren: Voert buddy-check uit na herinnering door leerkracht.\nVia ferrata-regel naleven: Maakt soms een fout, corrigeert na opmerking buddy.\nCommunicatieprotocol volgen: Gebruikt het protocol na herinnering.",
+              "goed": "Buddy-check uitvoeren: Voert buddy-check elke beurt uit: karabiner, communicatieprotocol.\nVia ferrata-regel naleven: Volgt 'eerst vast, dan los' consequent.\nCommunicatieprotocol volgen: Gebruikt het protocol elke beurt correct.",
+              "uitstekend": "Buddy-check uitvoeren: Buddy-check foutloos + corrigeert anderen spontaan.\nVia ferrata-regel naleven: Volgt de regel foutloos, signaleert ook bij anderen.\nCommunicatieprotocol volgen: Gebruikt het protocol foutloos en spontaan, eist het ook van anderen."
+            }
+          },
+          "lpd_13": {
+            "naam": "LPD 13 — Grenzen verleggen",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Uitdaging kiezen: Kiest altijd makkelijkste variant. Probeert niets nieuws.\nOmgaan met onzekerheid: Weigert te klimmen of stopt meteen.\nProgressie zichtbaar maken: Vult scorekaart niet in.",
+              "voldoende": "Uitdaging kiezen: Kiest soms moeilijkere variant na aanmoediging.\nOmgaan met onzekerheid: Stopt bij onzekerheid maar probeert opnieuw na aanmoediging.\nProgressie zichtbaar maken: Vult scorekaart in maar vergelijkt niet.",
+              "goed": "Uitdaging kiezen: Kiest bij minstens 2 stations de moeilijkere variant.\nOmgaan met onzekerheid: Herkent onzekerheid, pauzeert even, probeert opnieuw.\nProgressie zichtbaar maken: Vergelijkt scores met vorige beurt/les, benoemt vooruitgang.",
+              "uitstekend": "Uitdaging kiezen: Kiest systematisch variant net buiten comfortzone. Legt uit waarom.\nOmgaan met onzekerheid: Benoemt onzekerheid, kiest tussenstap, voert die uit.\nProgressie zichtbaar maken: Vergelijkt scores, stelt concreet doel en bereikt het."
+            }
+          }
+        },
+        "panels": {
+          "opwarming": "Sportraam-tikspel\n\nOpstelling: 2 sportramen. Klas in 2 groepen. Valmatten.\n\nBeschrijving: Tikkertje op het sportraam: de tikker klimt langs het sportraam en probeert anderen aan te tikken. Wie getikt wordt, klimt naar de andere kant en is veilig. Na 1 minuut wisselt de tikker.\n\nCue: 3 punten vast. Rustig maar snel bewegen.\n\nMakkelijker: Alleen onderste helft sportraam.\n\nMoeilijker: Hele sportraam + meerdere tikkers.",
+          "station_1": "Prusikklimmen — verdieping\n\nOpstelling: Zelfde als les 1. Klimtouwen + prusiktouwtjes + gordels.\n\nBeschrijving: Herhaling prusikklimmen. Doel: hoger komen dan les 1. Buddy telt de sporten. Na het klimmen: afdalen via omgekeerde procedure. Focus op vloeiende beweging.\n\nCue: Duwen — schuiven — trekken — staan. Rustig zakken, stap voor stap.\n\nMakkelijker: Halverwege en terug.\n\nMoeilijker: Helemaal tot boven + vloeiend afdalen.",
+          "station_2": "Via ferrata — verdieping\n\nOpstelling: Zelfde als les 1. Sportraam met lussen.\n\nBeschrijving: Herhaling via ferrata. Doel: sneller en vloeiender traverseren dan les 1. Focus op automatiseren van 'eerst vast, dan los'.\n\nCue: Eerst vast, dan los. Tempo opvoeren. 3 punten vast.\n\nMakkelijker: Zelfde tempo als les 1.\n\nMoeilijker: Op tijd: traverse binnen 2 minuten.",
+          "klimcircuit": "Klimcircuit: vrije keuze\n\nOpstelling: Zelfde 4 stations. Scorekaart les 1 erbij. Vrije keuze welk station.\n\nBeschrijving: Leerlingen kiezen zelf welke stations ze doen en in welke volgorde. Doel: minstens 1 station beter doen dan les 1. Vergelijk scores met les 1. Buddy moedigt aan maar respecteert de grens.\n\nCue: Vergelijk met les 1. Kies je uitdaging. Buddy-check elke beurt.\n\nMakkelijker: Zelfde niveau als les 1 is OK.\n\nMoeilijker: Alle stations op het hoogste niveau.",
+          "evaluatie": "Zelfevaluatie LPD 8 + LPD 13 (6 vragen). Eindevaluatie — vergelijk met les 1."
+        }
+      }
+    }
+  },
+  "ehbo": {
+    "graad_1": {
+      "les_1": {
+        "titel": "BLS-protocol aanleren",
+        "rubrics": {
+          "lpd_7": {
+            "naam": "LPD 7 — EHBO / Levensreddend handelen",
+            "type": "leerkracht",
+            "niveaus": {
+              "zwak": "BLS-protocol volledigheid: Slaat meerdere stappen over of verkeerde volgorde.\nTechnische uitvoering compressies: Handen verkeerde plaats, nauwelijks diepte, onregelmatig tempo.\nHandelen bij scenario: Raakt in paniek of weet niet wat te doen.",
+              "voldoende": "BLS-protocol volledigheid: Doorloopt de meeste stappen, slaat 1-2 over.\nTechnische uitvoering compressies: Handen juiste plaats, te ondiep of te langzaam.\nHandelen bij scenario: Herkent situatie na hints, voert handeling uit met hulp.",
+              "goed": "BLS-protocol volledigheid: Doorloopt alle stappen in juiste volgorde, soms korte aarzeling.\nTechnische uitvoering compressies: Juiste plaats, meestal 5-6 cm diep, tempo dicht bij 100-120/min.\nHandelen bij scenario: Herkent situatie, voert juiste handeling uit met kleine onzekerheden.",
+              "uitstekend": "BLS-protocol volledigheid: Doorloopt alle 8 stappen vlot en in juiste volgorde.\nTechnische uitvoering compressies: Altijd juiste plaats, 5-6 cm, 100-120/min, borst veert volledig terug.\nHandelen bij scenario: Herkent situatie snel, handelt kalm en correct."
+            }
+          },
+          "lpd_3": {
+            "naam": "LPD 3 — Zelfevaluatie",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Kan niet aangeven wat goed of fout ging.",
+              "voldoende": "Benoemt vaag of het goed of slecht ging.",
+              "goed": "Benoemt concreet welke stappen goed gingen en welke niet.",
+              "uitstekend": "Schat eigen niveau realistisch in, onderbouwt met voorbeelden."
+            }
+          }
+        },
+        "panels": {
+          "oefening_1": "BLS-protocol — demo en oefenen\n\nOpstelling: Per 2 leerlingen: 1 minipop. Kijkwijzer BLS bij de observer.\n\nBeschrijving: Leerkracht demonstreert het volledige BLS-protocol real-time op een ANNE-pop (zonder uitleg). Daarna opnieuw met uitleg per stap. Leerlingen gaan per 2 aan de slag. Eén leerling doorloopt het volledige protocol (compressies op minipop, beademing simuleren). De ander is observer met kijkwijzer. Wissel na 4 minuten.\n\nCue: Hard en snel — duw 5-6 cm, laat volledig terugveren, 100-120/min.\n\nMakkelijker: Observer leest de stappen voor van de kijkwijzer, hulpverlener volgt.\n\nMoeilijker: Hulpverlener doorloopt het protocol zonder hulp van de observer.",
+          "oefening_2": "Stabiele zijligging\n\nOpstelling: Per 2: 1 hulpverlener, 1 slachtoffer. Taakkaart met stappen erbij.\n\nBeschrijving: Het slachtoffer ligt op de rug, de hulpverlener voert de stabiele zijligging uit volgens de stappen op de taakkaart. Na uitvoering controleert de hulpverlener of de luchtweg open is. Wissel na 2 uitvoeringen.\n\nCue: Hoofd achterover, kin optillen, luchtweg open. Bovenste been 90°, hand onder wang.\n\nMakkelijker: Hulpverlener mag de taakkaart erbij houden.\n\nMoeilijker: Zonder taakkaart, uit het hoofd.",
+          "eindspel": "Doorschuifstations\n\nOpstelling: 4 stations: (A) BLS op minipop, (B) stabiele zijligging, (C) AED-bediening, (D) verstikking (Heimlich). Doorschuif per 8 min.\n\nBeschrijving: Per station: duo's oefenen. Bij elk station een taakkaart en een kijkwijzer. De observer checkt de uitvoering. Doorschuif na 8 minuten. Elke leerling doorloopt alle stations.\n\nCue: Eerst veiligheid, dan diagnose, dan handelen. Volg de stappen op de kijkwijzer.\n\nMakkelijker: Observer mag hints geven.\n\nMoeilijker: Observer zwijgt, hulpverlener doet alles zelf.",
+          "evaluatie": "Formatieve evaluatie. Leerkracht observeert uitvoeringen. Zelfevaluatie LPD 3 + LPD 7."
+        }
+      },
+      "les_2": {
+        "titel": "Herhaling BLS + AED + scenario's",
+        "rubrics": {
+          "lpd_7": {
+            "naam": "LPD 7 — EHBO / Levensreddend handelen",
+            "type": "leerkracht",
+            "niveaus": {
+              "zwak": "BLS-protocol volledigheid: Slaat meerdere stappen over of verkeerde volgorde.\nTechnische uitvoering compressies: Handen verkeerde plaats, nauwelijks diepte, onregelmatig tempo.\nHandelen bij scenario: Raakt in paniek of weet niet wat te doen.",
+              "voldoende": "BLS-protocol volledigheid: Doorloopt de meeste stappen, slaat 1-2 over.\nTechnische uitvoering compressies: Handen juiste plaats, te ondiep of te langzaam.\nHandelen bij scenario: Herkent situatie na hints, voert handeling uit met hulp.",
+              "goed": "BLS-protocol volledigheid: Doorloopt alle stappen in juiste volgorde, soms korte aarzeling.\nTechnische uitvoering compressies: Juiste plaats, meestal 5-6 cm diep, tempo dicht bij 100-120/min.\nHandelen bij scenario: Herkent situatie, voert juiste handeling uit met kleine onzekerheden.",
+              "uitstekend": "BLS-protocol volledigheid: Doorloopt alle 8 stappen vlot en in juiste volgorde.\nTechnische uitvoering compressies: Altijd juiste plaats, 5-6 cm, 100-120/min, borst veert volledig terug.\nHandelen bij scenario: Herkent situatie snel, handelt kalm en correct."
+            }
+          },
+          "lpd_3": {
+            "naam": "LPD 3 — Zelfevaluatie",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Kan niet aangeven wat goed of fout ging.",
+              "voldoende": "Benoemt vaag of het goed of slecht ging.",
+              "goed": "Benoemt concreet welke stappen goed gingen en welke niet.",
+              "uitstekend": "Schat eigen niveau realistisch in, onderbouwt met voorbeelden."
+            }
+          }
+        },
+        "panels": {
+          "oefening_1": "BLS met AED — vloeiend\n\nOpstelling: Per 2 aan een ANNE-pop + AED-trainer.\n\nBeschrijving: Elke leerling voert het volledige BLS-protocol met AED uit: compressies → AED aanzetten → elektroden kleven → analyse → schok → verder reanimeren. Partner observeert met kijkwijzer.\n\nCue: Geen pauzes — vloeiend van compressies naar AED en terug.\n\nMakkelijker: Partner mag bijsturen tijdens de uitvoering.\n\nMoeilijker: Volledig zelfstandig. Leerkracht scoort via rubric.",
+          "oefening_2": "Stabiele zijlig + herhaling verstikking\n\nOpstelling: Per 3: hulpverlener, slachtoffer, supervisor met taakkaart.\n\nBeschrijving: Supervisor kiest willekeurig: 'stabiele zijligging' of 'verstikking.' De hulpverlener voert uit, het slachtoffer simuleert. Supervisor geeft feedback. Elke leerling voert beide procedures minstens 1x uit.\n\nCue: Stabiele zijlig: luchtweg open! Heimlich: vuist boven de navel!\n\nMakkelijker: Supervisor leest de stappen voor.\n\nMoeilijker: Supervisor zegt enkel het scenario, hulpverlener beslist zelf welke procedure.",
+          "eindspel": "Simulatietoernooi\n\nOpstelling: Trio's: hulpverlener, slachtoffer, observer. Doorschuifsysteem per 8 minuten.\n\nBeschrijving: Elk trio trekt een casuskaartje. Het slachtoffer simuleert de beschreven symptomen. De hulpverlener voert de juiste handeling uit. De observer beoordeelt en geeft achteraf feedback. Na 8 minuten: wissel rollen én doorschuif. Elke leerling is minstens 2x hulpverlener.\n\nCue: Eerst veiligheid, dan diagnose, dan handelen.\n\nMakkelijker: Observer mag hints geven.\n\nMoeilijker: Observer zwijgt volledig. Achteraf pas feedback.",
+          "evaluatie": "Leraarevaluatie LPD 7 (rubric). Zelfevaluatie LPD 3. Peerevaluatie LPD 10."
+        }
+      }
+    },
+    "graad_3": {
+      "les_1": {
+        "titel": "Herhaling BLS/AED + open scenario's",
+        "rubrics": {
+          "lpd_7": {
+            "naam": "LPD 7 — EHBO / Levensreddend handelen",
+            "type": "leerkracht",
+            "niveaus": {
+              "zwak": "BLS-protocol volledigheid: Slaat stappen over, volgorde klopt niet.\nTechnische uitvoering BLS + AED: Compressies en AED bevatten meerdere fouten.\nHandelen bij open scenario: Herkent probleem niet, handelt niet of verkeerd.",
+              "voldoende": "BLS-protocol volledigheid: Doorloopt stappen maar niet vloeiend.\nTechnische uitvoering BLS + AED: Compressies of AED met kleine fouten.\nHandelen bij open scenario: Herkent probleem na nadenken, handeling met fouten.",
+              "goed": "BLS-protocol volledigheid: Doorloopt alle stappen vloeiend in juiste volgorde.\nTechnische uitvoering BLS + AED: Compressies correct, AED correct bediend, beademing acceptabel.\nHandelen bij open scenario: Herkent probleem, kiest juiste handeling, voert correct uit.",
+              "uitstekend": "BLS-protocol volledigheid: Protocol snel en vloeiend, neemt spontaan leiding.\nTechnische uitvoering BLS + AED: Alles technisch perfect: 5-6 cm, 100-120/min, AED vloeiend.\nHandelen bij open scenario: Herkent probleem meteen, handelt kalm, snel en correct."
+            }
+          },
+          "lpd_3": {
+            "naam": "LPD 3 — Zelfevaluatie",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Zichzelf inschatten: Geen idee van eigen niveau.\nReflecteren op vorderingen: Reflecteert niet, ziet geen verband met vorige uitvoering.",
+              "voldoende": "Zichzelf inschatten: Schat in met hulp, deels realistisch.\nReflecteren op vorderingen: Benoemt vaag verschil met vorige les.",
+              "goed": "Zichzelf inschatten: Schat niveau realistisch in, benoemt sterke en zwakke punten.\nReflecteren op vorderingen: Benoemt concreet wat verbeterd is t.o.v. les 1.",
+              "uitstekend": "Zichzelf inschatten: Schat exact in, vergelijkt met vorige les, formuleert werkpunt.\nReflecteren op vorderingen: Benoemt progressie, formuleert realistisch doel."
+            }
+          }
+        },
+        "panels": {
+          "oefening_1": "BLS met AED — herhaling onder druk\n\nOpstelling: Per 2 aan een ANNE-pop + AED-trainer.\n\nBeschrijving: Elke leerling voert het volledige BLS-protocol met AED uit terwijl de leerkracht observeert. Partner observeert met kijkwijzer. Focus op vloeiendheid en snelheid.\n\nCue: Volledige uitvoering — kalm, correct en vloeiend.\n\nMakkelijker: Partner mag bijsturen.\n\nMoeilijker: Volledig zelfstandig.",
+          "oefening_2": "Casuskaartjes met symptoomherkenning\n\nOpstelling: Per 3: hulpverlener, slachtoffer, observer.\n\nBeschrijving: Het slachtoffer simuleert symptomen (bv. niet meer reageren, niet ademen, hoesten). De hulpverlener moet EERST de situatie inschatten en dan de juiste handeling kiezen. De observer zwijgt tot na de uitvoering.\n\nCue: Eerst kijken en denken, dan handelen — observeer de symptomen.\n\nMakkelijker: Op het casuskaartje staat een hint.\n\nMoeilijker: Geen hints. De hulpverlener moet volledig zelf diagnosticeren.",
+          "eindspel": "Open scenario's met diagnose\n\nOpstelling: Duo's (hulpverlener + observer). Casuskaartjes met complexere scenario's.\n\nBeschrijving: De hulpverlener moet de situatie inschatten (symptomen herkennen) en de juiste handeling kiezen. Observer zwijgt en geeft achteraf gestructureerde feedback: (1) Was de diagnose correct? (2) Was het protocol volledig? (3) Waren de technieken correct? Doorschuif na 2 kaartjes.\n\nCue: Eerst kijken en denken, dan handelen.\n\nMakkelijker: Hint op het kaartje.\n\nMoeilijker: Geen hints. Volledig zelf diagnosticeren.",
+          "evaluatie": "Leraarevaluatie LPD 7. Zelfevaluatie LPD 3. Peerevaluatie LPD 10."
+        }
+      },
+      "les_2": {
+        "titel": "Eindevaluatie met simulaties",
+        "rubrics": {
+          "lpd_7": {
+            "naam": "LPD 7 — EHBO / Levensreddend handelen",
+            "type": "leerkracht",
+            "niveaus": {
+              "zwak": "BLS-protocol volledigheid: Slaat stappen over, volgorde klopt niet.\nTechnische uitvoering BLS + AED: Compressies en AED bevatten meerdere fouten.\nHandelen bij open scenario: Herkent probleem niet, handelt niet of verkeerd.",
+              "voldoende": "BLS-protocol volledigheid: Doorloopt stappen maar niet vloeiend.\nTechnische uitvoering BLS + AED: Compressies of AED met kleine fouten.\nHandelen bij open scenario: Herkent probleem na nadenken, handeling met fouten.",
+              "goed": "BLS-protocol volledigheid: Doorloopt alle stappen vloeiend in juiste volgorde.\nTechnische uitvoering BLS + AED: Compressies correct, AED correct bediend, beademing acceptabel.\nHandelen bij open scenario: Herkent probleem, kiest juiste handeling, voert correct uit.",
+              "uitstekend": "BLS-protocol volledigheid: Protocol snel en vloeiend, neemt spontaan leiding.\nTechnische uitvoering BLS + AED: Alles technisch perfect: 5-6 cm, 100-120/min, AED vloeiend.\nHandelen bij open scenario: Herkent probleem meteen, handelt kalm, snel en correct."
+            }
+          },
+          "lpd_3": {
+            "naam": "LPD 3 — Zelfevaluatie",
+            "type": "zelfevaluatie",
+            "niveaus": {
+              "zwak": "Zichzelf inschatten: Geen idee van eigen niveau.\nReflecteren op vorderingen: Reflecteert niet, ziet geen verband met vorige uitvoering.",
+              "voldoende": "Zichzelf inschatten: Schat in met hulp, deels realistisch.\nReflecteren op vorderingen: Benoemt vaag verschil met vorige les.",
+              "goed": "Zichzelf inschatten: Schat niveau realistisch in, benoemt sterke en zwakke punten.\nReflecteren op vorderingen: Benoemt concreet wat verbeterd is t.o.v. les 1.",
+              "uitstekend": "Zichzelf inschatten: Schat exact in, vergelijkt met vorige les, formuleert werkpunt.\nReflecteren op vorderingen: Benoemt progressie, formuleert realistisch doel."
+            }
+          }
+        },
+        "panels": {
+          "oefening_1": "Evaluatie BLS met AED\n\nOpstelling: Per 2 aan een ANNE-pop + AED. Leerkracht observeert en scoort via rubric.\n\nBeschrijving: Elke leerling voert het volledige BLS-protocol met AED uit terwijl de partner observeert met de kijkwijzer. De leerkracht scoort via de LPD 7-rubric. Na afloop geeft de observer feedback en vult de leerling de zelfevaluatie in.\n\nCue: Volledige uitvoering — kalm, correct en vloeiend.\n\nMakkelijker: Leerling mag 1x opnieuw beginnen na een hint.\n\nMoeilijker: Leerling voert uit zonder enige hulp.",
+          "oefening_2": "Evaluatie casuskaartje\n\nOpstelling: Individueel. Leerling trekt 1 casuskaartje. Medeleerling speelt het slachtoffer, een derde observeert.\n\nBeschrijving: De leerling leest het scenario, herkent de situatie en voert de juiste handeling uit. De observer checkt de oplossing op de achterkant van het kaartje en geeft feedback. De leerkracht scoort via de rubric.\n\nCue: Lees, herken, handel — kalm en in de juiste volgorde.\n\nMakkelijker: Op het kaartje staat een hint naar het type situatie.\n\nMoeilijker: Geen hints. Het slachtoffer simuleert, de leerling moet zelf diagnosticeren.",
+          "eindspel": "Simulatietoernooi\n\nOpstelling: Trio's: hulpverlener, slachtoffer, observer. Doorschuifsysteem per 8 minuten.\n\nBeschrijving: Elk trio trekt een casuskaartje. Hulpverlener voert uit. Observer beoordeelt met gestructureerde feedback: (1) Diagnose correct? (2) Protocol volledig? (3) Techniek correct? Doorschuif na 8 min. Leerkracht observeert en scoort.\n\nCue: Eerst veiligheid, dan diagnose, dan handelen.\n\nMakkelijker: Observer mag hints geven.\n\nMoeilijker: Observer zwijgt volledig.",
+          "evaluatie": "Eindevaluatie: LPD 7 (rubric leerkracht), LPD 3 (zelfevaluatie), LPD 10 (peerevaluatie feedback)."
+        }
+      }
+    }
   }
 }

@@ -2,10 +2,10 @@ import { useParams, Link } from 'react-router-dom'
 import sportsData from '../data/sports.json'
 import lessonsData from '../data/lessons.json'
 
-const GRADEN = [
-  { key: 'graad_1', label: '1e graad', jaar: '4e jaar' },
-  { key: 'graad_2', label: '2e graad', jaar: '5e jaar' },
-  { key: 'graad_3', label: '3e graad', jaar: '6e jaar' },
+const JAAR_GRADEN = [
+  { key: 'graad_1', label: '4e jaar' },
+  { key: 'graad_2', label: '5e jaar' },
+  { key: 'graad_3', label: '6e jaar' },
 ]
 
 export default function SportDetail() {
@@ -14,6 +14,12 @@ export default function SportDetail() {
   const sportLessons = lessonsData[sportId] ?? {}
 
   if (!sport) return <p className="text-red-500 p-4">Sport niet gevonden.</p>
+
+  // Only show jaren that have lessons in lessons.json
+  const availableJaren = JAAR_GRADEN.filter(({ key }) => {
+    const gradeData = sportLessons[key]
+    return gradeData && Object.keys(gradeData).length > 0
+  })
 
   return (
     <div>
@@ -32,23 +38,20 @@ export default function SportDetail() {
         </div>
       </div>
 
-      {/* Graden */}
-      <div className="space-y-3">
-        {GRADEN.map(({ key, label, jaar }) => {
-          const gradeData = sportLessons[key]
-          const lesKeys = gradeData ? Object.keys(gradeData) : []
+      {/* Jaren */}
+      {availableJaren.length === 0 ? (
+        <p className="text-sm text-gray-400 italic px-1">Nog geen lessen beschikbaar.</p>
+      ) : (
+        <div className="space-y-3">
+          {availableJaren.map(({ key, label }) => {
+            const gradeData = sportLessons[key]
+            const lesKeys = Object.keys(gradeData)
 
-          return (
-            <div key={key} className="bg-white rounded-2xl shadow p-4">
-              <div className="flex items-baseline gap-2 mb-3">
-                <h2 className="font-bold text-base" style={{ color: '#2C3E50' }}>{label}</h2>
-                <span className="text-xs text-gray-400">{jaar}</span>
-              </div>
-              <div className="flex gap-2">
-                {lesKeys.length === 0 ? (
-                  <span className="text-sm text-gray-400 italic">Nog geen lessen beschikbaar</span>
-                ) : (
-                  lesKeys.map(lesKey => {
+            return (
+              <div key={key} className="bg-white rounded-2xl shadow p-4">
+                <h2 className="font-bold text-base mb-3" style={{ color: '#2C3E50' }}>{label}</h2>
+                <div className="flex gap-2">
+                  {lesKeys.map(lesKey => {
                     const les = gradeData[lesKey]
                     const lesNr = lesKey.replace('les_', '')
                     return (
@@ -62,13 +65,13 @@ export default function SportDetail() {
                         <span className="block text-xs opacity-80 mt-0.5 leading-tight line-clamp-2">{les.titel}</span>
                       </Link>
                     )
-                  })
-                )}
+                  })}
+                </div>
               </div>
-            </div>
-          )
-        })}
-      </div>
+            )
+          })}
+        </div>
+      )}
     </div>
   )
 }

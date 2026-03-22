@@ -16,8 +16,24 @@ db.version(2).stores({
   klassen:           'id, naam',
   leerlingen:        'id, klasId, voornaam, achternaam',
   scores:            '++id, leerlingId, [leerlingId+sportId+graad+les+lpd], sportId, graad, les, datum',
-  // Zelfevaluatie-sessies: token → leerlingId koppeling (PRIVE, verlaat dit toestel nooit)
   zelfevalSessies:   'token, leerlingId, klasId, sportId, graad, les, aangemaakt',
+})
+
+// v3: extra index op lpd
+db.version(3).stores({
+  klassen:           'id, naam',
+  leerlingen:        'id, klasId, voornaam, achternaam',
+  scores:            '++id, leerlingId, [leerlingId+sportId+graad+les+lpd], sportId, graad, les, lpd, datum',
+  zelfevalSessies:   'token, leerlingId, klasId, sportId, graad, les, aangemaakt',
+})
+
+// v4: kledij in eigen tabel — los van les/sport
+db.version(4).stores({
+  klassen:           'id, naam',
+  leerlingen:        'id, klasId, voornaam, achternaam',
+  scores:            '++id, leerlingId, [leerlingId+sportId+graad+les+lpd], sportId, graad, les, lpd, datum',
+  zelfevalSessies:   'token, leerlingId, klasId, sportId, graad, les, aangemaakt',
+  kledij:            'leerlingId',   // { leerlingId, count, datum }
 })
 
 export default db

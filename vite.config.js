@@ -20,7 +20,7 @@ export default defineConfig(({ mode }) => {
         injectRegister: 'auto',
 
         // ── Precache: alle app-bestanden + assets ───────────────────────────
-        includeAssets: ['favicon.svg', 'icon-192.png', 'icon-512.png', 'images/**/*'],
+        includeAssets: ['favicon.svg', 'icon-192.png', 'icon-512.png', 'images/**/*', 'images/APP_thumbnail.png'],
         manifest: {
           name: 'LO MASTER 2026',
           short_name: 'LO App',
@@ -33,13 +33,13 @@ export default defineConfig(({ mode }) => {
           start_url: base,
           icons: [
             {
-              src: 'icon-192.png',
+              src: 'images/APP_thumbnail.png',
               sizes: '192x192',
               type: 'image/png',
               purpose: 'any',
             },
             {
-              src: 'icon-512.png',
+              src: 'images/APP_thumbnail.png',
               sizes: '512x512',
               type: 'image/png',
               purpose: 'any maskable',

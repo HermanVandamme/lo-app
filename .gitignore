@@ -16,13 +16,19 @@ dist-ssr/
 *.xls
 *.pdf
 
-# Foto's
+# Foto's (leerlingfoto's nooit committen)
 /photos/
 /images/
 *.jpg
 *.jpeg
 *.JPG
 *.JPEG
+
+# Uitzondering: sport-afbeeldingen in public/images/ mogen wél in de repo
+!public/images/*.jpg
+!public/images/*.jpeg
+!public/images/*.JPG
+!public/images/*.png
 
 # Specifieke mappen met privédata
 /Classes/
