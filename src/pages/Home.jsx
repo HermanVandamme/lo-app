@@ -1,8 +1,26 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import sportsData from '../data/sports.json'
 
-// Fallback achtergrondkleuren per sport
+import imgBasketbal  from '../assets/images/basketbal.jpg'
+import imgVolleybal  from '../assets/images/volleybal.jpg'
+import imgBadminton  from '../assets/images/badminton.jpg'
+import imgHandbal    from '../assets/images/handbal.jpg'
+import imgVoetbal    from '../assets/images/voetbal.jpg'
+import imgJudo       from '../assets/images/judo.jpg'
+import imgKlimmen    from '../assets/images/klimmen.jpg'
+import imgEhbo       from '../assets/images/ehbo.jpg'
+
+const SPORT_AFBEELDING = {
+  basketbal: imgBasketbal,
+  volleybal: imgVolleybal,
+  badminton: imgBadminton,
+  handbal:   imgHandbal,
+  voetbal:   imgVoetbal,
+  judo:      imgJudo,
+  klimmen:   imgKlimmen,
+  ehbo:      imgEhbo,
+}
+
 const SPORT_KLEUR = {
   basketbal: '#E67E22',
   volleybal:  '#2980B9',
@@ -30,7 +48,7 @@ export default function Home() {
 }
 
 function SportTile({ sport }) {
-  const [imgFailed, setImgFailed] = useState(false)
+  const imgSrc      = SPORT_AFBEELDING[sport.id]
   const fallbackKleur = SPORT_KLEUR[sport.id] ?? '#7F8C8D'
 
   return (
@@ -40,24 +58,22 @@ function SportTile({ sport }) {
     >
       <div
         className="relative h-32"
-        style={{ background: imgFailed ? fallbackKleur : '#d1d5db' }}
+        style={{ background: imgSrc ? '#d1d5db' : fallbackKleur }}
       >
-        {!imgFailed && (
+        {imgSrc && (
           <img
-            src={`${import.meta.env.BASE_URL}images/${sport.image}`}
+            src={imgSrc}
             alt={sport.name}
             className="w-full h-full object-cover"
-            onError={() => setImgFailed(true)}
           />
         )}
 
-        {/* Gradient overlay (ook bij fallback-kleur) */}
         <div
           className="absolute inset-0"
           style={{
-            background: imgFailed
-              ? 'linear-gradient(to top, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 60%)'
-              : 'linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 60%)',
+            background: imgSrc
+              ? 'linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 60%)'
+              : 'linear-gradient(to top, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 60%)',
           }}
         />
 
