@@ -23,8 +23,6 @@ const NIVEAU_LABELS = {
   uitstekend: 'Uitst.',
 }
 
-const GRAAD_JAAR = { graad_1: 'jaar_4', graad_2: 'jaar_5', graad_3: 'jaar_6' }
-
 const DEFAULT_SCORE = 0
 const MAX_SCORE     = 10
 const STEP          = 0.5
@@ -34,12 +32,11 @@ function getEvalType(sportId, lpdKey) {
 }
 
 function getCriteria(sportId, lpdKey, graad) {
-  const jaarKey = GRAAD_JAAR[graad]
-  return evaluatieData[sportId]?.[lpdKey]?.rubrics?.[jaarKey] ?? null
+  return evaluatieData[sportId]?.[lpdKey]?.rubrics?.[graad] ?? null
 }
 
 // ── Hoofd-component ────────────────────────────────────────────────────────────
-export default function EvaluatiePanel({ sportId, graad, les, rubrics, evaluatieTekst }) {
+export default function EvaluatiePanel({ sportId, graad, les, evaluatieTekst }) {
   const [rubricOpen, setRubricOpen]     = useState(true)   // standaard open
   const [selectedKlas, setSelectedKlas] = useState(null)
   const [tab, setTab]                   = useState('scores') // 'scores' | 'kledij'
@@ -50,7 +47,19 @@ export default function EvaluatiePanel({ sportId, graad, les, rubrics, evaluatie
     [klassen, graad]
   )
 
-  const rubricEntries = Object.entries(rubrics ?? {})
+  // Derive LPDs from evaluatie.json for this sport + year
+  const rubricEntries = useMemo(() => {
+    const sportEval = evaluatieData[sportId]
+    if (!sportEval) return []
+    return Object.entries(sportEval)
+      .filter(([lpdKey, lpd]) => {
+        if (lpdKey.startsWith('_')) return false
+        const et = lpd.evaluatie_type ?? 'rubric'
+        if (et !== 'rubric') return true
+        return lpd.rubrics?.[graad] != null
+      })
+      .map(([lpdKey, lpd]) => [lpdKey, { naam: lpd.naam, type: 'leerkracht' }])
+  }, [sportId, graad])
 
   return (
     <div className="mt-1">
@@ -81,9 +90,8 @@ export default function EvaluatiePanel({ sportId, graad, les, rubrics, evaluatie
               <div key={lpdKey}>
                 <div className="flex items-center gap-2 flex-wrap">
                   <span className="text-xs font-bold text-blue-800">
-                    {lpdKey.replace('lpd_', 'LPD ').toUpperCase()}
+                    {lpd.naam}
                   </span>
-                  <span className="text-xs text-blue-700">— {lpd.naam}</span>
                   <span className={`ml-auto text-xs px-2 py-0.5 rounded-full font-medium ${
                     lpd.type === 'zelfevaluatie' ? 'bg-purple-100 text-purple-600'
                     : et === 'testprotocol_score_10' ? 'bg-green-100 text-green-600'
@@ -461,10 +469,7 @@ function LpdRij({ lpdKey, lpd, sportId, graad, scores, onScore }) {
 
   const lpdLabel = (
     <div className="flex items-center gap-1 mb-1.5">
-      <span className="text-xs font-bold text-gray-600">
-        {lpdKey.replace('lpd_', 'LPD ').toUpperCase()}
-      </span>
-      <span className="text-xs text-gray-400">— {lpd.naam}</span>
+      <span className="text-xs font-bold text-gray-600">{lpd.naam}</span>
       {lpd.type === 'zelfevaluatie' && (
         <span className="text-xs bg-purple-100 text-purple-600 px-1.5 py-0.5 rounded-full">zelf</span>
       )}

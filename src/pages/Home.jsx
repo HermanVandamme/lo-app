@@ -33,7 +33,7 @@ export default function Home() {
 }
 
 function SportTile({ sport }) {
-  const imgUrl       = sport.image ? `/images/${sport.image}` : null
+  const imgUrl       = sport.image ? `${import.meta.env.BASE_URL}images/${sport.image}` : null
   const fallbackKleur = SPORT_KLEUR[sport.id] ?? '#7F8C8D'
 
   return (

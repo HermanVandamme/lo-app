@@ -67,7 +67,7 @@
     },
     {
       "id": "judo",
-      "name": "Judo Ne-Waza",
+      "name": "Judo",
       "image": "judo.jpg",
       "panels": [
         "Opwarming",
@@ -111,7 +111,7 @@
         "Opwarming",
         "Oefening 1",
         "Oefening 2",
-        "3,3 km Test",
+        "Spelvorm",
         "Evaluatie"
       ],
       "jaren": [4, 5, 6]

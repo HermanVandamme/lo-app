@@ -3,9 +3,9 @@ import sportsData from '../data/sports.json'
 import lessonsData from '../data/lessons.json'
 
 const JAAR_GRADEN = [
-  { key: 'graad_1', label: '4e jaar' },
-  { key: 'graad_2', label: '5e jaar' },
-  { key: 'graad_3', label: '6e jaar' },
+  { key: 'jaar_4', label: '4e jaar' },
+  { key: 'jaar_5', label: '5e jaar' },
+  { key: 'jaar_6', label: '6e jaar' },
 ]
 
 export default function SportDetail() {
@@ -26,7 +26,7 @@ export default function SportDetail() {
       {/* Header */}
       <div className="relative h-36 rounded-2xl overflow-hidden mb-5 shadow">
         <img
-          src={`/images/${sport.image}`}
+          src={`${import.meta.env.BASE_URL}images/${sport.image}`}
           alt={sport.name}
           className="w-full h-full object-cover"
           onError={e => { e.currentTarget.style.display = 'none' }}
