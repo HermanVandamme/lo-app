@@ -688,19 +688,19 @@
           {
             "criterium": "Vrijlopen en actie",
             "niveaus": {
-              "zwak": "Blijft staan of loopt doelloos. Geen V-cut of give and go.",
-              "voldoende": "Probeert V-cut of give and go maar timing en richting kloppen niet altijd.",
-              "goed": "Voert V-cut en give and go correct uit. Komt regelmatig vrij.",
-              "uitstekend": "Combineert V-cut en give and go vloeiend. Leest de verdediger en kiest de juiste actie."
+              "zwak": "Staat stil, loopt niet vrij.",
+              "voldoende": "Doet een poging tot vrijlopen maar willekeurig, zonder herkenbare looplijn.",
+              "goed": "Loopt vrij via V-cut of snijdt na een pass (give and go) volgens de juiste looplijn.",
+              "uitstekend": "Leest de verdediger, kiest het juiste moment en de juiste looplijn, perfecte timing."
             }
           },
           {
             "criterium": "Resultaat",
             "niveaus": {
-              "zwak": "Komt zelden vrij. Verliest de bal regelmatig.",
-              "voldoende": "Komt soms vrij maar kan de bal niet altijd verwerken.",
-              "goed": "Komt vrij en ontvangt de bal op een positie waar een shot of doorpas mogelijk is.",
-              "uitstekend": "Komt systematisch vrij, ontvangt de bal correct en creëert scorkansen."
+              "zwak": "Komt niet vrij, ontvangt geen bruikbare bal.",
+              "voldoende": "Komt soms vrij maar de pas komt niet aan of de positie is niet doelgevaarlijk.",
+              "goed": "Komt vrij, ontvangt de bal op een positie waar een shot of doorpas mogelijk is.",
+              "uitstekend": "Creëert kansen voor zichzelf én ploegmaats door slim vrijlopen."
             }
           }
         ],
@@ -708,19 +708,19 @@
           {
             "criterium": "Vrijlopen en actie",
             "niveaus": {
-              "zwak": "Gebruikt alleen V-cut. Geen backdoor of fill the spot.",
-              "voldoende": "Probeert backdoor en fill the spot maar leest de verdediger niet altijd correct.",
-              "goed": "Leest de verdediger en kiest correct: V-cut, backdoor of fill the spot.",
-              "uitstekend": "Combineert alle tactieken vloeiend. Herstelt de driehoek automatisch."
+              "zwak": "Staat stil, maakt geen keuze.",
+              "voldoende": "Doet steeds dezelfde actie, leest de verdediger niet.",
+              "goed": "Leest de verdediger en kiest de juiste actie: V-cut als hij laag staat, backdoor als hij hoog staat. Herstelt de driehoek (fill the spot).",
+              "uitstekend": "Schakelt vlot tussen V-cut, backdoor en fill the spot, anticipeert op de positie van de verdediger."
             }
           },
           {
             "criterium": "Resultaat",
             "niveaus": {
-              "zwak": "Komt zelden vrij. Driehoek wordt niet hersteld.",
-              "voldoende": "Komt soms vrij. Driehoek wordt met vertraging hersteld.",
-              "goed": "Komt regelmatig vrij. Driehoek wordt correct hersteld na elke actie.",
-              "uitstekend": "Creëert systematisch scorkansen. Driehoek altijd intact."
+              "zwak": "Komt niet vrij, driehoek valt uit elkaar.",
+              "voldoende": "Komt soms vrij maar de driehoek wordt niet hersteld na een mislukte actie.",
+              "goed": "Komt vrij, ontvangt de bal doelgevaarlijk. Bij een mislukte give and go wordt de driehoek hersteld.",
+              "uitstekend": "De aanval loopt door: vrijlopen, driehoek herstellen en kansen creëren als continu proces."
             }
           }
         ],
@@ -728,58 +728,19 @@
           {
             "criterium": "Vrijlopen en actie",
             "niveaus": {
-              "zwak": "Gebruikt beperkt aantal tactieken. Geen swing.",
-              "voldoende": "Probeert swing maar timing klopt niet. Combineert soms tactieken.",
-              "goed": "Combineert V-cut, backdoor, give and go, fill the spot en swing vloeiend.",
-              "uitstekend": "Alle tactieken geautomatiseerd. Leest de verdediging en kiest het juiste middel."
+              "zwak": "Staat stil of beweegt willekeurig.",
+              "voldoende": "Gebruikt één tactiek herhaaldelijk, schakelt niet.",
+              "goed": "Combineert V-cut, backdoor, give and go, fill the spot en swing. Kiest de juiste actie op het juiste moment.",
+              "uitstekend": "Leest het volledige spel, anticipeert, schakelt vloeiend tussen tactieken en stuurt ploegmaats aan."
             }
           },
           {
             "criterium": "Resultaat",
             "niveaus": {
-              "zwak": "Weinig scorkansen. Geen samenspel.",
-              "voldoende": "Creëert soms scorkansen maar mist afwerking.",
-              "goed": "Creëert regelmatig scorkansen via combinatiespel. Scoort of creëert voor medespelers.",
-              "uitstekend": "Domineert het aanvalsspel. Combineert alle tactieken en scoort of creëert systematisch."
-            }
-          }
-        ]
-      }
-    },
-    "lpd_8": {
-      "naam": "LPD 8 — Regels en afspraken",
-      "evaluatievorm": "Zelfevaluatie",
-      "rubrics": {
-        "jaar_4": [
-          {
-            "criterium": "Spelregels naleven",
-            "niveaus": {
-              "zwak": "Kent de basisregels niet. Loopt met de bal, duwt verdedigers.",
-              "voldoende": "Kent de regels maar vergeet soms steps of fouls.",
-              "goed": "Past alle regels correct toe zonder herinnering.",
-              "uitstekend": "Past regels toe en attendeert medespelers op overtredingen."
-            }
-          }
-        ],
-        "jaar_5": [
-          {
-            "criterium": "Spelregels naleven",
-            "niveaus": {
-              "zwak": "Overtreedt regels herhaaldelijk.",
-              "voldoende": "Volgt meeste regels maar vergeet soms transitieregels.",
-              "goed": "Past alle regels correct toe in wedstrijdsituaties.",
-              "uitstekend": "Past regels toe en stimuleert fair play actief."
-            }
-          }
-        ],
-        "jaar_6": [
-          {
-            "criterium": "Spelregels in tornooicontext",
-            "niveaus": {
-              "zwak": "Vergeet regels onder wedstrijddruk.",
-              "voldoende": "Past regels toe maar maakt fouten onder druk.",
-              "goed": "Past alle regels correct toe in tornooicontext.",
-              "uitstekend": "Speelt regelconform. Geeft fouten toe. Stimuleert fair play."
+              "zwak": "De aanval stokt, geen kansen.",
+              "voldoende": "Soms een kans, maar de aanval valt stil als de eerste actie niet lukt.",
+              "goed": "De aanval loopt door: bij mislukking wordt gewisseld (swing, fill the spot) en ontstaan nieuwe kansen.",
+              "uitstekend": "Doorlopende aanval met vlotte wisselingen, meerdere kansen per balbezit."
             }
           }
         ]
@@ -787,65 +748,92 @@
     },
     "lpd_11": {
       "naam": "LPD 11 — Leiding nemen en aanvaarden",
-      "evaluatievorm": "Zelfevaluatie",
+      "evaluatievorm": "Zelfevaluatie (na les 2, op papier of digitaal)",
       "rubrics": {
         "jaar_4": [
           {
-            "criterium": "Leiding nemen als leider",
+            "criterium": "Leiding nemen",
             "niveaus": {
-              "zwak": "Zegt niets, organiseert niet.",
-              "voldoende": "Leest de taakkaart voor maar organiseert niet actief.",
-              "goed": "Organiseert het groepje, verdeelt posities.",
-              "uitstekend": "Organiseert, motiveert, bespreekt tactiek in de time-out."
+              "zwak": "Ik nam geen leiding, ook niet als het gevraagd werd.",
+              "voldoende": "Ik nam aarzelend leiding na een vraag.",
+              "goed": "Ik nam leiding wanneer het nodig was.",
+              "uitstekend": "Ik nam spontaan en effectief leiding."
+            }
+          },
+          {
+            "criterium": "Kwaliteit van leiding",
+            "niveaus": {
+              "zwak": "Ik wist niet wat ik moest zeggen of doen.",
+              "voldoende": "Ik gaf basale instructies, weinig structuur.",
+              "goed": "Ik gaf duidelijke instructies en hield overzicht.",
+              "uitstekend": "Ik motiveerde het team en hield overzicht."
             }
           },
           {
             "criterium": "Leiding aanvaarden",
             "niveaus": {
-              "zwak": "Luistert niet naar de leider.",
-              "voldoende": "Volgt instructies maar vraagt niet door.",
-              "goed": "Volgt instructies en stelt constructieve vragen.",
-              "uitstekend": "Volgt instructies, geeft suggesties, zet zich in voor afspraken."
+              "zwak": "Ik negeerde de leider of discussieerde steeds.",
+              "voldoende": "Ik volgde soms, maar discussieerde vaak.",
+              "goed": "Ik volgde de instructies zonder discussie.",
+              "uitstekend": "Ik volgde respectvol en vroeg constructief door."
             }
           }
         ],
         "jaar_5": [
           {
-            "criterium": "Leiding nemen als leider",
+            "criterium": "Leiding nemen",
             "niveaus": {
-              "zwak": "Zegt niets, organiseert niet.",
-              "voldoende": "Leest de taakkaart voor maar organiseert niet actief.",
-              "goed": "Organiseert het groepje, verdeelt posities, bespreekt kort.",
-              "uitstekend": "Organiseert, motiveert, bespreekt tactiek in de time-out."
+              "zwak": "Ik nam geen leiding, ook niet als het gevraagd werd.",
+              "voldoende": "Ik nam aarzelend leiding na een vraag.",
+              "goed": "Ik nam leiding wanneer het nodig was.",
+              "uitstekend": "Ik nam spontaan en effectief leiding."
+            }
+          },
+          {
+            "criterium": "Kwaliteit van leiding",
+            "niveaus": {
+              "zwak": "Ik wist niet wat ik moest zeggen of doen.",
+              "voldoende": "Ik gaf basale instructies, weinig structuur.",
+              "goed": "Ik gaf duidelijke instructies en hield overzicht.",
+              "uitstekend": "Ik motiveerde het team en hield overzicht."
             }
           },
           {
             "criterium": "Leiding aanvaarden",
             "niveaus": {
-              "zwak": "Luistert niet naar de leider.",
-              "voldoende": "Volgt instructies maar vraagt niet door.",
-              "goed": "Volgt instructies en stelt constructieve vragen.",
-              "uitstekend": "Volgt instructies, geeft suggesties, zet zich in voor afspraken."
+              "zwak": "Ik negeerde de leider of discussieerde steeds.",
+              "voldoende": "Ik volgde soms, maar discussieerde vaak.",
+              "goed": "Ik volgde de instructies zonder discussie.",
+              "uitstekend": "Ik volgde respectvol en vroeg constructief door."
             }
           }
         ],
         "jaar_6": [
           {
-            "criterium": "Leiding nemen als leider",
+            "criterium": "Leiding nemen",
             "niveaus": {
-              "zwak": "Zegt niets, organiseert niet.",
-              "voldoende": "Leest de taakkaart voor maar organiseert niet actief.",
-              "goed": "Organiseert het groepje, verdeelt posities, bespreekt kort.",
-              "uitstekend": "Organiseert, motiveert, bespreekt tactiek, stuurt medespelers bij."
+              "zwak": "Ik nam geen leiding, ook niet als het gevraagd werd.",
+              "voldoende": "Ik nam aarzelend leiding na een vraag.",
+              "goed": "Ik nam leiding wanneer het nodig was.",
+              "uitstekend": "Ik nam spontaan en effectief leiding."
+            }
+          },
+          {
+            "criterium": "Kwaliteit van leiding",
+            "niveaus": {
+              "zwak": "Ik wist niet wat ik moest zeggen of doen.",
+              "voldoende": "Ik gaf basale instructies, weinig structuur.",
+              "goed": "Ik gaf duidelijke instructies en hield overzicht.",
+              "uitstekend": "Ik motiveerde het team en hield overzicht."
             }
           },
           {
             "criterium": "Leiding aanvaarden",
             "niveaus": {
-              "zwak": "Luistert niet naar de leider.",
-              "voldoende": "Volgt instructies maar vraagt niet door.",
-              "goed": "Volgt instructies en stelt constructieve vragen.",
-              "uitstekend": "Volgt instructies, geeft suggesties, zet zich volledig in."
+              "zwak": "Ik negeerde de leider of discussieerde steeds.",
+              "voldoende": "Ik volgde soms, maar discussieerde vaak.",
+              "goed": "Ik volgde de instructies zonder discussie.",
+              "uitstekend": "Ik volgde respectvol en vroeg constructief door."
             }
           }
         ]
