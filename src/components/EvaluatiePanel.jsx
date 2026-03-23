@@ -1,15 +1,20 @@
 /**
  * EvaluatiePanel — inline scoren vanuit het les-accordion
  *
- * Sectie 1: inklapbare rubric-samenvatting (welke LPDs, welk type)
- * Sectie 2: klas kiezen → leerlingkaarten met numerieke score + LPD-niveaukaarten
+ * Ondersteunt 3 evaluatietypes (uit evaluatie.json):
+ *   rubric            → criteria-kaarten per LPD
+ *   testprotocol_score_10 → +/- score op 10 (duurloop, volleybal LPD 1)
+ *   upload_score_10   → +/- score op 10 + Smartschool upload-tekst (gymnastiek)
+ *
+ * Kledij-tracking: apart tabblad per klas (0× = 10, 1× = 8, … 5× = 0)
  */
-import { useState, useEffect, useMemo, useRef } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import db from '../db/db'
 import { useKlassen, useStudentsByKlas } from '../hooks/useStudents'
 import { graadFromKlasId } from '../utils/graad'
-import { NIVEAU_SCORE, berekenEindScore, scoreKleur } from '../utils/scoring'
+import { NIVEAU_SCORE, berekenEindScore, scoreKleur, kledijScore } from '../utils/scoring'
+import evaluatieData from '../data/evaluatie.json'
 
 const NIVEAU_LABELS = {
   zwak:       'Zwak',
@@ -18,12 +23,26 @@ const NIVEAU_LABELS = {
   uitstekend: 'Uitst.',
 }
 
-const DEFAULT_SCORE = 10
+const GRAAD_JAAR = { graad_1: 'jaar_4', graad_2: 'jaar_5', graad_3: 'jaar_6' }
 
-// ── Hoofd-component ───────────────────────────────────────────────────────────
-export default function EvaluatiePanel({ sportId, graad, les, rubrics }) {
-  const [rubricOpen, setRubricOpen]     = useState(false)
+const DEFAULT_SCORE = 0
+const MAX_SCORE     = 10
+const STEP          = 0.5
+
+function getEvalType(sportId, lpdKey) {
+  return evaluatieData[sportId]?.[lpdKey]?.evaluatie_type ?? 'rubric'
+}
+
+function getCriteria(sportId, lpdKey, graad) {
+  const jaarKey = GRAAD_JAAR[graad]
+  return evaluatieData[sportId]?.[lpdKey]?.rubrics?.[jaarKey] ?? null
+}
+
+// ── Hoofd-component ────────────────────────────────────────────────────────────
+export default function EvaluatiePanel({ sportId, graad, les, rubrics, evaluatieTekst }) {
+  const [rubricOpen, setRubricOpen]     = useState(true)   // standaard open
   const [selectedKlas, setSelectedKlas] = useState(null)
+  const [tab, setTab]                   = useState('scores') // 'scores' | 'kledij'
 
   const klassen   = useKlassen()
   const gefilterd = useMemo(
@@ -36,37 +55,57 @@ export default function EvaluatiePanel({ sportId, graad, les, rubrics }) {
   return (
     <div className="mt-1">
 
-      {/* ── Sectie 1: Rubric-info (samenvatting) ───────────────────────── */}
+      {/* ── Evaluatie instructietekst ──────────────────────────────────── */}
+      {evaluatieTekst && (
+        <div className="bg-blue-50 border border-blue-100 rounded-xl px-3 py-3 mb-3 text-sm text-blue-800 whitespace-pre-line leading-relaxed">
+          {evaluatieTekst}
+        </div>
+      )}
+
+      {/* ── Rubric-info (standaard open) ──────────────────────────────── */}
       <button
         onClick={() => setRubricOpen(o => !o)}
-        className="w-full flex items-center justify-between bg-blue-50 border border-blue-100 rounded-xl px-3 py-2.5 mb-3 text-left"
+        className="w-full flex items-center justify-between bg-blue-50 border border-blue-100 rounded-xl px-3 py-2.5 mb-1 text-left"
       >
         <span className="text-sm font-semibold text-blue-700">📖 Rubric-info</span>
         <span className="text-blue-400 text-sm">{rubricOpen ? '▲' : '▼'}</span>
       </button>
       {rubricOpen && (
-        <div className="bg-blue-50 border border-blue-100 rounded-xl px-3 py-3 mb-3 space-y-2">
+        <div className="bg-blue-50 border border-blue-100 rounded-xl px-3 py-3 mb-3 space-y-1.5">
           {rubricEntries.length === 0 ? (
             <p className="text-xs text-blue-800">Geen rubrics voor deze les.</p>
-          ) : rubricEntries.map(([lpdKey, lpd]) => (
-            <div key={lpdKey} className="flex items-center gap-2">
-              <span className="text-xs font-bold text-blue-800">
-                {lpdKey.replace('lpd_', 'LPD ').toUpperCase()}
-              </span>
-              <span className="text-xs text-blue-700">— {lpd.naam}</span>
-              <span className={`ml-auto text-xs px-2 py-0.5 rounded-full font-medium ${
-                lpd.type === 'zelfevaluatie'
-                  ? 'bg-purple-100 text-purple-600'
-                  : 'bg-blue-100 text-blue-600'
-              }`}>
-                {lpd.type === 'zelfevaluatie' ? 'zelfevaluatie' : 'leerkracht'}
-              </span>
-            </div>
-          ))}
+          ) : rubricEntries.map(([lpdKey, lpd]) => {
+            const et = getEvalType(sportId, lpdKey)
+            const criteria = getCriteria(sportId, lpdKey, graad)
+            return (
+              <div key={lpdKey}>
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="text-xs font-bold text-blue-800">
+                    {lpdKey.replace('lpd_', 'LPD ').toUpperCase()}
+                  </span>
+                  <span className="text-xs text-blue-700">— {lpd.naam}</span>
+                  <span className={`ml-auto text-xs px-2 py-0.5 rounded-full font-medium ${
+                    lpd.type === 'zelfevaluatie' ? 'bg-purple-100 text-purple-600'
+                    : et === 'testprotocol_score_10' ? 'bg-green-100 text-green-600'
+                    : et === 'upload_score_10' ? 'bg-orange-100 text-orange-600'
+                    : 'bg-blue-100 text-blue-600'
+                  }`}>
+                    {lpd.type === 'zelfevaluatie' ? 'zelfevaluatie'
+                      : et === 'testprotocol_score_10' ? 'testprotocol'
+                      : et === 'upload_score_10' ? 'upload'
+                      : 'leerkracht'}
+                  </span>
+                </div>
+                {criteria && criteria.map((c, i) => (
+                  <p key={i} className="text-xs text-blue-600 ml-2 mt-0.5">• {c.criterium}</p>
+                ))}
+              </div>
+            )
+          })}
         </div>
       )}
 
-      {/* ── Sectie 2: Scoren ───────────────────────────────────────────── */}
+      {/* ── Klas-kiezer ────────────────────────────────────────────────── */}
       {gefilterd.length === 0 ? (
         <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-3 py-3 text-xs text-yellow-700">
           Geen klassen gevonden voor deze graad.
@@ -75,20 +114,55 @@ export default function EvaluatiePanel({ sportId, graad, les, rubrics }) {
       ) : !selectedKlas ? (
         <KlasPicker klassen={gefilterd} onKies={setSelectedKlas} />
       ) : (
-        <ScoringRaster
-          klas={selectedKlas}
-          sportId={sportId}
-          graad={graad}
-          les={les}
-          rubricEntries={rubricEntries}
-          onWisselKlas={() => setSelectedKlas(null)}
-        />
+        <>
+          {/* Tabs: scores / kledij */}
+          <div className="flex gap-2 mb-3">
+            <button
+              onClick={() => setTab('scores')}
+              className="flex-1 py-2 rounded-xl text-sm font-semibold transition-colors"
+              style={tab === 'scores'
+                ? { background: '#E67E22', color: 'white' }
+                : { background: '#F0F3F4', color: '#2C3E50' }
+              }
+            >
+              📋 Scores
+            </button>
+            <button
+              onClick={() => setTab('kledij')}
+              className="flex-1 py-2 rounded-xl text-sm font-semibold transition-colors"
+              style={tab === 'kledij'
+                ? { background: '#C0392B', color: 'white' }
+                : { background: '#F0F3F4', color: '#2C3E50' }
+              }
+            >
+              👕 Kledij
+            </button>
+            <button
+              onClick={() => setSelectedKlas(null)}
+              className="px-3 py-2 rounded-xl text-sm bg-gray-100 text-gray-600 font-semibold"
+            >
+              ↩
+            </button>
+          </div>
+
+          {tab === 'scores' ? (
+            <ScoringRaster
+              klas={selectedKlas}
+              sportId={sportId}
+              graad={graad}
+              les={les}
+              rubricEntries={rubricEntries}
+            />
+          ) : (
+            <KledijRaster klas={selectedKlas} />
+          )}
+        </>
       )}
     </div>
   )
 }
 
-// ── Klas-kiezer ───────────────────────────────────────────────────────────────
+// ── Klas-kiezer ────────────────────────────────────────────────────────────────
 function KlasPicker({ klassen, onKies }) {
   return (
     <div>
@@ -109,8 +183,86 @@ function KlasPicker({ klassen, onKies }) {
   )
 }
 
+// ── Kledij-raster ─────────────────────────────────────────────────────────────
+function KledijRaster({ klas }) {
+  const leerlingen = useStudentsByKlas(klas.id)
+
+  const alleKledij = useLiveQuery(
+    () => db.kledij.toArray(),
+    [],
+    []
+  )
+
+  const kledijMap = useMemo(() => {
+    const map = {}
+    for (const k of alleKledij ?? []) {
+      map[k.leerlingId] = k.count ?? 0
+    }
+    return map
+  }, [alleKledij])
+
+  async function incrementKledij(leerlingId) {
+    const existing = await db.kledij.get(leerlingId)
+    if (existing) {
+      await db.kledij.update(leerlingId, { count: existing.count + 1, datum: new Date().toISOString() })
+    } else {
+      await db.kledij.put({ leerlingId, count: 1, datum: new Date().toISOString() })
+    }
+  }
+
+  async function decrementKledij(leerlingId) {
+    const existing = await db.kledij.get(leerlingId)
+    if (!existing || existing.count <= 0) return
+    await db.kledij.update(leerlingId, { count: Math.max(0, existing.count - 1), datum: new Date().toISOString() })
+  }
+
+  return (
+    <div>
+      <p className="text-xs text-gray-500 mb-3">
+        <strong>{klas.naam}</strong> — tik + bij elke keer niet in orde.
+        Score: 0×=10 · 1×=8 · 2×=6 · 3×=4 · 4×=2 · 5×+=0
+      </p>
+      <div className="space-y-2">
+        {(leerlingen ?? []).map(l => {
+          const count = kledijMap[l.id] ?? 0
+          const score = kledijScore(count)
+          return (
+            <div key={l.id} className="flex items-center gap-3 bg-white border border-gray-200 rounded-xl px-3 py-2">
+              <LeerlingFoto leerling={l} size={10} />
+              <div className="flex-1 min-w-0">
+                <p className="font-semibold text-sm truncate" style={{ color: '#2C3E50' }}>
+                  {l.voornaam} {l.achternaam}
+                </p>
+                <p className="text-xs text-gray-400">{count}× niet in orde</p>
+              </div>
+              <span className="text-base font-bold w-8 text-center" style={{ color: scoreKleur(score) }}>
+                {score}
+              </span>
+              <div className="flex items-center gap-1">
+                <button
+                  onClick={() => decrementKledij(l.id)}
+                  className="w-8 h-8 rounded-lg bg-gray-100 text-gray-600 font-bold text-lg flex items-center justify-center active:scale-95"
+                >
+                  −
+                </button>
+                <button
+                  onClick={() => incrementKledij(l.id)}
+                  className="w-8 h-8 rounded-lg font-bold text-lg flex items-center justify-center active:scale-95"
+                  style={{ background: '#E74C3C', color: 'white' }}
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
 // ── Scoring-raster ────────────────────────────────────────────────────────────
-function ScoringRaster({ klas, sportId, graad, les, rubricEntries, onWisselKlas }) {
+function ScoringRaster({ klas, sportId, graad, les, rubricEntries }) {
   const leerlingen = useStudentsByKlas(klas.id)
 
   const alleScores = useLiveQuery(
@@ -144,19 +296,44 @@ function ScoringRaster({ klas, sportId, graad, les, rubricEntries, onWisselKlas 
     }
   }
 
+  // Verzamel alle score-sleutels per leerling (voor eindscore + CSV export)
+  function getAllScoreKeys(leerlingId) {
+    const keys = []
+    for (const [lpdKey] of rubricEntries) {
+      const et = getEvalType(sportId, lpdKey)
+      if (et === 'testprotocol_score_10' || et === 'upload_score_10') {
+        keys.push(`${lpdKey}_score`)
+      } else {
+        const criteria = getCriteria(sportId, lpdKey, graad)
+        if (criteria) {
+          criteria.forEach((_, idx) => keys.push(`${lpdKey}_c${idx}`))
+        } else {
+          keys.push(lpdKey)
+        }
+      }
+    }
+    return keys
+  }
+
   function exportCsv() {
     if (!leerlingen?.length) return
-    const lpdKeys = ['numeriek', ...rubricEntries.map(([k]) => k)]
-    const header  = ['student_id', 'voornaam', 'achternaam', ...lpdKeys].join(',')
-    const rows    = leerlingen.map(l => {
-      const s    = scoreMap[l.id] ?? {}
-      const vals = lpdKeys.map(k => s[k] ?? '')
-      return [l.id, l.voornaam, l.achternaam, ...vals].join(',')
+    const alleKeys = getAllScoreKeys(null)
+    const header = ['student_id', 'voornaam', 'achternaam', ...alleKeys, 'kledij', 'eindscore'].join(',')
+    const rows = leerlingen.map(l => {
+      const s = scoreMap[l.id] ?? {}
+      const deelVals = alleKeys.map(k => {
+        const v = s[k]
+        if (v === undefined || v === null) return ''
+        if (typeof v === 'string' && NIVEAU_SCORE[v] !== undefined) return NIVEAU_SCORE[v]
+        return v
+      })
+      const eindscore = berekenEindScore(s, alleKeys) ?? ''
+      return [l.id, l.voornaam, l.achternaam, ...deelVals, '', eindscore].join(',')
     })
     const blob = new Blob([[header, ...rows].join('\n')], { type: 'text/csv;charset=utf-8;' })
-    const url  = URL.createObjectURL(blob)
-    const a    = document.createElement('a')
-    a.href     = url
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
     a.download = `scores_${klas.id}_${sportId}_${graad}_${les}.csv`
     a.click()
     URL.revokeObjectURL(url)
@@ -165,21 +342,16 @@ function ScoringRaster({ klas, sportId, graad, les, rubricEntries, onWisselKlas 
   return (
     <div>
       <div className="flex items-center justify-between mb-3">
-        <div className="flex items-center gap-2">
-          <span className="font-bold text-base" style={{ color: '#2C3E50' }}>{klas.naam}</span>
-          <span className="text-xs text-gray-400">{leerlingen?.length ?? 0} leerlingen</span>
-        </div>
-        <div className="flex gap-2">
-          <button
-            onClick={exportCsv}
-            className="px-3 py-1.5 rounded-lg text-xs font-semibold text-white"
-            style={{ background: '#2C3E50' }}
-          >⬇ CSV</button>
-          <button
-            onClick={onWisselKlas}
-            className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-100 text-gray-600"
-          >Klas ↩</button>
-        </div>
+        <span className="font-bold text-base" style={{ color: '#2C3E50' }}>
+          {klas.naam} <span className="text-xs font-normal text-gray-400">({leerlingen?.length ?? 0})</span>
+        </span>
+        <button
+          onClick={exportCsv}
+          className="px-3 py-1.5 rounded-lg text-xs font-semibold text-white"
+          style={{ background: '#2C3E50' }}
+        >
+          ⬇ CSV
+        </button>
       </div>
 
       {!leerlingen?.length ? (
@@ -194,6 +366,8 @@ function ScoringRaster({ klas, sportId, graad, les, rubricEntries, onWisselKlas 
               leerling={l}
               scores={scoreMap[l.id] ?? {}}
               rubricEntries={rubricEntries}
+              sportId={sportId}
+              graad={graad}
               onScore={(lpd, score) => slaScore(l.id, lpd, score)}
             />
           ))}
@@ -203,8 +377,8 @@ function ScoringRaster({ klas, sportId, graad, les, rubricEntries, onWisselKlas 
   )
 }
 
-// ── Leerling-kaart ────────────────────────────────────────────────────────────
-function LeerlingKaart({ leerling, scores, rubricEntries, onScore }) {
+// ── Leerling-foto helper ───────────────────────────────────────────────────────
+function LeerlingFoto({ leerling, size = 12 }) {
   const [imgSrc, setImgSrc] = useState(null)
 
   useEffect(() => {
@@ -214,60 +388,66 @@ function LeerlingKaart({ leerling, scores, rubricEntries, onScore }) {
     return () => URL.revokeObjectURL(url)
   }, [leerling.fotoBlob])
 
-  const rubricKeys = rubricEntries.map(([k]) => k)
-  const numScore   = scores['numeriek'] ?? DEFAULT_SCORE
-  const eindscore  = berekenEindScore(scores, rubricKeys)
+  const cls = `w-${size} h-${size} rounded-full overflow-hidden bg-gray-200 flex-shrink-0 flex items-center justify-center`
+  return (
+    <div className={cls}>
+      {imgSrc
+        ? <img src={imgSrc} alt="" className="w-full h-full object-cover" />
+        : <span className="text-xl text-gray-400">👤</span>
+      }
+    </div>
+  )
+}
+
+// ── Leerling-kaart ────────────────────────────────────────────────────────────
+function LeerlingKaart({ leerling, scores, rubricEntries, sportId, graad, onScore }) {
+  // Verzamel alle relevante sleutels voor eindscore
+  const allScoreKeys = []
+  for (const [lpdKey] of rubricEntries) {
+    const et = getEvalType(sportId, lpdKey)
+    if (et === 'testprotocol_score_10' || et === 'upload_score_10') {
+      allScoreKeys.push(`${lpdKey}_score`)
+    } else {
+      const criteria = getCriteria(sportId, lpdKey, graad)
+      if (criteria) {
+        criteria.forEach((_, idx) => allScoreKeys.push(`${lpdKey}_c${idx}`))
+      } else {
+        allScoreKeys.push(lpdKey)
+      }
+    }
+  }
+
+  const eindscore = berekenEindScore(scores, allScoreKeys)
 
   return (
     <div className="bg-gray-50 border border-gray-200 rounded-2xl p-3">
       {/* Naam + foto + eindscore */}
       <div className="flex items-center gap-3 mb-3">
-        <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-200 flex-shrink-0 flex items-center justify-center">
-          {imgSrc
-            ? <img src={imgSrc} alt="" className="w-full h-full object-cover" />
-            : <span className="text-xl text-gray-400">👤</span>
-          }
-        </div>
-        <div className="flex-1">
-          <p className="font-bold text-sm leading-tight" style={{ color: '#2C3E50' }}>
+        <LeerlingFoto leerling={leerling} size={12} />
+        <div className="flex-1 min-w-0">
+          <p className="font-bold text-sm leading-tight truncate" style={{ color: '#2C3E50' }}>
             {leerling.voornaam} {leerling.achternaam}
           </p>
           <p className="text-xs text-gray-400">{leerling.klasId}</p>
         </div>
         {eindscore !== null && (
-          <div className="text-right">
+          <div className="text-right flex-shrink-0">
             <span className="block text-lg font-bold" style={{ color: scoreKleur(eindscore) }}>{eindscore}</span>
             <span className="text-xs text-gray-400">eindscr.</span>
           </div>
         )}
       </div>
 
-      {/* Numerieke score /10 */}
-      <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Manuele score</p>
-      <div className="flex items-center bg-white rounded-xl border border-gray-200 mb-2.5 overflow-hidden">
-        <button
-          onClick={() => onScore('numeriek', Math.max(0, numScore - 1))}
-          className="flex-1 py-3 text-2xl font-bold text-red-500 active:bg-red-50"
-          aria-label="min 1"
-        >−</button>
-        <span className="w-12 text-center text-xl font-bold" style={{ color: scoreKleur(numScore) }}>
-          {numScore}
-        </span>
-        <button
-          onClick={() => onScore('numeriek', Math.min(10, numScore + 1))}
-          className="flex-1 py-3 text-2xl font-bold text-green-500 active:bg-green-50"
-          aria-label="plus 1"
-        >+</button>
-      </div>
-
-      {/* LPD rubric-rijen */}
+      {/* LPD-rijen */}
       {rubricEntries.map(([lpdKey, lpd]) => (
         <LpdRij
           key={lpdKey}
           lpdKey={lpdKey}
           lpd={lpd}
-          huidig={scores[lpdKey] ?? null}
-          onKies={niveau => onScore(lpdKey, niveau)}
+          sportId={sportId}
+          graad={graad}
+          scores={scores}
+          onScore={onScore}
         />
       ))}
     </div>
@@ -275,109 +455,159 @@ function LeerlingKaart({ leerling, scores, rubricEntries, onScore }) {
 }
 
 // ── LPD-rij ───────────────────────────────────────────────────────────────────
-// Compact: 4 knoppen naast elkaar — tik = selecteer, lang drukken of ⓘ = uitklappen
-// Uitgeklapt: 4 kaarten onder elkaar met volledige omschrijving — tik = selecteer + inklappen
-function LpdRij({ lpdKey, lpd, huidig, onKies }) {
-  const [uitgeklapt, setUitgeklapt] = useState(true)
-  const longPressTimer = useRef(null)
-  const didLongPress   = useRef(false)
+function LpdRij({ lpdKey, lpd, sportId, graad, scores, onScore }) {
+  const evalType = getEvalType(sportId, lpdKey)
+  const criteria = getCriteria(sportId, lpdKey, graad)
 
-  const niveauEntries = Object.entries(lpd.niveaus)  // [["zwak", "..."], ...]
+  const lpdLabel = (
+    <div className="flex items-center gap-1 mb-1.5">
+      <span className="text-xs font-bold text-gray-600">
+        {lpdKey.replace('lpd_', 'LPD ').toUpperCase()}
+      </span>
+      <span className="text-xs text-gray-400">— {lpd.naam}</span>
+      {lpd.type === 'zelfevaluatie' && (
+        <span className="text-xs bg-purple-100 text-purple-600 px-1.5 py-0.5 rounded-full">zelf</span>
+      )}
+    </div>
+  )
 
-  function startLongPress() {
-    didLongPress.current = false
-    longPressTimer.current = setTimeout(() => {
-      didLongPress.current = true
-      setUitgeklapt(true)
-    }, 500)
+  // ── Testprotocol: +/- score ──
+  if (evalType === 'testprotocol_score_10') {
+    const scoreKey = `${lpdKey}_score`
+    const val = scores[scoreKey] ?? DEFAULT_SCORE
+    return (
+      <div className="mb-2 last:mb-0">
+        {lpdLabel}
+        <ScoreKnop
+          value={val}
+          onChange={v => onScore(scoreKey, v)}
+          label="Score /10"
+        />
+      </div>
+    )
   }
 
-  function cancelLongPress() {
-    clearTimeout(longPressTimer.current)
+  // ── Upload: +/- score + Smartschool ──
+  if (evalType === 'upload_score_10') {
+    const scoreKey = `${lpdKey}_score`
+    const val = scores[scoreKey] ?? DEFAULT_SCORE
+    return (
+      <div className="mb-2 last:mb-0">
+        {lpdLabel}
+        <div className="bg-orange-50 border border-orange-200 rounded-xl px-3 py-2 mb-1.5 text-xs text-orange-700">
+          📤 Filmpje indienen via Smartschool (uploadzone)
+        </div>
+        <ScoreKnop
+          value={val}
+          onChange={v => onScore(scoreKey, v)}
+          label="Score /10"
+        />
+      </div>
+    )
   }
 
-  function handleCompactClick(key) {
-    if (didLongPress.current) return
-    onKies(huidig === key ? null : key)
+  // ── Rubric: criteria-kaarten ──
+  if (criteria) {
+    return (
+      <div className="mb-2 last:mb-0">
+        {lpdLabel}
+        {criteria.map((c, idx) => {
+          const scoreKey = `${lpdKey}_c${idx}`
+          const huidig = scores[scoreKey] ?? null
+          return (
+            <CriteriumRij
+              key={idx}
+              criterium={c.criterium}
+              niveaus={c.niveaus}
+              huidig={huidig}
+              onKies={niveau => onScore(scoreKey, huidig === niveau ? null : niveau)}
+            />
+          )
+        })}
+      </div>
+    )
   }
 
-  function handleKaartKlik(key) {
-    onKies(huidig === key ? null : key)
-    setUitgeklapt(false)
-  }
-
+  // ── Fallback: lessons.json niveaus (enkele rubric) ──
+  const huidig = scores[lpdKey] ?? null
   return (
     <div className="mb-2 last:mb-0">
+      {lpdLabel}
+      <CriteriumRij
+        criterium={null}
+        niveaus={lpd.niveaus ?? {}}
+        huidig={huidig}
+        onKies={niveau => onScore(lpdKey, huidig === niveau ? null : niveau)}
+      />
+    </div>
+  )
+}
 
-      {/* LPD-label + info-knop */}
-      <div className="flex items-center gap-1 mb-1">
-        <span className="text-xs text-gray-500 font-medium">
-          {lpdKey.replace('lpd_', 'LPD ').toUpperCase()}
+// ── Score-knop (+/-) ──────────────────────────────────────────────────────────
+function ScoreKnop({ value, onChange, label }) {
+  function plus()  { onChange(Math.min(MAX_SCORE, Math.round((value + STEP) * 10) / 10)) }
+  function minus() { onChange(Math.max(0,         Math.round((value - STEP) * 10) / 10)) }
+
+  return (
+    <div>
+      {label && <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">{label}</p>}
+      <div className="flex items-center bg-white rounded-xl border border-gray-200 overflow-hidden">
+        <button
+          onClick={minus}
+          className="flex-1 py-3 text-2xl font-bold text-red-500 active:bg-red-50"
+          aria-label="min"
+        >−</button>
+        <span className="w-14 text-center text-xl font-bold" style={{ color: scoreKleur(value) }}>
+          {value % 1 === 0 ? value : value.toFixed(1)}
         </span>
-        <span className="text-xs text-gray-400">— {lpd.naam}</span>
-        {lpd.type === 'zelfevaluatie' && (
-          <span className="text-xs bg-purple-100 text-purple-600 px-1.5 py-0.5 rounded-full">
-            zelf
-          </span>
-        )}
+        <button
+          onClick={plus}
+          className="flex-1 py-3 text-2xl font-bold text-green-500 active:bg-green-50"
+          aria-label="plus"
+        >+</button>
       </div>
+    </div>
+  )
+}
 
-      {!uitgeklapt ? (
-        /* ── Compact: 4 knoppen ── */
-        <div className="flex gap-1">
-          {niveauEntries.map(([key]) => {
-            const actief = huidig === key
-            return (
-              <button
-                key={key}
-                onPointerDown={startLongPress}
-                onPointerUp={cancelLongPress}
-                onPointerLeave={cancelLongPress}
-                onClick={() => handleCompactClick(key)}
-                onContextMenu={e => e.preventDefault()}
-                className="flex-1 py-2 rounded-lg text-xs font-semibold transition-colors active:scale-95"
-                style={actief
-                  ? { background: '#E67E22', color: 'white' }
-                  : { background: 'white', color: '#6b7280', border: '1px solid #e5e7eb' }
-                }
-              >
-                {NIVEAU_LABELS[key] ?? key}
-              </button>
-            )
-          })}
-        </div>
-      ) : (
-        /* ── Uitgeklapt: kaarten met omschrijving ── */
-        <div className="space-y-1.5">
-          {niveauEntries.map(([key, omschrijving]) => {
-            const actief = huidig === key
-            const punten = NIVEAU_SCORE[key]
-            return (
-              <button
-                key={key}
-                onClick={() => handleKaartKlik(key)}
-                className="w-full text-left rounded-xl border-2 px-3 py-2.5 transition-colors active:scale-[0.99]"
-                style={actief
-                  ? { borderColor: '#E67E22', background: '#FFF8F0' }
-                  : { borderColor: '#e5e7eb', background: 'white' }
-                }
-              >
-                <div className="flex items-center justify-between mb-0.5">
-                  <p
-                    className="text-xs font-bold uppercase tracking-wide"
-                    style={{ color: actief ? '#E67E22' : '#2C3E50' }}
-                  >
-                    {NIVEAU_LABELS[key] ?? key}
-                    {actief && <span className="ml-1.5 normal-case font-normal">✓</span>}
-                  </p>
-                  <span className="text-xs font-semibold text-gray-400">{punten}/10</span>
-                </div>
-                <p className="text-xs text-gray-600 leading-relaxed">{omschrijving}</p>
-              </button>
-            )
-          })}
-        </div>
+// ── Criterium-rij (rubric-kaarten) ───────────────────────────────────────────
+function CriteriumRij({ criterium, niveaus, huidig, onKies }) {
+  const niveauEntries = Object.entries(niveaus ?? {})
+
+  return (
+    <div className="mb-2">
+      {criterium && (
+        <p className="text-xs text-gray-500 font-medium mb-1 italic">{criterium}</p>
       )}
+      <div className="space-y-1">
+        {niveauEntries.map(([key, omschrijving]) => {
+          const actief  = huidig === key
+          const punten  = NIVEAU_SCORE[key]
+          return (
+            <button
+              key={key}
+              onClick={() => onKies(key)}
+              className="w-full text-left rounded-xl border-2 px-3 py-2 transition-colors active:scale-[0.99]"
+              style={actief
+                ? { borderColor: '#E67E22', background: '#FFF8F0' }
+                : { borderColor: '#e5e7eb', background: 'white' }
+              }
+            >
+              <div className="flex items-center justify-between mb-0.5">
+                <p
+                  className="text-xs font-bold uppercase tracking-wide"
+                  style={{ color: actief ? '#E67E22' : '#2C3E50' }}
+                >
+                  {NIVEAU_LABELS[key] ?? key}
+                  {actief && <span className="ml-1.5 normal-case font-normal">✓</span>}
+                </p>
+                <span className="text-xs font-semibold text-gray-400">{punten}/10</span>
+              </div>
+              <p className="text-xs text-gray-600 leading-relaxed whitespace-pre-line">{omschrijving}</p>
+            </button>
+          )
+        })}
+      </div>
     </div>
   )
 }

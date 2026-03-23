@@ -11,7 +11,11 @@
         "Spelvorm",
         "Evaluatie"
       ],
-      "jaren": [4, 5, 6]
+      "jaren": [
+        4,
+        5,
+        6
+      ]
     },
     {
       "id": "volleybal",
@@ -24,7 +28,11 @@
         "Spelvorm",
         "Evaluatie"
       ],
-      "jaren": [4, 5, 6]
+      "jaren": [
+        4,
+        5,
+        6
+      ]
     },
     {
       "id": "badminton",
@@ -37,7 +45,11 @@
         "Spelvorm",
         "Evaluatie"
       ],
-      "jaren": [4, 5, 6]
+      "jaren": [
+        4,
+        5,
+        6
+      ]
     },
     {
       "id": "handbal",
@@ -50,7 +62,10 @@
         "Spelvorm",
         "Evaluatie"
       ],
-      "jaren": [4, 6]
+      "jaren": [
+        4,
+        6
+      ]
     },
     {
       "id": "voetbal",
@@ -63,7 +78,9 @@
         "Spelvorm",
         "Evaluatie"
       ],
-      "jaren": [5]
+      "jaren": [
+        5
+      ]
     },
     {
       "id": "judo",
@@ -76,7 +93,9 @@
         "Spelvorm",
         "Evaluatie"
       ],
-      "jaren": [5]
+      "jaren": [
+        5
+      ]
     },
     {
       "id": "klimmen",
@@ -89,7 +108,9 @@
         "Klimcircuit",
         "Evaluatie"
       ],
-      "jaren": [5]
+      "jaren": [
+        5
+      ]
     },
     {
       "id": "ehbo",
@@ -101,7 +122,93 @@
         "Eindspel",
         "Evaluatie"
       ],
-      "jaren": [4, 6]
+      "jaren": [
+        4,
+        6
+      ]
+    },
+    {
+      "id": "duurloop",
+      "name": "Duurloop",
+      "image": "duurloop.jpg",
+      "panels": [
+        "Opwarming",
+        "Oefening 1",
+        "Oefening 2",
+        "3,3 km Test",
+        "Evaluatie"
+      ],
+      "jaren": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "gaelic_football",
+      "name": "Gaelic Football",
+      "image": "gaelic_football.jpg",
+      "panels": [
+        "Opwarming",
+        "Oefening 1",
+        "Oefening 2",
+        "Spelvorm",
+        "Evaluatie"
+      ],
+      "jaren": [
+        6
+      ]
+    },
+    {
+      "id": "baseball",
+      "name": "Baseball",
+      "image": "baseball.jpg",
+      "panels": [
+        "Opwarming",
+        "Oefening 1",
+        "Oefening 2",
+        "Spelvorm",
+        "Evaluatie"
+      ],
+      "jaren": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "gymnastiek",
+      "name": "Gymnastiek",
+      "image": "gymnastiek.jpg",
+      "panels": [
+        "Opwarming",
+        "Station 1",
+        "Station 2",
+        "Reeks",
+        "Evaluatie"
+      ],
+      "jaren": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "ritmiek",
+      "name": "Ritmiek",
+      "image": "ritmiek.jpg",
+      "panels": [
+        "Opwarming",
+        "Oefening 1",
+        "Oefening 2",
+        "Spelvorm",
+        "Evaluatie"
+      ],
+      "jaren": [
+        4,
+        5,
+        6
+      ]
     }
   ]
 }

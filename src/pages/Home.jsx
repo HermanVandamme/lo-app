@@ -1,35 +1,20 @@
 import { Link } from 'react-router-dom'
 import sportsData from '../data/sports.json'
 
-import imgBasketbal  from '../assets/images/basketbal.jpg'
-import imgVolleybal  from '../assets/images/volleybal.jpg'
-import imgBadminton  from '../assets/images/badminton.jpg'
-import imgHandbal    from '../assets/images/handbal.jpg'
-import imgVoetbal    from '../assets/images/voetbal.jpg'
-import imgJudo       from '../assets/images/judo.jpg'
-import imgKlimmen    from '../assets/images/klimmen.jpg'
-import imgEhbo       from '../assets/images/ehbo.jpg'
-
-const SPORT_AFBEELDING = {
-  basketbal: imgBasketbal,
-  volleybal: imgVolleybal,
-  badminton: imgBadminton,
-  handbal:   imgHandbal,
-  voetbal:   imgVoetbal,
-  judo:      imgJudo,
-  klimmen:   imgKlimmen,
-  ehbo:      imgEhbo,
-}
-
 const SPORT_KLEUR = {
-  basketbal: '#E67E22',
-  volleybal:  '#2980B9',
-  badminton:  '#27AE60',
-  handbal:    '#C0392B',
-  voetbal:    '#16A085',
-  judo:       '#8E44AD',
-  klimmen:    '#D35400',
-  ehbo:       '#E74C3C',
+  basketbal:      '#E67E22',
+  volleybal:      '#2980B9',
+  badminton:      '#27AE60',
+  handbal:        '#C0392B',
+  voetbal:        '#16A085',
+  judo:           '#8E44AD',
+  klimmen:        '#D35400',
+  ehbo:           '#E74C3C',
+  duurloop:       '#1A5276',
+  gaelic_football:'#117A65',
+  baseball:       '#7D6608',
+  gymnastiek:     '#6C3483',
+  ritmiek:        '#1F618D',
 }
 
 export default function Home() {
@@ -48,7 +33,7 @@ export default function Home() {
 }
 
 function SportTile({ sport }) {
-  const imgSrc      = SPORT_AFBEELDING[sport.id]
+  const imgUrl       = sport.image ? `/images/${sport.image}` : null
   const fallbackKleur = SPORT_KLEUR[sport.id] ?? '#7F8C8D'
 
   return (
@@ -58,22 +43,21 @@ function SportTile({ sport }) {
     >
       <div
         className="relative h-32"
-        style={{ background: imgSrc ? '#d1d5db' : fallbackKleur }}
+        style={{ background: fallbackKleur }}
       >
-        {imgSrc && (
+        {imgUrl && (
           <img
-            src={imgSrc}
+            src={imgUrl}
             alt={sport.name}
             className="w-full h-full object-cover"
+            onError={e => { e.currentTarget.style.display = 'none' }}
           />
         )}
 
         <div
           className="absolute inset-0"
           style={{
-            background: imgSrc
-              ? 'linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 60%)'
-              : 'linear-gradient(to top, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 60%)',
+            background: 'linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 60%)',
           }}
         />
 

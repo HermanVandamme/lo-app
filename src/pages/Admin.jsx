@@ -45,6 +45,8 @@ export default function Admin() {
     try {
       const text = await file.text()
       const rows = parseStudentsCsv(text)
+      // Clear before re-import to prevent duplicates
+      await db.leerlingen.clear()
       const result = await importStudentsToDb(db, rows)
       setMsg('students', `✓ ${result.leerlingen} leerlingen in ${result.klassen} klassen geïmporteerd.`)
     } catch (err) {
@@ -71,17 +73,38 @@ export default function Admin() {
   }
 
   async function exportScores() {
-    const [scores, leerlingen] = await Promise.all([
+    const [scores, leerlingen, alleKledij] = await Promise.all([
       db.scores.toArray(),
       db.leerlingen.toArray(),
+      db.kledij.toArray(),
     ])
-    if (!scores.length) { setMsg('export', 'Geen scores om te exporteren.'); return }
+    if (!scores.length && !alleKledij.length) { setMsg('export', 'Geen scores om te exporteren.'); return }
 
     const leerlingMap = Object.fromEntries(leerlingen.map(l => [l.id, l]))
+    const kledijMap   = Object.fromEntries(alleKledij.map(k => [k.leerlingId, k.count ?? 0]))
+
+    // Groepeer scores per leerling per sport+graad+les
+    const scoresByCtx = {}
+    for (const s of scores) {
+      const ctxKey = `${s.leerlingId}|${s.sportId}|${s.graad}|${s.les}`
+      if (!scoresByCtx[ctxKey]) scoresByCtx[ctxKey] = {}
+      scoresByCtx[ctxKey][s.lpd] = s.score
+    }
+
+    // Rij per score-record (gedetailleerd) + eindscore per context
+    const NIVEAU_SCORE = { zwak: 2.5, voldoende: 5, goed: 7.5, uitstekend: 10 }
+    function scoreVal(v) {
+      if (v === undefined || v === null) return ''
+      if (typeof v === 'string' && NIVEAU_SCORE[v] !== undefined) return NIVEAU_SCORE[v]
+      return v
+    }
+
     const rows = [
-      ['student_id', 'voornaam', 'achternaam', 'klas', 'sport', 'graad', 'les', 'lpd', 'score', 'datum'].join(','),
+      ['student_id', 'voornaam', 'achternaam', 'klas', 'sport', 'graad', 'les', 'lpd', 'score_waarde', 'score_numeriek', 'kledij_teller', 'kledij_score', 'datum'].join(','),
       ...scores.map(s => {
         const l = leerlingMap[s.leerlingId] ?? {}
+        const kCount = kledijMap[s.leerlingId] ?? ''
+        const kScore = kCount !== '' ? Math.max(0, 10 - kCount * 2) : ''
         return [
           s.leerlingId,
           l.voornaam ?? '',
@@ -92,6 +115,9 @@ export default function Admin() {
           s.les.replace('les_', ''),
           s.lpd,
           s.score,
+          scoreVal(s.score),
+          kCount,
+          kScore,
           s.datum?.slice(0, 10) ?? '',
         ].join(',')
       })

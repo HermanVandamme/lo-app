@@ -25,15 +25,18 @@ export function kledijScore(count) {
 export function berekenEindScore(scores, rubricKeys) {
   const deelscores = []
 
-  // Rubric-scores (niveau-string → getal)
+  // Rubric-scores (niveau-string) en numerieke scores (testprotocol/upload)
   for (const key of rubricKeys ?? []) {
     const v = scores?.[key]
-    if (v && NIVEAU_SCORE[v] !== undefined) {
+    if (v === undefined || v === null) continue
+    if (typeof v === 'string' && NIVEAU_SCORE[v] !== undefined) {
       deelscores.push(NIVEAU_SCORE[v])
+    } else if (typeof v === 'number' && !isNaN(v)) {
+      deelscores.push(v)
     }
   }
 
-  // Manuele numerieke score
+  // Manuele numerieke score (legacy key)
   if (scores?.numeriek !== undefined && scores.numeriek !== null) {
     deelscores.push(Number(scores.numeriek))
   }

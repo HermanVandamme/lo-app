@@ -15,6 +15,7 @@ const PANEL_KEY_MAP = {
   'Reeks':       'reeks',
   'Klimcircuit': 'klimcircuit',
   'Eindspel':    'eindspel',
+  '3,3 km Test': 'test_3_3',
 }
 
 const STRUCTURED_PANELS = new Set(['Oefening 1', 'Oefening 2', 'Station 1', 'Station 2'])
@@ -137,6 +138,12 @@ export default function LesDetail() {
   const panelEntries = (sport.panels ?? []).map(label => {
     const key = PANEL_KEY_MAP[label] ?? label.toLowerCase().replace(/\s+/g, '_')
     return { key, label, content: lesData.panels?.[key] ?? '' }
+  }).filter(({ key, label, content }) => {
+    // Always show Evaluatie panel; hide other panels without content
+    if (label === 'Evaluatie') return true
+    if (!content) return false
+    if (content.trimStart().startsWith('(Geen')) return false
+    return true
   })
 
   const jaarLabel = JAAR_LABEL[graad] ?? graad
