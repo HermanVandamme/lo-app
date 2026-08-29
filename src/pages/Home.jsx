@@ -18,41 +18,39 @@ const SPORT_KLEUR = {
 }
 
 export default function Home() {
-  const sports = sportsData.sports ?? []
+  const sports = Object.entries(sportsData)
 
   return (
     <div>
       <h1 className="text-xl font-bold mb-4" style={{ color: '#2C3E50' }}>Kies een sport</h1>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-        {sports.map(sport => (
-          <SportTile key={sport.id} sport={sport} />
+        {sports.map(([id, sport]) => (
+          <SportTile key={id} id={id} sport={sport} />
         ))}
       </div>
     </div>
   )
 }
 
-function SportTile({ sport }) {
-  const imgUrl       = sport.image ? `${import.meta.env.BASE_URL}images/${sport.image}` : null
-  const fallbackKleur = SPORT_KLEUR[sport.id] ?? '#7F8C8D'
+function SportTile({ id, sport }) {
+  const fallbackKleur = SPORT_KLEUR[id] ?? '#7F8C8D'
+  const imgUrl = `${import.meta.env.BASE_URL}images/${id}.jpg`
 
   return (
     <Link
-      to={`/sport/${sport.id}`}
+      to={`/sport/${id}`}
       className="block rounded-2xl overflow-hidden shadow-md active:scale-95 transition-transform"
     >
       <div
         className="relative h-32"
         style={{ background: fallbackKleur }}
       >
-        {imgUrl && (
-          <img
-            src={imgUrl}
-            alt={sport.name}
-            className="w-full h-full object-cover"
-            onError={e => { e.currentTarget.style.display = 'none' }}
-          />
-        )}
+        <img
+          src={imgUrl}
+          alt={sport.naam}
+          className="w-full h-full object-cover"
+          onError={e => { e.currentTarget.style.display = 'none' }}
+        />
 
         <div
           className="absolute inset-0"
@@ -62,7 +60,7 @@ function SportTile({ sport }) {
         />
 
         <span className="absolute bottom-2 left-3 right-3 text-white font-bold text-base leading-tight drop-shadow">
-          {sport.name}
+          {sport.naam}
         </span>
       </div>
     </Link>

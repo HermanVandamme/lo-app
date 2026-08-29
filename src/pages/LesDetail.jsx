@@ -2,19 +2,11 @@ import { useParams, Link } from 'react-router-dom'
 import { useState } from 'react'
 import sportsData from '../data/sports.json'
 import lessonsData from '../data/lessons.json'
-import EvaluatiePanel from '../components/EvaluatiePanel'
+import EvaluatieScherm from '../components/EvaluatieScherm'
 
-const PANEL_KEY_MAP = {
-  'Opwarming':    'opwarming',
-  'Oefening 1':  'oefening_1',
-  'Oefening 2':  'oefening_2',
-  'Spelvorm':    'spelvorm',
-  'Evaluatie':   'evaluatie',
-  'Station 1':   'station_1',
-  'Station 2':   'station_2',
-  'Reeks':       'reeks',
-  'Klimcircuit': 'klimcircuit',
-  'Eindspel':    'eindspel',
+/** "oefening_1" → "Oefening 1" */
+function prettyLabel(key) {
+  return key.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
 }
 
 /** Render structured panel content (object with titel/opstelling/beschrijving/cues/makkelijker/moeilijker) */
@@ -69,20 +61,19 @@ export default function LesDetail() {
   const { sportId, graad, les } = useParams()
   const [openPanel, setOpenPanel] = useState(null)
 
-  const sport   = sportsData.sports.find(s => s.id === sportId)
+  const sport   = sportsData[sportId]
   const lesData = lessonsData[sportId]?.[graad]?.[les]
 
   if (!sport || !lesData) {
     return <p className="text-red-500 p-4">Les niet gevonden.</p>
   }
 
-  const panelEntries = (sport.panels ?? []).map(label => {
-    const key = PANEL_KEY_MAP[label] ?? label.toLowerCase().replace(/\s+/g, '_')
-    return { key, label, content: lesData.panels?.[key] ?? null }
-  }).filter(({ label, content }) => {
-    if (label === 'Evaluatie') return true
-    return !!content
-  })
+  // Panelen komen rechtstreeks uit lessons.json (ground truth), niet uit sports.json —
+  // dat laatste is soms niet in sync (bv. "eindspel" vs. de effectieve key "spelvorm").
+  const panelEntries = [
+    ...Object.keys(lesData.panels ?? {}).map(key => ({ key, label: prettyLabel(key), content: lesData.panels[key] })),
+    { key: 'evaluatie', label: 'Evaluatie', content: null },
+  ]
 
   const jaarLabel = JAAR_LABEL[graad] ?? graad
   const lesNr     = les.replace('les_', '')
@@ -94,14 +85,14 @@ export default function LesDetail() {
   return (
     <div>
       <Link to={`/sport/${sportId}`} className="text-sm mb-3 inline-block" style={{ color: '#E67E22' }}>
-        ← {sport.name}
+        ← {sport.naam}
       </Link>
       <h1 className="text-xl font-bold mb-0.5" style={{ color: '#2C3E50' }}>{lesData.titel}</h1>
       <p className="text-sm text-gray-400 mb-4">{jaarLabel} · les {lesNr}</p>
 
       <div className="space-y-2">
         {panelEntries.map(({ key, label, content }, idx) => {
-          const isEvaluatie = label === 'Evaluatie'
+          const isEvaluatie = key === 'evaluatie'
           const isOpen      = openPanel === key
 
           return (
@@ -135,12 +126,7 @@ export default function LesDetail() {
               {isOpen && (
                 <div className="px-4 pb-5 border-t border-gray-100 pt-3">
                   {isEvaluatie ? (
-                    <EvaluatiePanel
-                      sportId={sportId}
-                      graad={graad}
-                      les={les}
-                      evaluatieTekst={content?.tekst ?? ''}
-                    />
+                    <EvaluatieScherm sportId={sportId} graadFilter={graad} />
                   ) : (
                     <StructuredPanelContent content={content} />
                   )}

@@ -10,7 +10,7 @@ const JAAR_GRADEN = [
 
 export default function SportDetail() {
   const { sportId } = useParams()
-  const sport = sportsData.sports.find(s => s.id === sportId)
+  const sport = sportsData[sportId]
   const sportLessons = lessonsData[sportId] ?? {}
 
   if (!sport) return <p className="text-red-500 p-4">Sport niet gevonden.</p>
@@ -24,17 +24,17 @@ export default function SportDetail() {
   return (
     <div>
       {/* Header */}
-      <div className="relative h-36 rounded-2xl overflow-hidden mb-5 shadow">
+      <div className="relative h-36 rounded-2xl overflow-hidden mb-5 shadow" style={{ background: '#2C3E50' }}>
         <img
-          src={`${import.meta.env.BASE_URL}images/${sport.image}`}
-          alt={sport.name}
+          src={`${import.meta.env.BASE_URL}images/${sportId}.jpg`}
+          alt={sport.naam}
           className="w-full h-full object-cover"
           onError={e => { e.currentTarget.style.display = 'none' }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/20" />
         <div className="absolute bottom-0 left-0 right-0 p-4">
           <Link to="/" className="text-white/70 text-xs hover:text-white">← Terug</Link>
-          <h1 className="text-2xl font-bold text-white">{sport.name}</h1>
+          <h1 className="text-2xl font-bold text-white">{sport.naam}</h1>
         </div>
       </div>
 

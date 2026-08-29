@@ -16,3 +16,8 @@ export const GRAAD_LABEL = {
   jaar_5: '5e jaar',
   jaar_6: '6e jaar',
 }
+
+/** 'jaar_4' → 4 (voor vergelijking met sports.json / evaluatie.json "jaren"-arrays van getallen) */
+export function jaarNummerFromGraad(graad) {
+  return parseInt(graad?.replace('jaar_', '') ?? '0', 10)
+}
