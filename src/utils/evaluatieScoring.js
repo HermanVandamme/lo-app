@@ -6,6 +6,15 @@
  * item (zie EvaluatieScherm voor hoe dit uit Dexie-scores wordt opgebouwd:
  * sleutel in de db = `${item.id}::${subKey}`).
  */
+/** Rekent een ruwe (opgetelde) score om naar max_score, ALS het item max_score_ruw declareert. */
+function pasOmrekeningToe(item, ruw) {
+  if (ruw === null || ruw === undefined) return ruw
+  if (item.max_score_ruw && item.max_score) {
+    return Math.round((ruw / item.max_score_ruw) * item.max_score * 10) / 10
+  }
+  return ruw
+}
+
 export function berekenEvaluatieScore(item, waarden) {
   if (!item || !waarden) return null
 
@@ -26,7 +35,7 @@ export function berekenEvaluatieScore(item, waarden) {
       if (!items) return null
       const vals = items.map((_, idx) => waarden[`i${idx}`]).filter(v => v !== undefined && v !== null)
       if (!vals.length) return null
-      return vals.reduce((a, b) => a + b, 0)
+      return pasOmrekeningToe(item, vals.reduce((a, b) => a + b, 0))
     }
 
     case 'dropdown_score': {
@@ -37,11 +46,7 @@ export function berekenEvaluatieScore(item, waarden) {
     case 'dropdown_meerdere': {
       const vals = (item.items ?? []).map((_, idx) => waarden[`i${idx}`]).filter(v => v !== undefined && v !== null)
       if (!vals.length) return null
-      const ruw = vals.reduce((a, b) => a + b, 0)
-      if (item.max_score_ruw && item.max_score) {
-        return Math.round((ruw / item.max_score_ruw) * item.max_score * 10) / 10
-      }
-      return ruw
+      return pasOmrekeningToe(item, vals.reduce((a, b) => a + b, 0))
     }
 
     case 'direct_score_test':
@@ -78,11 +83,7 @@ export function berekenEvaluatieScore(item, waarden) {
       })
       const gevuld = subScores.filter(v => v !== null && v !== undefined)
       if (!gevuld.length) return null
-      const ruw = gevuld.reduce((a, b) => a + b, 0)
-      if (item.max_score_ruw && item.max_score) {
-        return Math.round((ruw / item.max_score_ruw) * item.max_score * 10) / 10
-      }
-      return ruw
+      return pasOmrekeningToe(item, gevuld.reduce((a, b) => a + b, 0))
     }
 
     default:

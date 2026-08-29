@@ -674,42 +674,6 @@
       }
     ]
   },
-  "gym_acrogym": {
-    "jaren_aangeboden": [
-      4
-    ],
-    "evaluaties": [
-      {
-        "id": "gym_acrogym_lpd9",
-        "lpd": "LPD9",
-        "jaren": [
-          4
-        ],
-        "titel": "Moeilijkheidsgraad en show piramide",
-        "type": "checklist_punten",
-        "scored_by": "leerkracht",
-        "max_score_ruw": 4,
-        "max_score": 10,
-        "omrekening": "totaal_ruw / 4 x 10",
-        "opties_per_item": [
-          0,
-          1,
-          2
-        ],
-        "items": [
-          {
-            "naam": "Moeilijkheidsgraad",
-            "max_punten": 2
-          },
-          {
-            "naam": "Show (opkomst, verbindingen, slot, kleding en muziek, kijken naar publiek, afwerking, ...)",
-            "max_punten": 2
-          }
-        ],
-        "bron": "Evaluatie.docx – GYM: Piramiden – Jaar 4 LPD9 (zelfevaluatie-onderdeel verwijderd op vraag gebruiker, resterend leerkrachtdeel omgerekend naar 10)"
-      }
-    ]
-  },
   "gym_loopoverslag": {
     "jaren_aangeboden": [
       5
@@ -860,11 +824,9 @@
           5
         ],
         "titel": "Zelfgemaakte choreografie",
-        "type": "dropdown_meerdere",
+        "type": "rubric_klikcriteria",
         "scored_by": "leerkracht",
-        "max_score_ruw": 4,
         "max_score": 10,
-        "omrekening": "totaal_ruw / 4 x 10",
         "herhaling": "Deze evaluatie wordt 2x afgenomen: einde les 1 én einde les 2.",
         "criteria": [
           {
@@ -872,28 +834,28 @@
             "niveaus": [
               {
                 "label": "Zwak",
-                "punten": 1,
+                "punten": 2.5,
                 "omschrijving": "Er is weinig zichtbare verandering tov de eerste les."
               },
               {
                 "label": "Voldoende",
-                "punten": 2,
+                "punten": 5,
                 "omschrijving": "Er is beperkte maar merkbare vooruitgang."
               },
               {
                 "label": "Goed",
-                "punten": 3,
+                "punten": 7.5,
                 "omschrijving": "Er is een duidelijke vooruitgang."
               },
               {
                 "label": "Uitstekend",
-                "punten": 4,
+                "punten": 10,
                 "omschrijving": "Er is een zeer duidelijke persoonlijke groei, de leerling kan meer dan bij het begin."
               }
             ]
           }
         ],
-        "bron": "Evaluatie.docx – RITMIEK: dans – Jaar 5 LPD3+13 (zelfevaluatie-onderdeel verwijderd op vraag gebruiker, resterend leerkrachtdeel omgerekend naar 10)"
+        "bron": "Evaluatie.docx – RITMIEK: dans – Jaar 5 LPD3+13 (type gecorrigeerd naar rubric_klikcriteria — bugfix)"
       }
     ]
   },
@@ -909,48 +871,26 @@
           5
         ],
         "titel": "Materiaalgebruik en leeflijn",
-        "type": "samengesteld",
-        "max_score_ruw": 8,
+        "type": "checklist_punten",
+        "scored_by": "leerkracht",
         "max_score": 10,
-        "omrekening": "totaal_ruw / 8 x 10",
-        "onderdelen": [
+        "opties_per_item": [
+          0,
+          2.5,
+          5
+        ],
+        "items": [
           {
-            "naam": "Checklist materiaalgebruik",
-            "type": "checklist_punten",
-            "scored_by": "leerkracht",
-            "max_score": 4,
-            "opties_per_item": [
-              0,
-              1,
-              2
-            ],
-            "items": [
-              {
-                "naam": "Gebruikt het juiste materiaal voor de opdracht: leeflijn voor via ferrata, musketon voor Prusik klimmen",
-                "max_punten": 2
-              },
-              {
-                "naam": "Gebruikt de leeflijn correct: er hangt altijd minstens 1 musketon vast, niet met twee musketons gelijktijdig o.w.v. remsysteem",
-                "max_punten": 2
-              }
-            ]
+            "naam": "Gebruikt het juiste materiaal voor de opdracht: leeflijn voor via ferrata, musketon voor Prusik klimmen",
+            "max_punten": 5
           },
           {
-            "naam": "Leerkrachtscore (dropdown)",
-            "type": "dropdown_score",
-            "scored_by": "leerkracht",
-            "max_score": 4,
-            "opties": [
-              0,
-              1,
-              2,
-              3,
-              4
-            ]
+            "naam": "Gebruikt de leeflijn correct: er hangt altijd minstens 1 musketon vast, niet met twee musketons gelijktijdig o.w.v. remsysteem",
+            "max_punten": 5
           }
         ],
         "expliciet_uitgesloten": "Zelfevaluatie op wisbordje (duo-check gordel) NIET overnemen in de app.",
-        "bron": "Evaluatie.docx – Klimmen – Jaar 5 LPD8 (omgerekend naar 10, na overleg gebruiker)"
+        "bron": "Evaluatie.docx – Klimmen – Jaar 5 LPD8 (losse leerkracht-dropdown verwijderd op vraag gebruiker, checklist herschaald naar 10)"
       }
     ]
   },
@@ -968,32 +908,30 @@
         "titel": "Getoonde technieken",
         "type": "checklist_punten",
         "scored_by": "leerkracht",
-        "max_score_ruw": 4,
         "max_score": 10,
-        "omrekening": "totaal_ruw / 4 x 10",
         "opties_per_item": [
           0,
-          1
+          2.5
         ],
         "items": [
           {
             "naam": "Kesa Gatame",
-            "max_punten": 1
+            "max_punten": 2.5
           },
           {
             "naam": "Yoko shiho gatame",
-            "max_punten": 1
+            "max_punten": 2.5
           },
           {
             "naam": "Achterwaartse val",
-            "max_punten": 1
+            "max_punten": 2.5
           },
           {
             "naam": "Zijwaartse val",
-            "max_punten": 1
+            "max_punten": 2.5
           }
         ],
-        "bron": "Evaluatie.docx – Zelfverdediging/Judo – Jaar 5 LPD1 (zelfevaluatie scheidsrechterfunctie volledig verwijderd op vraag gebruiker, enkel technieken-checklist resteert, omgerekend naar 10)"
+        "bron": "Evaluatie.docx – Zelfverdediging/Judo – Jaar 5 LPD1 (vereenvoudigd naar vlakke schaal op 10 — bugfix)"
       }
     ]
   },
@@ -1319,5 +1257,42 @@
     "max_score": 10,
     "gedrag": "Indien de leerkracht niets invult, telt dit niet mee voor het rapport.",
     "bron": "Evaluatie.docx – slotzin"
+  },
+  "GYM_piramidenbouw": {
+    "jaren_aangeboden": [
+      4
+    ],
+    "evaluaties": [
+      {
+        "id": "GYM_piramidenbouw_lpd9",
+        "lpd": "LPD9",
+        "jaren": [
+          4
+        ],
+        "titel": "Moeilijkheidsgraad en show piramide",
+        "type": "checklist_punten",
+        "scored_by": "leerkracht",
+        "max_score": 10,
+        "opties_per_item": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "items": [
+          {
+            "naam": "Moeilijkheidsgraad",
+            "max_punten": 5
+          },
+          {
+            "naam": "Show (opkomst, verbindingen, slot, kleding en muziek, kijken naar publiek, afwerking, ...)",
+            "max_punten": 5
+          }
+        ],
+        "bron": "Evaluatie.docx – GYM: Piramiden – Jaar 4 LPD9 (vereenvoudigd naar vlakke schaal op 10 — bugfix)"
+      }
+    ]
   }
 }

@@ -19,6 +19,7 @@ const SPORT_KLEUR = {
 
 export default function Home() {
   const sports = Object.entries(sportsData)
+    .sort(([, a], [, b]) => a.naam.localeCompare(b.naam, 'nl', { sensitivity: 'base' }))
 
   return (
     <div>

@@ -58,7 +58,7 @@ function ResultatenKlas({ klas, onTerug }) {
   const leerlingen = useStudentsByKlas(klas.id)
   const [bezig, setBezig] = useState(false)
 
-  const sportKolommen = useMemo(() => (
+  const alleSportKolommen = useMemo(() => (
     Object.entries(sportsData)
       .filter(([id, sport]) => sport.jaren?.includes(jaarNr) && getEvaluatiesVoorSport(id, jaarNr).length > 0)
       .map(([id, sport]) => ({ id, naam: sport.naam }))
@@ -107,6 +107,11 @@ function ResultatenKlas({ klas, onTerug }) {
     }
     return gevuld ? { som: Math.round(som * 10) / 10, max } : null
   }
+
+  // Enkel thema's tonen waar minstens 1 leerling van deze klas iets heeft ingevuld.
+  const sportKolommen = useMemo(() => (
+    alleSportKolommen.filter(s => (leerlingen ?? []).some(l => celScore(l.id, s.id) !== null))
+  ), [alleSportKolommen, leerlingen, scoreMap])
 
   async function resetResultaten() {
     const ok = confirm(

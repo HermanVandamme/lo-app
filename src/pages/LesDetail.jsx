@@ -71,7 +71,9 @@ export default function LesDetail() {
   // Panelen komen rechtstreeks uit lessons.json (ground truth), niet uit sports.json —
   // dat laatste is soms niet in sync (bv. "eindspel" vs. de effectieve key "spelvorm").
   const panelEntries = [
-    ...Object.keys(lesData.panels ?? {}).map(key => ({ key, label: prettyLabel(key), content: lesData.panels[key] })),
+    ...Object.keys(lesData.panels ?? {})
+      .filter(key => lesData.panels[key] != null)
+      .map(key => ({ key, label: prettyLabel(key), content: lesData.panels[key] })),
     { key: 'evaluatie', label: 'Evaluatie', content: null },
   ]
 

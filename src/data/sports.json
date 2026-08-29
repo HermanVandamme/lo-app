@@ -1,26 +1,319 @@
 {
-  "basketbal": { "naam": "Basketbal", "locatie": "SPORTHAL", "jaren": [4, 5, 6], "panels": ["opwarming", "oefening_1", "oefening_2", "eindspel", "evaluatie"] },
-  "volleybal": { "naam": "Volleybal", "locatie": "SPORTHAL", "jaren": [4, 5, 6], "panels": ["opwarming", "oefening_1", "oefening_2", "eindspel", "evaluatie"] },
-  "badminton": { "naam": "Badminton", "locatie": "SPORTHAL", "jaren": [4, 5, 6], "panels": ["opwarming", "oefening_1", "oefening_2", "eindspel", "evaluatie"] },
-  "voetbal": { "naam": "Voetbal", "locatie": "SPORTHAL", "jaren": [5], "panels": ["opwarming", "oefening_1", "oefening_2", "eindspel", "evaluatie"] },
-  "handbal": { "naam": "Handbal", "locatie": "SPORTHAL", "jaren": [4, 6], "panels": ["opwarming", "oefening_1", "oefening_2", "eindspel", "evaluatie"] },
-  "frisbee": { "naam": "Frisbee", "locatie": "SPORTHAL", "jaren": [4, 5, 6], "panels": ["opwarming", "oefening_1", "oefening_2", "eindspel", "evaluatie"] },
-  "conditie": { "naam": "Conditie", "locatie": "TURNZAAL", "jaren": [4, 5, 6], "panels": ["opwarming", "oefening_1", "oefening_2", "eindspel", "evaluatie"] },
-  "ehbo": { "naam": "EHBO", "locatie": "TURNZAAL", "jaren": [4, 6], "panels": ["oefening_1", "oefening_2", "eindspel", "evaluatie"] },
-  "gym_acrogym": { "naam": "Gym: acrogym", "locatie": "TURNZAAL", "jaren": [4], "panels": ["opwarming", "oefening_1", "oefening_2", "eindspel", "evaluatie"] },
-  "gym_loopoverslag": { "naam": "Gym: loopoverslag", "locatie": "TURNZAAL", "jaren": [5], "panels": ["evaluatie"] },
-  "gym_freerunning": { "naam": "Gym: freerunning", "locatie": "TURNZAAL", "jaren": [6], "panels": ["opwarming", "oefening_1", "oefening_2", "eindspel", "evaluatie"] },
-  "ritmiek_dans": { "naam": "Ritmiek: dans", "locatie": "TURNZAAL", "jaren": [5], "panels": ["opwarming", "oefening_1", "oefening_2", "eindspel", "evaluatie"] },
-  "ritmiek_ropeskipping": { "naam": "Ritmiek: ropeskipping", "locatie": "TURNZAAL", "jaren": [4, 6], "panels": ["opwarming", "oefening_1", "oefening_2", "eindspel", "evaluatie"] },
-  "judo": { "naam": "Judo", "locatie": "TURNZAAL", "jaren": [5], "panels": ["opwarming", "oefening_1", "oefening_2", "eindspel", "evaluatie"] },
-  "klimmen": { "naam": "Klimmen", "locatie": "TURNZAAL", "jaren": [5], "panels": ["opwarming", "oefening_1", "oefening_2", "eindspel", "evaluatie"] },
-  "duurloop": { "naam": "Duurloop", "locatie": "ALTERNATIEF", "jaren": [4, 5, 6], "panels": ["opwarming", "evaluatie"] },
-  "fietsen": { "naam": "Fietsen", "locatie": "ALTERNATIEF", "jaren": [5], "panels": ["evaluatie"] },
-  "fitness": { "naam": "Fitness", "locatie": "ALTERNATIEF", "jaren": [4, 5, 6], "panels": ["evaluatie"] },
-  "trampoline_schaatsen": { "naam": "Trampoline + Schaatsen", "locatie": "ALTERNATIEF", "jaren": [5], "panels": ["evaluatie"] },
-  "boulderen": { "naam": "Boulderen", "locatie": "ALTERNATIEF", "jaren": [6], "panels": ["evaluatie"] },
-  "padel_fietsen": { "naam": "Padel + Fietsen", "locatie": "ALTERNATIEF", "jaren": [4], "panels": ["evaluatie"] },
-  "zwemmen": { "naam": "Zwemmen", "locatie": "ALTERNATIEF", "jaren": [4], "panels": ["evaluatie"] },
-  "baseball": { "naam": "Baseball", "locatie": "ALTERNATIEF", "jaren": [4, 5, 6], "panels": ["eindspel", "evaluatie"] },
-  "varia": { "naam": "Varia", "locatie": "TURNZAAL", "jaren": [4, 6], "panels": ["evaluatie"] }
+  "basketbal": {
+    "naam": "Basketbal",
+    "locatie": "SPORTHAL",
+    "jaren": [
+      4,
+      5,
+      6
+    ],
+    "panels": [
+      "opwarming",
+      "oefening_1",
+      "oefening_2",
+      "eindspel",
+      "evaluatie"
+    ]
+  },
+  "volleybal": {
+    "naam": "Volleybal",
+    "locatie": "SPORTHAL",
+    "jaren": [
+      4,
+      5,
+      6
+    ],
+    "panels": [
+      "opwarming",
+      "oefening_1",
+      "oefening_2",
+      "eindspel",
+      "evaluatie"
+    ]
+  },
+  "badminton": {
+    "naam": "Badminton",
+    "locatie": "SPORTHAL",
+    "jaren": [
+      4,
+      5,
+      6
+    ],
+    "panels": [
+      "opwarming",
+      "oefening_1",
+      "oefening_2",
+      "eindspel",
+      "evaluatie"
+    ]
+  },
+  "voetbal": {
+    "naam": "Voetbal",
+    "locatie": "SPORTHAL",
+    "jaren": [
+      5
+    ],
+    "panels": [
+      "opwarming",
+      "oefening_1",
+      "oefening_2",
+      "eindspel",
+      "evaluatie"
+    ]
+  },
+  "handbal": {
+    "naam": "Handbal",
+    "locatie": "SPORTHAL",
+    "jaren": [
+      4,
+      6
+    ],
+    "panels": [
+      "opwarming",
+      "oefening_1",
+      "oefening_2",
+      "eindspel",
+      "evaluatie"
+    ]
+  },
+  "frisbee": {
+    "naam": "Frisbee",
+    "locatie": "SPORTHAL",
+    "jaren": [
+      4,
+      5,
+      6
+    ],
+    "panels": [
+      "opwarming",
+      "oefening_1",
+      "oefening_2",
+      "eindspel",
+      "evaluatie"
+    ]
+  },
+  "conditie": {
+    "naam": "Conditie",
+    "locatie": "TURNZAAL",
+    "jaren": [
+      4,
+      5,
+      6
+    ],
+    "panels": [
+      "opwarming",
+      "oefening_1",
+      "oefening_2",
+      "eindspel",
+      "evaluatie"
+    ]
+  },
+  "ehbo": {
+    "naam": "EHBO",
+    "locatie": "TURNZAAL",
+    "jaren": [
+      4,
+      6
+    ],
+    "panels": [
+      "oefening_1",
+      "oefening_2",
+      "eindspel",
+      "evaluatie"
+    ]
+  },
+  "gym_loopoverslag": {
+    "naam": "Gym: loopoverslag",
+    "locatie": "TURNZAAL",
+    "jaren": [
+      5
+    ],
+    "panels": [
+      "evaluatie"
+    ]
+  },
+  "gym_freerunning": {
+    "naam": "Gym: freerunning",
+    "locatie": "TURNZAAL",
+    "jaren": [
+      6
+    ],
+    "panels": [
+      "opwarming",
+      "oefening_1",
+      "oefening_2",
+      "eindspel",
+      "evaluatie"
+    ]
+  },
+  "ritmiek_dans": {
+    "naam": "Ritmiek: dans",
+    "locatie": "TURNZAAL",
+    "jaren": [
+      5
+    ],
+    "panels": [
+      "opwarming",
+      "oefening_1",
+      "oefening_2",
+      "eindspel",
+      "evaluatie"
+    ]
+  },
+  "ritmiek_ropeskipping": {
+    "naam": "Ritmiek: ropeskipping",
+    "locatie": "TURNZAAL",
+    "jaren": [
+      4,
+      6
+    ],
+    "panels": [
+      "opwarming",
+      "oefening_1",
+      "oefening_2",
+      "eindspel",
+      "evaluatie"
+    ]
+  },
+  "judo": {
+    "naam": "Judo",
+    "locatie": "TURNZAAL",
+    "jaren": [
+      5
+    ],
+    "panels": [
+      "opwarming",
+      "oefening_1",
+      "oefening_2",
+      "eindspel",
+      "evaluatie"
+    ]
+  },
+  "klimmen": {
+    "naam": "Klimmen",
+    "locatie": "TURNZAAL",
+    "jaren": [
+      5
+    ],
+    "panels": [
+      "opwarming",
+      "oefening_1",
+      "oefening_2",
+      "eindspel",
+      "evaluatie"
+    ]
+  },
+  "duurloop": {
+    "naam": "Duurloop",
+    "locatie": "ALTERNATIEF",
+    "jaren": [
+      4,
+      5,
+      6
+    ],
+    "panels": [
+      "opwarming",
+      "evaluatie"
+    ]
+  },
+  "fietsen": {
+    "naam": "Fietsen",
+    "locatie": "ALTERNATIEF",
+    "jaren": [
+      5
+    ],
+    "panels": [
+      "evaluatie"
+    ]
+  },
+  "fitness": {
+    "naam": "Fitness",
+    "locatie": "ALTERNATIEF",
+    "jaren": [
+      4,
+      5,
+      6
+    ],
+    "panels": [
+      "evaluatie"
+    ]
+  },
+  "trampoline_schaatsen": {
+    "naam": "Trampoline + Schaatsen",
+    "locatie": "ALTERNATIEF",
+    "jaren": [
+      5
+    ],
+    "panels": [
+      "evaluatie"
+    ]
+  },
+  "boulderen": {
+    "naam": "Boulderen",
+    "locatie": "ALTERNATIEF",
+    "jaren": [
+      6
+    ],
+    "panels": [
+      "evaluatie"
+    ]
+  },
+  "padel_fietsen": {
+    "naam": "Padel + Fietsen",
+    "locatie": "ALTERNATIEF",
+    "jaren": [
+      4
+    ],
+    "panels": [
+      "evaluatie"
+    ]
+  },
+  "zwemmen": {
+    "naam": "Zwemmen",
+    "locatie": "ALTERNATIEF",
+    "jaren": [
+      4
+    ],
+    "panels": [
+      "evaluatie"
+    ]
+  },
+  "baseball": {
+    "naam": "Baseball",
+    "locatie": "ALTERNATIEF",
+    "jaren": [
+      4,
+      5,
+      6
+    ],
+    "panels": [
+      "eindspel",
+      "evaluatie"
+    ]
+  },
+  "varia": {
+    "naam": "Varia",
+    "locatie": "TURNZAAL",
+    "jaren": [
+      4,
+      6
+    ],
+    "panels": [
+      "evaluatie"
+    ]
+  },
+  "GYM_piramidenbouw": {
+    "naam": "GYM: piramidenbouw",
+    "locatie": "TURNZAAL",
+    "jaren": [
+      4
+    ],
+    "panels": [
+      "opwarming",
+      "oefening_1",
+      "oefening_2",
+      "eindspel",
+      "evaluatie"
+    ]
+  }
 }

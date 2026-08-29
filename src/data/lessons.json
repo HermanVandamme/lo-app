@@ -1420,41 +1420,6 @@
       }
     }
   },
-  "gym_acrogym": {
-    "jaar_4": {
-      "les_1": {
-        "titel": "Lange mat en piramides",
-        "panels": {
-          "opwarming": {
-            "titel": "Lange mat opwarming",
-            "opstelling": "",
-            "beschrijving": "Lopen, bijtrekpassen links en rechts, koprol naar echtstaan zonder handen te gebruiken, kruiwagen per twee, per twee lopen en elkaar tegenhouden, heffen van knieën, springen op R been dan L been.",
-            "cues": "Zacht landen – actieve armen – rechte rug bij kruiwagen",
-            "makkelijker": "",
-            "moeilijker": ""
-          },
-          "oefening_1": {
-            "titel": "Kijkwijzeroefeningen (loopoverslag, handstand doorrollen, radslag, koprol)",
-            "opstelling": "",
-            "beschrijving": "Elke leerling voert bij opkomst of bij een overgang 2 gymnastische oefeningen uit uit de kijkwijzers: loopoverslag, handstand doorrollen, radslag, koprol. Groepjes helpen elkaar.",
-            "cues": "Help elkaar – gebruik de kijkwijzers – vormspanning",
-            "makkelijker": "Enkel koprol of handstand doorrollen kiezen.",
-            "moeilijker": "Loopoverslag of radslag toevoegen aan de combinatie."
-          },
-          "oefening_2": null,
-          "spelvorm": {
-            "titel": "Piramideshow",
-            "opstelling": "",
-            "beschrijving": "Groepjes van 5 à 7 leerlingen bereiden een show voor met 1 lange mat, gebouwd tot een vierkant. Elk groepje toont 2 piramides. Vuistregels: helpers, niet op ruggengraat, vormspanning, kijk naar publiek, rustig afbouwen, gestrekte tenen/handen, evenwicht en controle.",
-            "cues": "Niet op de ruggengraat – rustig opbouwen en afbouwen – kijk naar publiek",
-            "makkelijker": "",
-            "moeilijker": ""
-          }
-        }
-      },
-      "les_2": null
-    }
-  },
   "gym_freerunning": {
     "jaar_6": {
       "les_1": {
@@ -1852,6 +1817,41 @@
             "opstelling": "",
             "beschrijving": "Test op 8 rondjes van 415 meter (3,3km) in het Vrijbroekpark, zie evaluatietabel.",
             "cues": "",
+            "makkelijker": "",
+            "moeilijker": ""
+          }
+        }
+      },
+      "les_2": null
+    }
+  },
+  "GYM_piramidenbouw": {
+    "jaar_4": {
+      "les_1": {
+        "titel": "Lange mat en piramides",
+        "panels": {
+          "opwarming": {
+            "titel": "Lange mat opwarming",
+            "opstelling": "",
+            "beschrijving": "Lopen, bijtrekpassen links en rechts, koprol naar echtstaan zonder handen te gebruiken, kruiwagen per twee, per twee lopen en elkaar tegenhouden, heffen van knieën, springen op R been dan L been.",
+            "cues": "Zacht landen – actieve armen – rechte rug bij kruiwagen",
+            "makkelijker": "",
+            "moeilijker": ""
+          },
+          "oefening_1": {
+            "titel": "Kijkwijzeroefeningen (loopoverslag, handstand doorrollen, radslag, koprol)",
+            "opstelling": "",
+            "beschrijving": "Elke leerling voert bij opkomst of bij een overgang 2 gymnastische oefeningen uit uit de kijkwijzers: loopoverslag, handstand doorrollen, radslag, koprol. Groepjes helpen elkaar.",
+            "cues": "Help elkaar – gebruik de kijkwijzers – vormspanning",
+            "makkelijker": "Enkel koprol of handstand doorrollen kiezen.",
+            "moeilijker": "Loopoverslag of radslag toevoegen aan de combinatie."
+          },
+          "oefening_2": null,
+          "spelvorm": {
+            "titel": "Piramideshow",
+            "opstelling": "",
+            "beschrijving": "Groepjes van 5 à 7 leerlingen bereiden een show voor met 1 lange mat, gebouwd tot een vierkant. Elk groepje toont 2 piramides. Vuistregels: helpers, niet op ruggengraat, vormspanning, kijk naar publiek, rustig afbouwen, gestrekte tenen/handen, evenwicht en controle.",
+            "cues": "Niet op de ruggengraat – rustig opbouwen en afbouwen – kijk naar publiek",
             "makkelijker": "",
             "moeilijker": ""
           }
