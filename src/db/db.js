@@ -36,4 +36,13 @@ db.version(4).stores({
   kledij:            'leerlingId',   // { leerlingId, count, datum }
 })
 
+// v5: zelfevaluatie via QR verwijderd — gebeurt voortaan via BookWidgets, buiten de app
+db.version(5).stores({
+  klassen:           'id, naam',
+  leerlingen:        'id, klasId, voornaam, achternaam',
+  scores:            '++id, leerlingId, [leerlingId+sportId+graad+les+lpd], sportId, graad, les, lpd, datum',
+  kledij:            'leerlingId',   // { leerlingId, score, datum }
+  zelfevalSessies:   null,
+})
+
 export default db

@@ -4,8 +4,8 @@
  * EvaluatiePanel.jsx vs. KledijScreen in Evaluatie.jsx).
  *
  * Score start op 10/10, −aftrek_per_overtreding per keer niet in orde
- * (via +/- knop). Reset-knop (stap 6) zet ALLE leerlingen terug op 10/10 —
- * enkel op expliciete klik, nooit automatisch.
+ * (via +/- knop). Resetten gebeurt niet hier, maar via het Resultaten-scherm
+ * (gecombineerd met het wissen van thema-scores, per klas).
  */
 import { useState, useMemo } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
@@ -20,16 +20,6 @@ export default function Kledij({ onTerug }) {
   const cfg = getKledijConfig()
   const klassen = useKlassen()
   const [klas, setKlas] = useState(null)
-  const [resetBezig, setResetBezig] = useState(false)
-
-  async function resetAlleLeerlingen() {
-    if (!confirm('Weet je zeker dat je alle kledijpunten wil resetten naar 10/10?')) return
-    setResetBezig(true)
-    const alleLeerlingen = await db.leerlingen.toArray()
-    const datum = new Date().toISOString()
-    await db.kledij.bulkPut(alleLeerlingen.map(l => ({ leerlingId: l.id, score: cfg.start_score, datum })))
-    setResetBezig(false)
-  }
 
   if (klas) {
     return <KledijKlasScherm klas={klas} cfg={cfg} onTerug={() => setKlas(null)} />
@@ -41,15 +31,6 @@ export default function Kledij({ onTerug }) {
         <p className="font-bold text-base" style={{ color: '#2C3E50' }}>👕 Kledij</p>
         <button onClick={onTerug} className="px-3 py-2 rounded-xl text-sm font-semibold bg-gray-100 text-gray-600">← Terug</button>
       </div>
-
-      <button
-        onClick={resetAlleLeerlingen}
-        disabled={resetBezig}
-        className="w-full py-3 rounded-xl font-semibold text-white text-sm mb-4 disabled:opacity-50"
-        style={{ background: '#C0392B' }}
-      >
-        ↺ Reset kledijpunten ({resetBezig ? 'bezig…' : `alle leerlingen naar ${cfg.start_score}/${cfg.max_score}`})
-      </button>
 
       <p className="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wide">Kies een klas</p>
       {klassen.length === 0 ? (

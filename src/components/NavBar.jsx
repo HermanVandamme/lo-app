@@ -1,9 +1,10 @@
 import { Link, useLocation } from 'react-router-dom'
 
 const NAV_ITEMS = [
-  { to: '/',          label: 'Sporten',   icon: '🏅' },
-  { to: '/evaluatie', label: 'Evaluatie', icon: '📋' },
-  { to: '/admin',     label: 'Admin',     icon: '⚙️' },
+  { to: '/',           label: 'Sporten',    icon: '🏅' },
+  { to: '/evaluatie',  label: 'Evaluatie',  icon: '📋' },
+  { to: '/resultaten', label: 'Resultaten', icon: '📊' },
+  { to: '/admin',      label: 'Admin',      icon: '⚙️' },
 ]
 
 export default function NavBar() {

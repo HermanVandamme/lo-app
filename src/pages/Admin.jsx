@@ -3,7 +3,6 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import db from '../db/db'
 import { parseStudentsCsv, importStudentsToDb, importPhotoForStudent } from '../utils/csvImport'
 import { useKlassen } from '../hooks/useStudents'
-import { getSupabaseConfig, saveSupabaseConfig, makeSupabaseClient } from '../lib/supabase'
 import { jaarNummerFromGraad } from '../utils/graad'
 import { getEvaluatiesVoorSport, getKledijConfig } from '../utils/evaluatieData'
 import { berekenEvaluatieScore } from '../utils/evaluatieScoring'
@@ -286,9 +285,6 @@ export default function Admin() {
         )}
       </div>
 
-      {/* Supabase configuratie */}
-      <SupabaseConfig />
-
       {/* Wis alles */}
       <div className="bg-white rounded-2xl shadow p-4">
         <h2 className="font-semibold text-red-600 mb-1">Data wissen</h2>
@@ -333,61 +329,6 @@ function ImportSection({ title, description, buttonLabel, accept, multiple, mess
           {message}
         </p>
       )}
-    </div>
-  )
-}
-
-/* ── Supabase-configuratie ── */
-function SupabaseConfig() {
-  const cfg = getSupabaseConfig()
-  const [url, setUrl]       = useState(cfg.url)
-  const [key, setKey]       = useState(cfg.key)
-  const [status, setStatus] = useState('')
-
-  function sla() {
-    saveSupabaseConfig(url, key)
-    const client = makeSupabaseClient()
-    setStatus(client ? '✓ Opgeslagen en verbinding OK' : url || key ? '⚠ Opgeslagen (controleer URL/key)' : 'Gewist.')
-  }
-
-  const geconfigureerd = !!(cfg.url && cfg.key)
-
-  return (
-    <div className="bg-white rounded-2xl shadow p-4 mb-4">
-      <div className="flex items-center justify-between mb-1">
-        <h2 className="font-semibold" style={{ color: '#8E44AD' }}>Supabase (zelfevaluatie)</h2>
-        <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${geconfigureerd ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-500'}`}>
-          {geconfigureerd ? '✓ Ingesteld' : 'Niet ingesteld'}
-        </span>
-      </div>
-      <p className="text-xs text-gray-400 mb-3">
-        Nodig voor zelfevaluatie via QR. Antwoorden van leerlingen worden hier opgeslagen (anoniem via token).
-        Maak een gratis project op <strong>supabase.com</strong> en voer de URL + anon key in.
-      </p>
-      <div className="space-y-2 mb-3">
-        <input
-          type="url"
-          placeholder="https://xxxx.supabase.co"
-          value={url}
-          onChange={e => setUrl(e.target.value)}
-          className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm"
-        />
-        <input
-          type="password"
-          placeholder="anon public key"
-          value={key}
-          onChange={e => setKey(e.target.value)}
-          className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm font-mono"
-        />
-      </div>
-      <button
-        onClick={sla}
-        className="w-full py-2.5 rounded-xl font-semibold text-white text-sm"
-        style={{ background: '#8E44AD' }}
-      >
-        Opslaan
-      </button>
-      {status && <p className="mt-2 text-sm text-gray-600">{status}</p>}
     </div>
   )
 }
