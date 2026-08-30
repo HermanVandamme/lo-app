@@ -14,7 +14,7 @@ export default function NavBar() {
     <header className="sticky top-0 z-50 safe-top" style={{ background: '#2C3E50' }}>
       <div className="container mx-auto px-4 max-w-3xl flex items-center justify-between h-14">
         <Link to="/" className="text-white font-bold text-lg tracking-tight">
-          LO MASTER <span className="text-brand text-sm font-normal">2026</span>
+          LO APP
         </Link>
         <nav className="flex gap-1">
           {NAV_ITEMS.map(({ to, label, icon }) => {

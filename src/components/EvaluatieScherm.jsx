@@ -163,9 +163,9 @@ function LeerlingEvaluatieKaart({ leerling, items, waardenVoorItem, onSet }) {
   return (
     <div className="bg-gray-50 border border-gray-200 rounded-2xl p-3">
       <button onClick={() => setOpen(o => !o)} className="w-full flex items-center gap-3 text-left">
-        <LeerlingFoto leerling={leerling} size={12} />
+        <LeerlingFoto leerling={leerling} size={10} />
         <div className="flex-1 min-w-0">
-          <p className="font-bold text-sm leading-tight truncate" style={{ color: '#2C3E50' }}>
+          <p className="font-bold text-sm leading-tight" style={{ color: '#2C3E50' }}>
             {leerling.voornaam} {leerling.achternaam}
           </p>
         </div>
