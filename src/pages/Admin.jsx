@@ -8,6 +8,7 @@ import { getEvaluatiesVoorSport, getKledijConfig } from '../utils/evaluatieData'
 import { berekenEvaluatieScore } from '../utils/evaluatieScoring'
 import { downloadCsv, SCORE_HEADER, scoreRij, KLEDIJ_HEADER, kledijRij } from '../utils/csvExport'
 import sportsData from '../data/sports.json'
+import PdfImportDebug from '../components/PdfImportDebug'
 
 export default function Admin() {
   const klassen = useKlassen()
@@ -228,6 +229,9 @@ export default function Admin() {
         onFileChange={handlePhotoImport}
         inputRef={refs.photos}
       />
+
+      {/* PDF-import (in ontwikkeling, additief — vervangt de CSV-import hierboven nog niet) */}
+      <PdfImportDebug />
 
       {/* Klassen-overzicht */}
       {klassen.length > 0 && (
