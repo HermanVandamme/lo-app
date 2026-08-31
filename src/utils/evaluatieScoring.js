@@ -59,7 +59,11 @@ export function berekenEvaluatieScore(item, waarden) {
 
     case 'plus_min_tracker': {
       const v = waarden.score
-      return v === undefined || v === null ? (item.start_score ?? null) : Number(v)
+      if (v !== undefined && v !== null) return Number(v)
+      // Enkel bij een permanente evaluatie (bv. Kledij) staat de tracker altijd
+      // actief op start_score. Andere trackers (bv. Boulderen) tellen pas mee
+      // vanaf de eerste + of - klik van de leerkracht.
+      return item.type_globaal === 'permanente_evaluatie' ? (item.start_score ?? null) : null
     }
 
     case 'video_upload_score': {

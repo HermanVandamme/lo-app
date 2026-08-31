@@ -184,8 +184,14 @@ function DirectScoreTest({ item, waarden, onSet }) {
   const heeftInvoer = item.invoer_min !== undefined && item.invoer_max !== undefined
   if (heeftInvoer) {
     const factor = parseFormuleFactor(item.formule)
-    const invoer = waarden.invoer ?? 0
-    function wijzigInvoer(v) {
+    function wijzigInvoer(e) {
+      const raw = e.target.value
+      if (raw === '') {
+        onSet('invoer', null)
+        onSet('score', null)
+        return
+      }
+      const v = Math.min(item.invoer_max, Math.max(item.invoer_min, Number(raw)))
       onSet('invoer', v)
       onSet('score', Math.round(v * factor * 10) / 10)
     }
@@ -193,10 +199,17 @@ function DirectScoreTest({ item, waarden, onSet }) {
       <div>
         {uitleg}
         {item.invoer_label && <p className="text-xs text-gray-500 mb-1">{item.invoer_label}</p>}
-        <PlusMinKnop value={invoer} min={item.invoer_min} max={item.invoer_max} step={1} onChange={wijzigInvoer} />
-        <p className="text-xs text-gray-500 mt-1.5">
-          Score: <span className="font-bold" style={{ color: '#E67E22' }}>{waarden.score ?? 0}</span> / {item.max_score}
-        </p>
+        <div className="flex items-center gap-2">
+          <input
+            type="number" min={item.invoer_min} max={item.invoer_max} step={1}
+            value={waarden.invoer ?? ''} placeholder="0"
+            onChange={wijzigInvoer}
+            className="w-24 border border-gray-200 rounded-xl px-3 py-2 text-sm text-center font-bold"
+          />
+          <p className="text-xs text-gray-500">
+            → Score: <span className="font-bold" style={{ color: '#E67E22' }}>{waarden.score ?? 0}</span>/{item.max_score}
+          </p>
+        </div>
       </div>
     )
   }
@@ -244,6 +257,20 @@ function DropdownTijdLookup({ item, waarden, onSet }) {
 
 // ── plus_min_tracker ──────────────────────────────────────────────────────────
 function PlusMinTracker({ item, waarden, onSet }) {
+  const permanent = item.type_globaal === 'permanente_evaluatie'
+  const ingevuld = waarden.score !== undefined && waarden.score !== null
+
+  // Niet-permanente trackers (bv. Boulderen) tonen geen score tot de leerkracht
+  // effectief op + of - klikt — daarvoor gelden ze als "niet ingevuld".
+  if (!permanent && !ingevuld) {
+    return (
+      <div>
+        <p className="text-xs text-gray-400 italic mb-1">Nog niet ingevuld — telt niet mee tot de eerste klik.</p>
+        <PlusMinKnop value={item.start_score ?? 0} min={item.min_score ?? 0} max={item.max_score} step={1} onChange={v => onSet('score', v)} />
+      </div>
+    )
+  }
+
   const val = waarden.score ?? item.start_score ?? 0
   return <PlusMinKnop value={val} min={item.min_score ?? 0} max={item.max_score} step={1} onChange={v => onSet('score', v)} />
 }

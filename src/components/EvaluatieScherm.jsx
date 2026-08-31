@@ -67,6 +67,10 @@ function EvaluatieKlasScherm({ sportId, sport, klas, onTerug }) {
     return telScoreVelden(items[0]) === 1 ? items[0] : null
   }, [items])
 
+  const zelfevalHints = useMemo(() => (
+    [...new Set(items.filter(it => it.zelfevaluatie_hint).map(it => it.zelfevaluatie_hint))]
+  ), [items])
+
   const leerlingen = useStudentsByKlas(klas.id)
 
   const alleScores = useLiveQuery(
@@ -131,6 +135,13 @@ function EvaluatieKlasScherm({ sportId, sport, klas, onTerug }) {
           <button onClick={onTerug} className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-100 text-gray-600">↩ Andere klas</button>
         </div>
       </div>
+
+      {zelfevalHints.length > 0 && (
+        <div className="bg-blue-50 border border-blue-200 rounded-xl px-3 py-2 mb-3 text-xs text-blue-700 flex items-start gap-2">
+          <span>📱</span>
+          <span>{zelfevalHints.join(' · ')}</span>
+        </div>
+      )}
 
       {items.length === 0 ? (
         <p className="text-sm text-gray-400 italic text-center py-4">Geen evaluatie-items voor dit thema/jaar.</p>

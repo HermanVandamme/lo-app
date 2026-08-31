@@ -278,7 +278,8 @@
             ]
           }
         ],
-        "bron": "Evaluatie.docx – EHBO – Jaar 4+6 LPD7 (bijvragen-item toegevoegd aan scenario 2, na overleg gebruiker)"
+        "bron": "Evaluatie.docx – EHBO – Jaar 4+6 LPD7 (bijvragen-item toegevoegd aan scenario 2, na overleg gebruiker)",
+        "zelfevaluatie_hint": "Zelfevaluatie via oefening in Smartschool"
       }
     ]
   },
@@ -673,7 +674,8 @@
         "type": "vrije_score",
         "scored_by": "leerkracht",
         "max_score": 10,
-        "bron": "Evaluatie.docx – Conditie – Jaar 4+5+6 LPD13 (zelfevaluatie-onderdeel verwijderd op vraag gebruiker, enkel leerkrachtdeel resteert, dat toevallig al op 10 stond)"
+        "bron": "Evaluatie.docx – Conditie – Jaar 4+5+6 LPD13 (zelfevaluatie-onderdeel verwijderd op vraag gebruiker, enkel leerkrachtdeel resteert, dat toevallig al op 10 stond)",
+        "zelfevaluatie_hint": "Zelfevaluatie via oefening in Smartschool"
       }
     ]
   },
@@ -858,7 +860,8 @@
             ]
           }
         ],
-        "bron": "Evaluatie.docx – RITMIEK: dans – Jaar 5 LPD3+13 (type gecorrigeerd naar rubric_klikcriteria — bugfix)"
+        "bron": "Evaluatie.docx – RITMIEK: dans – Jaar 5 LPD3+13 (type gecorrigeerd naar rubric_klikcriteria — bugfix)",
+        "zelfevaluatie_hint": "Zelfevaluatie via oefening in Smartschool"
       }
     ]
   },
@@ -935,7 +938,8 @@
             "max_punten": 2
           }
         ],
-        "bron": "Evaluatie.docx – Zelfverdediging/Judo – Jaar 5 LPD1 (max_score gecorrigeerd naar 8, per techniek 0/1/2 klikbaar i.p.v. 0/2,5 — op vraag gebruiker)"
+        "bron": "Evaluatie.docx – Zelfverdediging/Judo – Jaar 5 LPD1 (max_score gecorrigeerd naar 8, per techniek 0/1/2 klikbaar i.p.v. 0/2,5 — op vraag gebruiker)",
+        "zelfevaluatie_hint": "Zelfevaluatie via oefening in Smartschool"
       }
     ]
   },
@@ -1295,7 +1299,8 @@
             "max_punten": 5
           }
         ],
-        "bron": "Evaluatie.docx – GYM: Piramiden – Jaar 4 LPD9 (vereenvoudigd naar vlakke schaal op 10 — bugfix)"
+        "bron": "Evaluatie.docx – GYM: Piramiden – Jaar 4 LPD9 (vereenvoudigd naar vlakke schaal op 10 — bugfix)",
+        "zelfevaluatie_hint": "Zelfevaluatie via oefening in Smartschool"
       }
     ]
   }
