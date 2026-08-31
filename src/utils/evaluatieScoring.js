@@ -91,6 +91,34 @@ export function berekenEvaluatieScore(item, waarden) {
   }
 }
 
+/**
+ * Telt het aantal losse klikbare scoreveldjes dat een evaluatie-item bevat.
+ * Gebruikt om te bepalen of een item met precies 1 veld meteen inline in de
+ * klaslijst getoond kan worden (zie EvaluatieScherm), i.p.v. via foto-klik
+ * naar een detailscherm.
+ */
+export function telScoreVelden(item) {
+  if (!item) return 0
+  switch (item.type) {
+    case 'rubric_klikcriteria':
+      return item.criteria?.length ?? 0
+    case 'checklist_punten':
+      if (item.scenario_varianten) {
+        // scenario-keuze is een extra stap bovenop de items zelf
+        return (item.scenario_varianten[0]?.items?.length ?? 0) + 1
+      }
+      return item.items?.length ?? 0
+    case 'dropdown_meerdere':
+      return item.items?.length ?? 0
+    case 'video_upload_score':
+      return item.onderdelen ? item.onderdelen.length : 1
+    case 'samengesteld':
+      return (item.onderdelen ?? []).reduce((som, sub) => som + telScoreVelden(sub), 0)
+    default:
+      return 1
+  }
+}
+
 /** Kleur op basis van score/maxScore, genormaliseerd naar een schaal op 10. */
 export function scoreKleurGenormaliseerd(score, maxScore) {
   if (score === null || score === undefined || !maxScore) return '#9ca3af'

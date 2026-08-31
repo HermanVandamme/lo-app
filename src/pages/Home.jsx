@@ -17,18 +17,46 @@ const SPORT_KLEUR = {
   ritmiek:        '#1F618D',
 }
 
+const LOCATIE_VOLGORDE = ['SPORTHAL', 'TURNZAAL', 'ALTERNATIEF']
+const LOCATIE_LABEL = { SPORTHAL: 'Sporthal', TURNZAAL: 'Turnzaal', ALTERNATIEF: 'Alternatief' }
+
 export default function Home() {
-  const sports = Object.entries(sportsData)
-    .sort(([, a], [, b]) => a.naam.localeCompare(b.naam, 'nl', { sensitivity: 'base' }))
+  const sortNaam = ([, a], [, b]) => a.naam.localeCompare(b.naam, 'nl', { sensitivity: 'base' })
+  const alleSporten = Object.entries(sportsData)
+
+  const groepen = LOCATIE_VOLGORDE
+    .map(locatie => ({
+      locatie,
+      sporten: alleSporten.filter(([, sport]) => sport.locatie === locatie).sort(sortNaam),
+    }))
+    .filter(g => g.sporten.length > 0)
+
+  // Sporten zonder (herkend) locatie-veld toch tonen, als vangnet
+  const overig = alleSporten.filter(([, sport]) => !LOCATIE_VOLGORDE.includes(sport.locatie)).sort(sortNaam)
 
   return (
     <div>
       <h1 className="text-xl font-bold mb-4" style={{ color: '#2C3E50' }}>Kies een sport</h1>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-        {sports.map(([id, sport]) => (
-          <SportTile key={id} id={id} sport={sport} />
-        ))}
-      </div>
+      {groepen.map(({ locatie, sporten }) => (
+        <div key={locatie} className="mb-6">
+          <p className="text-sm font-semibold text-gray-500 mb-2 uppercase tracking-wide">{LOCATIE_LABEL[locatie]}</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            {sporten.map(([id, sport]) => (
+              <SportTile key={id} id={id} sport={sport} />
+            ))}
+          </div>
+        </div>
+      ))}
+      {overig.length > 0 && (
+        <div className="mb-6">
+          <p className="text-sm font-semibold text-gray-500 mb-2 uppercase tracking-wide">Overige</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            {overig.map(([id, sport]) => (
+              <SportTile key={id} id={id} sport={sport} />
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   )
 }

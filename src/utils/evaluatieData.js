@@ -36,6 +36,6 @@ export function getKledijConfig() {
     start_score: 10,
     max_score: 10,
     min_score: 0,
-    aftrek_per_overtreding: 2.5,
+    aftrek_per_overtreding: 3,
   }
 }

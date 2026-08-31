@@ -1,6 +1,19 @@
 """
 Extract student photos from Smartschool PDF (Klaslijst.pdf).
 
+Volledig automatisch: geen PAGE_CLASS_MAP meer om jaarlijks aan te passen.
+De klas per pagina wordt afgeleid uit de tekst "Klaslijst (4eLa)" die
+Smartschool zelf op elke pagina afdrukt (klas_id = het leidende
+cijfer+kleine-letter-voorvoegsel, bv. "4eLa" -> "4e"). Pagina's zonder
+zo'n cijfer-klascode (bv. "SEM1 - VDAH") worden automatisch overgeslagen.
+
+Elke foto wordt bovendien gekoppeld aan de leerlingnaam die Smartschool
+er in de PDF vlak onder afdrukt (leesbare tekst, geen OCR nodig) en die
+naam wordt gematcht tegen students.csv — i.p.v. blind te vertrouwen op
+dezelfde volgorde in CSV en PDF. Enkel wanneer een naam niet uniek
+gematcht kan worden, valt de koppeling terug op positie (oude gedrag),
+en dat wordt duidelijk gemarkeerd in de preview.
+
 FIX: Sorteert fotos op visuele positie (y dan x) i.p.v. interne PDF-volgorde.
 Toont een preview VOOR het opslaan zodat je de koppeling kan controleren.
 
@@ -9,34 +22,15 @@ Vereisten: pip install pymupdf
 
 import csv
 import os
+import re
 import sys
+import unicodedata
 import fitz  # PyMuPDF
 
 # ── Paden ─────────────────────────────────────────────────────────────────────
 PDF_PATH   = "C:/Users/herma/Documents/LO-app/Klaslijst.pdf"
 CSV_PATH   = "C:/Users/herma/Documents/LO-app/students.csv"
 OUTPUT_DIR = "C:/Users/herma/Documents/LO-app/photos"
-
-# ── Pagina → klas_id mapping (0-geïndexeerd) ──────────────────────────────────
-# Pagina's 16-17 (SEM1, SEM2) worden overgeslagen — duplicaten
-PAGE_CLASS_MAP = {
-    0:  "4e",   # 4eLa
-    1:  "4e",   # 4eLaSt
-    2:  "4f",   # 4fNw
-    3:  "5a",   # 5aBw
-    4:  "5a",   # 5aWw
-    5:  "5b",   # 5bEcMt
-    6:  "5b",   # 5bLaMt
-    7:  "5b",   # 5bLaWe
-    8:  "5b",   # 5bMt
-    9:  "5d",   # 5dHw
-    10: "6b",   # 6bEcMt
-    11: "6b",   # 6bLaMt
-    12: "6b",   # 6bLaWe
-    13: "6b",   # 6bMt
-    14: "6e",   # 6eWeWi
-    15: "6e",   # 6eWeWi (vervolg)
-}
 
 # Fotos waarvan de y0-coördinaat minder dan deze waarde verschilt
 # worden als 'zelfde rij' beschouwd (aanpassen als sortering fout blijft)
@@ -46,8 +40,35 @@ ROW_TOLERANCE = 25  # punten (≈ pixels bij 72 dpi)
 MIN_PHOTO_WIDTH  = 30
 MIN_PHOTO_HEIGHT = 30
 
+# Maximale afstand tussen de onderkant van een foto en een naamregel eronder
+# om ze nog als bij elkaar horend te beschouwen (in punten)
+NAME_MAX_GAP = 40
 
-# ── Hulpfuncties ──────────────────────────────────────────────────────────────
+# "Klaslijst (4eLa)" -> groep "4eLa"; klas_id = leidend cijfer+kleine-letter-
+# voorvoegsel ("4e"). Codes die niet met een cijfer beginnen (SEM1, SEM2, ...)
+# leveren geen klas_id op en worden overgeslagen.
+CODE_PATTERN        = re.compile(r"Klaslijst\s*\(([^)]+)\)")
+KLAS_PREFIX_PATTERN = re.compile(r"^(\d+[a-z]+)")
+
+
+# ── Hulpfuncties: klas-detectie ────────────────────────────────────────────────
+
+def get_class_code(page):
+    """Haalt de ruwe klascode uit de paginatekst, bv. '4eLa' of 'SEM1 - VDAH'."""
+    text = page.get_text()
+    m = CODE_PATTERN.search(text)
+    return m.group(1).strip() if m else None
+
+
+def klas_prefix_from_code(code):
+    """Leidt klas_id af uit een klascode, bv. '4eLa' -> '4e'. None indien geen cijferklas."""
+    if not code:
+        return None
+    m = KLAS_PREFIX_PATTERN.match(code)
+    return m.group(1) if m else None
+
+
+# ── Hulpfuncties: leerlingen ────────────────────────────────────────────────────
 
 def load_students(csv_path):
     """Laad leerlingen uit CSV, gegroepeerd per klas_id, in CSV-volgorde."""
@@ -59,6 +80,17 @@ def load_students(csv_path):
             students_by_class.setdefault(klas, []).append(row)
     return students_by_class
 
+
+def normalize_naam(s):
+    """Normaliseert een naam voor vergelijking (hoofdletters/spaties/unicode)."""
+    if not s:
+        return ""
+    s = unicodedata.normalize("NFKC", s)
+    s = re.sub(r"\s+", " ", s).strip().lower()
+    return s
+
+
+# ── Hulpfuncties: foto's + naam-koppeling op positie ───────────────────────────
 
 def get_images_sorted(page, doc):
     """
@@ -102,11 +134,92 @@ def get_images_sorted(page, doc):
                 "data": img_data,
                 "bbox": info["bbox"],
                 "xref": xref,
+                "naam_pdf": None,
             })
         except Exception as e:
             print(f"    ⚠  Kon xref {xref} niet extraheren: {e}")
 
     return result
+
+
+def assign_names_to_photos(page, photos):
+    """
+    Koppelt aan elke foto de leerlingnaam die Smartschool er in de PDF vlak
+    onder afdrukt: voor elke tekstregel wordt de dichtstbijzijnde foto erboven
+    in dezelfde kolom (x-overlap) gezocht. Namen die over 2 regels wrappen
+    (lange achternamen) worden automatisch samengevoegd, want beide regels
+    wijzen naar dezelfde foto. Zet 'naam_pdf' op elke foto-dict (str of None).
+    """
+    lines = []
+    for block in page.get_text("dict").get("blocks", []):
+        for line in block.get("lines", []):
+            text = "".join(span["text"] for span in line["spans"]).strip()
+            if text:
+                lines.append((line["bbox"], text))
+
+    toegewezen = {}  # index in photos -> [(y0, text), ...]
+    for (lx0, ly0, lx1, ly1), text in lines:
+        beste_idx, beste_afstand = None, None
+        for idx, photo in enumerate(photos):
+            px0, py0, px1, py1 = photo["bbox"]
+            if lx1 <= px0 or lx0 >= px1:
+                continue  # geen x-overlap: andere kolom
+            afstand = ly0 - py1
+            if afstand < -2 or afstand > NAME_MAX_GAP:
+                continue  # regel staat niet (net) onder deze foto
+            if beste_afstand is None or afstand < beste_afstand:
+                beste_afstand, beste_idx = afstand, idx
+        if beste_idx is not None:
+            toegewezen.setdefault(beste_idx, []).append((ly0, text))
+
+    for idx, photo in enumerate(photos):
+        stukken = sorted(toegewezen.get(idx, []), key=lambda t: t[0])
+        photo["naam_pdf"] = " ".join(t[1] for t in stukken) if stukken else None
+
+    return photos
+
+
+def match_photos_to_students(students, imgs):
+    """
+    Koppelt foto's aan leerlingen van één klas. Voorkeur: op de leerlingnaam
+    die uit de PDF gehaald werd (uniek matchen tegen 'achternaam voornaam'
+    uit de CSV). Foto's/leerlingen die niet via naam gekoppeld raken vallen
+    terug op positie (oude gedrag) als vangnet.
+
+    Retourneert:
+      matches    — lijst (student, img_of_None, via_naam_bool) in CSV-volgorde
+      extra_imgs — foto's die overblijven nadat alle leerlingen gekoppeld zijn
+    """
+    naam_index = {}
+    for s in students:
+        key = normalize_naam(f"{s['achternaam']} {s['voornaam']}")
+        naam_index.setdefault(key, []).append(s)
+
+    student_to_img = {}
+    matched_by_naam = set()
+    gebruikte_img_idx = set()
+
+    for idx, img in enumerate(imgs):
+        key = normalize_naam(img.get("naam_pdf"))
+        kandidaten = naam_index.get(key) if key else None
+        if kandidaten:
+            student = kandidaten.pop(0)
+            student_to_img[id(student)] = img
+            matched_by_naam.add(id(student))
+            gebruikte_img_idx.add(idx)
+            if not kandidaten:
+                del naam_index[key]
+
+    # Vangnet: resterende leerlingen/foto's op volgorde koppelen
+    resterende_studenten = [s for s in students if id(s) not in student_to_img]
+    resterende_imgs = [img for idx, img in enumerate(imgs) if idx not in gebruikte_img_idx]
+
+    for student, img in zip(resterende_studenten, resterende_imgs):
+        student_to_img[id(student)] = img
+
+    matches = [(s, student_to_img.get(id(s)), id(s) in matched_by_naam) for s in students]
+    extra_imgs = resterende_imgs[len(resterende_studenten):]  # geen leerling meer voor deze fotos
+    return matches, extra_imgs
 
 
 def format_bbox(bbox):
@@ -132,17 +245,30 @@ def main():
     students_by_class = load_students(CSV_PATH)
     doc = fitz.open(PDF_PATH)
 
-    print(f"PDF heeft {doc.page_count} pagina's. Verwerking pagina's: {sorted(PAGE_CLASS_MAP.keys())}\n")
+    print(f"PDF heeft {doc.page_count} pagina's. Klas per pagina wordt automatisch herkend.\n")
 
-    # ── Stap 1: Fotos extraheren per pagina, accumuleren per klas ────────────
+    # ── Stap 1: klas herkennen + fotos extraheren per pagina, accumuleren per klas ──
     images_by_class = {}
 
-    for page_idx in sorted(PAGE_CLASS_MAP):
-        klas_id = PAGE_CLASS_MAP[page_idx]
-        page    = doc[page_idx]
-        imgs    = get_images_sorted(page, doc)
+    for page_idx in range(doc.page_count):
+        page = doc[page_idx]
+        code = get_class_code(page)
+
+        if not code:
+            print(f"  Pagina {page_idx + 1:2d}  : geen 'Klaslijst (...)'-titel gevonden, overgeslagen")
+            continue
+
+        klas_id = klas_prefix_from_code(code)
+        if not klas_id:
+            print(f"  Pagina {page_idx + 1:2d}  ({code!r:14s}) : geen cijfer-klascode, overgeslagen")
+            continue
+
+        imgs = get_images_sorted(page, doc)
+        imgs = assign_names_to_photos(page, imgs)
         images_by_class.setdefault(klas_id, []).extend(imgs)
-        print(f"  Pagina {page_idx + 1:2d}  ({klas_id:4s}) : {len(imgs):2d} foto's gevonden")
+
+        onbekend = "" if klas_id in students_by_class else "  ⚠  klas niet in students.csv"
+        print(f"  Pagina {page_idx + 1:2d}  ({code:14s}) → klas {klas_id:4s} : {len(imgs):2d} foto's gevonden{onbekend}")
 
     # ── Stap 2: Preview ───────────────────────────────────────────────────────
     print("\n" + "═" * 65)
@@ -159,29 +285,40 @@ def main():
         if mismatch:
             has_warning = True
 
+        matches, extra_imgs = match_photos_to_students(students, imgs)
+        n_naam = sum(1 for _, _, via_naam in matches if via_naam)
+
         print(f"\n  ── Klas {klas_id.upper():4s}  "
-              f"({len(students)} leerlingen  /  {len(imgs)} foto's)"
+              f"({len(students)} leerlingen  /  {len(imgs)} foto's  /  {n_naam} via naam-herkenning)"
               + ("  ⚠  AANTAL KLOPT NIET!" if mismatch else ""))
 
-        for i, student in enumerate(students):
+        for i, (student, img, via_naam) in enumerate(matches):
             sid  = student["student_id"]
             naam = f"{student['voornaam']} {student['achternaam']}"
 
-            if i < len(imgs):
-                img  = imgs[i]
-                ext  = img["data"]["ext"]
-                pos  = format_bbox(img["bbox"])
-                print(f"    Foto {i + 1:2d}  ({pos})  →  {sid}.{ext:<5}  {naam}")
+            if img is not None:
+                ext = img["data"]["ext"]
+                pos = format_bbox(img["bbox"])
+                tag = "naam   " if via_naam else "positie"
+                print(f"    Foto {i + 1:2d}  ({pos})  [{tag}]  →  {sid}.{ext:<5}  {naam}")
                 all_pairs.append((student, img))
             else:
                 print(f"    !!  GEEN foto beschikbaar voor  {sid}  {naam}")
                 has_warning = True
 
-        # Overtollige foto's (meer foto's dan leerlingen)
-        for i in range(len(students), len(imgs)):
-            img = imgs[i]
+        # Overtollige foto's (meer foto's dan leerlingen, of naam niet herkend in CSV)
+        for img in extra_imgs:
             pos = format_bbox(img["bbox"])
-            print(f"    ??  EXTRA foto {i + 1} ({pos}) — geen leerling meer")
+            pdf_naam = img.get("naam_pdf") or "?"
+            print(f"    ??  EXTRA foto ({pos}) — geen leerling meer (PDF-naam: {pdf_naam})")
+            has_warning = True
+
+    # Klassen met foto's maar zonder leerlingen in de CSV: apart signaleren
+    voor_onbekende_klassen = set(images_by_class) - set(students_by_class)
+    for klas_id in sorted(voor_onbekende_klassen):
+        n = len(images_by_class[klas_id])
+        print(f"\n  ⚠  Klas {klas_id.upper()} heeft {n} foto's, maar staat niet in students.csv — overgeslagen.")
+        has_warning = True
 
     print("\n" + "═" * 65)
 

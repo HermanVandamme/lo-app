@@ -302,9 +302,12 @@
         "scored_by": "leerkracht",
         "max_score": 10,
         "instructie": "Per twee: 10x bovenhands toetsen naar elkaar, dan 10x onderhandse receptie naar elkaar. Test stopt zodra de bal valt.",
-        "formule": "aantal_balcontacten x 0.5",
+        "invoer_label": "Aantal balcontacten (0 t.e.m. 20)",
+        "invoer_min": 0,
+        "invoer_max": 20,
+        "formule": "score = invoer x 0.5",
         "bijzonderheid": "Jaar 4: bovenhands en onderhands mogen apart afgelegd worden. Vanaf jaar 5 (3e graad) moet dit achtereenvolgens.",
-        "bron": "Evaluatie.docx – Volleybal – Jaar 4+5+6 LPD1"
+        "bron": "Evaluatie.docx – Volleybal – Jaar 4+5+6 LPD1 (verduidelijkt: leerkracht geeft het RUWE aantal balcontacten in, app berekent automatisch x0,5 — bugfix/verduidelijking)"
       }
     ]
   },
@@ -873,24 +876,24 @@
         "titel": "Materiaalgebruik en leeflijn",
         "type": "checklist_punten",
         "scored_by": "leerkracht",
-        "max_score": 10,
+        "max_score": 4,
         "opties_per_item": [
           0,
-          2.5,
-          5
+          1,
+          2
         ],
         "items": [
           {
             "naam": "Gebruikt het juiste materiaal voor de opdracht: leeflijn voor via ferrata, musketon voor Prusik klimmen",
-            "max_punten": 5
+            "max_punten": 2
           },
           {
             "naam": "Gebruikt de leeflijn correct: er hangt altijd minstens 1 musketon vast, niet met twee musketons gelijktijdig o.w.v. remsysteem",
-            "max_punten": 5
+            "max_punten": 2
           }
         ],
         "expliciet_uitgesloten": "Zelfevaluatie op wisbordje (duo-check gordel) NIET overnemen in de app.",
-        "bron": "Evaluatie.docx – Klimmen – Jaar 5 LPD8 (losse leerkracht-dropdown verwijderd op vraag gebruiker, checklist herschaald naar 10)"
+        "bron": "Evaluatie.docx – Klimmen – Jaar 5 LPD8 (max_score gecorrigeerd naar 4, per item 0/1/2 klikbaar — op vraag gebruiker)"
       }
     ]
   },
@@ -908,30 +911,31 @@
         "titel": "Getoonde technieken",
         "type": "checklist_punten",
         "scored_by": "leerkracht",
-        "max_score": 10,
+        "max_score": 8,
         "opties_per_item": [
           0,
-          2.5
+          1,
+          2
         ],
         "items": [
           {
             "naam": "Kesa Gatame",
-            "max_punten": 2.5
+            "max_punten": 2
           },
           {
             "naam": "Yoko shiho gatame",
-            "max_punten": 2.5
+            "max_punten": 2
           },
           {
             "naam": "Achterwaartse val",
-            "max_punten": 2.5
+            "max_punten": 2
           },
           {
             "naam": "Zijwaartse val",
-            "max_punten": 2.5
+            "max_punten": 2
           }
         ],
-        "bron": "Evaluatie.docx – Zelfverdediging/Judo – Jaar 5 LPD1 (vereenvoudigd naar vlakke schaal op 10 — bugfix)"
+        "bron": "Evaluatie.docx – Zelfverdediging/Judo – Jaar 5 LPD1 (max_score gecorrigeerd naar 8, per techniek 0/1/2 klikbaar i.p.v. 0/2,5 — op vraag gebruiker)"
       }
     ]
   },
@@ -1239,8 +1243,8 @@
       "start_score": 10,
       "max_score": 10,
       "min_score": 0,
-      "aftrek_per_overtreding": 2.5,
-      "reset": "handmatige knop per DW (5x per jaar), niet automatisch. Reset zet terug op 10/10."
+      "aftrek_per_overtreding": 3,
+      "reset": "handmatige knop per DW (5x per jaar) via Resultaten-scherm (gecombineerd met thema-scores), niet automatisch. Reset zet terug op 10/10."
     },
     "bron": "Evaluatie.docx – Kledij"
   },
@@ -1264,7 +1268,7 @@
     ],
     "evaluaties": [
       {
-        "id": "GYM_piramidenbouw_lpd9",
+        "id": "gym_acrogym_lpd9",
         "lpd": "LPD9",
         "jaren": [
           4

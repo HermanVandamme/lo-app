@@ -93,10 +93,10 @@ function KledijKlasScherm({ klas, cfg, onTerug }) {
       ) : (
         <div className="space-y-2">
           {leerlingen.map(l => (
-            <div key={l.id} className="flex items-center gap-3 bg-white border border-gray-200 rounded-xl px-3 py-2">
-              <LeerlingFoto leerling={l} size={11} />
-              <div className="flex-1 min-w-0">
-                <p className="font-semibold text-sm truncate" style={{ color: '#2C3E50' }}>{l.voornaam} {l.achternaam}</p>
+            <div key={l.id} className="bg-white border border-gray-200 rounded-xl px-3 py-2">
+              <div className="flex items-center gap-3 mb-2">
+                <LeerlingFoto leerling={l} size={11} />
+                <p className="flex-1 min-w-0 font-semibold text-sm truncate" style={{ color: '#2C3E50' }}>{l.voornaam} {l.achternaam}</p>
               </div>
               <PlusMinKnop
                 value={scoreMap[l.id] ?? cfg.start_score}

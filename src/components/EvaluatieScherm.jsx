@@ -11,7 +11,7 @@ import db from '../db/db'
 import { useKlassen, useStudentsByKlas } from '../hooks/useStudents'
 import { graadFromKlasId, jaarNummerFromGraad } from '../utils/graad'
 import { getEvaluatiesVoorSport } from '../utils/evaluatieData'
-import { berekenEvaluatieScore, scoreKleurGenormaliseerd } from '../utils/evaluatieScoring'
+import { berekenEvaluatieScore, scoreKleurGenormaliseerd, telScoreVelden } from '../utils/evaluatieScoring'
 import { downloadCsv, SCORE_HEADER, scoreRij } from '../utils/csvExport'
 import sportsData from '../data/sports.json'
 import EvaluatieVeld from './EvaluatieVeld'
@@ -60,6 +60,12 @@ function EvaluatieKlasScherm({ sportId, sport, klas, onTerug }) {
   const graad  = graadFromKlasId(klas.id)
   const jaarNr = jaarNummerFromGraad(graad)
   const items  = useMemo(() => getEvaluatiesVoorSport(sportId, jaarNr), [sportId, jaarNr])
+  // Eén enkel klikbaar scoreveld in totaal? Toon dat dan meteen in de klaslijst,
+  // zonder eerst naar een detailscherm te moeten klikken.
+  const enkelItem = useMemo(() => {
+    if (items.length !== 1) return null
+    return telScoreVelden(items[0]) === 1 ? items[0] : null
+  }, [items])
 
   const leerlingen = useStudentsByKlas(klas.id)
 
@@ -132,7 +138,15 @@ function EvaluatieKlasScherm({ sportId, sport, klas, onTerug }) {
         <p className="text-gray-400 text-sm italic text-center py-4">Geen leerlingen in {klas.naam}. Importeer via Admin.</p>
       ) : (
         <div className="space-y-3">
-          {leerlingen.map(l => (
+          {leerlingen.map(l => enkelItem ? (
+            <LeerlingEnkelVeldRij
+              key={l.id}
+              leerling={l}
+              item={enkelItem}
+              waarden={waardenVoorItem(l.id, enkelItem.id)}
+              onSet={(subKey, waarde) => slaOp(l.id, `${enkelItem.id}::${subKey}`, waarde)}
+            />
+          ) : (
             <LeerlingEvaluatieKaart
               key={l.id}
               leerling={l}
@@ -143,6 +157,27 @@ function EvaluatieKlasScherm({ sportId, sport, klas, onTerug }) {
           ))}
         </div>
       )}
+    </div>
+  )
+}
+
+/** Eén scoreveld, meteen naast de leerling in de lijst — geen foto-klik nodig. */
+function LeerlingEnkelVeldRij({ leerling, item, waarden, onSet }) {
+  const score = berekenEvaluatieScore(item, waarden)
+  return (
+    <div className="bg-gray-50 border border-gray-200 rounded-2xl p-3">
+      <div className="flex items-center gap-3 mb-2">
+        <LeerlingFoto leerling={leerling} size={10} />
+        <p className="flex-1 min-w-0 font-bold text-sm leading-tight truncate" style={{ color: '#2C3E50' }}>
+          {leerling.voornaam} {leerling.achternaam}
+        </p>
+        {score !== null && score !== undefined && (
+          <span className="text-sm font-bold flex-shrink-0" style={{ color: scoreKleurGenormaliseerd(score, item.max_score) }}>
+            {score}/{item.max_score}
+          </span>
+        )}
+      </div>
+      <EvaluatieVeld item={item} waarden={waarden} onSet={onSet} />
     </div>
   )
 }

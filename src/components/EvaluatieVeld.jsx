@@ -7,6 +7,34 @@
  */
 import PlusMinKnop from './PlusMinKnop'
 
+// ── KeuzeRij — herbruikbare rij klikbare knoppen i.p.v. een dropdown ──────────
+function KeuzeRij({ opties, huidig, onKies, renderLabel, compact = false }) {
+  return (
+    <div className="flex flex-wrap gap-1.5">
+      {opties.map(o => {
+        const actief = huidig === o
+        return (
+          <button key={o} type="button" onClick={() => onKies(actief ? null : o)}
+            className={compact
+              ? 'px-2.5 py-2 rounded-lg text-xs font-bold flex-shrink-0'
+              : 'min-w-[2.75rem] h-11 px-2 rounded-lg text-sm font-bold flex-shrink-0'}
+            style={actief ? { background: '#E67E22', color: 'white' } : { background: 'white', border: '1px solid #e5e7eb', color: '#2C3E50' }}>
+            {renderLabel ? renderLabel(o) : o}
+          </button>
+        )
+      })}
+    </div>
+  )
+}
+
+/** Haalt de vermenigvuldigingsfactor uit een formule-string zoals "score = invoer x 0.5". */
+function parseFormuleFactor(formule) {
+  if (!formule) return 1
+  const match = formule.match(/x\s*([\d.,]+)/i)
+  if (!match) return 1
+  return parseFloat(match[1].replace(',', '.'))
+}
+
 export default function EvaluatieVeld({ item, waarden, onSet }) {
   switch (item.type) {
     case 'rubric_klikcriteria':
@@ -117,31 +145,23 @@ function ChecklistPunten({ item, waarden, onSet }) {
 
 // ── dropdown_score ────────────────────────────────────────────────────────────
 function DropdownScore({ item, waarden, onSet }) {
-  const val = waarden.score ?? ''
-  return (
-    <select value={val} onChange={e => onSet('score', e.target.value === '' ? null : Number(e.target.value))}
-      className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm">
-      <option value="">— kies —</option>
-      {(item.opties ?? []).map(o => <option key={o} value={o}>{o} / {item.max_score}</option>)}
-    </select>
-  )
+  const val = waarden.score ?? null
+  const opties = item.opties ?? Array.from({ length: (item.max_score ?? 0) + 1 }, (_, i) => i)
+  return <KeuzeRij opties={opties} huidig={val} onKies={v => onSet('score', v)} />
 }
 
 // ── dropdown_meerdere ─────────────────────────────────────────────────────────
 function DropdownMeerdere({ item, waarden, onSet }) {
   return (
-    <div className="space-y-1.5">
+    <div className="space-y-2">
       {(item.items ?? []).map((it, idx) => {
         const key = `i${idx}`
-        const val = waarden[key] ?? ''
+        const val = waarden[key] ?? null
+        const opties = it.opties ?? Array.from({ length: (it.max_score ?? 0) + 1 }, (_, i) => i)
         return (
-          <div key={idx} className="flex items-center justify-between gap-2">
-            <span className="text-xs text-gray-700 flex-1">{it.naam}</span>
-            <select value={val} onChange={e => onSet(key, e.target.value === '' ? null : Number(e.target.value))}
-              className="border border-gray-200 rounded-lg px-2 py-1.5 text-sm w-20">
-              <option value="">—</option>
-              {it.opties.map(o => <option key={o} value={o}>{o}</option>)}
-            </select>
+          <div key={idx}>
+            <p className="text-xs text-gray-700 mb-1">{it.naam}</p>
+            <KeuzeRij opties={opties} huidig={val} onKies={v => onSet(key, v)} />
           </div>
         )
       })}
@@ -151,15 +171,40 @@ function DropdownMeerdere({ item, waarden, onSet }) {
 
 // ── direct_score_test ─────────────────────────────────────────────────────────
 function DirectScoreTest({ item, waarden, onSet }) {
+  const uitleg = (item.instructie || item.formule) && (
+    <div className="bg-blue-50 border border-blue-100 rounded-xl px-3 py-2 mb-2 text-xs text-blue-700">
+      {item.instructie && <p>{item.instructie}</p>}
+      {item.formule && <p className="mt-0.5 font-mono">{item.formule}</p>}
+    </div>
+  )
+
+  // Sommige testen geven een RUW aantal in (bv. balcontacten), waarna de
+  // score via de formule berekend wordt — i.p.v. dat de leerkracht de score
+  // rechtstreeks intikt.
+  const heeftInvoer = item.invoer_min !== undefined && item.invoer_max !== undefined
+  if (heeftInvoer) {
+    const factor = parseFormuleFactor(item.formule)
+    const invoer = waarden.invoer ?? 0
+    function wijzigInvoer(v) {
+      onSet('invoer', v)
+      onSet('score', Math.round(v * factor * 10) / 10)
+    }
+    return (
+      <div>
+        {uitleg}
+        {item.invoer_label && <p className="text-xs text-gray-500 mb-1">{item.invoer_label}</p>}
+        <PlusMinKnop value={invoer} min={item.invoer_min} max={item.invoer_max} step={1} onChange={wijzigInvoer} />
+        <p className="text-xs text-gray-500 mt-1.5">
+          Score: <span className="font-bold" style={{ color: '#E67E22' }}>{waarden.score ?? 0}</span> / {item.max_score}
+        </p>
+      </div>
+    )
+  }
+
   const val = waarden.score ?? 0
   return (
     <div>
-      {(item.instructie || item.formule) && (
-        <div className="bg-blue-50 border border-blue-100 rounded-xl px-3 py-2 mb-2 text-xs text-blue-700">
-          {item.instructie && <p>{item.instructie}</p>}
-          {item.formule && <p className="mt-0.5 font-mono">{item.formule}</p>}
-        </div>
-      )}
+      {uitleg}
       <PlusMinKnop value={val} min={0} max={item.max_score} step={0.5} onChange={v => onSet('score', v)} />
     </div>
   )
@@ -174,7 +219,7 @@ function DropdownTijdLookup({ item, waarden, onSet }) {
   const geslacht = waarden.geslacht ?? 'jongens'
   const tijden = geslacht === 'jongens' ? item.dropdown_jongens : item.dropdown_meisjes
   const tabel  = geslacht === 'jongens' ? item.tabel_jongens : item.tabel_meisjes
-  const gekozenTijd = waarden.tijd ?? ''
+  const gekozenTijd = waarden.tijd ?? null
 
   function kiesTijd(tijd) {
     onSet('tijd', tijd)
@@ -192,11 +237,7 @@ function DropdownTijdLookup({ item, waarden, onSet }) {
           </button>
         ))}
       </div>
-      <select value={gekozenTijd} onChange={e => kiesTijd(e.target.value)}
-        className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm">
-        <option value="">— kies tijd —</option>
-        {tijden.map(t => <option key={t} value={t}>{t}</option>)}
-      </select>
+      <KeuzeRij compact opties={tijden} huidig={gekozenTijd} onKies={kiesTijd} />
     </div>
   )
 }
