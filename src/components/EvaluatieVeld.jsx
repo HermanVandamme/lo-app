@@ -309,17 +309,22 @@ function VideoUploadScore({ item, waarden, onSet }) {
         <div className="space-y-2">
           {item.onderdelen.map((sub, idx) => {
             const key = `o${idx}`
-            const val = waarden[key] ?? 0
+            const val = waarden[key] ?? null
+            const opties = Array.from({ length: sub.max_score + 1 }, (_, i) => i)
             return (
               <div key={idx}>
                 <p className="text-xs text-gray-500 mb-1">{sub.naam}</p>
-                <PlusMinKnop value={val} min={0} max={sub.max_score} step={0.5} onChange={v => onSet(key, v)} />
+                <KeuzeRij opties={opties} huidig={val} onKies={v => onSet(key, v)} />
               </div>
             )
           })}
         </div>
       ) : (
-        <PlusMinKnop value={waarden.score ?? 0} min={0} max={item.max_score} step={0.5} onChange={v => onSet('score', v)} />
+        <KeuzeRij
+          opties={Array.from({ length: item.max_score + 1 }, (_, i) => i)}
+          huidig={waarden.score ?? null}
+          onKies={v => onSet('score', v)}
+        />
       )}
     </div>
   )

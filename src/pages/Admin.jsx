@@ -6,9 +6,9 @@ import { useKlassen } from '../hooks/useStudents'
 import { jaarNummerFromGraad } from '../utils/graad'
 import { getEvaluatiesVoorSport, getKledijConfig } from '../utils/evaluatieData'
 import { berekenEvaluatieScore } from '../utils/evaluatieScoring'
-import { downloadCsv, SCORE_HEADER, scoreRij, KLEDIJ_HEADER, kledijRij } from '../utils/csvExport'
+import { downloadCsv, SCORE_HEADER, scoreRij, kledijScoreRij } from '../utils/csvExport'
 import sportsData from '../data/sports.json'
-import PdfImportDebug from '../components/PdfImportDebug'
+import PdfImport from '../components/PdfImport'
 
 export default function Admin() {
   const klassen = useKlassen()
@@ -77,14 +77,15 @@ export default function Admin() {
     e.target.value = ''
   }
 
-  /** Eén CSV met alle scores van alle klassen/thema's samen (zelfde formaat als de export per klas/thema). */
+  /** Eén CSV met alle scores van alle klassen/thema's samen, inclusief kledij (aparte, permanente evaluatie). */
   async function exportScores() {
-    const [scores, leerlingen, klassen] = await Promise.all([
+    const [scores, alleKledij, leerlingen, klassen] = await Promise.all([
       db.scores.toArray(),
+      db.kledij.toArray(),
       db.leerlingen.toArray(),
       db.klassen.toArray(),
     ])
-    if (!scores.length) { setMsg('export', 'Geen scores om te exporteren.'); return }
+    if (!scores.length && !leerlingen.length) { setMsg('export', 'Geen scores om te exporteren.'); return }
 
     const leerlingMap = Object.fromEntries(leerlingen.map(l => [l.id, l]))
     const klasNaamMap = Object.fromEntries(klassen.map(k => [k.id, k.naam]))
@@ -117,34 +118,24 @@ export default function Admin() {
       }))
     }
 
+    // Kledij is een aparte, permanente evaluatie — komt als extra rij per leerling mee in dezelfde export.
+    if (leerlingen.length) {
+      const cfg = getKledijConfig()
+      const kledijMap = Object.fromEntries(alleKledij.map(k => [k.leerlingId, k]))
+      const datum = new Date().toISOString().slice(0, 10)
+      for (const leerling of leerlingen) {
+        rows.push(kledijScoreRij({
+          leerling,
+          klasNaam: klasNaamMap[leerling.klasId] ?? leerling.klasId,
+          score: kledijMap[leerling.id]?.score ?? cfg.start_score,
+          cfg, datum,
+        }))
+      }
+    }
+
     if (!rows.length) { setMsg('export', 'Geen scores om te exporteren.'); return }
     downloadCsv(`lo_scores_${new Date().toISOString().slice(0, 10)}.csv`, SCORE_HEADER, rows)
     setMsg('export', `✓ ${rows.length} scorerijen geëxporteerd.`)
-  }
-
-  /** Kledij is een aparte, permanente evaluatie — eigen CSV, los van de themascores. */
-  async function exportKledij() {
-    const [alleKledij, leerlingen, klassen] = await Promise.all([
-      db.kledij.toArray(),
-      db.leerlingen.toArray(),
-      db.klassen.toArray(),
-    ])
-    if (!leerlingen.length) { setMsg('exportKledij', 'Geen leerlingen om te exporteren.'); return }
-
-    const cfg = getKledijConfig()
-    const klasNaamMap = Object.fromEntries(klassen.map(k => [k.id, k.naam]))
-    const kledijMap = Object.fromEntries(alleKledij.map(k => [k.leerlingId, k]))
-    const datum = new Date().toISOString().slice(0, 10)
-
-    const rows = leerlingen.map(l => kledijRij({
-      leerling: l,
-      klasNaam: klasNaamMap[l.klasId] ?? l.klasId,
-      score: kledijMap[l.id]?.score ?? cfg.start_score,
-      cfg, datum,
-    }))
-
-    downloadCsv(`lo_kledij_${new Date().toISOString().slice(0, 10)}.csv`, KLEDIJ_HEADER, rows)
-    setMsg('exportKledij', `✓ ${rows.length} leerlingen geëxporteerd.`)
   }
 
   async function handleWisLegeKlassen() {
@@ -230,8 +221,8 @@ export default function Admin() {
         inputRef={refs.photos}
       />
 
-      {/* PDF-import (in ontwikkeling, additief — vervangt de CSV-import hierboven nog niet) */}
-      <PdfImportDebug />
+      {/* PDF-import — additief, vervangt de CSV-import hierboven niet */}
+      <PdfImport />
 
       {/* Klassen-overzicht */}
       {klassen.length > 0 && (
@@ -248,25 +239,15 @@ export default function Admin() {
       {/* Export scores */}
       <div className="bg-white rounded-2xl shadow p-4 mb-4">
         <h2 className="font-semibold mb-1" style={{ color: '#2C3E50' }}>Exporteer scores</h2>
-        <p className="text-xs text-gray-400 mb-3">Download alle scores als CSV-bestand (alle klassen/thema's samen).</p>
+        <p className="text-xs text-gray-400 mb-3">Download alle scores als CSV-bestand (alle klassen/thema's/kledij samen).</p>
         <button
           onClick={exportScores}
-          className="px-4 py-3 rounded-xl font-semibold text-white text-base w-full mb-2"
+          className="px-4 py-3 rounded-xl font-semibold text-white text-base w-full"
           style={{ background: '#2C3E50' }}
         >
           ⬇ Exporteer alle scores
         </button>
-        {messages.export && <p className="mb-2 text-sm text-gray-500">{messages.export}</p>}
-
-        <p className="text-xs text-gray-400 mb-1">Kledij is een aparte permanente evaluatie — eigen CSV.</p>
-        <button
-          onClick={exportKledij}
-          className="px-4 py-3 rounded-xl font-semibold text-white text-base w-full"
-          style={{ background: '#C0392B' }}
-        >
-          ⬇ Exporteer kledij
-        </button>
-        {messages.exportKledij && <p className="mt-2 text-sm text-gray-500">{messages.exportKledij}</p>}
+        {messages.export && <p className="mt-2 text-sm text-gray-500">{messages.export}</p>}
       </div>
 
       {/* Wis lege klassen */}

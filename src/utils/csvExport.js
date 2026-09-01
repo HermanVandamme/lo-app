@@ -38,3 +38,17 @@ export const KLEDIJ_HEADER = ['leerling_naam', 'leerling_id', 'klas', 'score', '
 export function kledijRij({ leerling, klasNaam, score, cfg, datum }) {
   return [`${leerling.voornaam} ${leerling.achternaam}`, leerling.id, klasNaam, score, cfg.max_score, datum]
 }
+
+/** Kledijrij in SCORE_HEADER-formaat, zodat kledij mee kan in de algemene scores-export. */
+export function kledijScoreRij({ leerling, klasNaam, score, cfg, datum }) {
+  return [
+    `${leerling.voornaam} ${leerling.achternaam}`,
+    leerling.id,
+    klasNaam,
+    'Kledij',
+    'Kledij',
+    score,
+    cfg.max_score,
+    datum,
+  ]
+}
