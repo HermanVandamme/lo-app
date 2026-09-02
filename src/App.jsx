@@ -4,7 +4,6 @@ import InstallPrompt from './components/InstallPrompt'
 import Home from './pages/Home'
 import SportDetail from './pages/SportDetail'
 import SportEvaluatie from './pages/SportEvaluatie'
-import LesDetail from './pages/LesDetail'
 import Evaluatie from './pages/Evaluatie'
 import Resultaten from './pages/Resultaten'
 import Admin from './pages/Admin'
@@ -19,7 +18,6 @@ function AppShell() {
           <Route path="/" element={<Home />} />
           <Route path="/sport/:sportId" element={<SportDetail />} />
           <Route path="/sport/:sportId/graad/:graad/evaluatie" element={<SportEvaluatie />} />
-          <Route path="/sport/:sportId/graad/:graad/les/:les" element={<LesDetail />} />
           <Route path="/evaluatie" element={<Evaluatie />} />
           <Route path="/resultaten" element={<Resultaten />} />
           <Route path="/admin" element={<Admin />} />

@@ -1,1307 +1,1421 @@
 {
-  "basketbal": {
-    "jaren_aangeboden": [
-      4,
-      5,
-      6
+ "basketbal": {
+  "jaren_aangeboden": [
+   4,
+   5,
+   6
+  ],
+  "evaluaties": [
+   {
+    "id": "basketbal_lpd2",
+    "lpd": "LPD2",
+    "jaren": [
+     4
     ],
-    "evaluaties": [
-      {
-        "id": "basketbal_lpd2",
-        "lpd": "LPD2",
-        "jaren": [
-          4,
-          5,
-          6
-        ],
-        "titel": "Vrijlopen, resultaat en spelregels",
-        "type": "rubric_klikcriteria",
-        "scored_by": "leerkracht",
-        "max_score": 10,
-        "criteria": [
-          {
-            "naam": "Vrijlopen en actie",
-            "niveaus": [
-              {
-                "label": "Zwak",
-                "punten": 2.5,
-                "omschrijving": "Staat stil, loopt niet vrij"
-              },
-              {
-                "label": "Voldoende",
-                "punten": 5,
-                "omschrijving": "Doet een poging tot vrijlopen maar willekeurig, zonder herkenbare looplijn"
-              },
-              {
-                "label": "Goed",
-                "punten": 7.5,
-                "omschrijving": "Loopt vrij via V-cut of snijdt na een pass (give and go) volgens de juiste looplijn"
-              },
-              {
-                "label": "Uitstekend",
-                "punten": 10,
-                "omschrijving": "Leest de verdediger, kiest het juiste moment en de juiste looplijn, perfecte timing"
-              }
-            ]
-          },
-          {
-            "naam": "Resultaat",
-            "niveaus": [
-              {
-                "label": "Zwak",
-                "punten": 2.5,
-                "omschrijving": "Komt niet vrij, ontvangt geen bruikbare bal"
-              },
-              {
-                "label": "Voldoende",
-                "punten": 5,
-                "omschrijving": "Komt soms vrij maar de pas komt niet aan of de positie is niet doelgevaarlijk"
-              },
-              {
-                "label": "Goed",
-                "punten": 7.5,
-                "omschrijving": "Komt vrij, ontvangt de bal op een positie waar een shot of doorpas mogelijk is"
-              },
-              {
-                "label": "Uitstekend",
-                "punten": 10,
-                "omschrijving": "Creëert kansen voor zichzelf én ploegmaats door slim vrijlopen"
-              }
-            ]
-          },
-          {
-            "naam": "Kennis en toepassing spelregels",
-            "niveaus": [
-              {
-                "label": "Zwak",
-                "punten": 2.5,
-                "omschrijving": "Kent de basisregels nauwelijks of helemaal niet. Maakt regelmatig fouten. Herkent eigen overtredingen niet"
-              },
-              {
-                "label": "Voldoende",
-                "punten": 5,
-                "omschrijving": "Kent enkele basisregels, maar past ze onregelmatig of onjuist toe"
-              },
-              {
-                "label": "Goed",
-                "punten": 7.5,
-                "omschrijving": "Kent de belangrijkste spelregels goed en past ze in de meeste situaties correct toe"
-              },
-              {
-                "label": "Uitstekend",
-                "punten": 10,
-                "omschrijving": "Herkent en benoemt overtredingen snel en juist. Handelt zelfstandig volgens de regels en kan anderen erop wijzen"
-              }
-            ]
-          }
-        ],
-        "bron": "Evaluatie.docx – Basketbal – Jaar 4+5+6 LPD2"
-      },
-      {
-        "id": "basketbal_lpd11_jaar6",
-        "lpd": "LPD11",
-        "jaren": [
-          6
-        ],
-        "titel": "Leiding nemen/aanvaarden als scheidsrechter",
-        "type": "rubric_klikcriteria",
-        "scored_by": "leerkracht",
-        "max_score": 10,
-        "criteria": [
-          {
-            "naam": "Leiding nemen",
-            "niveaus": [
-              {
-                "label": "Zwak",
-                "punten": 2.5,
-                "omschrijving": "Neemt geen leiding, ook niet gevraagd"
-              },
-              {
-                "label": "Voldoende",
-                "punten": 5,
-                "omschrijving": "Neemt aarzelend leiding na vraag"
-              },
-              {
-                "label": "Goed",
-                "punten": 7.5,
-                "omschrijving": "Neemt leiding wanneer nodig"
-              },
-              {
-                "label": "Uitstekend",
-                "punten": 10,
-                "omschrijving": "Neemt spontaan en effectief leiding"
-              }
-            ]
-          },
-          {
-            "naam": "Leiding aanvaarden",
-            "niveaus": [
-              {
-                "label": "Zwak",
-                "punten": 2.5,
-                "omschrijving": "Negeert leiding of discussieert steeds"
-              },
-              {
-                "label": "Voldoende",
-                "punten": 5,
-                "omschrijving": "Volgt soms, discussieert vaak"
-              },
-              {
-                "label": "Goed",
-                "punten": 7.5,
-                "omschrijving": "Volgt instructies zonder discussie"
-              },
-              {
-                "label": "Uitstekend",
-                "punten": 10,
-                "omschrijving": "Volgt respectvol, vraagt constructief door"
-              }
-            ]
-          },
-          {
-            "naam": "Kwaliteit van leiding / toepassen van regels",
-            "niveaus": [
-              {
-                "label": "Zwak",
-                "punten": 2.5,
-                "omschrijving": "Onduidelijk, weet niet wat te doen. Onverstaanbaar"
-              },
-              {
-                "label": "Voldoende",
-                "punten": 5,
-                "omschrijving": "Basale instructies, weinig structuur. Moeilijk te verstaan"
-              },
-              {
-                "label": "Goed",
-                "punten": 7.5,
-                "omschrijving": "Duidelijke instructies, houdt overzicht"
-              },
-              {
-                "label": "Uitstekend",
-                "punten": 10,
-                "omschrijving": "Kent de regels, voldoende luid en hoorbaar praten en houdt overzicht"
-              }
-            ]
-          }
-        ],
-        "bron": "Evaluatie.docx – Basketbal – Jaar 6 LPD11"
-      }
-    ]
-  },
-  "ehbo": {
-    "jaren_aangeboden": [
-      4,
-      6
-    ],
-    "evaluaties": [
-      {
-        "id": "ehbo_lpd7",
-        "lpd": "LPD7",
-        "jaren": [
-          4,
-          6
-        ],
-        "titel": "EHBO-handelingen",
-        "type": "checklist_punten",
-        "scored_by": "leerkracht",
-        "max_score": 14,
-        "opties_per_item": [
-          0,
-          1,
-          2
-        ],
-        "scenario_varianten": [
-          {
-            "naam": "Slachtoffer ademt niet meer",
-            "items": [
-              {
-                "naam": "Veiligheid in orde",
-                "max_punten": 2
-              },
-              {
-                "naam": "Bewustzijn controleren",
-                "max_punten": 2
-              },
-              {
-                "naam": "Ademhaling controleren",
-                "max_punten": 2
-              },
-              {
-                "naam": "112 + AED",
-                "max_punten": 2
-              },
-              {
-                "naam": "Reanimatie",
-                "max_punten": 2
-              },
-              {
-                "naam": "Beademing",
-                "max_punten": 2
-              },
-              {
-                "naam": "Twee bijvragen over de filmpjes",
-                "max_punten": 2
-              }
-            ]
-          },
-          {
-            "naam": "Slachtoffer ademt wel nog",
-            "items": [
-              {
-                "naam": "Veiligheid in orde",
-                "max_punten": 2
-              },
-              {
-                "naam": "Bewustzijn controleren",
-                "max_punten": 2
-              },
-              {
-                "naam": "Ademhaling controleren",
-                "max_punten": 2
-              },
-              {
-                "naam": "112 + AED",
-                "max_punten": 2
-              },
-              {
-                "naam": "Stabiele zijlig",
-                "max_punten": 2
-              },
-              {
-                "naam": "Hoofd naar achter, luchtweg vrij en hoofd naar beneden",
-                "max_punten": 2
-              },
-              {
-                "naam": "Twee bijvragen over de filmpjes",
-                "max_punten": 2
-              }
-            ]
-          }
-        ],
-        "bron": "Evaluatie.docx – EHBO – Jaar 4+6 LPD7 (bijvragen-item toegevoegd aan scenario 2, na overleg gebruiker)",
-        "zelfevaluatie_hint": "Zelfevaluatie via oefening in Smartschool"
-      }
-    ]
-  },
-  "volleybal": {
-    "jaren_aangeboden": [
-      4,
-      5,
-      6
-    ],
-    "evaluaties": [
-      {
-        "id": "volleybal_lpd1",
-        "lpd": "LPD1",
-        "jaren": [
-          4,
-          5,
-          6
-        ],
-        "titel": "Bovenhands toetsen / onderhandse receptie",
-        "type": "direct_score_test",
-        "scored_by": "leerkracht",
-        "max_score": 10,
-        "instructie": "Per twee: 10x bovenhands toetsen naar elkaar, dan 10x onderhandse receptie naar elkaar. Test stopt zodra de bal valt.",
-        "invoer_label": "Aantal balcontacten (0 t.e.m. 20)",
-        "invoer_min": 0,
-        "invoer_max": 20,
-        "formule": "score = invoer x 0.5",
-        "bijzonderheid": "Jaar 4: bovenhands en onderhands mogen apart afgelegd worden. Vanaf jaar 5 (3e graad) moet dit achtereenvolgens.",
-        "bron": "Evaluatie.docx – Volleybal – Jaar 4+5+6 LPD1 (verduidelijkt: leerkracht geeft het RUWE aantal balcontacten in, app berekent automatisch x0,5 — bugfix/verduidelijking)"
-      }
-    ]
-  },
-  "badminton": {
-    "jaren_aangeboden": [
-      4,
-      5,
-      6
-    ],
-    "evaluaties": [
-      {
-        "id": "badminton_lpd2",
-        "lpd": "LPD2",
-        "jaren": [
-          4,
-          5,
-          6
-        ],
-        "titel": "Tactisch spel",
-        "type": "rubric_klikcriteria",
-        "scored_by": "leerkracht",
-        "max_score": 10,
-        "criteria": [
-          {
-            "naam": "Speelt waar de ander niet staat",
-            "niveaus": [
-              {
-                "label": "Zwak",
-                "punten": 2.5,
-                "omschrijving": "Speelt de shuttle vaak naar de tegenstander."
-              },
-              {
-                "label": "Voldoende",
-                "punten": 5,
-                "omschrijving": "Probeert de vrije ruimte te benutten, maar vaak onnauwkeurig."
-              },
-              {
-                "label": "Goed",
-                "punten": 7.5,
-                "omschrijving": "Speelt meestal gericht naar de vrije ruimte."
-              },
-              {
-                "label": "Uitstekend",
-                "punten": 10,
-                "omschrijving": "Herkent de vrije ruimte en speelt doelgericht naar waar de tegenstander niet staat."
-              }
-            ]
-          },
-          {
-            "naam": "Terugkeren naar het centrum",
-            "niveaus": [
-              {
-                "label": "Zwak",
-                "punten": 2.5,
-                "omschrijving": "Blijft na een slag op zijn plaats staan."
-              },
-              {
-                "label": "Voldoende",
-                "punten": 5,
-                "omschrijving": "Keert soms terug naar het centrum, maar te laat."
-              },
-              {
-                "label": "Goed",
-                "punten": 7.5,
-                "omschrijving": "Keert na de slag snel terug naar een goede centrale positie."
-              },
-              {
-                "label": "Uitstekend",
-                "punten": 10,
-                "omschrijving": "Keert automatisch en snel terug naar het centrum en anticipeert op de volgende slag."
-              }
-            ]
-          },
-          {
-            "naam": "Opslag tactisch plaatsen",
-            "niveaus": [
-              {
-                "label": "Zwak",
-                "punten": 2.5,
-                "omschrijving": "Slaat de opslag willekeurig of foutief."
-              },
-              {
-                "label": "Voldoende",
-                "punten": 5,
-                "omschrijving": "Plaatst de opslag correct, maar weinig gericht."
-              },
-              {
-                "label": "Goed",
-                "punten": 7.5,
-                "omschrijving": "Kiest bewust voor een hoge, verre of korte, lage opslag."
-              },
-              {
-                "label": "Uitstekend",
-                "punten": 10,
-                "omschrijving": "Kiest doelgericht de opslag die de tegenstander het meest onder druk zet (bv in de backhand)."
-              }
-            ]
-          }
-        ],
-        "bron": "Evaluatie.docx – Badminton – Jaar 4+5+6 LPD2"
-      }
-    ]
-  },
-  "voetbal": {
-    "jaren_aangeboden": [
-      5
-    ],
-    "evaluaties": [
-      {
-        "id": "voetbal_lpd11_jaar5",
-        "lpd": "LPD11",
-        "jaren": [
-          5
-        ],
-        "titel": "Leiding nemen/aanvaarden als coach",
-        "type": "rubric_klikcriteria",
-        "scored_by": "leerkracht",
-        "max_score": 10,
-        "context": "4 ploegen, halve veldjes 5v5, 6e speler = coach. Bij 5 spelers neemt de keeper de coachrol op. Doorschuifsysteem.",
-        "criteria": [
-          {
-            "naam": "Leiding nemen",
-            "niveaus": [
-              {
-                "label": "Zwak",
-                "punten": 2.5,
-                "omschrijving": "Neemt geen leiding, ook niet gevraagd."
-              },
-              {
-                "label": "Voldoende",
-                "punten": 5,
-                "omschrijving": "Neemt aarzelend leiding na vraag."
-              },
-              {
-                "label": "Goed",
-                "punten": 7.5,
-                "omschrijving": "Neemt leiding wanneer nodig."
-              },
-              {
-                "label": "Uitstekend",
-                "punten": 10,
-                "omschrijving": "Neemt spontaan en effectief leiding."
-              }
-            ]
-          },
-          {
-            "naam": "Leiding aanvaarden",
-            "niveaus": [
-              {
-                "label": "Zwak",
-                "punten": 2.5,
-                "omschrijving": "Negeert leiding of discussieert steeds."
-              },
-              {
-                "label": "Voldoende",
-                "punten": 5,
-                "omschrijving": "Volgt soms, discussieert vaak."
-              },
-              {
-                "label": "Goed",
-                "punten": 7.5,
-                "omschrijving": "Volgt instructies zonder discussie."
-              },
-              {
-                "label": "Uitstekend",
-                "punten": 10,
-                "omschrijving": "Volgt respectvol, vraagt constructief door."
-              }
-            ]
-          },
-          {
-            "naam": "Kwaliteit van leiding",
-            "niveaus": [
-              {
-                "label": "Zwak",
-                "punten": 2.5,
-                "omschrijving": "Onduidelijk, weet niet wat te doen."
-              },
-              {
-                "label": "Voldoende",
-                "punten": 5,
-                "omschrijving": "Basale instructies, weinig structuur."
-              },
-              {
-                "label": "Goed",
-                "punten": 7.5,
-                "omschrijving": "Duidelijke instructies."
-              },
-              {
-                "label": "Uitstekend",
-                "punten": 10,
-                "omschrijving": "Motiveert en stuurt het team, duidelijk en verstaanbaar."
-              }
-            ]
-          },
-          {
-            "naam": "Bijdrage aan het team, prestatie",
-            "niveaus": [
-              {
-                "label": "Zwak",
-                "punten": 2.5,
-                "omschrijving": "Speelt vooral voor zichzelf en helpt het team weinig."
-              },
-              {
-                "label": "Voldoende",
-                "punten": 5,
-                "omschrijving": "Probeert samen te spelen, maar is vaak niet aanspeelbaar of betrokken."
-              },
-              {
-                "label": "Goed",
-                "punten": 7.5,
-                "omschrijving": "Werkt samen, maakt zich aanspeelbaar en helpt in aanval en verdediging."
-              },
-              {
-                "label": "Uitstekend",
-                "punten": 10,
-                "omschrijving": "Speelt voortdurend in functie van het team, maakt ruimte, biedt zich aan en helpt ploegmaats aanvallend én verdedigend."
-              }
-            ]
-          }
-        ],
-        "bron": "Evaluatie.docx – Voetbal – Jaar 5 LPD11"
-      }
-    ]
-  },
-  "handbal": {
-    "jaren_aangeboden": [
-      4
-    ],
-    "evaluaties": [
-      {
-        "id": "handbal_lpd2_jaar4",
-        "lpd": "LPD2",
-        "jaren": [
-          4
-        ],
-        "titel": "Balbezit en omschakeling",
-        "type": "rubric_klikcriteria",
-        "scored_by": "leerkracht",
-        "max_score": 10,
-        "criteria": [
-          {
-            "naam": "Balbezit – harmonica",
-            "niveaus": [
-              {
-                "label": "Zwak",
-                "punten": 2.5,
-                "omschrijving": "Beweegt niet doelgericht met of zonder bal. Houdt de bal onnodig lang bij."
-              },
-              {
-                "label": "Voldoende",
-                "punten": 5,
-                "omschrijving": "Beweegt soms naar het doel met bal en weg van het doel zonder bal."
-              },
-              {
-                "label": "Goed",
-                "punten": 7.5,
-                "omschrijving": "Beweegt met bal naar het doel en zonder bal weg om ruimte te creëren."
-              },
-              {
-                "label": "Uitstekend",
-                "punten": 10,
-                "omschrijving": "Lokt doelgericht een verdediger uit, speelt door en maakt direct opnieuw ruimte."
-              }
-            ]
-          },
-          {
-            "naam": "Balbezit – breed spelen",
-            "niveaus": [
-              {
-                "label": "Zwak",
-                "punten": 2.5,
-                "omschrijving": "Blijft centraal; gebruikt de ruimte nauwelijks."
-              },
-              {
-                "label": "Voldoende",
-                "punten": 5,
-                "omschrijving": "Beweegt soms naar de zijkant, maar keert snel naar het centrum."
-              },
-              {
-                "label": "Goed",
-                "punten": 7.5,
-                "omschrijving": "Gebruikt de breedte en zoekt de hoeken rond de doelcirkel op."
-              },
-              {
-                "label": "Uitstekend",
-                "punten": 10,
-                "omschrijving": "Houdt het veld optimaal breed, gebruikt doelgericht de hoeken en creëert zo ruimte centraal."
-              }
-            ]
-          },
-          {
-            "naam": "Omschakeling na balverlies",
-            "niveaus": [
-              {
-                "label": "Zwak",
-                "punten": 2.5,
-                "omschrijving": "Blijft voorwaarts spelen; doelcirkel blijft open."
-              },
-              {
-                "label": "Voldoende",
-                "punten": 5,
-                "omschrijving": "Loopt terug, maar reageert te laat of kiest een verkeerde positie."
-              },
-              {
-                "label": "Goed",
-                "punten": 7.5,
-                "omschrijving": "Schakelt snel om en sluit de doelcirkel af."
-              },
-              {
-                "label": "Uitstekend",
-                "punten": 10,
-                "omschrijving": "Schakelt onmiddellijk om, herkent de gevaarlijke zone en organiseert de verdediging."
-              }
-            ]
-          },
-          {
-            "naam": "Tactische afspraken",
-            "niveaus": [
-              {
-                "label": "Zwak",
-                "punten": 2.5,
-                "omschrijving": "Houdt zich zelden aan afspraken."
-              },
-              {
-                "label": "Voldoende",
-                "punten": 5,
-                "omschrijving": "Kent de afspraken, maar past ze onregelmatig toe."
-              },
-              {
-                "label": "Goed",
-                "punten": 7.5,
-                "omschrijving": "Past de afspraken meestal correct toe, bv. speelt niet door een verdedigend blok van twee."
-              },
-              {
-                "label": "Uitstekend",
-                "punten": 10,
-                "omschrijving": "Past afspraken consequent toe en kiest zelfstandig de beste oplossing."
-              }
-            ]
-          }
-        ],
-        "bron": "Evaluatie.docx – Handbal – Jaar 4 LPD2"
-      }
-    ]
-  },
-  "conditie": {
-    "jaren_aangeboden": [
-      4,
-      5,
-      6
-    ],
-    "evaluaties": [
-      {
-        "id": "conditie_lpd13",
-        "lpd": "LPD13",
-        "jaren": [
-          4,
-          5,
-          6
-        ],
-        "titel": "Inzet tijdens conditiecircuit",
-        "type": "vrije_score",
-        "scored_by": "leerkracht",
-        "max_score": 10,
-        "bron": "Evaluatie.docx – Conditie – Jaar 4+5+6 LPD13 (zelfevaluatie-onderdeel verwijderd op vraag gebruiker, enkel leerkrachtdeel resteert, dat toevallig al op 10 stond)",
-        "zelfevaluatie_hint": "Zelfevaluatie via oefening in Smartschool"
-      }
-    ]
-  },
-  "gym_loopoverslag": {
-    "jaren_aangeboden": [
-      5
-    ],
-    "evaluaties": [
-      {
-        "id": "gym_loopoverslag",
-        "lpd": "LPD1 + LPD9",
-        "jaren": [
-          5
-        ],
-        "titel": "Loopoverslag – eigen uitvoering en helpersfunctie",
-        "type": "video_upload_score",
-        "scored_by": "leerkracht",
-        "instructie": "Leerling filmt zichzelf en uploadt op Smartschool: 1 filmpje eigen uitvoering/prestatie, 1 filmpje helpersfunctie.",
-        "onderdelen": [
-          {
-            "naam": "Eigen uitvoering / prestatie",
-            "max_score": 5
-          },
-          {
-            "naam": "Helpersfunctie",
-            "max_score": 5
-          }
-        ],
-        "bron": "Evaluatie.docx – GYM: loopoverslag – Jaar 5 LPD1+9"
-      }
-    ]
-  },
-  "gym_freerunning": {
-    "jaren_aangeboden": [
-      6
-    ],
-    "evaluaties": [
-      {
-        "id": "gym_freerunning",
-        "lpd": "LPD1",
-        "jaren": [
-          6
-        ],
-        "titel": "Freerunning – eigen uitvoering",
-        "type": "video_upload_score",
-        "scored_by": "leerkracht",
-        "max_score": 10,
-        "instructie": "Leerling filmt zichzelf en uploadt op Smartschool: 1 filmpje eigen uitvoering/prestatie.",
-        "bron": "Evaluatie.docx – GYM: freerunning – Jaar 6 LPD1"
-      }
-    ]
-  },
-  "ritmiek_ropeskipping": {
-    "jaren_aangeboden": [
-      4,
-      6
-    ],
-    "evaluaties": [
-      {
-        "id": "ritmiek_ropeskipping_lpd1",
-        "lpd": "LPD1",
-        "jaren": [
-          4,
-          6
-        ],
-        "titel": "Kijkwijzers ropeskipping",
-        "type": "dropdown_meerdere",
-        "scored_by": "leerkracht",
-        "max_score_ruw": 16,
-        "max_score": 10,
-        "omrekening": "totaal_ruw / 16 x 10",
-        "items": [
-          {
-            "naam": "Kijkwijzer 1",
-            "opties": [
-              0,
-              1,
-              2
-            ]
-          },
-          {
-            "naam": "Kijkwijzer 2",
-            "opties": [
-              0,
-              1,
-              2
-            ]
-          },
-          {
-            "naam": "Kijkwijzer 3",
-            "opties": [
-              0,
-              1,
-              2
-            ]
-          },
-          {
-            "naam": "Kijkwijzer 4",
-            "opties": [
-              0,
-              1,
-              2
-            ]
-          },
-          {
-            "naam": "Kijkwijzer 5",
-            "opties": [
-              0,
-              1,
-              2
-            ]
-          },
-          {
-            "naam": "Kijkwijzer 6",
-            "opties": [
-              0,
-              1,
-              2
-            ]
-          },
-          {
-            "naam": "Kijkwijzer 7",
-            "opties": [
-              0,
-              1,
-              2
-            ]
-          },
-          {
-            "naam": "Doorzetting",
-            "opties": [
-              0,
-              1,
-              2
-            ]
-          }
-        ],
-        "bron": "Evaluatie.docx – RITMIEK: ropeskipping – Jaar 4+6 LPD1 (jaar 4 toegevoegd, zelfde rubric, na overleg gebruiker)"
-      }
-    ]
-  },
-  "ritmiek_dans": {
-    "jaren_aangeboden": [
-      5
-    ],
-    "evaluaties": [
-      {
-        "id": "ritmiek_dans_les1",
-        "lpd": "LPD3 + LPD13",
-        "jaren": [
-          5
-        ],
-        "titel": "Zelfgemaakte choreografie",
-        "type": "rubric_klikcriteria",
-        "scored_by": "leerkracht",
-        "max_score": 10,
-        "herhaling": "Deze evaluatie wordt 2x afgenomen: einde les 1 én einde les 2.",
-        "criteria": [
-          {
-            "naam": "Algemene vordering",
-            "niveaus": [
-              {
-                "label": "Zwak",
-                "punten": 2.5,
-                "omschrijving": "Er is weinig zichtbare verandering tov de eerste les."
-              },
-              {
-                "label": "Voldoende",
-                "punten": 5,
-                "omschrijving": "Er is beperkte maar merkbare vooruitgang."
-              },
-              {
-                "label": "Goed",
-                "punten": 7.5,
-                "omschrijving": "Er is een duidelijke vooruitgang."
-              },
-              {
-                "label": "Uitstekend",
-                "punten": 10,
-                "omschrijving": "Er is een zeer duidelijke persoonlijke groei, de leerling kan meer dan bij het begin."
-              }
-            ]
-          }
-        ],
-        "bron": "Evaluatie.docx – RITMIEK: dans – Jaar 5 LPD3+13 (type gecorrigeerd naar rubric_klikcriteria — bugfix)",
-        "zelfevaluatie_hint": "Zelfevaluatie via oefening in Smartschool"
-      }
-    ]
-  },
-  "klimmen": {
-    "jaren_aangeboden": [
-      5
-    ],
-    "evaluaties": [
-      {
-        "id": "klimmen_lpd8",
-        "lpd": "LPD8",
-        "jaren": [
-          5
-        ],
-        "titel": "Materiaalgebruik en leeflijn",
-        "type": "checklist_punten",
-        "scored_by": "leerkracht",
-        "max_score": 4,
-        "opties_per_item": [
-          0,
-          1,
-          2
-        ],
-        "items": [
-          {
-            "naam": "Gebruikt het juiste materiaal voor de opdracht: leeflijn voor via ferrata, musketon voor Prusik klimmen",
-            "max_punten": 2
-          },
-          {
-            "naam": "Gebruikt de leeflijn correct: er hangt altijd minstens 1 musketon vast, niet met twee musketons gelijktijdig o.w.v. remsysteem",
-            "max_punten": 2
-          }
-        ],
-        "expliciet_uitgesloten": "Zelfevaluatie op wisbordje (duo-check gordel) NIET overnemen in de app.",
-        "bron": "Evaluatie.docx – Klimmen – Jaar 5 LPD8 (max_score gecorrigeerd naar 4, per item 0/1/2 klikbaar — op vraag gebruiker)"
-      }
-    ]
-  },
-  "judo": {
-    "jaren_aangeboden": [
-      5
-    ],
-    "evaluaties": [
-      {
-        "id": "judo_lpd1",
-        "lpd": "LPD1",
-        "jaren": [
-          5
-        ],
-        "titel": "Getoonde technieken",
-        "type": "checklist_punten",
-        "scored_by": "leerkracht",
-        "max_score": 8,
-        "opties_per_item": [
-          0,
-          1,
-          2
-        ],
-        "items": [
-          {
-            "naam": "Kesa Gatame",
-            "max_punten": 2
-          },
-          {
-            "naam": "Yoko shiho gatame",
-            "max_punten": 2
-          },
-          {
-            "naam": "Achterwaartse val",
-            "max_punten": 2
-          },
-          {
-            "naam": "Zijwaartse val",
-            "max_punten": 2
-          }
-        ],
-        "bron": "Evaluatie.docx – Zelfverdediging/Judo – Jaar 5 LPD1 (max_score gecorrigeerd naar 8, per techniek 0/1/2 klikbaar i.p.v. 0/2,5 — op vraag gebruiker)",
-        "zelfevaluatie_hint": "Zelfevaluatie via oefening in Smartschool"
-      }
-    ]
-  },
-  "duurloop": {
-    "jaren_aangeboden": [
-      4,
-      5,
-      6
-    ],
-    "evaluaties": [
-      {
-        "id": "duurloop_lpd4",
-        "lpd": "LPD4",
-        "jaren": [
-          4,
-          5,
-          6
-        ],
-        "titel": "Cooper-achtige duurlooptest (8x415m = 3,3km)",
-        "type": "dropdown_tijd_lookup",
-        "scored_by": "leerkracht",
-        "max_score": 10,
-        "dropdown_jongens": [
-          "14 min",
-          "15 min",
-          "16 min",
-          "17 min",
-          "18 min",
-          "19 min",
-          "20 min",
-          "21 min",
-          "22 min",
-          "23 min",
-          "24 min"
-        ],
-        "dropdown_meisjes": [
-          "17,5 min",
-          "18,5 min",
-          "19,5 min",
-          "20,5 min",
-          "21,5 min",
-          "22,5 min",
-          "23,5 min",
-          "24,5 min",
-          "25,5 min",
-          "26,5 min",
-          "27,5 min"
-        ],
-        "tabel_jongens": {
-          "14": 10,
-          "15": 9,
-          "16": 8,
-          "17": 7,
-          "18": 6,
-          "19": 5,
-          "20": 4,
-          "21": 3,
-          "22": 2,
-          "23": 1,
-          "24": 0
-        },
-        "tabel_meisjes": {
-          "17.5": 10,
-          "18.5": 9,
-          "19.5": 8,
-          "20.5": 7,
-          "21.5": 6,
-          "22.5": 5,
-          "23.5": 4,
-          "24.5": 3,
-          "25.5": 2,
-          "26.5": 1,
-          "27.5": 0
-        },
-        "bron": "Evaluatie.docx – Duurloop – Jaar 4+5+6 LPD4 (dropdown-range aangepast aan scoretabel, na overleg gebruiker)"
-      }
-    ]
-  },
-  "fitness": {
-    "jaren_aangeboden": [
-      4,
-      5,
-      6
-    ],
-    "evaluaties": [
-      {
-        "id": "fitness_lpd5",
-        "lpd": "LPD5",
-        "jaren": [
-          4,
-          5,
-          6
-        ],
-        "titel": "Zelfreflectietaak bewegingstest",
-        "type": "dropdown_score",
-        "scored_by": "leerkracht",
-        "max_score": 4,
-        "opties": [
-          0,
-          1,
-          2,
-          3,
-          4
-        ],
-        "instructie": "Leerling vult bewegingstest in op mijn.gezondleven.be, beantwoordt reflectievragen en post resultaten + analyse in de uploadzone op Smartschool. Leerkracht kiest score o.b.v. kwaliteit van de zelfreflectie.",
-        "bron": "Evaluatie.docx – Fitness – Jaar 4+5+6 LPD5"
-      },
-      {
-        "id": "fitness_lpd6",
-        "lpd": "LPD6",
-        "jaren": [
-          4,
-          5,
-          6
-        ],
-        "titel": "Inzet, correctheid en cardio",
-        "type": "dropdown_score",
-        "scored_by": "leerkracht",
-        "max_score": 6,
-        "opties": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ],
-        "aandachtspunten_niet_apart_scoren": [
-          "Correcte uitvoering van oefeningen (LPD6)",
-          "Inzet en actieve deelname",
-          "20 minuten cardio"
-        ],
-        "bron": "Evaluatie.docx – Fitness – Jaar 4+5+6 LPD6"
-      }
-    ]
-  },
-  "zwemmen": {
-    "jaren_aangeboden": [
-      4
-    ],
-    "evaluaties": [
-      {
-        "id": "zwemmen_lpd1",
-        "lpd": "LPD1",
-        "jaren": [
-          4
-        ],
-        "titel": "Schoolslag en crawl",
-        "type": "dropdown_meerdere",
-        "scored_by": "leerkracht",
-        "max_score": 8,
-        "items": [
-          {
-            "naam": "Schoolslag",
-            "max_score": 4,
-            "aandachtspunten_niet_apart_scoren": [
-              "armen",
-              "benen",
-              "pijlfase",
-              "coördinatie",
-              "hoofd onder water"
-            ]
-          },
-          {
-            "naam": "Crawl",
-            "max_score": 4,
-            "aandachtspunten_niet_apart_scoren": [
-              "armen",
-              "benen",
-              "coördinatie",
-              "hoofd onder water"
-            ]
-          }
-        ],
-        "bron": "Evaluatie.docx – Zwemmen – Jaar 4 LPD1 (aandachtspunten = richtlijnen, geen aparte items, bevestigd gebruiker)"
-      },
-      {
-        "id": "zwemmen_lpd8",
-        "lpd": "LPD8",
-        "jaren": [
-          4
-        ],
-        "titel": "In orde zijn",
-        "type": "vrije_score",
-        "scored_by": "leerkracht",
-        "max_score": 2,
-        "bron": "Evaluatie.docx – Zwemmen – Jaar 4 LPD8"
-      }
-    ]
-  },
-  "baseball": {
-    "jaren_aangeboden": [
-      4,
-      5,
-      6
-    ],
-    "evaluaties": [
-      {
-        "id": "baseball_lpd12",
-        "lpd": "LPD12",
-        "jaren": [
-          4,
-          5,
-          6
-        ],
-        "titel": "Fairplay, sportiviteit en teambijdrage",
-        "type": "rubric_klikcriteria",
-        "scored_by": "leerkracht",
-        "max_score": 5,
-        "omrekening": "gemiddelde_van_criteria_op_10_omgerekend_naar_5",
-        "criteria": [
-          {
-            "naam": "Fairplay en sportiviteit – zich kunnen neerleggen bij het besluit van de scheidsrechter",
-            "niveaus": [
-              {
-                "label": "Zwak",
-                "punten": 2.5,
-                "omschrijving": "Protesteert of reageert regelmatig onsportief."
-              },
-              {
-                "label": "Voldoende",
-                "punten": 5,
-                "omschrijving": "Reageert soms negatief op beslissingen."
-              },
-              {
-                "label": "Goed",
-                "punten": 7.5,
-                "omschrijving": "Sportief. Aanvaardt beslissingen, soms kort teleurgesteld."
-              },
-              {
-                "label": "Uitstekend",
-                "punten": 10,
-                "omschrijving": "Altijd sportief. Aanvaardt beslissingen onmiddellijk."
-              }
-            ]
-          },
-          {
-            "naam": "Bijdrage aan het team en inzet/prestatie binnen de rol van teamspeler",
-            "niveaus": [
-              {
-                "label": "Zwak",
-                "punten": 2.5,
-                "omschrijving": "Weinig inzet en betrokkenheid."
-              },
-              {
-                "label": "Voldoende",
-                "punten": 5,
-                "omschrijving": "Wisselende inzet en beperkte bijdrage."
-              },
-              {
-                "label": "Goed",
-                "punten": 7.5,
-                "omschrijving": "Actief en gemotiveerd. Goede bijdrage aan het team."
-              },
-              {
-                "label": "Uitstekend",
-                "punten": 10,
-                "omschrijving": "Zeer actief, gemotiveerd en belangrijke bijdrage aan het team."
-              }
-            ]
-          }
-        ],
-        "bron": "Evaluatie.docx – Baseball – Jaar 4+5+6 LPD12"
-      }
-    ]
-  },
-  "boulderen": {
-    "jaren_aangeboden": [
-      6
-    ],
-    "evaluaties": [
-      {
-        "id": "boulderen_lpd8",
-        "lpd": "LPD8",
-        "jaren": [
-          6
-        ],
-        "titel": "Gedrag in de klimzaal",
-        "type": "plus_min_tracker",
-        "scored_by": "leerkracht",
-        "start_score": 5,
-        "max_score": 8,
-        "min_score": 0,
-        "richtlijnen": [
-          "Traject naar klimzaal",
-          "Houden aan regels van de klimzaal (bv. niet voorbij de lijn, ...)",
-          "Afspraak = 80% van de tijd klimmen"
-        ],
-        "bron": "Evaluatie.docx – Boulderen – Jaar 6 LPD8"
-      }
-    ]
-  },
-  "kledij": {
-    "type_globaal": "permanente_evaluatie",
-    "jaren_aangeboden": [
-      4,
-      5,
-      6
-    ],
-    "menu": "apart, los van lesthema's",
-    "evaluatie": {
-      "type": "plus_min_tracker",
-      "scored_by": "leerkracht",
-      "start_score": 10,
-      "max_score": 10,
-      "min_score": 0,
-      "aftrek_per_overtreding": 3,
-      "reset": "handmatige knop per DW (5x per jaar) via Resultaten-scherm (gecombineerd met thema-scores), niet automatisch. Reset zet terug op 10/10."
-    },
-    "bron": "Evaluatie.docx – Kledij"
-  },
-  "overige_themas_vrije_score": {
-    "toepassing": [
-      "Varia",
-      "Padel + Fietsen",
-      "Frisbee",
-      "Trampoline + Schaatsen",
-      "Fietsen"
-    ],
-    "type": "vrije_score_optioneel",
+    "titel": "Vrijlopen, resultaat en spelregels",
+    "type": "rubric_klikcriteria",
     "scored_by": "leerkracht",
     "max_score": 10,
-    "gedrag": "Indien de leerkracht niets invult, telt dit niet mee voor het rapport.",
-    "bron": "Evaluatie.docx – slotzin"
-  },
-  "GYM_piramidenbouw": {
-    "jaren_aangeboden": [
-      4
+    "criteria": [
+     {
+      "naam": "Vrijlopen en actie",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Staat stil, loopt niet vrij"
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Doet een poging tot vrijlopen maar willekeurig, zonder herkenbare looplijn"
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Loopt vrij via V-cut of snijdt na een pass (give and go) volgens de juiste looplijn"
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Leest de verdediger, kiest het juiste moment en de juiste looplijn, perfecte timing"
+       }
+      ]
+     },
+     {
+      "naam": "Resultaat",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Komt niet vrij, ontvangt geen bruikbare bal"
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Komt soms vrij maar de pas komt niet aan of de positie is niet doelgevaarlijk"
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Komt vrij, ontvangt de bal op een positie waar een shot of doorpas mogelijk is"
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Creëert kansen voor zichzelf én ploegmaats door slim vrijlopen"
+       }
+      ]
+     },
+     {
+      "naam": "Kennis en toepassing spelregels",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Kent de basisregels nauwelijks of helemaal niet. Maakt regelmatig fouten. Herkent eigen overtredingen niet"
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Kent enkele basisregels, maar past ze onregelmatig of onjuist toe"
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Kent de belangrijkste spelregels goed en past ze in de meeste situaties correct toe"
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Herkent en benoemt overtredingen snel en juist. Handelt zelfstandig volgens de regels en kan anderen erop wijzen"
+       }
+      ]
+     }
     ],
-    "evaluaties": [
-      {
-        "id": "gym_acrogym_lpd9",
-        "lpd": "LPD9",
-        "jaren": [
-          4
-        ],
-        "titel": "Moeilijkheidsgraad en show piramide",
-        "type": "checklist_punten",
-        "scored_by": "leerkracht",
-        "max_score": 10,
-        "opties_per_item": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "items": [
-          {
-            "naam": "Moeilijkheidsgraad",
-            "max_punten": 5
-          },
-          {
-            "naam": "Show (opkomst, verbindingen, slot, kleding en muziek, kijken naar publiek, afwerking, ...)",
-            "max_punten": 5
-          }
-        ],
-        "bron": "Evaluatie.docx – GYM: Piramiden – Jaar 4 LPD9 (vereenvoudigd naar vlakke schaal op 10 — bugfix)",
-        "zelfevaluatie_hint": "Zelfevaluatie via oefening in Smartschool"
-      }
-    ]
-  }
+    "bron": "Evaluatie.docx – Basketbal – Jaar 4 LPD2"
+   },
+   {
+    "id": "basketbal_lpd2_jaar56",
+    "lpd": "LPD2",
+    "jaren": [
+     5,
+     6
+    ],
+    "titel": "Vrijlopen, resultaat en spelregels",
+    "type": "rubric_klikcriteria",
+    "scored_by": "leerkracht",
+    "max_score": 10,
+    "criteria": [
+     {
+      "naam": "Vrijlopen en actie",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Staat stil, loopt niet vrij"
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Doet een poging tot vrijlopen maar willekeurig, zonder herkenbare looplijn"
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Loopt vrij via V-cut of snijdt na een pass (give and go) volgens de juiste looplijn"
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Leest de verdediger, kiest het juiste moment en de juiste looplijn, perfecte timing"
+       }
+      ]
+     },
+     {
+      "naam": "Resultaat",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Komt niet vrij, ontvangt geen bruikbare bal"
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Komt soms vrij maar de pas komt niet aan of de positie is niet doelgevaarlijk"
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Komt vrij, ontvangt de bal op een positie waar een shot of doorpas mogelijk is"
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Creëert kansen voor zichzelf én ploegmaats door slim vrijlopen"
+       }
+      ]
+     },
+     {
+      "naam": "Kennis en toepassing spelregels",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Kent de basisregels nauwelijks of helemaal niet. Maakt regelmatig fouten. Herkent eigen overtredingen niet"
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Kent enkele basisregels, maar past ze onregelmatig of onjuist toe"
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Kent de belangrijkste spelregels goed en past ze in de meeste situaties correct toe"
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Herkent en benoemt overtredingen snel en juist. Handelt zelfstandig volgens de regels en kan anderen erop wijzen"
+       }
+      ]
+     },
+     {
+      "naam": "Actief verdedigen",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Verdedigt weinig of niet. Staat niet tussen man en doel en verliest zijn tegenstander regelmatig uit het oog."
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Probeert zijn man te verdedigen en tussen man en doel te blijven, maar reageert vaak te laat of staat verkeerd opgesteld."
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Past manverdediging goed toe: blijft tussen zijn man en het doel, houdt bal en tegenstander in het oog en beweegt correct mee."
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Past manverdediging zeer goed toe: kiest voortdurend de juiste positie tussen bal, man en doel, anticipeert op bewegingen, houdt druk op de aanvaller."
+       }
+      ]
+     }
+    ],
+    "bron": "Evaluatie.docx – Basketbal – Jaar 5+6 LPD2 (+ Actief verdedigen)"
+   },
+   {
+    "id": "basketbal_lpd11_jaar6",
+    "lpd": "LPD11",
+    "jaren": [
+     6
+    ],
+    "titel": "Leiding nemen/aanvaarden als scheidsrechter",
+    "type": "rubric_klikcriteria",
+    "scored_by": "leerkracht",
+    "max_score": 10,
+    "criteria": [
+     {
+      "naam": "Leiding nemen",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Neemt geen leiding, ook niet gevraagd"
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Neemt aarzelend leiding na vraag"
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Neemt leiding wanneer nodig"
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Neemt spontaan en effectief leiding"
+       }
+      ]
+     },
+     {
+      "naam": "Leiding aanvaarden",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Negeert leiding of discussieert steeds"
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Volgt soms, discussieert vaak"
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Volgt instructies zonder discussie"
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Volgt respectvol, vraagt constructief door"
+       }
+      ]
+     },
+     {
+      "naam": "Kwaliteit van leiding / toepassen van regels",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Onduidelijk, weet niet wat te doen. Onverstaanbaar"
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Basale instructies, weinig structuur. Moeilijk te verstaan"
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Duidelijke instructies, houdt overzicht"
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Kent de regels, voldoende luid en hoorbaar praten en houdt overzicht"
+       }
+      ]
+     }
+    ],
+    "bron": "Evaluatie.docx – Basketbal – Jaar 6 LPD11"
+   }
+  ]
+ },
+ "ehbo": {
+  "jaren_aangeboden": [
+   4,
+   6
+  ],
+  "evaluaties": [
+   {
+    "id": "ehbo_lpd7",
+    "lpd": "LPD7",
+    "jaren": [
+     4,
+     6
+    ],
+    "titel": "EHBO-handelingen",
+    "type": "checklist_punten",
+    "scored_by": "leerkracht",
+    "max_score": 14,
+    "opties_per_item": [
+     0,
+     1,
+     2
+    ],
+    "scenario_varianten": [
+     {
+      "naam": "Slachtoffer ademt niet meer",
+      "items": [
+       {
+        "naam": "Veiligheid in orde",
+        "max_punten": 2
+       },
+       {
+        "naam": "Bewustzijn controleren",
+        "max_punten": 2
+       },
+       {
+        "naam": "Ademhaling controleren",
+        "max_punten": 2
+       },
+       {
+        "naam": "112 + AED",
+        "max_punten": 2
+       },
+       {
+        "naam": "Reanimatie",
+        "max_punten": 2
+       },
+       {
+        "naam": "Beademing",
+        "max_punten": 2
+       },
+       {
+        "naam": "Twee bijvragen over de filmpjes",
+        "max_punten": 2
+       }
+      ]
+     },
+     {
+      "naam": "Slachtoffer ademt wel nog",
+      "items": [
+       {
+        "naam": "Veiligheid in orde",
+        "max_punten": 2
+       },
+       {
+        "naam": "Bewustzijn controleren",
+        "max_punten": 2
+       },
+       {
+        "naam": "Ademhaling controleren",
+        "max_punten": 2
+       },
+       {
+        "naam": "112 + AED",
+        "max_punten": 2
+       },
+       {
+        "naam": "Stabiele zijlig",
+        "max_punten": 2
+       },
+       {
+        "naam": "Hoofd naar achter, luchtweg vrij en hoofd naar beneden",
+        "max_punten": 2
+       },
+       {
+        "naam": "Twee bijvragen over de filmpjes",
+        "max_punten": 2
+       }
+      ]
+     }
+    ],
+    "bron": "Evaluatie.docx – EHBO – Jaar 4+6 LPD7 (bijvragen-item toegevoegd aan scenario 2, na overleg gebruiker)",
+    "zelfevaluatie_hint": "Zelfevaluatie via oefening in Smartschool"
+   }
+  ]
+ },
+ "volleybal": {
+  "jaren_aangeboden": [
+   4,
+   5,
+   6
+  ],
+  "evaluaties": [
+   {
+    "id": "volleybal_lpd1",
+    "lpd": "LPD1",
+    "jaren": [
+     4,
+     5,
+     6
+    ],
+    "titel": "Bovenhands toetsen / onderhandse receptie",
+    "type": "direct_score_test",
+    "scored_by": "leerkracht",
+    "max_score": 10,
+    "instructie": "Per twee: 10x bovenhands toetsen naar elkaar, dan 10x onderhandse receptie naar elkaar. Test stopt zodra de bal valt.",
+    "invoer_label": "Aantal balcontacten (0 t.e.m. 20)",
+    "invoer_min": 0,
+    "invoer_max": 20,
+    "formule": "score = invoer x 0.5",
+    "bijzonderheid": "Jaar 4: bovenhands en onderhands mogen apart afgelegd worden. Vanaf jaar 5 (3e graad) moet dit achtereenvolgens.",
+    "bron": "Evaluatie.docx – Volleybal – Jaar 4+5+6 LPD1 (verduidelijkt: leerkracht geeft het RUWE aantal balcontacten in, app berekent automatisch x0,5 — bugfix/verduidelijking)"
+   }
+  ]
+ },
+ "badminton": {
+  "jaren_aangeboden": [
+   4,
+   5,
+   6
+  ],
+  "evaluaties": [
+   {
+    "id": "badminton_lpd2",
+    "lpd": "LPD2",
+    "jaren": [
+     4,
+     5,
+     6
+    ],
+    "titel": "Tactisch spel",
+    "type": "rubric_klikcriteria",
+    "scored_by": "leerkracht",
+    "max_score": 10,
+    "criteria": [
+     {
+      "naam": "Speelt waar de ander niet staat",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Speelt de shuttle vaak naar de tegenstander."
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Probeert de vrije ruimte te benutten, maar vaak onnauwkeurig."
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Speelt meestal gericht naar de vrije ruimte."
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Herkent de vrije ruimte en speelt doelgericht naar waar de tegenstander niet staat."
+       }
+      ]
+     },
+     {
+      "naam": "Terugkeren naar het centrum",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Blijft na een slag op zijn plaats staan."
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Keert soms terug naar het centrum, maar te laat."
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Keert na de slag snel terug naar een goede centrale positie."
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Keert automatisch en snel terug naar het centrum en anticipeert op de volgende slag."
+       }
+      ]
+     },
+     {
+      "naam": "Opslag tactisch plaatsen",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Slaat de opslag willekeurig of foutief."
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Plaatst de opslag correct, maar weinig gericht."
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Kiest bewust voor een hoge, verre of korte, lage opslag."
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Kiest doelgericht de opslag die de tegenstander het meest onder druk zet (bv in de backhand)."
+       }
+      ]
+     }
+    ],
+    "bron": "Evaluatie.docx – Badminton – Jaar 4+5+6 LPD2"
+   }
+  ]
+ },
+ "voetbal": {
+  "jaren_aangeboden": [
+   5
+  ],
+  "evaluaties": [
+   {
+    "id": "voetbal_lpd11_jaar5",
+    "lpd": "LPD11",
+    "jaren": [
+     5
+    ],
+    "titel": "Leiding nemen/aanvaarden als coach",
+    "type": "rubric_klikcriteria",
+    "scored_by": "leerkracht",
+    "max_score": 10,
+    "context": "4 ploegen, halve veldjes 5v5, 6e speler = coach. Bij 5 spelers neemt de keeper de coachrol op. Doorschuifsysteem.",
+    "criteria": [
+     {
+      "naam": "Leiding nemen",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Neemt geen leiding, ook niet gevraagd."
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Neemt aarzelend leiding na vraag."
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Neemt leiding wanneer nodig."
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Neemt spontaan en effectief leiding."
+       }
+      ]
+     },
+     {
+      "naam": "Leiding aanvaarden",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Negeert leiding of discussieert steeds."
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Volgt soms, discussieert vaak."
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Volgt instructies zonder discussie."
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Volgt respectvol, vraagt constructief door."
+       }
+      ]
+     },
+     {
+      "naam": "Kwaliteit van leiding",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Onduidelijk, weet niet wat te doen."
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Basale instructies, weinig structuur."
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Duidelijke instructies."
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Motiveert en stuurt het team, duidelijk en verstaanbaar."
+       }
+      ]
+     },
+     {
+      "naam": "Bijdrage aan het team, prestatie",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Speelt vooral voor zichzelf en helpt het team weinig."
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Probeert samen te spelen, maar is vaak niet aanspeelbaar of betrokken."
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Werkt samen, maakt zich aanspeelbaar en helpt in aanval en verdediging."
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Speelt voortdurend in functie van het team, maakt ruimte, biedt zich aan en helpt ploegmaats aanvallend én verdedigend."
+       }
+      ]
+     }
+    ],
+    "bron": "Evaluatie.docx – Voetbal – Jaar 5 LPD11"
+   }
+  ]
+ },
+ "handbal": {
+  "jaren_aangeboden": [
+   4
+  ],
+  "evaluaties": [
+   {
+    "id": "handbal_lpd2_jaar4",
+    "lpd": "LPD2",
+    "jaren": [
+     4
+    ],
+    "titel": "Balbezit en omschakeling",
+    "type": "rubric_klikcriteria",
+    "scored_by": "leerkracht",
+    "max_score": 10,
+    "criteria": [
+     {
+      "naam": "Balbezit – harmonica",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Beweegt niet doelgericht met of zonder bal. Houdt de bal onnodig lang bij."
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Beweegt soms naar het doel met bal en weg van het doel zonder bal."
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Beweegt met bal naar het doel en zonder bal weg om ruimte te creëren."
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Lokt doelgericht een verdediger uit, speelt door en maakt direct opnieuw ruimte."
+       }
+      ]
+     },
+     {
+      "naam": "Balbezit – breed spelen",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Blijft centraal; gebruikt de ruimte nauwelijks."
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Beweegt soms naar de zijkant, maar keert snel naar het centrum."
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Gebruikt de breedte en zoekt de hoeken rond de doelcirkel op."
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Houdt het veld optimaal breed, gebruikt doelgericht de hoeken en creëert zo ruimte centraal."
+       }
+      ]
+     },
+     {
+      "naam": "Omschakeling na balverlies",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Blijft voorwaarts spelen; doelcirkel blijft open."
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Loopt terug, maar reageert te laat of kiest een verkeerde positie."
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Schakelt snel om en sluit de doelcirkel af."
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Schakelt onmiddellijk om, herkent de gevaarlijke zone en organiseert de verdediging."
+       }
+      ]
+     },
+     {
+      "naam": "Tactische afspraken",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Houdt zich zelden aan afspraken."
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Kent de afspraken, maar past ze onregelmatig toe."
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Past de afspraken meestal correct toe, bv. speelt niet door een verdedigend blok van twee."
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Past afspraken consequent toe en kiest zelfstandig de beste oplossing."
+       }
+      ]
+     }
+    ],
+    "bron": "Evaluatie.docx – Handbal – Jaar 4 LPD2"
+   }
+  ]
+ },
+ "conditie": {
+  "jaren_aangeboden": [
+   4,
+   5,
+   6
+  ],
+  "evaluaties": [
+   {
+    "id": "conditie_lpd13",
+    "lpd": "LPD13",
+    "jaren": [
+     4,
+     5,
+     6
+    ],
+    "titel": "Inzet tijdens conditiecircuit",
+    "type": "vrije_score",
+    "scored_by": "leerkracht",
+    "max_score": 10,
+    "bron": "Evaluatie.docx – Conditie – Jaar 4+5+6 LPD13 (zelfevaluatie-onderdeel verwijderd op vraag gebruiker, enkel leerkrachtdeel resteert, dat toevallig al op 10 stond)",
+    "zelfevaluatie_hint": "Zelfevaluatie via oefening in Smartschool"
+   }
+  ]
+ },
+ "gym_loopoverslag": {
+  "jaren_aangeboden": [
+   5
+  ],
+  "evaluaties": [
+   {
+    "id": "gym_loopoverslag",
+    "lpd": "LPD1 + LPD9",
+    "jaren": [
+     5
+    ],
+    "titel": "Loopoverslag – eigen uitvoering en helpersfunctie",
+    "type": "video_upload_score",
+    "scored_by": "leerkracht",
+    "instructie": "Leerling filmt zichzelf en uploadt op Smartschool: 1 filmpje eigen uitvoering/prestatie, 1 filmpje helpersfunctie.",
+    "onderdelen": [
+     {
+      "naam": "Eigen uitvoering / prestatie",
+      "max_score": 5
+     },
+     {
+      "naam": "Helpersfunctie",
+      "max_score": 5
+     }
+    ],
+    "bron": "Evaluatie.docx – GYM: loopoverslag – Jaar 5 LPD1+9"
+   }
+  ]
+ },
+ "gym_freerunning": {
+  "jaren_aangeboden": [
+   6
+  ],
+  "evaluaties": [
+   {
+    "id": "gym_freerunning",
+    "lpd": "LPD1",
+    "jaren": [
+     6
+    ],
+    "titel": "Freerunning – eigen uitvoering",
+    "type": "video_upload_score",
+    "scored_by": "leerkracht",
+    "max_score": 10,
+    "instructie": "Leerling filmt zichzelf en uploadt op Smartschool: 1 filmpje eigen uitvoering/prestatie.",
+    "bron": "Evaluatie.docx – GYM: freerunning – Jaar 6 LPD1"
+   }
+  ]
+ },
+ "ritmiek_ropeskipping": {
+  "jaren_aangeboden": [
+   4,
+   6
+  ],
+  "evaluaties": [
+   {
+    "id": "ritmiek_ropeskipping_lpd1",
+    "lpd": "LPD1",
+    "jaren": [
+     4,
+     6
+    ],
+    "titel": "Kijkwijzers ropeskipping",
+    "type": "dropdown_meerdere",
+    "scored_by": "leerkracht",
+    "max_score_ruw": 16,
+    "max_score": 10,
+    "omrekening": "totaal_ruw / 16 x 10",
+    "items": [
+     {
+      "naam": "Kijkwijzer 1",
+      "opties": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "naam": "Kijkwijzer 2",
+      "opties": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "naam": "Kijkwijzer 3",
+      "opties": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "naam": "Kijkwijzer 4",
+      "opties": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "naam": "Kijkwijzer 5",
+      "opties": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "naam": "Kijkwijzer 6",
+      "opties": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "naam": "Kijkwijzer 7",
+      "opties": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "naam": "Doorzetting",
+      "opties": [
+       0,
+       1,
+       2
+      ]
+     }
+    ],
+    "bron": "Evaluatie.docx – RITMIEK: ropeskipping – Jaar 4+6 LPD1 (jaar 4 toegevoegd, zelfde rubric, na overleg gebruiker)"
+   }
+  ]
+ },
+ "ritmiek_dans": {
+  "jaren_aangeboden": [
+   5
+  ],
+  "evaluaties": [
+   {
+    "id": "ritmiek_dans_les1",
+    "lpd": "LPD3 + LPD13",
+    "jaren": [
+     5
+    ],
+    "titel": "Zelfgemaakte choreografie",
+    "type": "rubric_klikcriteria",
+    "scored_by": "leerkracht",
+    "max_score": 10,
+    "herhaling": "Deze evaluatie wordt 2x afgenomen: einde les 1 én einde les 2.",
+    "criteria": [
+     {
+      "naam": "Algemene vordering",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Er is weinig zichtbare verandering tov de eerste les."
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Er is beperkte maar merkbare vooruitgang."
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Er is een duidelijke vooruitgang."
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Er is een zeer duidelijke persoonlijke groei, de leerling kan meer dan bij het begin."
+       }
+      ]
+     }
+    ],
+    "bron": "Evaluatie.docx – RITMIEK: dans – Jaar 5 LPD3+13 (type gecorrigeerd naar rubric_klikcriteria — bugfix)",
+    "zelfevaluatie_hint": "Zelfevaluatie via oefening in Smartschool"
+   }
+  ]
+ },
+ "klimmen": {
+  "jaren_aangeboden": [
+   5
+  ],
+  "evaluaties": [
+   {
+    "id": "klimmen_lpd8",
+    "lpd": "LPD8",
+    "jaren": [
+     5
+    ],
+    "titel": "Materiaalgebruik en leeflijn",
+    "type": "checklist_punten",
+    "scored_by": "leerkracht",
+    "max_score": 4,
+    "opties_per_item": [
+     0,
+     1,
+     2
+    ],
+    "items": [
+     {
+      "naam": "Gebruikt het juiste materiaal voor de opdracht: leeflijn voor via ferrata, musketon voor Prusik klimmen",
+      "max_punten": 2
+     },
+     {
+      "naam": "Gebruikt de leeflijn correct: er hangt altijd minstens 1 musketon vast, niet met twee musketons gelijktijdig o.w.v. remsysteem",
+      "max_punten": 2
+     }
+    ],
+    "expliciet_uitgesloten": "Zelfevaluatie op wisbordje (duo-check gordel) NIET overnemen in de app.",
+    "bron": "Evaluatie.docx – Klimmen – Jaar 5 LPD8 (max_score gecorrigeerd naar 4, per item 0/1/2 klikbaar — op vraag gebruiker)"
+   }
+  ]
+ },
+ "judo": {
+  "jaren_aangeboden": [
+   5
+  ],
+  "evaluaties": [
+   {
+    "id": "judo_lpd1",
+    "lpd": "LPD1",
+    "jaren": [
+     5
+    ],
+    "titel": "Getoonde technieken",
+    "type": "checklist_punten",
+    "scored_by": "leerkracht",
+    "max_score": 8,
+    "opties_per_item": [
+     0,
+     1,
+     2
+    ],
+    "items": [
+     {
+      "naam": "Kesa Gatame",
+      "max_punten": 2
+     },
+     {
+      "naam": "Yoko shiho gatame",
+      "max_punten": 2
+     },
+     {
+      "naam": "Achterwaartse val",
+      "max_punten": 2
+     },
+     {
+      "naam": "Zijwaartse val",
+      "max_punten": 2
+     }
+    ],
+    "bron": "Evaluatie.docx – Zelfverdediging/Judo – Jaar 5 LPD1 (max_score gecorrigeerd naar 8, per techniek 0/1/2 klikbaar i.p.v. 0/2,5 — op vraag gebruiker)",
+    "zelfevaluatie_hint": "Zelfevaluatie via oefening in Smartschool"
+   }
+  ]
+ },
+ "duurloop": {
+  "jaren_aangeboden": [
+   4,
+   5,
+   6
+  ],
+  "evaluaties": [
+   {
+    "id": "duurloop_lpd4",
+    "lpd": "LPD4",
+    "jaren": [
+     4,
+     5,
+     6
+    ],
+    "titel": "Cooper-achtige duurlooptest (8x415m = 3,3km)",
+    "type": "dropdown_tijd_lookup",
+    "scored_by": "leerkracht",
+    "max_score": 10,
+    "dropdown_jongens": [
+     "14 min",
+     "15 min",
+     "16 min",
+     "17 min",
+     "18 min",
+     "19 min",
+     "20 min",
+     "21 min",
+     "22 min",
+     "23 min",
+     "24 min"
+    ],
+    "dropdown_meisjes": [
+     "17,5 min",
+     "18,5 min",
+     "19,5 min",
+     "20,5 min",
+     "21,5 min",
+     "22,5 min",
+     "23,5 min",
+     "24,5 min",
+     "25,5 min",
+     "26,5 min",
+     "27,5 min"
+    ],
+    "tabel_jongens": {
+     "14": 10,
+     "15": 9,
+     "16": 8,
+     "17": 7,
+     "18": 6,
+     "19": 5,
+     "20": 4,
+     "21": 3,
+     "22": 2,
+     "23": 1,
+     "24": 0
+    },
+    "tabel_meisjes": {
+     "17.5": 10,
+     "18.5": 9,
+     "19.5": 8,
+     "20.5": 7,
+     "21.5": 6,
+     "22.5": 5,
+     "23.5": 4,
+     "24.5": 3,
+     "25.5": 2,
+     "26.5": 1,
+     "27.5": 0
+    },
+    "bron": "Evaluatie.docx – Duurloop – Jaar 4+5+6 LPD4 (dropdown-range aangepast aan scoretabel, na overleg gebruiker)"
+   }
+  ]
+ },
+ "fitness": {
+  "jaren_aangeboden": [
+   4,
+   5,
+   6
+  ],
+  "evaluaties": [
+   {
+    "id": "fitness_lpd5",
+    "lpd": "LPD5",
+    "jaren": [
+     4,
+     5,
+     6
+    ],
+    "titel": "Zelfreflectietaak bewegingstest",
+    "type": "dropdown_score",
+    "scored_by": "leerkracht",
+    "max_score": 4,
+    "opties": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "instructie": "Leerling vult bewegingstest in op mijn.gezondleven.be, beantwoordt reflectievragen en post resultaten + analyse in de uploadzone op Smartschool. Leerkracht kiest score o.b.v. kwaliteit van de zelfreflectie.",
+    "bron": "Evaluatie.docx – Fitness – Jaar 4+5+6 LPD5"
+   },
+   {
+    "id": "fitness_lpd6",
+    "lpd": "LPD6",
+    "jaren": [
+     4,
+     5,
+     6
+    ],
+    "titel": "Inzet, correctheid en cardio",
+    "type": "dropdown_score",
+    "scored_by": "leerkracht",
+    "max_score": 6,
+    "opties": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "aandachtspunten_niet_apart_scoren": [
+     "Correcte uitvoering van oefeningen (LPD6)",
+     "Inzet en actieve deelname",
+     "20 minuten cardio"
+    ],
+    "bron": "Evaluatie.docx – Fitness – Jaar 4+5+6 LPD6"
+   }
+  ]
+ },
+ "zwemmen": {
+  "jaren_aangeboden": [
+   4
+  ],
+  "evaluaties": [
+   {
+    "id": "zwemmen_lpd1",
+    "lpd": "LPD1",
+    "jaren": [
+     4
+    ],
+    "titel": "Schoolslag en crawl",
+    "type": "dropdown_meerdere",
+    "scored_by": "leerkracht",
+    "max_score": 8,
+    "items": [
+     {
+      "naam": "Schoolslag",
+      "max_score": 4,
+      "aandachtspunten_niet_apart_scoren": [
+       "armen",
+       "benen",
+       "pijlfase",
+       "coördinatie",
+       "hoofd onder water"
+      ]
+     },
+     {
+      "naam": "Crawl",
+      "max_score": 4,
+      "aandachtspunten_niet_apart_scoren": [
+       "armen",
+       "benen",
+       "coördinatie",
+       "hoofd onder water"
+      ]
+     }
+    ],
+    "bron": "Evaluatie.docx – Zwemmen – Jaar 4 LPD1 (aandachtspunten = richtlijnen, geen aparte items, bevestigd gebruiker)"
+   },
+   {
+    "id": "zwemmen_lpd8",
+    "lpd": "LPD8",
+    "jaren": [
+     4
+    ],
+    "titel": "In orde zijn",
+    "type": "vrije_score",
+    "scored_by": "leerkracht",
+    "max_score": 2,
+    "bron": "Evaluatie.docx – Zwemmen – Jaar 4 LPD8"
+   }
+  ]
+ },
+ "baseball": {
+  "jaren_aangeboden": [
+   4,
+   5,
+   6
+  ],
+  "evaluaties": [
+   {
+    "id": "baseball_lpd12",
+    "lpd": "LPD12",
+    "jaren": [
+     4,
+     5,
+     6
+    ],
+    "titel": "Fairplay, sportiviteit en teambijdrage",
+    "type": "rubric_klikcriteria",
+    "scored_by": "leerkracht",
+    "max_score": 5,
+    "omrekening": "gemiddelde_van_criteria_op_10_omgerekend_naar_5",
+    "criteria": [
+     {
+      "naam": "Fairplay en sportiviteit – zich kunnen neerleggen bij het besluit van de scheidsrechter",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Protesteert of reageert regelmatig onsportief."
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Reageert soms negatief op beslissingen."
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Sportief. Aanvaardt beslissingen, soms kort teleurgesteld."
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Altijd sportief. Aanvaardt beslissingen onmiddellijk."
+       }
+      ]
+     },
+     {
+      "naam": "Bijdrage aan het team en inzet/prestatie binnen de rol van teamspeler",
+      "niveaus": [
+       {
+        "label": "Zwak",
+        "punten": 2.5,
+        "omschrijving": "Weinig inzet en betrokkenheid."
+       },
+       {
+        "label": "Voldoende",
+        "punten": 5,
+        "omschrijving": "Wisselende inzet en beperkte bijdrage."
+       },
+       {
+        "label": "Goed",
+        "punten": 7.5,
+        "omschrijving": "Actief en gemotiveerd. Goede bijdrage aan het team."
+       },
+       {
+        "label": "Uitstekend",
+        "punten": 10,
+        "omschrijving": "Zeer actief, gemotiveerd en belangrijke bijdrage aan het team."
+       }
+      ]
+     }
+    ],
+    "bron": "Evaluatie.docx – Baseball – Jaar 4+5+6 LPD12"
+   }
+  ]
+ },
+ "boulderen": {
+  "jaren_aangeboden": [
+   6
+  ],
+  "evaluaties": [
+   {
+    "id": "boulderen_lpd8",
+    "lpd": "LPD8",
+    "jaren": [
+     6
+    ],
+    "titel": "Gedrag in de klimzaal",
+    "type": "plus_min_tracker",
+    "scored_by": "leerkracht",
+    "start_score": 5,
+    "max_score": 8,
+    "min_score": 0,
+    "richtlijnen": [
+     "Traject naar klimzaal",
+     "Houden aan regels van de klimzaal (bv. niet voorbij de lijn, ...)",
+     "Afspraak = 80% van de tijd klimmen"
+    ],
+    "bron": "Evaluatie.docx – Boulderen – Jaar 6 LPD8"
+   }
+  ]
+ },
+ "kledij": {
+  "type_globaal": "permanente_evaluatie",
+  "jaren_aangeboden": [
+   4,
+   5,
+   6
+  ],
+  "menu": "apart, los van lesthema's",
+  "evaluatie": {
+   "type": "plus_min_tracker",
+   "scored_by": "leerkracht",
+   "start_score": 10,
+   "max_score": 10,
+   "min_score": 0,
+   "aftrek_per_overtreding": 3,
+   "reset": "handmatige knop per DW (5x per jaar) via Resultaten-scherm (gecombineerd met thema-scores), niet automatisch. Reset zet terug op 10/10."
+  },
+  "bron": "Evaluatie.docx – Kledij"
+ },
+ "overige_themas_vrije_score": {
+  "toepassing": [
+   "Varia",
+   "Padel + Fietsen",
+   "Frisbee",
+   "Trampoline + Schaatsen",
+   "Fietsen",
+   "Kennismaking"
+  ],
+  "type": "vrije_score_optioneel",
+  "scored_by": "leerkracht",
+  "max_score": 10,
+  "gedrag": "Indien de leerkracht niets invult, telt dit niet mee voor het rapport.",
+  "bron": "Evaluatie.docx – slotzin"
+ },
+ "GYM_piramidenbouw": {
+  "jaren_aangeboden": [
+   4
+  ],
+  "evaluaties": [
+   {
+    "id": "gym_acrogym_lpd9",
+    "lpd": "LPD9",
+    "jaren": [
+     4
+    ],
+    "titel": "Moeilijkheidsgraad en show piramide",
+    "type": "checklist_punten",
+    "scored_by": "leerkracht",
+    "max_score": 10,
+    "opties_per_item": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "items": [
+     {
+      "naam": "Moeilijkheidsgraad",
+      "max_punten": 5
+     },
+     {
+      "naam": "Show (opkomst, verbindingen, slot, kleding en muziek, kijken naar publiek, afwerking, ...)",
+      "max_punten": 5
+     }
+    ],
+    "bron": "Evaluatie.docx – GYM: Piramiden – Jaar 4 LPD9 (vereenvoudigd naar vlakke schaal op 10 — bugfix)",
+    "zelfevaluatie_hint": "Zelfevaluatie via oefening in Smartschool"
+   }
+  ]
+ }
 }

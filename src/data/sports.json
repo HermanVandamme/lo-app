@@ -6,13 +6,6 @@
       4,
       5,
       6
-    ],
-    "panels": [
-      "opwarming",
-      "oefening_1",
-      "oefening_2",
-      "eindspel",
-      "evaluatie"
     ]
   },
   "volleybal": {
@@ -22,13 +15,6 @@
       4,
       5,
       6
-    ],
-    "panels": [
-      "opwarming",
-      "oefening_1",
-      "oefening_2",
-      "eindspel",
-      "evaluatie"
     ]
   },
   "badminton": {
@@ -38,13 +24,6 @@
       4,
       5,
       6
-    ],
-    "panels": [
-      "opwarming",
-      "oefening_1",
-      "oefening_2",
-      "eindspel",
-      "evaluatie"
     ]
   },
   "voetbal": {
@@ -52,13 +31,6 @@
     "locatie": "SPORTHAL",
     "jaren": [
       5
-    ],
-    "panels": [
-      "opwarming",
-      "oefening_1",
-      "oefening_2",
-      "eindspel",
-      "evaluatie"
     ]
   },
   "handbal": {
@@ -67,13 +39,6 @@
     "jaren": [
       4,
       6
-    ],
-    "panels": [
-      "opwarming",
-      "oefening_1",
-      "oefening_2",
-      "eindspel",
-      "evaluatie"
     ]
   },
   "frisbee": {
@@ -83,13 +48,6 @@
       4,
       5,
       6
-    ],
-    "panels": [
-      "opwarming",
-      "oefening_1",
-      "oefening_2",
-      "eindspel",
-      "evaluatie"
     ]
   },
   "conditie": {
@@ -99,13 +57,6 @@
       4,
       5,
       6
-    ],
-    "panels": [
-      "opwarming",
-      "oefening_1",
-      "oefening_2",
-      "eindspel",
-      "evaluatie"
     ]
   },
   "ehbo": {
@@ -114,12 +65,6 @@
     "jaren": [
       4,
       6
-    ],
-    "panels": [
-      "oefening_1",
-      "oefening_2",
-      "eindspel",
-      "evaluatie"
     ]
   },
   "gym_loopoverslag": {
@@ -127,9 +72,6 @@
     "locatie": "TURNZAAL",
     "jaren": [
       5
-    ],
-    "panels": [
-      "evaluatie"
     ]
   },
   "gym_freerunning": {
@@ -137,13 +79,6 @@
     "locatie": "TURNZAAL",
     "jaren": [
       6
-    ],
-    "panels": [
-      "opwarming",
-      "oefening_1",
-      "oefening_2",
-      "eindspel",
-      "evaluatie"
     ]
   },
   "ritmiek_dans": {
@@ -151,13 +86,6 @@
     "locatie": "TURNZAAL",
     "jaren": [
       5
-    ],
-    "panels": [
-      "opwarming",
-      "oefening_1",
-      "oefening_2",
-      "eindspel",
-      "evaluatie"
     ]
   },
   "ritmiek_ropeskipping": {
@@ -166,13 +94,6 @@
     "jaren": [
       4,
       6
-    ],
-    "panels": [
-      "opwarming",
-      "oefening_1",
-      "oefening_2",
-      "eindspel",
-      "evaluatie"
     ]
   },
   "judo": {
@@ -180,13 +101,6 @@
     "locatie": "TURNZAAL",
     "jaren": [
       5
-    ],
-    "panels": [
-      "opwarming",
-      "oefening_1",
-      "oefening_2",
-      "eindspel",
-      "evaluatie"
     ]
   },
   "klimmen": {
@@ -194,13 +108,6 @@
     "locatie": "TURNZAAL",
     "jaren": [
       5
-    ],
-    "panels": [
-      "opwarming",
-      "oefening_1",
-      "oefening_2",
-      "eindspel",
-      "evaluatie"
     ]
   },
   "duurloop": {
@@ -210,10 +117,6 @@
       4,
       5,
       6
-    ],
-    "panels": [
-      "opwarming",
-      "evaluatie"
     ]
   },
   "fietsen": {
@@ -221,9 +124,6 @@
     "locatie": "ALTERNATIEF",
     "jaren": [
       5
-    ],
-    "panels": [
-      "evaluatie"
     ]
   },
   "fitness": {
@@ -233,9 +133,6 @@
       4,
       5,
       6
-    ],
-    "panels": [
-      "evaluatie"
     ]
   },
   "trampoline_schaatsen": {
@@ -243,9 +140,6 @@
     "locatie": "ALTERNATIEF",
     "jaren": [
       5
-    ],
-    "panels": [
-      "evaluatie"
     ]
   },
   "boulderen": {
@@ -253,9 +147,6 @@
     "locatie": "ALTERNATIEF",
     "jaren": [
       6
-    ],
-    "panels": [
-      "evaluatie"
     ]
   },
   "padel_fietsen": {
@@ -263,9 +154,6 @@
     "locatie": "ALTERNATIEF",
     "jaren": [
       4
-    ],
-    "panels": [
-      "evaluatie"
     ]
   },
   "zwemmen": {
@@ -273,9 +161,6 @@
     "locatie": "ALTERNATIEF",
     "jaren": [
       4
-    ],
-    "panels": [
-      "evaluatie"
     ]
   },
   "baseball": {
@@ -285,10 +170,6 @@
       4,
       5,
       6
-    ],
-    "panels": [
-      "eindspel",
-      "evaluatie"
     ]
   },
   "varia": {
@@ -297,9 +178,6 @@
     "jaren": [
       4,
       6
-    ],
-    "panels": [
-      "evaluatie"
     ]
   },
   "GYM_piramidenbouw": {
@@ -307,13 +185,15 @@
     "locatie": "TURNZAAL",
     "jaren": [
       4
-    ],
-    "panels": [
-      "opwarming",
-      "oefening_1",
-      "oefening_2",
-      "eindspel",
-      "evaluatie"
+    ]
+  },
+  "kennismaking": {
+    "naam": "Kennismaking",
+    "locatie": "ALTERNATIEF",
+    "jaren": [
+      4,
+      5,
+      6
     ]
   }
 }

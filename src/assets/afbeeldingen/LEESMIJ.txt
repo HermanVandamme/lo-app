@@ -1,0 +1,19 @@
+AFBEELDINGEN PER THEMA
+======================
+Maak hier per thema een map met EXACT de themasleutel als naam, bv.:
+
+  src/assets/afbeeldingen/judo/01_kesa-gatame.jpg
+  src/assets/afbeeldingen/gym_freerunning/02_safety-vault.png
+
+Regels:
+1. Mapnaam = themasleutel uit src/data/sports.json (hoofdlettergevoelig),
+   bv. basketbal, judo, gym_freerunning, ritmiek_ropeskipping, GYM_piramidenbouw.
+2. Bestandsnaam begint met een nummer (01_, 02_, ...) -> bepaalt de volgorde.
+   De rest van de naam wordt het bijschrift onder de foto.
+3. Toegelaten: .jpg .jpeg .png .webp
+
+De blauwe knop "Afbeeldingen" verschijnt automatisch bij een thema
+zodra er minstens een afbeelding in zijn map staat. Niets in te stellen.
+
+LET OP: dit is NIET public/images. Die map bevat de themafoto's
+(een bestand per thema, exact <themasleutel>.jpg) voor de tegels op het beginscherm.
