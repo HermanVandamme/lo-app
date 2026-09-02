@@ -89,34 +89,6 @@ function OefeningInhoud({ oefening }) {
         </div>
       )}
 
-      {/* Afbeeldingen — onderaan, enkel als er foto's in src/assets/afbeeldingen/<sportId>/ staan */}
-      {afbeeldingen.length > 0 && (
-        <div className="mt-5">
-          <Balk
-            kleur={KLEUR.afbeelding}
-            icoon="🖼"
-            titel={`Afbeeldingen (${afbeeldingen.length})`}
-            open={open === 'afbeeldingen'}
-            onToggle={() => toggle('afbeeldingen')}
-          >
-            <div className="max-h-[70vh] overflow-y-auto -mx-1 px-1 space-y-4">
-              {afbeeldingen.map(afb => (
-                <figure key={afb.bestand}>
-                  <img
-                    src={afb.url}
-                    alt={afb.bijschrift}
-                    loading="lazy"
-                    className="w-full rounded-xl border border-gray-100"
-                  />
-                  {afb.bijschrift && (
-                    <figcaption className="text-xs text-gray-500 mt-1 px-0.5">{afb.bijschrift}</figcaption>
-                  )}
-                </figure>
-              ))}
-            </div>
-          </Balk>
-        </div>
-      )}
     </div>
   )
 }
