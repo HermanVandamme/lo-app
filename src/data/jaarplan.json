@@ -1,0 +1,53 @@
+{
+  "4": [
+    { "thema": "Basketbal", "locatie": "SPORTHAL", "lpd": ["LPD2", "LPD8", "LPD11"] },
+    { "thema": "Frisbee", "locatie": "SPORTHAL", "lpd": ["LPD1", "LPD8", "LPD12"] },
+    { "thema": "Handbal", "locatie": "SPORTHAL", "lpd": ["LPD1", "LPD2", "LPD11"] },
+    { "thema": "Volleybal", "locatie": "SPORTHAL", "lpd": ["LPD1", "LPD2", "LPD8"] },
+    { "thema": "Badminton", "locatie": "SPORTHAL", "lpd": ["LPD1", "LPD2", "LPD12"] },
+    { "thema": "Conditie", "locatie": "TURNZAAL", "lpd": ["LPD4", "LPD5", "LPD13"] },
+    { "thema": "EHBO (LPD10 = peerevaluatie)", "locatie": "TURNZAAL", "lpd": ["LPD3", "LPD7", "LPD10"] },
+    { "thema": "Gym (piramide)", "locatie": "TURNZAAL", "lpd": ["LPD6", "LPD9", "LPD13"] },
+    { "thema": "Ritmiek: ropeskipping", "locatie": "TURNZAAL", "lpd": ["LPD1", "LPD13"] },
+    { "thema": "Varia", "locatie": "TURNZAAL", "lpd": [] },
+    { "thema": "Loopdisciplines (duurloop)", "locatie": "ALTERNATIEF", "lpd": ["LPD4", "LPD5", "LPD13"] },
+    { "thema": "Padel + Fietsen", "locatie": "ALTERNATIEF", "lpd": ["LPD1", "LPD8", "LPD12"] },
+    { "thema": "Fitness", "locatie": "ALTERNATIEF", "lpd": ["LPD4", "LPD5", "LPD6"] },
+    { "thema": "Zwemmen (les 1 = Schoolslag, les 2 = Crawl)", "locatie": "ALTERNATIEF", "lpd": ["LPD1", "LPD8", "LPD13"] },
+    { "thema": "Baseball", "locatie": "ALTERNATIEF", "lpd": ["LPD2", "LPD8", "LPD12"] }
+  ],
+  "5": [
+    { "thema": "Basketbal", "locatie": "SPORTHAL", "lpd": ["LPD2", "LPD8", "LPD11"] },
+    { "thema": "Frisbee", "locatie": "SPORTHAL", "lpd": ["LPD1", "LPD8", "LPD12"] },
+    { "thema": "Voetbal", "locatie": "SPORTHAL", "lpd": ["LPD2", "LPD8", "LPD11"] },
+    { "thema": "Volleybal", "locatie": "SPORTHAL", "lpd": ["LPD1", "LPD2", "LPD8"] },
+    { "thema": "Badminton", "locatie": "SPORTHAL", "lpd": ["LPD1", "LPD2", "LPD12"] },
+    { "thema": "Conditie", "locatie": "TURNZAAL", "lpd": ["LPD4", "LPD5", "LPD13"] },
+    { "thema": "Klimmen", "locatie": "TURNZAAL", "lpd": ["LPD1", "LPD8", "LPD13"] },
+    { "thema": "Gym (loopoverslag)", "locatie": "TURNZAAL", "lpd": ["LPD1", "LPD6", "LPD9"] },
+    { "thema": "Ritmiek: dans", "locatie": "TURNZAAL", "lpd": ["LPD3", "LPD10", "LPD13"] },
+    { "thema": "Zelfverdediging", "locatie": "TURNZAAL", "lpd": ["LPD1", "LPD8", "LPD11"] },
+    { "thema": "Loopdisciplines (duurloop)", "locatie": "ALTERNATIEF", "lpd": ["LPD4", "LPD5", "LPD13"] },
+    { "thema": "Fietsen", "locatie": "ALTERNATIEF", "lpd": ["LPD4", "LPD8"] },
+    { "thema": "Fitness", "locatie": "ALTERNATIEF", "lpd": ["LPD4", "LPD5", "LPD6"] },
+    { "thema": "Trampoline + Schaatsen", "locatie": "ALTERNATIEF", "lpd": ["LPD4", "LPD8", "LPD9"] },
+    { "thema": "Baseball", "locatie": "ALTERNATIEF", "lpd": ["LPD2", "LPD8", "LPD12"] }
+  ],
+  "6": [
+    { "thema": "Basketbal", "locatie": "SPORTHAL", "lpd": ["LPD2", "LPD8", "LPD11"] },
+    { "thema": "Frisbee", "locatie": "SPORTHAL", "lpd": ["LPD1", "LPD8", "LPD12"] },
+    { "thema": "Handbal", "locatie": "SPORTHAL", "lpd": ["LPD1", "LPD2", "LPD11"] },
+    { "thema": "Volleybal", "locatie": "SPORTHAL", "lpd": ["LPD1", "LPD2", "LPD8"] },
+    { "thema": "Badminton", "locatie": "SPORTHAL", "lpd": ["LPD1", "LPD2", "LPD12"] },
+    { "thema": "Conditie", "locatie": "TURNZAAL", "lpd": ["LPD4", "LPD5", "LPD13"] },
+    { "thema": "EHBO (LPD10 = peerevaluatie)", "locatie": "TURNZAAL", "lpd": ["LPD3", "LPD7", "LPD10"] },
+    { "thema": "Gym (freerunning)", "locatie": "TURNZAAL", "lpd": ["LPD1", "LPD6", "LPD13"] },
+    { "thema": "Ritmiek: ropeskipping", "locatie": "TURNZAAL", "lpd": ["LPD1", "LPD13"] },
+    { "thema": "Varia", "locatie": "TURNZAAL", "lpd": [] },
+    { "thema": "Loopdisciplines (duurloop)", "locatie": "ALTERNATIEF", "lpd": ["LPD4", "LPD5", "LPD13"] },
+    { "thema": "Varia (gaelic football / inhalen gemiste les)", "locatie": "ALTERNATIEF", "lpd": [] },
+    { "thema": "Fitness", "locatie": "ALTERNATIEF", "lpd": ["LPD4", "LPD5", "LPD6"] },
+    { "thema": "Boulderen", "locatie": "ALTERNATIEF", "lpd": ["LPD1", "LPD8", "LPD13"] },
+    { "thema": "Baseball", "locatie": "ALTERNATIEF", "lpd": ["LPD2", "LPD8", "LPD12"] }
+  ]
+}

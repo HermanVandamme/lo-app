@@ -3,7 +3,8 @@ import { useState } from 'react'
 import sportsData from '../data/sports.json'
 import { oefeningenVoor, extraKnoppenVoor } from '../utils/oefeningen'
 import { afbeeldingenVoor } from '../utils/afbeeldingen'
-import { evaluatieLabel } from '../utils/evaluatieLabel'
+import { evaluatieLabel, evaluatieLpdNummers } from '../utils/evaluatieLabel'
+import { lpdOmschrijvingen } from '../utils/lpdData'
 import EvaluatieScherm from '../components/EvaluatieScherm'
 import FormattedText from '../components/FormattedText'
 
@@ -148,6 +149,22 @@ export default function SportDetail() {
                     open={open === `${key}:evaluatie`}
                     onToggle={() => toggle(`${key}:evaluatie`)}
                   >
+                    {lpdOmschrijvingen(evaluatieLpdNummers(sportId, nr)).length > 0 && (
+                      <div className="mb-3 space-y-2">
+                        {lpdOmschrijvingen(evaluatieLpdNummers(sportId, nr)).map(({ nr: lpdNr, omschrijving }) => (
+                          <div
+                            key={lpdNr}
+                            className="rounded-xl px-3 py-2 border-l-4 text-gray-700"
+                            style={{ background: '#EAFAF1', borderColor: KLEUR.evaluatie }}
+                          >
+                            <p className="text-xs font-bold uppercase tracking-wide mb-0.5" style={{ color: '#1E8449' }}>
+                              LPD {lpdNr}
+                            </p>
+                            <p className="text-sm leading-snug">{omschrijving}</p>
+                          </div>
+                        ))}
+                      </div>
+                    )}
                     <EvaluatieScherm sportId={sportId} graadFilter={key} />
                   </Balk>
 

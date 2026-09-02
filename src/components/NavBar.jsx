@@ -4,6 +4,7 @@ const NAV_ITEMS = [
   { to: '/',           label: 'Sporten',    icon: '🏅' },
   { to: '/evaluatie',  label: 'Evaluatie',  icon: '📋' },
   { to: '/resultaten', label: 'Resultaten', icon: '📊' },
+  { to: '/jaarplan',   label: 'Jaarplan',   icon: '📅' },
   { to: '/admin',      label: 'Admin',      icon: '⚙️' },
 ]
 
@@ -12,10 +13,7 @@ export default function NavBar() {
 
   return (
     <header className="sticky top-0 z-50 safe-top" style={{ background: '#2C3E50' }}>
-      <div className="container mx-auto px-4 max-w-3xl flex items-center justify-between h-14">
-        <Link to="/" className="text-white font-bold text-lg tracking-tight">
-          LO APP
-        </Link>
+      <div className="container mx-auto px-4 max-w-3xl flex items-center justify-center h-14">
         <nav className="flex gap-1">
           {NAV_ITEMS.map(({ to, label, icon }) => {
             const active = pathname === to || (to !== '/' && pathname.startsWith(to))

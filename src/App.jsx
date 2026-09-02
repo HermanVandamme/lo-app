@@ -6,6 +6,7 @@ import SportDetail from './pages/SportDetail'
 import SportEvaluatie from './pages/SportEvaluatie'
 import Evaluatie from './pages/Evaluatie'
 import Resultaten from './pages/Resultaten'
+import Jaarplan from './pages/Jaarplan'
 import Admin from './pages/Admin'
 
 function AppShell() {
@@ -20,6 +21,7 @@ function AppShell() {
           <Route path="/sport/:sportId/graad/:graad/evaluatie" element={<SportEvaluatie />} />
           <Route path="/evaluatie" element={<Evaluatie />} />
           <Route path="/resultaten" element={<Resultaten />} />
+          <Route path="/jaarplan" element={<Jaarplan />} />
           <Route path="/admin" element={<Admin />} />
         </Routes>
       </main>

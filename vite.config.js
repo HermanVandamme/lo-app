@@ -16,7 +16,7 @@ export default defineConfig(({ mode }) => {
     plugins: [
       react(),
       VitePWA({
-        registerType: 'prompt',       // toon update-prompt i.p.v. stille autoUpdate
+        registerType: 'autoUpdate',   // nieuwe versie meteen actief, geen hangende oude service worker
         injectRegister: 'auto',
 
         // ── Precache: alle app-bestanden + assets ───────────────────────────
@@ -53,6 +53,8 @@ export default defineConfig(({ mode }) => {
           globPatterns: ['**/*.{js,css,html,ico,png,svg,jpg,webp,json}'],
 
           cleanupOutdatedCaches: true,
+          skipWaiting: true,
+          clientsClaim: true,
 
           // SPA-routing offline: alle navigaties → index.html
           // GitHub Pages 404.html zorgt voor de eerste load van diepe URLs.
