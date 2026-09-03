@@ -16,7 +16,13 @@ export default defineConfig(({ mode }) => {
     plugins: [
       react(),
       VitePWA({
-        registerType: 'autoUpdate',   // nieuwe versie meteen actief, geen hangende oude service worker
+        // 'prompt': de app toont zelf een update-toast (InstallPrompt.jsx) en laat de
+        // gebruiker het moment kiezen. NIET op 'autoUpdate' met skipWaiting/clientsClaim
+        // zetten: een nieuwe service worker neemt dan een AL GELADEN pagina over, terwijl
+        // die pagina nog naar de oude, intussen verwijderde bestandsnamen verwijst. Gevolg:
+        // 'failed to fetch dynamically imported module', en een pdf.worker die niet laadt
+        // waardoor pdf.js op de hoofddraad verder rekent (tientallen keren trager).
+        registerType: 'prompt',
         injectRegister: 'auto',
 
         // ── Precache: alle app-bestanden + assets ───────────────────────────
@@ -50,11 +56,12 @@ export default defineConfig(({ mode }) => {
         // ── Workbox ─────────────────────────────────────────────────────────
         workbox: {
           // Precache: JS, CSS, HTML, afbeeldingen, JSON-data
-          globPatterns: ['**/*.{js,css,html,ico,png,svg,jpg,webp,json}'],
+          // .mjs staat er expliciet bij: de pdf.js-worker is een .mjs-bestand. Zonder
+          // die extensie werd hij nooit vooraf opgeslagen en moest hij telkens van het
+          // net komen; mislukt dat, dan valt pdf.js terug op de trage hoofddraad.
+          globPatterns: ['**/*.{js,mjs,css,html,ico,png,svg,jpg,webp,json}'],
 
           cleanupOutdatedCaches: true,
-          skipWaiting: true,
-          clientsClaim: true,
 
           // SPA-routing offline: alle navigaties → index.html
           // GitHub Pages 404.html zorgt voor de eerste load van diepe URLs.
