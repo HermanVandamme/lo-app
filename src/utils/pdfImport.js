@@ -146,12 +146,17 @@ export async function extractFotoBboxenVanPagina(page) {
 }
 
 /**
- * Rendert de volledige pagina naar een canvas (schaal zodat de output-
- * resolutie ongeveer overeenkomt met de ingebedde foto-resolutie, hier
- * 256x256px over ~85pt -> schaal 3) en snijdt daaruit, per gevonden bbox,
- * de losse foto's — als PNG-blob, klaar om te tonen of op te slaan.
+ * Rendert de volledige pagina één keer naar een canvas en snijdt daaruit, per
+ * gevonden bbox, de losse foto's — als JPEG-blob, klaar om te tonen of op te
+ * slaan. De schaal bepaalt zowel de scherpte als de rekentijd; zie hieronder.
  */
-const RENDER_SCALE = 3
+// Schaal waarop een pagina getekend wordt vóór de pasfoto's eruit geknipt worden.
+// De rekentijd stijgt met het KWADRAAT van deze waarde: schaal 3 is ruim twee
+// keer zo duur als schaal 2. De foto's worden in de app getoond op 32 tot 64
+// pixels; op schaal 2 is een uitgeknipte foto nog altijd ongeveer 200x260 pixels,
+// dus ruim scherp genoeg. Zet dit op 1.5 als je nog sneller wil, of terug op 3
+// als je de foto's scherper wil hebben.
+const RENDER_SCALE = 2
 
 export async function renderEnCropFotos(page, fotoBboxen) {
   const viewport = page.getViewport({ scale: RENDER_SCALE })
@@ -176,7 +181,10 @@ export async function renderEnCropFotos(page, fotoBboxen) {
     cropCanvas.height = Math.max(1, Math.round(sh))
     cropCanvas.getContext('2d').drawImage(pageCanvas, sx, sy, sw, sh, 0, 0, cropCanvas.width, cropCanvas.height)
 
-    const blob = await new Promise(resolve => cropCanvas.toBlob(resolve, 'image/png'))
+    // JPEG i.p.v. PNG: een pasfoto als PNG is al snel 200-400 kB en traag om te
+    // coderen, als JPEG ongeveer 20 kB. Dat scheelt zowel tijd als plaats in de
+    // lokale database.
+    const blob = await new Promise(resolve => cropCanvas.toBlob(resolve, 'image/jpeg', 0.85))
     resultaten.push({
       objId: foto.objId,
       bboxPdf: foto.bboxPdf,
