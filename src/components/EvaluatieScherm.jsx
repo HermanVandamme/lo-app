@@ -278,8 +278,12 @@ function LeerlingFocus({
   leerling, index, aantal, items, totaal,
   waardenVoorItem, onSet, onVorige, onVolgende, onTerug,
 }) {
-  // Bij het wisselen van leerling weer bovenaan beginnen.
-  useEffect(() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }, [index])
+  // Bij het wisselen van leerling weer bovenaan beginnen — zonder animatie, en
+  // alleen als er effectief gescrold is. Een vloeiende scroll laat het scherm
+  // bij elke leerling zichtbaar bewegen, wat onrustig oogt.
+  useEffect(() => {
+    if (window.scrollY > 0) window.scrollTo({ top: 0, behavior: 'auto' })
+  }, [index])
 
   const laatste = index >= aantal - 1
 

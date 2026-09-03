@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import db from '../db/db'
-import { parseStudentsCsv, importStudentsToDb, importPhotoForStudent } from '../utils/csvImport'
+import { parseStudentsCsv, parseKlassenCsv, importStudentsToDb, importPhotoForStudent } from '../utils/csvImport'
 import { useKlassen } from '../hooks/useStudents'
 import { jaarNummerFromGraad } from '../utils/graad'
 import { getEvaluatiesVoorSport, getKledijConfig } from '../utils/evaluatieData'
@@ -28,17 +28,12 @@ export default function Admin() {
     if (!file) return
     try {
       const text = await file.text()
-      // classes.csv: klas_id, naam (of enkel klas_id kolom)
-      const lines = text.trim().split('\n')
-      const headers = lines[0].replace(/^\uFEFF/, '').split(',').map(h => h.trim())
-      const rows = lines.slice(1).map(line => {
-        const vals = line.split(',').map(v => v.trim())
-        return Object.fromEntries(headers.map((h, i) => [h, vals[i] ?? '']))
-      }).filter(r => r.klas_id)
+      // classes.csv: klas_id, naam (of enkel de kolom klas_id)
+      const { rows, waarschuwingen } = parseKlassenCsv(text)
       const klassen = rows.map(r => ({ id: r.klas_id.toLowerCase(), naam: (r.naam || r.klas_id).toUpperCase() }))
       await db.klassen.clear()
       await db.klassen.bulkPut(klassen)
-      setMsg('classes', `✓ ${klassen.length} klassen geïmporteerd.`)
+      setMsg('classes', `✓ ${klassen.length} klassen geïmporteerd.${waarschuwingTekst(waarschuwingen)}`)
     } catch (err) {
       setMsg('classes', `Fout: ${err.message}`)
     }
@@ -50,11 +45,11 @@ export default function Admin() {
     if (!file) return
     try {
       const text = await file.text()
-      const rows = parseStudentsCsv(text)
+      const { rows, waarschuwingen } = parseStudentsCsv(text)
       // Clear before re-import to prevent duplicates
       await db.leerlingen.clear()
       const result = await importStudentsToDb(db, rows)
-      setMsg('students', `✓ ${result.leerlingen} leerlingen in ${result.klassen} klassen geïmporteerd.`)
+      setMsg('students', `✓ ${result.leerlingen} leerlingen in ${result.klassen} klassen geïmporteerd.${waarschuwingTekst(waarschuwingen)}`)
     } catch (err) {
       setMsg('students', `Fout: ${err.message}`)
     }
@@ -290,6 +285,14 @@ export default function Admin() {
       </div>
     </div>
   )
+}
+
+/** Vat de waarschuwingen van de CSV-parser samen achter de succesmelding. */
+function waarschuwingTekst(waarschuwingen) {
+  if (!waarschuwingen?.length) return ''
+  const eerste = waarschuwingen.slice(0, 3).join('; ')
+  const rest = waarschuwingen.length > 3 ? ` en ${waarschuwingen.length - 3} andere` : ''
+  return `  ⚠ Controleer ${eerste}${rest}.`
 }
 
 /* ── Opslagstatus: is de lokale opslag beschermd tegen opruimen? ── */
