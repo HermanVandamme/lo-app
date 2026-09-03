@@ -293,7 +293,16 @@ function LeerlingFocus({
       </div>
 
       <div className="flex items-center gap-3 mb-4">
-        <LeerlingFoto leerling={leerling} size={16} />
+        {/* Op de foto klikken brengt je ook terug naar de lijst. */}
+        <button
+          type="button"
+          onClick={onTerug}
+          title="Terug naar de lijst"
+          aria-label="Terug naar de lijst"
+          className="rounded-full ring-2 ring-transparent hover:ring-gray-300 active:scale-95 transition-transform flex-shrink-0"
+        >
+          <LeerlingFoto leerling={leerling} size={16} />
+        </button>
         <div className="flex-1 min-w-0">
           <p className="font-bold text-lg leading-tight" style={{ color: '#2C3E50' }}>
             {leerling.voornaam} {leerling.achternaam}

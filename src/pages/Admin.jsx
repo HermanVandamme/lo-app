@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import db from '../db/db'
 import { parseStudentsCsv, importStudentsToDb, importPhotoForStudent } from '../utils/csvImport'
@@ -9,6 +9,7 @@ import { berekenEvaluatieScore } from '../utils/evaluatieScoring'
 import { downloadCsv, SCORE_HEADER, scoreRij, kledijScoreRij } from '../utils/csvExport'
 import sportsData from '../data/sports.json'
 import PdfImport from '../components/PdfImport'
+import { opslagStatus } from '../utils/opslag'
 
 export default function Admin() {
   const klassen = useKlassen()
@@ -155,10 +156,11 @@ export default function Admin() {
 
   async function handleClearAll() {
     if (!confirm('Alle leerlingdata en scores wissen? Dit kan niet ongedaan worden.')) return
-    await db.transaction('rw', db.klassen, db.leerlingen, db.scores, async () => {
+    await db.transaction('rw', db.klassen, db.leerlingen, db.scores, db.kledij, async () => {
       await db.klassen.clear()
       await db.leerlingen.clear()
       await db.scores.clear()
+      await db.kledij.clear()
     })
     setMessages({ clear: 'Alle data gewist.' })
   }
@@ -172,6 +174,8 @@ export default function Admin() {
         <strong>Privacy:</strong> Alle leerlingdata wordt enkel lokaal opgeslagen (IndexedDB).
         Niets verlaat dit toestel.
       </div>
+
+      <OpslagRegel />
 
       {/* Status-overzicht */}
       <div className="grid grid-cols-3 gap-2 mb-5">
@@ -284,6 +288,37 @@ export default function Admin() {
         </button>
         {messages.clear && <p className="mt-2 text-sm text-green-600">{messages.clear}</p>}
       </div>
+    </div>
+  )
+}
+
+/* ── Opslagstatus: is de lokale opslag beschermd tegen opruimen? ── */
+function OpslagRegel() {
+  const [status, setStatus] = useState(null)
+
+  useEffect(() => {
+    let actief = true
+    opslagStatus().then(s => { if (actief) setStatus(s) })
+    return () => { actief = false }
+  }, [])
+
+  if (!status) return null
+
+  const beschermd = status.ondersteund && status.persistent
+  return (
+    <div
+      className="rounded-xl px-3 py-2 mb-4 text-xs border"
+      style={beschermd
+        ? { background: '#EAFAF1', borderColor: '#A9DFBF', color: '#1E8449' }
+        : { background: '#FEF9E7', borderColor: '#F5D76E', color: '#9A7D0A' }}
+    >
+      <strong>Opslag:</strong>{' '}
+      {!status.ondersteund
+        ? 'deze browser geeft geen garantie. Zet de app op je beginscherm en exporteer regelmatig.'
+        : beschermd
+          ? 'beschermd — de browser ruimt je scores niet op bij plaatsgebrek.'
+          : 'nog niet beschermd. Zet de app op je beginscherm; daarna wordt de aanvraag meestal toegekend.'}
+      {status.gebruiktMb != null && <span className="ml-1 opacity-70">({status.gebruiktMb} MB in gebruik)</span>}
     </div>
   )
 }
