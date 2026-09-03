@@ -1,14 +1,9 @@
 import { useState } from 'react'
 import jaarplanData from '../data/jaarplan.json'
 import lpdData from '../data/lpd.json'
+import { LOCATIE_KLEUR } from '../utils/locatieKleur'
 
 const KLEUR = { donker: '#2C3E50', evaluatie: '#27AE60' }
-
-const LOCATIE_KLEUR = {
-  SPORTHAL:    '#2980B9',
-  TURNZAAL:    '#8E44AD',
-  ALTERNATIEF: '#16A085',
-}
 
 function lpdNummer(code) {
   const match = String(code).match(/\d+/)

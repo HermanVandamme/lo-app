@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import sportsData from '../data/sports.json'
+import { LOCATIE_VOLGORDE, LOCATIE_LABEL, locatieKleur } from '../utils/locatieKleur'
 
 const SPORT_KLEUR = {
   basketbal:      '#E67E22',
@@ -16,9 +17,6 @@ const SPORT_KLEUR = {
   gymnastiek:     '#6C3483',
   ritmiek:        '#1F618D',
 }
-
-const LOCATIE_VOLGORDE = ['SPORTHAL', 'TURNZAAL', 'ALTERNATIEF']
-const LOCATIE_LABEL = { SPORTHAL: 'Sporthal', TURNZAAL: 'Turnzaal', ALTERNATIEF: 'Alternatief' }
 
 export default function Home() {
   const sortNaam = ([, a], [, b]) => a.naam.localeCompare(b.naam, 'nl', { sensitivity: 'base' })
@@ -39,7 +37,10 @@ export default function Home() {
       <h1 className="text-xl font-bold mb-4" style={{ color: '#2C3E50' }}>Kies een sport</h1>
       {groepen.map(({ locatie, sporten }) => (
         <div key={locatie} className="mb-6">
-          <p className="text-sm font-semibold text-gray-500 mb-2 uppercase tracking-wide">{LOCATIE_LABEL[locatie]}</p>
+          <p className="inline-block text-xs font-bold text-white uppercase tracking-wide mb-2 px-2.5 py-1 rounded-full"
+             style={{ background: locatieKleur(locatie) }}>
+            {LOCATIE_LABEL[locatie]}
+          </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {sporten.map(([id, sport]) => (
               <SportTile key={id} id={id} sport={sport} />
@@ -62,7 +63,7 @@ export default function Home() {
 }
 
 function SportTile({ id, sport }) {
-  const fallbackKleur = SPORT_KLEUR[id] ?? '#7F8C8D'
+  const kleur = locatieKleur(sport.locatie, SPORT_KLEUR[id] ?? '#7F8C8D')
   const imgUrl = `${import.meta.env.BASE_URL}images/${id}.jpg`
 
   return (
@@ -71,8 +72,8 @@ function SportTile({ id, sport }) {
       className="block rounded-2xl overflow-hidden shadow-md active:scale-95 transition-transform"
     >
       <div
-        className="relative h-32"
-        style={{ background: fallbackKleur }}
+        className="relative h-32 border-b-4"
+        style={{ background: kleur, borderColor: kleur }}
       >
         <img
           src={imgUrl}

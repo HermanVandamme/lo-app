@@ -8,6 +8,7 @@ const SIZE_CLASSES = {
   10: 'w-10 h-10',
   11: 'w-11 h-11',
   12: 'w-12 h-12',
+  16: 'w-16 h-16',
 }
 
 export default function LeerlingFoto({ leerling, size = 12 }) {
