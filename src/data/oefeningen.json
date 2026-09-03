@@ -436,8 +436,8 @@
       },
       {
         "titel": "Werkstations",
-        "opstelling": "Vier stations, je kiest vrij waar je oefent.",
-        "beschrijving": "- Klimmen aan het sportraam en zekeren via het prusiktouw, over de basketring en verder.\n- Klimmen op een schuin klimrek met twee valmatten eronder en jezelf laten vallen.\n- Oefenen voor het bonuspunt touwklimmen: voeten dicht bij elkaar, anders werkt de klem niet.\n- Oefenen voor het bonuspunt rond de langwerpige bok klimmen zonder de grond te raken.",
+        "opstelling": "Vier stations. Je start in je groepje aan één station en schuift op signaal door naar het volgende.",
+        "beschrijving": "### Doorschuifsysteem\n- Verdeel de klas in vier groepjes, elk groepje start aan een ander station.\n- Op het signaal van de leerkracht schuift iedereen door naar het volgende station.\n- Zo doorloopt elk groepje alle vier de stations.\n\n### De vier stations\n1. Klimmen aan het sportraam en zekeren via het prusiktouw, over de basketring en verder.\n2. Klimmen op een schuin klimrek met twee valmatten eronder en jezelf laten vallen.\n3. Oefenen voor het bonuspunt touwklimmen: voeten dicht bij elkaar, anders werkt de klem niet.\n4. Oefenen voor het bonuspunt rond de langwerpige bok klimmen zonder de grond te raken.",
         "cues": "Voeten dicht bij elkaar bij het touwklimmen",
         "makkelijker": "Blijf laag en oefen enkel de techniek.",
         "moeilijker": "Volledige route zonder pauze."
@@ -740,8 +740,8 @@
       },
       {
         "titel": "Test: 8 rondjes",
-        "opstelling": "Op de piste, tijd wordt genoteerd.",
-        "beschrijving": "Test over 8 rondjes, samen 3320 meter.",
+        "opstelling": "Op de piste. Je telt zelf je rondjes.",
+        "beschrijving": "Test over 8 rondjes, samen 3320 meter.\n\n### Hoe tonen we het aan\n- Je telt zelf hoeveel rondjes je gelopen hebt.\n- Je registreert je loop met Strava of een andere app en toont daarmee aan dat je effectief 8 rondjes liep.\n- Ter controle volgt de leerkracht enkele willekeurig gekozen leerlingen.",
         "cues": "Start rustiger dan je denkt nodig te hebben",
         "makkelijker": "",
         "moeilijker": ""
