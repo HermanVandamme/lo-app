@@ -37,6 +37,9 @@ export default function PdfImport() {
       })
       setPreview(result)
       setStatus('klaar')
+      // Meteen wegschrijven — geen aparte bevestigingsklik meer. Het overzicht
+      // per klas blijft eronder staan als controle achteraf.
+      await voerImportUit(result)
     } catch (err) {
       setError(err.message)
       setStatus('fout')
@@ -44,12 +47,13 @@ export default function PdfImport() {
     e.target.value = ''
   }
 
-  async function handleImporteer() {
+  async function voerImportUit(previewData) {
+    if (!previewData) return
     setImportStatus('bezig')
     setImportError(null)
     try {
       const { importeerPreview } = await import('../utils/pdfMatching')
-      const resultaat = await importeerPreview(preview)
+      const resultaat = await importeerPreview(previewData)
       setImportResultaat(resultaat)
       setImportStatus('klaar')
     } catch (err) {
@@ -65,12 +69,13 @@ export default function PdfImport() {
       </h2>
       <p className="text-xs text-gray-400 mb-3">
         Matcht namen en foto's uit een Smartschool-klaslijst-PDF tegen de leerlingen die nu al in
-        Dexie staan. Er wordt pas geschreven na je bevestiging hieronder — tot dan is dit enkel een preview.
+        de app staan, en slaat ze meteen op. Het overzicht per klas verschijnt eronder, zodat je
+        achteraf kan controleren wat er gekoppeld werd.
       </p>
 
       <button
         onClick={() => inputRef.current?.click()}
-        disabled={status === 'bezig'}
+        disabled={status === 'bezig' || importStatus === 'bezig'}
         className="px-4 py-3 rounded-xl font-semibold text-white text-base w-full disabled:opacity-50"
         style={{ background: '#8e44ad' }}
       >
@@ -90,18 +95,12 @@ export default function PdfImport() {
 
       {status === 'klaar' && preview && (
         <div className="mt-3 space-y-4">
-          {Object.entries(preview.perKlas).sort(([a], [b]) => a.localeCompare(b)).map(([klasId, info]) => (
-            <KlasMatchingKaart key={klasId} klasId={klasId} info={info} />
-          ))}
-
-          {preview.overgeslagenPaginas.length > 0 && (
-            <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-3 py-2 text-xs text-yellow-700">
-              {preview.overgeslagenPaginas.length} pagina('s) overgeslagen (geen cijfer-klascode herkend):{' '}
-              {preview.overgeslagenPaginas.map(p => `#${p.pageNum} (${p.code ?? 'geen titel'})`).join(', ')}
-            </div>
+          {/* Resultaat staat bovenaan: geen gescrol nodig om te zien of het gelukt is. */}
+          {importStatus === 'bezig' && (
+            <p className="text-sm text-gray-500">⏳ Bezig met opslaan…</p>
           )}
 
-          {importStatus === 'klaar' && importResultaat ? (
+          {importStatus === 'klaar' && importResultaat && (
             <div className="bg-green-50 border-2 border-green-300 rounded-xl px-3 py-3 text-sm text-green-700">
               <p className="font-bold mb-1">✓ Import voltooid</p>
               <p>{importResultaat.nieuweKlassen} klas(sen) aangemaakt</p>
@@ -113,21 +112,32 @@ export default function PdfImport() {
                 </p>
               )}
             </div>
-          ) : (
-            <div className="border-t border-dashed border-gray-200 pt-3">
+          )}
+
+          {importStatus === 'fout' && (
+            <div className="bg-red-50 border-2 border-red-300 rounded-xl px-3 py-3">
+              <p className="text-sm text-red-600 font-semibold mb-2">Opslaan mislukt: {importError}</p>
               <button
-                onClick={handleImporteer}
-                disabled={importStatus === 'bezig'}
-                className="px-4 py-3 rounded-xl font-semibold text-white text-base w-full disabled:opacity-50"
+                onClick={() => voerImportUit(preview)}
+                className="px-4 py-2.5 rounded-xl font-semibold text-white text-sm"
                 style={{ background: '#27AE60' }}
               >
-                {importStatus === 'bezig' ? '⏳ Bezig met opslaan…' : '✅ Bevestig en importeer in Dexie'}
+                Probeer opnieuw op te slaan
               </button>
-              {importStatus === 'fout' && (
-                <p className="mt-2 text-sm text-red-500">Fout bij opslaan: {importError}</p>
-              )}
             </div>
           )}
+
+          {Object.entries(preview.perKlas).sort(([a], [b]) => a.localeCompare(b)).map(([klasId, info]) => (
+            <KlasMatchingKaart key={klasId} klasId={klasId} info={info} />
+          ))}
+
+          {preview.overgeslagenPaginas.length > 0 && (
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-3 py-2 text-xs text-yellow-700">
+              {preview.overgeslagenPaginas.length} pagina('s) overgeslagen (geen cijfer-klascode herkend):{' '}
+              {preview.overgeslagenPaginas.map(p => `#${p.pageNum} (${p.code ?? 'geen titel'})`).join(', ')}
+            </div>
+          )}
+
         </div>
       )}
     </div>
