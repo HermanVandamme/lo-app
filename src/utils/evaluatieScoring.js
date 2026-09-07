@@ -6,13 +6,30 @@
  * item (zie EvaluatieScherm voor hoe dit uit Dexie-scores wordt opgebouwd:
  * sleutel in de db = `${item.id}::${subKey}`).
  */
-/** Rekent een ruwe (opgetelde) score om naar max_score, ALS het item max_score_ruw declareert. */
-function pasOmrekeningToe(item, ruw) {
-  if (ruw === null || ruw === undefined) return ruw
-  if (item.max_score_ruw && item.max_score) {
-    return Math.round((ruw / item.max_score_ruw) * item.max_score * 10) / 10
-  }
-  return ruw
+/**
+ * Schaalt een opgetelde score naar de eindschaal van het item, op basis van
+ * ENKEL de onderdelen die effectief ingevuld zijn.
+ *
+ * Een niet-ingevuld criterium telt dus niet mee: wie 4 van de 5 criteria
+ * ingevuld krijgt, wordt beoordeeld op die 4 en verliest geen punten voor het
+ * vijfde. Is alles ingevuld, dan komt dit exact op hetzelfde neer als vroeger
+ * (de som van de maxima is in alle rubrics gelijk aan max_score_ruw/max_score).
+ *
+ * @param somIngevuld  opgetelde punten van de ingevulde onderdelen
+ * @param maxIngevuld  opgetelde maxima van diezelfde onderdelen
+ * @param maxScore     eindschaal van het item (bv. 10)
+ */
+function schaalNaarIngevuld(somIngevuld, maxIngevuld, maxScore) {
+  if (!maxIngevuld) return null
+  if (!maxScore) return Math.round(somIngevuld * 10) / 10
+  return Math.round((somIngevuld / maxIngevuld) * maxScore * 10) / 10
+}
+
+/** Maximum van één checklist-item: eigen max_punten, anders de hoogste optie. */
+function maxVanChecklistItem(subItem, optiesPerItem) {
+  if (typeof subItem?.max_punten === 'number') return subItem.max_punten
+  const opties = optiesPerItem ?? [0, 1]
+  return Math.max(...opties)
 }
 
 export function berekenEvaluatieScore(item, waarden) {
@@ -33,9 +50,16 @@ export function berekenEvaluatieScore(item, waarden) {
         ? (waarden.variant != null ? item.scenario_varianten[waarden.variant]?.items : null)
         : item.items
       if (!items) return null
-      const vals = items.map((_, idx) => waarden[`i${idx}`]).filter(v => v !== undefined && v !== null)
-      if (!vals.length) return null
-      return pasOmrekeningToe(item, vals.reduce((a, b) => a + b, 0))
+      let som = 0, maxIngevuld = 0, aantal = 0
+      items.forEach((subItem, idx) => {
+        const v = waarden[`i${idx}`]
+        if (v === undefined || v === null) return
+        som += Number(v)
+        maxIngevuld += maxVanChecklistItem(subItem, item.opties_per_item)
+        aantal++
+      })
+      if (!aantal) return null
+      return schaalNaarIngevuld(som, maxIngevuld, item.max_score)
     }
 
     case 'dropdown_score': {
@@ -44,9 +68,16 @@ export function berekenEvaluatieScore(item, waarden) {
     }
 
     case 'dropdown_meerdere': {
-      const vals = (item.items ?? []).map((_, idx) => waarden[`i${idx}`]).filter(v => v !== undefined && v !== null)
-      if (!vals.length) return null
-      return pasOmrekeningToe(item, vals.reduce((a, b) => a + b, 0))
+      let som = 0, maxIngevuld = 0, aantal = 0
+      ;(item.items ?? []).forEach((subItem, idx) => {
+        const v = waarden[`i${idx}`]
+        if (v === undefined || v === null) return
+        som += Number(v)
+        maxIngevuld += subItem.max_score ?? Math.max(...(subItem.opties ?? [0]))
+        aantal++
+      })
+      if (!aantal) return null
+      return schaalNaarIngevuld(som, maxIngevuld, item.max_score)
     }
 
     case 'direct_score_test':
@@ -68,9 +99,18 @@ export function berekenEvaluatieScore(item, waarden) {
 
     case 'video_upload_score': {
       if (item.onderdelen) {
-        const vals = item.onderdelen.map((_, idx) => waarden[`o${idx}`]).filter(v => v !== undefined && v !== null)
-        if (!vals.length) return null
-        return vals.reduce((a, b) => a + b, 0)
+        let som = 0, maxIngevuld = 0, aantal = 0
+        item.onderdelen.forEach((sub, idx) => {
+          const v = waarden[`o${idx}`]
+          if (v === undefined || v === null) return
+          som += Number(v)
+          maxIngevuld += sub.max_score ?? 0
+          aantal++
+        })
+        if (!aantal) return null
+        // Geen eigen max_score? Dan is de som van alle onderdelen de eindschaal.
+        const eindschaal = item.max_score ?? item.onderdelen.reduce((t, sub) => t + (sub.max_score ?? 0), 0)
+        return schaalNaarIngevuld(som, maxIngevuld, eindschaal)
       }
       const v = waarden.score
       return v === undefined || v === null ? null : Number(v)
@@ -85,9 +125,16 @@ export function berekenEvaluatieScore(item, waarden) {
         }
         return berekenEvaluatieScore(sub, subWaarden)
       })
-      const gevuld = subScores.filter(v => v !== null && v !== undefined)
-      if (!gevuld.length) return null
-      return pasOmrekeningToe(item, gevuld.reduce((a, b) => a + b, 0))
+      let som = 0, maxIngevuld = 0, aantal = 0
+      subScores.forEach((score, idx) => {
+        if (score === null || score === undefined) return
+        som += score
+        maxIngevuld += (item.onderdelen ?? [])[idx]?.max_score ?? 0
+        aantal++
+      })
+      if (!aantal) return null
+      const eindschaal = item.max_score ?? (item.onderdelen ?? []).reduce((t, sub) => t + (sub.max_score ?? 0), 0)
+      return schaalNaarIngevuld(som, maxIngevuld, eindschaal)
     }
 
     default:

@@ -12,7 +12,7 @@
  *                            Terug naar de lijst blijft altijd mogelijk, zodat
  *                            je ook rechtstreeks één leerling kan opzoeken.
  */
-import { useState, useMemo, useEffect } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import db from '../db/db'
 import { useKlassen, useStudentsByKlas } from '../hooks/useStudents'
@@ -278,17 +278,19 @@ function LeerlingFocus({
   leerling, index, aantal, items, totaal,
   waardenVoorItem, onSet, onVorige, onVolgende, onTerug,
 }) {
-  // Bij het wisselen van leerling weer bovenaan beginnen — zonder animatie, en
-  // alleen als er effectief gescrold is. Een vloeiende scroll laat het scherm
-  // bij elke leerling zichtbaar bewegen, wat onrustig oogt.
+  // Bij het openen én bij elke volgende leerling brengen we DIT paneel in beeld,
+  // niet de bovenkant van de pagina. Anders spring je terug naar de themakop en
+  // moet je alsnog naar beneden scrollen om een punt te kunnen geven.
+  // Zonder animatie: bij elke leerling zichtbaar scrollen oogt onrustig.
+  const bovenRef = useRef(null)
   useEffect(() => {
-    if (window.scrollY > 0) window.scrollTo({ top: 0, behavior: 'auto' })
+    bovenRef.current?.scrollIntoView({ block: 'start', behavior: 'auto' })
   }, [index])
 
   const laatste = index >= aantal - 1
 
   return (
-    <div>
+    <div ref={bovenRef} className="scroll-mt-20">
       <div className="flex items-center justify-between mb-3">
         <button onClick={onTerug} className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-100 text-gray-600">
           ↩ Lijst
