@@ -143,6 +143,46 @@ export function berekenEvaluatieScore(item, waarden) {
 }
 
 /**
+ * Totaal over meerdere evaluatie-items van hetzelfde thema/jaar.
+ *
+ * Items die hetzelfde `gemiddelde_groep`-veld dragen, tellen samen als ÉÉN
+ * punt: het gemiddelde van de items die effectief ingevuld zijn. Zo levert de
+ * duurlooptest, die in twee lessen afgenomen wordt, één score op 10 op — en
+ * blijft die score gelijk als je maar één les invulde.
+ *
+ * Items zonder dat veld gedragen zich als voorheen: hun scores en maxima
+ * worden gewoon opgeteld.
+ *
+ * @param items            evaluatie-items voor dit thema/jaar
+ * @param waardenVoorItem  (item) => object met de ingevulde sub-waarden
+ * @returns {{som: number, max: number}|null}  null als er niets ingevuld is
+ */
+export function berekenTotaal(items, waardenVoorItem) {
+  const groepen = new Map()
+
+  for (const item of items ?? []) {
+    const sleutel = item.gemiddelde_groep ?? item.id
+    const score = berekenEvaluatieScore(item, waardenVoorItem(item) ?? {})
+    const groep = groepen.get(sleutel) ?? { scores: [], max: 0 }
+    // Een groep telt als één score, dus het maximum van de groep telt één keer.
+    groep.max = Math.max(groep.max, item.max_score ?? 0)
+    if (score !== null && score !== undefined) groep.scores.push(score)
+    groepen.set(sleutel, groep)
+  }
+
+  let som = 0, max = 0, gevuld = false
+  for (const groep of groepen.values()) {
+    max += groep.max
+    if (groep.scores.length) {
+      som += groep.scores.reduce((a, b) => a + b, 0) / groep.scores.length
+      gevuld = true
+    }
+  }
+
+  return gevuld ? { som: Math.round(som * 10) / 10, max } : null
+}
+
+/**
  * Telt het aantal losse klikbare scoreveldjes dat een evaluatie-item bevat.
  * Gebruikt om te bepalen of een item met precies 1 veld meteen inline in de
  * klaslijst getoond kan worden (zie EvaluatieScherm), i.p.v. via foto-klik

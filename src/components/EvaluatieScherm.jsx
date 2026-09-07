@@ -18,13 +18,13 @@ import db from '../db/db'
 import { useKlassen, useStudentsByKlas } from '../hooks/useStudents'
 import { graadFromKlasId, jaarNummerFromGraad } from '../utils/graad'
 import { getEvaluatiesVoorSport } from '../utils/evaluatieData'
-import { berekenEvaluatieScore, scoreKleurGenormaliseerd, telScoreVelden } from '../utils/evaluatieScoring'
+import { berekenEvaluatieScore, berekenTotaal, scoreKleurGenormaliseerd, telScoreVelden } from '../utils/evaluatieScoring'
 import { downloadCsv, SCORE_HEADER, scoreRij } from '../utils/csvExport'
 import sportsData from '../data/sports.json'
 import EvaluatieVeld from './EvaluatieVeld'
 import LeerlingFoto from './LeerlingFoto'
 
-export default function EvaluatieScherm({ sportId, graadFilter }) {
+export default function EvaluatieScherm({ sportId, graadFilter, evaluatieId }) {
   const [klas, setKlas] = useState(null)
   const klassen = useKlassen()
   const sport = sportsData[sportId]
@@ -36,7 +36,7 @@ export default function EvaluatieScherm({ sportId, graadFilter }) {
   }), [klassen, sport, graadFilter])
 
   if (klas) {
-    return <EvaluatieKlasScherm sportId={sportId} sport={sport} klas={klas} onTerug={() => setKlas(null)} />
+    return <EvaluatieKlasScherm sportId={sportId} sport={sport} klas={klas} evaluatieId={evaluatieId} onTerug={() => setKlas(null)} />
   }
 
   return (
@@ -63,10 +63,16 @@ export default function EvaluatieScherm({ sportId, graadFilter }) {
   )
 }
 
-function EvaluatieKlasScherm({ sportId, sport, klas, onTerug }) {
+function EvaluatieKlasScherm({ sportId, sport, klas, evaluatieId, onTerug }) {
   const graad  = graadFromKlasId(klas.id)
   const jaarNr = jaarNummerFromGraad(graad)
-  const items  = useMemo(() => getEvaluatiesVoorSport(sportId, jaarNr), [sportId, jaarNr])
+  // evaluatieId gezet? Dan toont dit scherm enkel die ene evaluatie — zo krijgt
+  // elke groene knop zijn eigen klaslijst. Zonder de prop (bv. via het menu
+  // Evaluatie) blijven alle evaluaties van dat jaar samen staan.
+  const items = useMemo(() => {
+    const alle = getEvaluatiesVoorSport(sportId, jaarNr)
+    return evaluatieId ? alle.filter(it => it.id === evaluatieId) : alle
+  }, [sportId, jaarNr, evaluatieId])
   // Eén enkel klikbaar scoreveld in totaal? Toon dat dan meteen in de klaslijst,
   // zonder eerst naar een detailscherm te moeten klikken.
   const enkelItem = useMemo(() => {
@@ -107,15 +113,9 @@ function EvaluatieKlasScherm({ sportId, sport, klas, onTerug }) {
     return result
   }
 
-  /** Totaal over alle evaluatie-items van deze leerling, of null als niets ingevuld is. */
+  /** Totaal over de getoonde evaluatie-items, of null als niets ingevuld is. */
   function totaalVoor(leerlingId) {
-    let som = 0, max = 0, gevuld = false
-    for (const item of items) {
-      const s = berekenEvaluatieScore(item, waardenVoorItem(leerlingId, item.id))
-      max += item.max_score ?? 0
-      if (s !== null && s !== undefined) { som += s; gevuld = true }
-    }
-    return gevuld ? { som: Math.round(som * 10) / 10, max } : null
+    return berekenTotaal(items, item => waardenVoorItem(leerlingId, item.id))
   }
 
   async function slaOp(leerlingId, key, waarde) {

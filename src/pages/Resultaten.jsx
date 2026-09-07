@@ -9,7 +9,7 @@ import db from '../db/db'
 import { useKlassen, useStudentsByKlas } from '../hooks/useStudents'
 import { graadFromKlasId, jaarNummerFromGraad } from '../utils/graad'
 import { getEvaluatiesVoorSport, getKledijConfig } from '../utils/evaluatieData'
-import { berekenEvaluatieScore, scoreKleurGenormaliseerd } from '../utils/evaluatieScoring'
+import { berekenTotaal, scoreKleurGenormaliseerd } from '../utils/evaluatieScoring'
 import sportsData from '../data/sports.json'
 import LeerlingFoto from '../components/LeerlingFoto'
 
@@ -97,15 +97,12 @@ function ResultatenKlas({ klas, onTerug }) {
   }, [alleKledij])
 
   function celScore(leerlingId, sportId) {
-    const items = getEvaluatiesVoorSport(sportId, jaarNr)
-    let som = 0, max = 0, gevuld = false
-    for (const item of items) {
-      const waarden = scoreMap[leerlingId]?.[sportId]?.[item.id] ?? {}
-      const s = berekenEvaluatieScore(item, waarden)
-      max += item.max_score ?? 0
-      if (s !== null && s !== undefined) { som += s; gevuld = true }
-    }
-    return gevuld ? { som: Math.round(som * 10) / 10, max } : null
+    // berekenTotaal middelt items die tot dezelfde groep horen (bv. duurloop
+    // les 1 + les 2 = één punt op 10) en telt de rest gewoon op.
+    return berekenTotaal(
+      getEvaluatiesVoorSport(sportId, jaarNr),
+      item => scoreMap[leerlingId]?.[sportId]?.[item.id] ?? {}
+    )
   }
 
   // Enkel thema's tonen waar minstens 1 leerling van deze klas iets heeft ingevuld.

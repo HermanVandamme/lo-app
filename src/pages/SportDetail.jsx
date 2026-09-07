@@ -3,7 +3,8 @@ import { useState } from 'react'
 import sportsData from '../data/sports.json'
 import { oefeningenVoor, extraKnoppenVoor } from '../utils/oefeningen'
 import { afbeeldingenVoor } from '../utils/afbeeldingen'
-import { evaluatieLabel, evaluatieLpdNummers } from '../utils/evaluatieLabel'
+import { evaluatieItemLabel, lpdNummersVanItem } from '../utils/evaluatieLabel'
+import { getEvaluatiesVoorSport } from '../utils/evaluatieData'
 import { lpdOmschrijvingen } from '../utils/lpdData'
 import EvaluatieScherm from '../components/EvaluatieScherm'
 import FormattedText from '../components/FormattedText'
@@ -135,38 +136,52 @@ export default function SportDetail() {
           {jaren.map(({ nr, key, label }) => {
             const oefeningen = oefeningenVoor(sportId, key)
             const extras = extraKnoppenVoor(sportId, key)
+            const evaluaties = getEvaluatiesVoorSport(sportId, nr)
 
             return (
               <div key={key}>
                 <h2 className="font-bold text-base mb-2 px-1" style={{ color: KLEUR.donker }}>{label}</h2>
 
                 <div className="space-y-2">
-                  {/* Evaluatie staat altijd bovenaan */}
-                  <Balk
-                    kleur={KLEUR.evaluatie}
-                    icoon="📋"
-                    titel={evaluatieLabel(sportId, nr)}
-                    open={open === `${key}:evaluatie`}
-                    onToggle={() => toggle(`${key}:evaluatie`)}
-                  >
-                    {lpdOmschrijvingen(evaluatieLpdNummers(sportId, nr)).length > 0 && (
-                      <div className="mb-3 space-y-2">
-                        {lpdOmschrijvingen(evaluatieLpdNummers(sportId, nr)).map(({ nr: lpdNr, omschrijving }) => (
-                          <div
-                            key={lpdNr}
-                            className="rounded-xl px-3 py-2 border-l-4 text-gray-700"
-                            style={{ background: '#EAFAF1', borderColor: KLEUR.evaluatie }}
-                          >
-                            <p className="text-xs font-bold uppercase tracking-wide mb-0.5" style={{ color: '#1E8449' }}>
-                              LPD {lpdNr}
-                            </p>
-                            <p className="text-sm leading-snug">{omschrijving}</p>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                    <EvaluatieScherm sportId={sportId} graadFilter={key} />
-                  </Balk>
+                  {/* Evaluatie staat altijd bovenaan — één knop per evaluatie */}
+                  {evaluaties.length === 0 ? (
+                    <Balk
+                      kleur={KLEUR.evaluatie}
+                      icoon="📋"
+                      titel="Evaluatie"
+                      open={open === `${key}:evaluatie`}
+                      onToggle={() => toggle(`${key}:evaluatie`)}
+                    >
+                      <EvaluatieScherm sportId={sportId} graadFilter={key} />
+                    </Balk>
+                  ) : evaluaties.map(item => (
+                    <Balk
+                      key={`${key}-eval-${item.id}`}
+                      kleur={KLEUR.evaluatie}
+                      icoon="📋"
+                      titel={evaluatieItemLabel(item)}
+                      open={open === `${key}:eval:${item.id}`}
+                      onToggle={() => toggle(`${key}:eval:${item.id}`)}
+                    >
+                      {lpdOmschrijvingen(lpdNummersVanItem(item)).length > 0 && (
+                        <div className="mb-3 space-y-2">
+                          {lpdOmschrijvingen(lpdNummersVanItem(item)).map(({ nr: lpdNr, omschrijving }) => (
+                            <div
+                              key={lpdNr}
+                              className="rounded-xl px-3 py-2 border-l-4 text-gray-700"
+                              style={{ background: '#EAFAF1', borderColor: KLEUR.evaluatie }}
+                            >
+                              <p className="text-xs font-bold uppercase tracking-wide mb-0.5" style={{ color: '#1E8449' }}>
+                                LPD {lpdNr}
+                              </p>
+                              <p className="text-sm leading-snug">{omschrijving}</p>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                      <EvaluatieScherm sportId={sportId} graadFilter={key} evaluatieId={item.id} />
+                    </Balk>
+                  ))}
 
                   {/* Oefeningen */}
                   {oefeningen.map((oefening, i) => (
