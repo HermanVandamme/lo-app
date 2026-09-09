@@ -1019,13 +1019,11 @@
         "id": "duurloop_lpd4_les1",
         "lpd": "LPD4",
         "jaren": [
-          4,
-          5,
-          6
+          4
         ],
         "knoplabel": "les 1",
         "gemiddelde_groep": "duurloop_lpd4",
-        "titel": "Duurlooptest 8 rondjes — les 1",
+        "titel": "Duurlooptest 8 rondjes (3,32 km) — les 1",
         "type": "dropdown_tijd_lookup",
         "scored_by": "leerkracht",
         "max_score": 10,
@@ -1087,13 +1085,11 @@
         "id": "duurloop_lpd4_les2",
         "lpd": "LPD4",
         "jaren": [
-          4,
-          5,
-          6
+          4
         ],
         "knoplabel": "les 2",
         "gemiddelde_groep": "duurloop_lpd4",
-        "titel": "Duurlooptest 8 rondjes — les 2",
+        "titel": "Duurlooptest 8 rondjes (3,32 km) — les 2",
         "type": "dropdown_tijd_lookup",
         "scored_by": "leerkracht",
         "max_score": 10,
@@ -1150,6 +1146,140 @@
           "27.5": 0
         },
         "bron": "Evaluatie.docx – Duurloop – Jaar 4+5+6 LPD4 (test in beide lessen; eindpunt = gemiddelde)"
+      },
+      {
+        "id": "duurloop_lpd4_les1_graad3",
+        "lpd": "LPD4",
+        "jaren": [
+          5,
+          6
+        ],
+        "knoplabel": "les 1",
+        "gemiddelde_groep": "duurloop_lpd4",
+        "titel": "Duurlooptest 10 rondjes (4,125 km) — les 1",
+        "type": "dropdown_tijd_lookup",
+        "scored_by": "leerkracht",
+        "max_score": 10,
+        "dropdown_jongens": [
+          "19:10",
+          "20:25",
+          "21:40",
+          "22:55",
+          "24:10",
+          "25:25",
+          "26:40",
+          "27:55",
+          "29:10",
+          "30:25",
+          "31:40"
+        ],
+        "dropdown_meisjes": [
+          "23:50",
+          "25:05",
+          "26:20",
+          "27:35",
+          "28:50",
+          "30:05",
+          "31:20",
+          "32:35",
+          "33:50",
+          "35:05",
+          "36:20"
+        ],
+        "tabel_jongens": {
+          "19:10": 10,
+          "20:25": 9,
+          "21:40": 8,
+          "22:55": 7,
+          "24:10": 6,
+          "25:25": 5,
+          "26:40": 4,
+          "27:55": 3,
+          "29:10": 2,
+          "30:25": 1,
+          "31:40": 0
+        },
+        "tabel_meisjes": {
+          "23:50": 10,
+          "25:05": 9,
+          "26:20": 8,
+          "27:35": 7,
+          "28:50": 6,
+          "30:05": 5,
+          "31:20": 4,
+          "32:35": 3,
+          "33:50": 2,
+          "35:05": 1,
+          "36:20": 0
+        },
+        "bron": "Evaluatie.docx – Duurloop – derde graad: 10 rondjes (4,125 km), tijden afgesproken met collega's; eindpunt = gemiddelde van les 1 en les 2"
+      },
+      {
+        "id": "duurloop_lpd4_les2_graad3",
+        "lpd": "LPD4",
+        "jaren": [
+          5,
+          6
+        ],
+        "knoplabel": "les 2",
+        "gemiddelde_groep": "duurloop_lpd4",
+        "titel": "Duurlooptest 10 rondjes (4,125 km) — les 2",
+        "type": "dropdown_tijd_lookup",
+        "scored_by": "leerkracht",
+        "max_score": 10,
+        "dropdown_jongens": [
+          "19:10",
+          "20:25",
+          "21:40",
+          "22:55",
+          "24:10",
+          "25:25",
+          "26:40",
+          "27:55",
+          "29:10",
+          "30:25",
+          "31:40"
+        ],
+        "dropdown_meisjes": [
+          "23:50",
+          "25:05",
+          "26:20",
+          "27:35",
+          "28:50",
+          "30:05",
+          "31:20",
+          "32:35",
+          "33:50",
+          "35:05",
+          "36:20"
+        ],
+        "tabel_jongens": {
+          "19:10": 10,
+          "20:25": 9,
+          "21:40": 8,
+          "22:55": 7,
+          "24:10": 6,
+          "25:25": 5,
+          "26:40": 4,
+          "27:55": 3,
+          "29:10": 2,
+          "30:25": 1,
+          "31:40": 0
+        },
+        "tabel_meisjes": {
+          "23:50": 10,
+          "25:05": 9,
+          "26:20": 8,
+          "27:35": 7,
+          "28:50": 6,
+          "30:05": 5,
+          "31:20": 4,
+          "32:35": 3,
+          "33:50": 2,
+          "35:05": 1,
+          "36:20": 0
+        },
+        "bron": "Evaluatie.docx – Duurloop – derde graad: 10 rondjes (4,125 km), tijden afgesproken met collega's; eindpunt = gemiddelde van les 1 en les 2"
       }
     ]
   },
