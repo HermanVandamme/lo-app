@@ -713,7 +713,7 @@
     ]
   },
   "duurloop": {
-    "alle_jaren": [
+    "jaar_4": [
       {
         "titel": "Vragen over hartslag",
         "opstelling": "Klassikaal, voor het lopen.",
@@ -742,6 +742,74 @@
         "titel": "Test: 8 rondjes",
         "opstelling": "Op de piste. Je telt zelf je rondjes.",
         "beschrijving": "Test over 8 rondjes, samen 3320 meter.\n\n### Hoe tonen we het aan\n- Je telt zelf hoeveel rondjes je gelopen hebt.\n- Je registreert je loop met Strava of een andere app en toont daarmee aan dat je effectief 8 rondjes liep.\n- Ter controle volgt de leerkracht enkele willekeurig gekozen leerlingen.",
+        "cues": "Start rustiger dan je denkt nodig te hebben",
+        "makkelijker": "",
+        "moeilijker": ""
+      }
+    ],
+    "jaar_5": [
+      {
+        "titel": "Vragen over hartslag",
+        "opstelling": "Klassikaal, voor het lopen.",
+        "beschrijving": "- In wat drukken we onze hartslag uit? (bpm of aantal slagen per minuut)\n- Wie weet wat de maximale hartslag is en hoe je die bij benadering berekent? (220 - leeftijd)\n- Wie heeft zijn maximale hartslag al eens laten testen?\n- Wat is een goede intensiteit om aan te trainen? (maximale hartslag x 0,75)\n- Hoeveel meter denk je dat 1 rondje is? (415 meter)",
+        "cues": "",
+        "makkelijker": "",
+        "moeilijker": ""
+      },
+      {
+        "titel": "Hartslag voelen en sturen",
+        "opstelling": "Iedereen op zijn plaats, leerkracht houdt de tijd bij.",
+        "beschrijving": "- Voel je hartslag aan je pols of in je hals. Hoeveel slagen voel je op 20 seconden?\n- Tik daarna 20x de grond aan en spring omhoog: hoeveel bedraagt je hartslag nu?\n- Probeer je hartslag naar 100 te brengen, wie zit in de buurt?\n- Doe hetzelfde tot 120, en daarna tot 140.",
+        "cues": "Twee vingers op de pols of hals, niet je duim",
+        "makkelijker": "Tellen op 30 seconden en verdubbelen.",
+        "moeilijker": "Je hartslag op een vooraf gekozen waarde proberen houden."
+      },
+      {
+        "titel": "Opwarming",
+        "opstelling": "Op de piste.",
+        "beschrijving": "Loop 2 rondjes op eigen tempo, maar probeer niet te wandelen.",
+        "cues": "Kies een tempo dat je 2 rondjes kan volhouden",
+        "makkelijker": "1 rondje.",
+        "moeilijker": "3 rondjes."
+      },
+      {
+        "titel": "Test: 10 rondjes",
+        "opstelling": "Op de piste. Je telt zelf je rondjes.",
+        "beschrijving": "Test over 10 rondjes, samen 4,125 km.\n\n### Hoe tonen we het aan\n- Je telt zelf hoeveel rondjes je gelopen hebt.\n- Je registreert je loop met Strava of een andere app en toont daarmee aan dat je effectief 10 rondjes liep.\n- Ter controle volgt de leerkracht enkele willekeurig gekozen leerlingen.",
+        "cues": "Start rustiger dan je denkt nodig te hebben",
+        "makkelijker": "",
+        "moeilijker": ""
+      }
+    ],
+    "jaar_6": [
+      {
+        "titel": "Vragen over hartslag",
+        "opstelling": "Klassikaal, voor het lopen.",
+        "beschrijving": "- In wat drukken we onze hartslag uit? (bpm of aantal slagen per minuut)\n- Wie weet wat de maximale hartslag is en hoe je die bij benadering berekent? (220 - leeftijd)\n- Wie heeft zijn maximale hartslag al eens laten testen?\n- Wat is een goede intensiteit om aan te trainen? (maximale hartslag x 0,75)\n- Hoeveel meter denk je dat 1 rondje is? (415 meter)",
+        "cues": "",
+        "makkelijker": "",
+        "moeilijker": ""
+      },
+      {
+        "titel": "Hartslag voelen en sturen",
+        "opstelling": "Iedereen op zijn plaats, leerkracht houdt de tijd bij.",
+        "beschrijving": "- Voel je hartslag aan je pols of in je hals. Hoeveel slagen voel je op 20 seconden?\n- Tik daarna 20x de grond aan en spring omhoog: hoeveel bedraagt je hartslag nu?\n- Probeer je hartslag naar 100 te brengen, wie zit in de buurt?\n- Doe hetzelfde tot 120, en daarna tot 140.",
+        "cues": "Twee vingers op de pols of hals, niet je duim",
+        "makkelijker": "Tellen op 30 seconden en verdubbelen.",
+        "moeilijker": "Je hartslag op een vooraf gekozen waarde proberen houden."
+      },
+      {
+        "titel": "Opwarming",
+        "opstelling": "Op de piste.",
+        "beschrijving": "Loop 2 rondjes op eigen tempo, maar probeer niet te wandelen.",
+        "cues": "Kies een tempo dat je 2 rondjes kan volhouden",
+        "makkelijker": "1 rondje.",
+        "moeilijker": "3 rondjes."
+      },
+      {
+        "titel": "Test: 10 rondjes",
+        "opstelling": "Op de piste. Je telt zelf je rondjes.",
+        "beschrijving": "Test over 10 rondjes, samen 4,125 km.\n\n### Hoe tonen we het aan\n- Je telt zelf hoeveel rondjes je gelopen hebt.\n- Je registreert je loop met Strava of een andere app en toont daarmee aan dat je effectief 10 rondjes liep.\n- Ter controle volgt de leerkracht enkele willekeurig gekozen leerlingen.",
         "cues": "Start rustiger dan je denkt nodig te hebben",
         "makkelijker": "",
         "moeilijker": ""
