@@ -6,6 +6,7 @@ import { afbeeldingenVoor } from '../utils/afbeeldingen'
 import { evaluatieItemLabel, lpdNummersVanItem } from '../utils/evaluatieLabel'
 import { getEvaluatiesVoorSport } from '../utils/evaluatieData'
 import { lpdOmschrijvingen } from '../utils/lpdData'
+import { duurloopInfo } from '../utils/duurloopInfo'
 import EvaluatieScherm from '../components/EvaluatieScherm'
 import FormattedText from '../components/FormattedText'
 
@@ -95,6 +96,43 @@ function OefeningInhoud({ oefening }) {
   )
 }
 
+/** Blauw kader met de streeftijden die leerlingen vóór de duurlooptest vragen. */
+function DuurloopStreefkader({ info }) {
+  if (!info) return null
+
+  const Blok = ({ titel, regels }) => (
+    <div className="flex-1 min-w-[8.5rem]">
+      <p className="text-xs font-bold mb-1" style={{ color: '#1F618D' }}>{titel}</p>
+      <table className="w-full text-xs">
+        <thead>
+          <tr className="text-gray-400">
+            <th className="text-left font-medium pb-0.5"></th>
+            <th className="text-right font-semibold pb-0.5">10/10</th>
+            <th className="text-right font-semibold pb-0.5">5/10</th>
+          </tr>
+        </thead>
+        <tbody className="text-gray-700">
+          <tr><td className="pr-1">Snelheid</td><td className="text-right tabular-nums">{regels[10].snelheid}</td><td className="text-right tabular-nums">{regels[5].snelheid}</td></tr>
+          <tr><td className="pr-1">Per rondje</td><td className="text-right tabular-nums">{regels[10].perRondje}</td><td className="text-right tabular-nums">{regels[5].perRondje}</td></tr>
+          <tr><td className="pr-1">Per km</td><td className="text-right tabular-nums">{regels[10].perKm}</td><td className="text-right tabular-nums">{regels[5].perKm}</td></tr>
+        </tbody>
+      </table>
+    </div>
+  )
+
+  return (
+    <div className="mb-3 rounded-xl px-3 py-2.5 border-l-4" style={{ background: '#EBF5FB', borderColor: '#2980B9' }}>
+      <p className="text-xs font-bold uppercase tracking-wide mb-2" style={{ color: '#2980B9' }}>
+        Streeftijden ({info.aantalRondjes} rondjes · {String(info.afstandKm).replace('.', ',')} km)
+      </p>
+      <div className="flex flex-wrap gap-4">
+        <Blok titel="Jongens" regels={info.jongens} />
+        <Blok titel="Meisjes" regels={info.meisjes} />
+      </div>
+    </div>
+  )
+}
+
 export default function SportDetail() {
   const { sportId } = useParams()
   const sport = sportsData[sportId]
@@ -179,6 +217,7 @@ export default function SportDetail() {
                           ))}
                         </div>
                       )}
+                      <DuurloopStreefkader info={duurloopInfo(item)} />
                       <EvaluatieScherm sportId={sportId} graadFilter={key} evaluatieId={item.id} />
                     </Balk>
                   ))}

@@ -1079,7 +1079,9 @@
           "26.5": 1,
           "27.5": 0
         },
-        "bron": "Evaluatie.docx – Duurloop – Jaar 4+5+6 LPD4 (test in beide lessen; eindpunt = gemiddelde)"
+        "bron": "Evaluatie.docx – Duurloop – Jaar 4+5+6 LPD4 (test in beide lessen; eindpunt = gemiddelde)",
+        "afstand_km": 3.3,
+        "aantal_rondjes": 8
       },
       {
         "id": "duurloop_lpd4_les2",
@@ -1145,7 +1147,9 @@
           "26.5": 1,
           "27.5": 0
         },
-        "bron": "Evaluatie.docx – Duurloop – Jaar 4+5+6 LPD4 (test in beide lessen; eindpunt = gemiddelde)"
+        "bron": "Evaluatie.docx – Duurloop – Jaar 4+5+6 LPD4 (test in beide lessen; eindpunt = gemiddelde)",
+        "afstand_km": 3.3,
+        "aantal_rondjes": 8
       },
       {
         "id": "duurloop_lpd4_les1_graad3",
@@ -1212,7 +1216,9 @@
           "35:05": 1,
           "36:20": 0
         },
-        "bron": "Evaluatie.docx – Duurloop – derde graad: 10 rondjes (4,125 km), tijden afgesproken met collega's; eindpunt = gemiddelde van les 1 en les 2"
+        "bron": "Evaluatie.docx – Duurloop – derde graad: 10 rondjes (4,125 km), tijden afgesproken met collega's; eindpunt = gemiddelde van les 1 en les 2",
+        "afstand_km": 4.125,
+        "aantal_rondjes": 10
       },
       {
         "id": "duurloop_lpd4_les2_graad3",
@@ -1279,7 +1285,9 @@
           "35:05": 1,
           "36:20": 0
         },
-        "bron": "Evaluatie.docx – Duurloop – derde graad: 10 rondjes (4,125 km), tijden afgesproken met collega's; eindpunt = gemiddelde van les 1 en les 2"
+        "bron": "Evaluatie.docx – Duurloop – derde graad: 10 rondjes (4,125 km), tijden afgesproken met collega's; eindpunt = gemiddelde van les 1 en les 2",
+        "afstand_km": 4.125,
+        "aantal_rondjes": 10
       }
     ]
   },
